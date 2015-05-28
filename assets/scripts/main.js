@@ -40,12 +40,11 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
       }
     },
-    // Home page
+    // Pages
     'page': {
       init: function() {
-        var $navPage = $('.nav-page');
 
-        console.log( $navPage  );
+        var $navPage = $('.nav-page');
 
         // Fix Nav Page when scroll down
         $(window).scroll(function(e) {
@@ -56,15 +55,15 @@
             $navPage.removeClass("fixed");
           }
         });
-      },
-      finalize: function() {
-        // JavaScript to be fired on the home page, after the init JS
       }
     },
-    // About us page, note the change from about-us to about_us.
-    'about_us': {
+    // Prices Page
+    'prices': {
       init: function() {
-        // JavaScript to be fired on the about us page
+
+        var w = $('.page-content').width();
+        console.log('W', w);
+        var vis = main_visualization('#main-vis').width( w ).height( Math.round(w*9/16) ).init();
       }
     }
   };

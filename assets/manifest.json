@@ -8,7 +8,8 @@
     },
     "main-visualization.js": {
       "files": [
-        "scripts/main-visualization.js"
+        "scripts/main-visualization.js",
+        "scripts/patents-visualization.js"
       ],
       "main": true
     },
@@ -25,6 +26,9 @@
     },
     "jquery.js": {
       "bower": ["jquery"]
+    },
+    "d3.min.js": {
+      "bower": ["d3"]
     },
     "modernizr.js": {
       "bower": ["modernizr"]

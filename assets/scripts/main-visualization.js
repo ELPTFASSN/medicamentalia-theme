@@ -1,96 +1,121 @@
-(function($) {
+function main_visualization( _id ) {
+
+  var $ = jQuery.noConflict();
+
+  var that = this;
+
+  var id = _id;
 
   var DOT_OPACITY = 0.7;
 
   var margin = {top: 20, right: 20, bottom: 70, left: 50},
-      width = 1140 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
-
-  var x = d3.scale.ordinal()
-      .rangePoints([0, width]);
-
-  var y = d3.scale.linear()
-      .range([height, 0]);
+      widthCont = 1140,
+      heightCont = 500,
+      width, height;
 
   var color = d3.scale.category20();
 
-  var xAxis = d3.svg.axis()
+  var svg,
+      x, y,
+      xAxis, yAxis,
+      dataPricesPublic, dataPricesPrivate, countries;
+
+
+  // Setup Visualization
+
+  that.init = function() {
+
+    console.log('vis', widthCont, heightCont );
+
+    width = widthCont - margin.left - margin.right;
+    height = heightCont - margin.top - margin.bottom;
+
+    x = d3.scale.ordinal()
+      .rangePoints([0, width]);
+
+    y = d3.scale.linear()
+      .range([height, 0]);
+
+    xAxis = d3.svg.axis()
       .scale(x)
       .tickSize(-height)
       .tickSubdivide(true)
       .orient('bottom');
 
-  var yAxis = d3.svg.axis()
+    yAxis = d3.svg.axis()
       .scale(y)
       .tickSize(-width)
       .tickPadding(12)
       .orient('left');
 
-  var svg = d3.select('#main-vis').append('svg')
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom)
-    .append('g')
-      .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+    svg = d3.select(id).append('svg')
+        .attr('width', widthCont)
+        .attr('height', heightCont)
+      .append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-  var dataPricesPublic, dataPricesPrivate, countries;
+    // Load CSV
+    d3.csv( $('body').data('template-uri')+'/dist/scripts/data/prices.csv', function(error, data) {
 
-  // Load CSV
+      console.log(data);
 
-  d3.csv( $('body').data('template-uri')+'/dist/scripts/data/prices.csv', function(error, data) {
+      var dataPrices = data.filter(function(d){ return d['Unit/MPR'] === 'MPR'; });
 
-    console.log(data);
+      dataPrices = dataPrices.filter(function(d){ return d.Price !== 'NO DATA'; });
+      dataPrices.forEach(function(d) {
+        d.Price = (d.Price !== 'free') ? +d.Price : 0;
+      });
+      
+      dataPricesPublic = dataPrices.filter(function(d){ return d['Public/Private'] === 'Public'; });
+      dataPricesPrivate = dataPrices.filter(function(d){ return d['Public/Private'] === 'Private'; });
 
-    var dataPrices = data.filter(function(d){ return d['Unit/MPR'] === 'MPR'; });
+      // Set Countries
 
-    dataPrices = dataPrices.filter(function(d){ return d.Price !== 'NO DATA'; });
-    dataPrices.forEach(function(d) {
-      d.Price = (d.Price !== 'free') ? +d.Price : 0;
+      var nestedData = d3.nest()
+        .key(function(d) { return d.Country; })
+        .entries(dataPrices);
+
+      countries = [];
+      nestedData.forEach(function(d) { countries.push( d.key ); });
+
+      x.domain( countries );
+
+      //console.dir( dataPricesPublic );
+      //console.dir( dataPricesPrivate );
+
+      $('.btn-group').css('visibility', 'visible');
+
+      setData( dataPricesPublic );
     });
-    
-    dataPricesPublic = dataPrices.filter(function(d){ return d['Public/Private'] === 'Public'; });
-    dataPricesPrivate = dataPrices.filter(function(d){ return d['Public/Private'] === 'Private'; });
 
-    // Set Countries
+    // Setup Public/Private Btns
+    $('#public-btn').click(function(e){
 
-    var nestedData = d3.nest()
-      .key(function(d) { return d.Country; })
-      .entries(dataPrices);
+      if( $(this).hasClass('active') ){
+        return;
+      }
 
-    countries = [];
-    nestedData.forEach(function(d) { countries.push( d.key ); });
+      $('#private-btn').removeClass('active');
+      $(this).addClass('active');
 
-    x.domain( countries );
+      updateData( dataPricesPublic );
+    });
 
-    //console.dir( dataPricesPublic );
-    //console.dir( dataPricesPrivate );
+    $('#private-btn').click(function(e){
+      if( $(this).hasClass('active') ){
+        return;
+      }
 
-    $('.btn-group').css('visibility', 'visible');
+      $('#public-btn').removeClass('active');
+      $(this).addClass('active');
 
-    setData( dataPricesPublic );
-  });  
+      updateData( dataPricesPrivate );
+    });
 
-  $('#public-btn').click(function(e){
+    return that;
+  };
 
-    if( $(this).hasClass('active') ){
-      return;
-    }
-
-    $('#private-btn').removeClass('active');
-    $(this).addClass('active');
-
-    updateData( dataPricesPublic );
-  });
-
-  $('#private-btn').click(function(e){
-    if( $(this).hasClass('active') ){
-      return;
-    }
-
-    $('#public-btn').removeClass('active');
-    $(this).addClass('active');
-
-    updateData( dataPricesPrivate );
-  });
+  // Private Methods
 
   var setData = function( data ){
 
@@ -150,28 +175,6 @@
         .style('fill', function(d) { return color(d.Drug); })
         .on('mouseover', onOverDot )
         .on('mouseout', onOutDot );
-
-    /*
-    var legend = svg.selectAll('.legend')
-        .data(color.domain())
-      .enter().append('g')
-        .attr('class', 'legend')
-        .attr('transform', function(d, i) { return 'translate(0,' + i * 20 + ')'; });
-
-    legend.append('rect')
-      .attr('x', width )
-      .attr('width', 16)
-      .attr('height', 16)
-      .style('opacity', 0.8)
-      .style('fill', color);
-
-    legend.append('text')
-      .attr('x', width - 4)
-      .attr('y', 9)
-      .attr('dy', '.35em')
-      .style('text-anchor', 'end')
-      .text(function(d) { return d; });
-    */
   };
 
   var onOverDot = function(){
@@ -242,4 +245,24 @@
     return drug.toLowerCase().replace(/[ +\/]/g,'-');
   };
 
-})(jQuery); // Fully reference jQuery after this point.
+
+  // Public Methods
+
+  that.width = function(value) {
+    if (!arguments.length) {
+      return widthCont;
+    }
+    widthCont = value;
+    return that;
+  };
+
+  that.height = function(value) {
+    if (!arguments.length) {
+      return heightCont;
+    }
+    heightCont = value;
+    return that;
+  };
+
+  return that;
+}

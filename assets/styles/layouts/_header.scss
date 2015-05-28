@@ -1,7 +1,8 @@
 .navbar-default{
   border: none;
-  background: $brand-primary;
+  background: $color-menu;
   margin-bottom: 0;
+  border-radius: 0;
 
   .home & {
     display: none;
@@ -11,6 +12,8 @@
     color: $brand-secondary;
     letter-spacing: 0.07em;
     text-transform: uppercase;
+    padding-left: 32px;
+    background: url(../images/medicamentalia-small.png) no-repeat 4px center transparent;
     @include transition(.3s ease-in-out opacity);
 
     &:hover{

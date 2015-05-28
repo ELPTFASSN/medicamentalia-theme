@@ -40,19 +40,23 @@ header {
 
     h1 {
       color: $brand-secondary;
-      font-weight: 700;
-      letter-spacing: .075em;
-      text-transform: uppercase;
-      margin-top: 0;
-      margin-bottom: 0;
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: .03em;
+      margin: 15px 0;
     }
 
     h2{
-      color: $brand-secondary;
+      color: $color-yellow;
       font-size: 22px;
-      margin: 20px 0 10px;
+      margin: 0;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 400;
+    }
+
+    p{
+      font-weight: 300;
     }
   }
 
@@ -86,7 +90,7 @@ header {
   .nav-page-container{
     position: absolute;
     width: 100%;
-    background: $brand-secondary;
+    background: #e2723b;
     z-index: 90;
   }
 
@@ -103,15 +107,24 @@ header {
 
   .navbar-nav{
     width: 100%;
-    border-right: 1px solid mix($brand-primary, $brand-secondary, 50%);
+    border-right: 1px solid #be5f30;
 
     li{
       width: 33.33%;
 
       > a{
+        color: #653015;
         padding: 12px 0;
         text-align: center;
-        border-left: 1px solid mix($brand-primary, $brand-secondary, 50%);
+        border-left: 1px solid #be5f30;
+        @include transition(.3s ease-out background);
+
+        &.active,
+        &:hover,
+        &:focus{
+          color: white;
+          background: #be5f30;
+        }
       }
     }
   }
