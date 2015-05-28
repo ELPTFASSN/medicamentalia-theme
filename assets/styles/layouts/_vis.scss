@@ -1,0 +1,64 @@
+#main-vis{
+
+  position: relative;
+  margin: 20px 0;
+  font-family: $font-family-sans-serif;
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #666;
+    shape-rendering: crispEdges;
+  }
+
+  .axis text{
+    fill: #666;
+    font-weight: 600;
+  }
+
+  .y.axis text{
+    font-size: 0.875em;
+    font-weight: 400;
+  }
+
+  .y.axis .tick line{
+    stroke: #e0e0e0;
+  }
+
+  .x.axis .tick line{
+    stroke: #ccc;
+    stroke-dasharray: 1, 2;
+  }
+
+  .axis .domain{
+    display: none;
+  }
+
+  .dot{
+    cursor: pointer;
+  }
+
+
+  #graph-tooltip{
+    background: white;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 10px 10px 2px;
+    width: auto;
+    margin: -40px 16px 10px;
+
+    p{
+      font-size: 14px;
+      margin-bottom: 8px;
+      line-height: 1em;
+    }
+  }  
+}
+
+.btn-group{
+  visibility: hidden;
+
+  .btn{
+    font-family: $font-family-sans-serif;
+  }
+}

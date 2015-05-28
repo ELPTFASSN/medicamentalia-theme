@@ -1,0 +1,312 @@
+// Page Header
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+  color: white;
+  background: url('http://lorempixel.com/g/1280/720/nature/') center center no-repeat fixed;
+  @include background-size( cover );
+
+  .header-overlay{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: $brand-primary;
+    opacity: 0.5;
+
+    .prices &{
+      background: $color-green;
+    }
+    .ghana &{
+      background: $color-blue;
+    }
+    .brasil &{
+      background: $color-orange;
+    }
+    .patents &{
+      background: $color-yellow;
+    }
+  }
+
+  .header-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 15px 100px;
+    width: 100%;
+
+    h1 {
+      color: $brand-secondary;
+      font-weight: 700;
+      letter-spacing: .075em;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    h2{
+      color: $brand-secondary;
+      font-size: 22px;
+      margin: 20px 0 10px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 33%;
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      @include translate(0, -50%);
+      padding: 0;
+        
+      .header-content-inner {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+      }
+    }
+  }
+}
+
+
+// Page Menu
+
+.nav-page{
+  height: 0;
+  position: relative;
+  overflow: visible;
+
+  .nav-page-container{
+    position: absolute;
+    width: 100%;
+    background: $brand-secondary;
+    z-index: 90;
+  }
+
+  &.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 90;
+  }
+
+  .container{
+    max-width: 1040px;
+  }
+
+  .navbar-nav{
+    width: 100%;
+    border-right: 1px solid mix($brand-primary, $brand-secondary, 50%);
+
+    li{
+      width: 33.33%;
+
+      > a{
+        padding: 12px 0;
+        text-align: center;
+        border-left: 1px solid mix($brand-primary, $brand-secondary, 50%);
+      }
+    }
+  }
+}
+
+
+// Page Containers
+
+.page-content{
+  font-family: $font-family-serif;
+  max-width: 1040px;
+
+  .page-content-container{
+    width: 100%;
+  }
+
+  h2{
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  a.page-anchor{
+    display: block;
+    padding-top: 40px;
+    border-bottom: 1px solid mix($brand-primary, $brand-secondary, 50%);
+
+    &:first-child{
+      border: none;
+    }
+  }
+
+  a{
+    font-weight: 600;
+    @include transition(0.3s ease-out color);
+    
+    &:hover{
+      color: $color-orange;
+      text-decoration: none;
+    }
+  }
+
+  .video-container{
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .video-container-caption{
+    color: $brand-primary;
+    font-family: $font-family-sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.375em;
+    margin: -20px 0 40px;
+  }
+}
+
+.video-container{
+  position: relative;
+  margin: 60px 0 30px;
+}
+
+.video-container-right{
+  .video-container{
+    margin-top: 40px;
+  }
+}
+
+
+// Align right pictures
+.alignright{
+  height: auto;
+  width: 100% !important;
+}
+
+.wp-caption{
+  padding: 0;
+  border: none;
+
+  > img{
+    width: 100%;
+  }
+}
+
+.wp-caption-text{
+  color: $brand-primary;
+  font-family: $font-family-sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.375em;
+  padding: 9px 0;
+}
+
+
+// Blockquote
+
+$page-content-container: 0.75;
+$blockquote-margin-right: -(300% / 12) / $page-content-container;
+
+blockquote{
+  position: relative;
+  width: auto;
+  padding: 0;
+  margin: 0 30px 30px;
+  font-family: $font-family-sans-serif;
+  color: $color-orange;
+  font-weight: 600;
+  border: none;
+  text-indent: 1.5em;
+
+  > p{
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  &:before{
+    content: '“';
+    display: block;
+    position: absolute;
+    top: -0.05em;
+    left: -0.7em;
+    color: $brand-primary;
+    font-size: 2.25em;
+    font-weight: 700;
+    line-height: 1em;
+  }
+}
+
+
+// Carousel Fullscreen
+
+.carousel.full-width{
+  height: 100%;
+  margin-top: 40px;
+  
+  .item,
+  .active,
+  .carousel-inner{
+    height: 100%;
+  }
+
+  .fill{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    @include background-size( cover );
+  }
+}
+
+
+// Tablet & Computers Resolution
+@media (min-width: $screen-sm) {
+
+  blockquote,
+  .alignright,
+  .video-container-right{
+    float: right;
+    width: 40% !important;
+    margin-right: 0;
+  }
+
+  .alignright{
+    margin-left: 30px;
+  }
+
+  .page-content .video-container-right{
+    margin-left: 30px;
+
+    .video-container{
+      margin-top: 0;
+    }
+    .video-container-caption{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Computers Resolution
+@media (min-width: $screen-md) {
+
+  .page-content .page-content-container{
+    width: $page-content-container * 100%;
+  }
+
+  blockquote,
+  .alignright,
+  .video-container-right{
+    width: (500% / 12) / $page-content-container !important;
+    margin-right: $blockquote-margin-right;
+  }
+}

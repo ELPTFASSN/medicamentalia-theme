@@ -1,0 +1,11 @@
+@import "main";
+
+body {
+  font-family: $font-family-serif;
+  margin: 12px !important;
+
+  p{
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
