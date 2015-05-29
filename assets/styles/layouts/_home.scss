@@ -12,24 +12,25 @@
     }
 
     h1{
-      font-size: 48px;
+      font-size: 38px;
       font-weight: 400;
-      line-height: 139px;
-      padding-left: 100px;
-      background: url(../images/medicamentalia.png) no-repeat 0 0 transparent;
-      text-align: left;
+      line-height: 100px;
+      padding-top: 140px;
+      margin: 0;
+      background: url(../images/medicamentalia.png) no-repeat center 0 transparent;
+      text-align: center;
       text-transform: uppercase;
       letter-spacing: .1em;
     }
 
     p{
-      font-size: 22px;
+      font-size: 20px;
       font-family: $font-family-serif;
       letter-spacing: .03em;
-      padding-left: 174px;
+      padding-left: 40px;
       padding-right: 40px;
-      margin-top: -22px;
-      text-align: left;
+      margin-top: -10px;
+      text-align: center;
       margin-bottom: 80px;
     }
   }
@@ -41,6 +42,28 @@
     display: block;
   }
 }
+
+@media (min-width: $screen-sm) {
+
+  .home header .header-content{
+
+    h1{
+      font-size: 48px;
+      padding-top: 0;
+      padding-left: 100px;
+      line-height: 139px;
+      background-position: 0 0;
+      text-align: left;
+    }
+
+    p{
+      font-size: 22px;
+      padding-left: 174px;
+      text-align: left;
+    }
+  }
+}
+
 
 $btn-scroll-down-width: 120px;
 $btn-scroll-down-icon-top: 32px;
@@ -148,7 +171,7 @@ $btn-scroll-down-icon-size: 44px;
 
 
 #home {
-  height: 100%;
+  height: 200%;
 
   .container-fluid,
   .row {
@@ -156,7 +179,7 @@ $btn-scroll-down-icon-size: 44px;
   }
 
   [class*=col-] {
-    height: 50%;
+    height: 25%;
   }
 
   &.page-footer{
@@ -166,7 +189,21 @@ $btn-scroll-down-icon-size: 44px;
       height: 100%;
     }
   }
+
+  
 }
+
+@media (min-width: $screen-sm) {
+
+  #home {
+    height: 100%;
+
+    [class*=col-] {
+      height: 50%;
+    }
+  }
+}
+
 
 // Portfolio Styles
 
@@ -249,7 +286,7 @@ $btn-scroll-down-icon-size: 44px;
 
   &:hover {
     .portfolio-box-overlay {
-      opacity: 0.8;
+      opacity: 0.7;
     }
     .portfolio-box-caption-content {
       .read-more-btn{
@@ -260,28 +297,28 @@ $btn-scroll-down-icon-size: 44px;
   }
 
   .post-12 & .portfolio-box-overlay{
-    background: $color-green;
+    background: $overlay-green;
   }
   .post-12 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
-    color: $color-green;
+    color: $overlay-green;
   }
   .post-10 & .portfolio-box-overlay{
-    background: $color-blue;
+    background: $overlay-blue;
   }
   .post-10 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
-    color: $color-blue;
+    color: $overlay-blue;
   }
   .post-8 &   .portfolio-box-overlay{
-    background: $color-orange;
+    background: $overlay-orange;
   }
   .post-8 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
-    color: $color-orange;
+    color: $overlay-orange;
   }
   .post-2 & .portfolio-box-overlay{
-    background: $color-yellow;
+    background: $overlay-yellow;
   }
   .post-2 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
-    color: $color-yellow;
+    color: $overlay-yellow;
   }
 
 

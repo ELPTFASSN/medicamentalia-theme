@@ -1,6 +1,6 @@
 .navbar-default{
   border: none;
-  background: $color-menu;
+  background: $color-green-dark;
   margin-bottom: 0;
   border-radius: 0;
 
@@ -23,6 +23,40 @@
   }
 }
 
+.navbar-toggle{
+  width: $navbar-height;
+  height: $navbar-height;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  @include transition(.3s ease-out background);
+
+  .navbar-default &{
+    border-left: 1px solid $color-green;
+
+    &:hover,
+    &:focus{
+      background: $color-green;
+    }
+  }
+
+  .icon-bar{
+    width: 24px;
+    height: 3px;
+    margin-right: auto;
+    margin-left: auto;
+  
+    .navbar-default &{
+      background: $brand-secondary;
+
+      &+.icon-bar{
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
 
 #main-menu{
   float: right;
@@ -35,7 +69,18 @@
       text-transform: uppercase;
 
       &.menu-item-language{
-        border-left: 1px solid mix($brand-secondary, $brand-primary, 50%);
+        background: $color-green;
+        @include transition(.3s ease-in-out background);
+
+        >a{
+          color: $color-green-dark;
+          opacity: 1;
+          font-weight: 400;
+        }
+
+        &:hover{
+          background: $color-green-light;
+        }
       }
 
       >a{

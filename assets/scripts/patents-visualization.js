@@ -17,7 +17,7 @@ function patents_visualization( _id ) {
       xAxis, yAxis,
       line;
 
-      var parseDate = d3.time.format("%y").parse;
+      var parseDate = d3.time.format("%Y").parse;
 
   // Public Methods
 
@@ -25,8 +25,11 @@ function patents_visualization( _id ) {
 
     console.log('patents');
 
-    x = d3.time.scale()
-      .range([0, width]);
+    width = widthCont - margin.left - margin.right;
+    height = heightCont - margin.top - margin.bottom;
+
+    x = d3.scale.ordinal()
+      .rangeRoundBands([0, width], 0.1);
 
     y = d3.scale.linear()
       .range([height, 0]);
@@ -40,10 +43,10 @@ function patents_visualization( _id ) {
       .orient("left");
 
     line = d3.svg.line()
-      .x(function(d) { return x(d.Year); })
-      .y(function(d) { return y(d.Patents); });
+      .x(function(d) { return x(d.date); })
+      .y(function(d) { return y(d.patents); });
 
-    svg = d3.select("body").append("svg")
+    svg = d3.select(id).append("svg")
       .attr("width", widthCont)
       .attr("height", heightCont)
     .append("g")
@@ -53,35 +56,52 @@ function patents_visualization( _id ) {
     d3.csv( $('body').data('url')+'/wp-content/uploads/csv/patents.csv', function(error, data) {
 
       data.forEach(function(d) {
-        d.Year = parseDate(d.Year);
-        d.Patents = +d.Patents;
-      });
+       // d.date = parseDate(d.date);
+        d.patents = +d.patents;
+      });   
 
-      console.log(error, data);
+      console.log(error, data);   
 
-      x.domain(d3.extent(data, function(d) { return d.Year; }));
-      y.domain([0, d3.max(data, function(d) { return d.Patents; })]);
+      //x.domain(d3.extent(data, function(d) { return d.date; }));
+     // y.domain([0, d3.max(data, function(d) { return d.patents; })]);
+
+      x.domain(data.map(function(d) { return d.date; }));
+      y.domain([0, d3.max(data, function(d) { return d.patents; })]);
+
 
       svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
 
       svg.append("g")
         .attr("class", "y axis")
           .call(yAxis)
         .append("text")
-          .attr("transform", "rotate(-90)")
-          .attr("y", 6)
-          .attr("dy", ".71em")
+          .attr("y", -6)
           .style("text-anchor", "end")
-          .text("Price ($)");
+          .text("Patents");
 
+      /*
       svg.append("path")
         .datum(data)
         .attr("class", "line")
         .attr("d", line);
+      */
 
+      svg.selectAll(".bar")
+        .data(data)
+      .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", function(d) { return x(d.date); })
+        .attr("y", height )
+        .attr("height", 0)
+        .attr("width", x.rangeBand());
+
+       svg.selectAll(".bar")
+        .transition().duration(1000).delay( function(d,i){ return 100*i; })
+        .attr("y", function(d) { return y(d.patents); })
+        .attr("height", function(d) { return height - y(d.patents); });
     });
   };
   

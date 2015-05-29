@@ -63,3 +63,32 @@
     font-family: $font-family-sans-serif;
   }
 }
+
+
+#patents-vis{
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis path {
+    display: none;
+  }
+
+  .line {
+    fill: none;
+    stroke: $brand-primary;
+    stroke-width: 1.5px;
+  }
+
+  .bar {
+    fill: $brand-primary;
+  }
+
+  .bar:hover {
+    fill: $color-orange;
+  }
+}

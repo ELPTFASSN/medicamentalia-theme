@@ -3,6 +3,7 @@
 header {
   position: relative;
   width: 100%;
+  height: 33%;
   min-height: 200px;
   text-align: center;
   color: white;
@@ -19,16 +20,16 @@ header {
     opacity: 0.5;
 
     .prices &{
-      background: $color-green;
+      background: $overlay-green;
     }
     .ghana &{
-      background: $color-blue;
+      background: $overlay-blue;
     }
     .brasil &{
-      background: $color-orange;
+      background: $overlay-orange;
     }
     .patents &{
-      background: $color-yellow;
+      background: $overlay-yellow;
     }
   }
 
@@ -37,6 +38,20 @@ header {
     text-align: center;
     padding: 100px 15px 100px;
     width: 100%;
+
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    @include translate(0, -50%);
+
+
+    .header-content-inner {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 40px;
+    }
+    
 
     h1 {
       color: $brand-secondary;
@@ -60,6 +75,7 @@ header {
     }
   }
 
+  /*
   @media (min-width: 768px) {
     height: 33%;
 
@@ -77,6 +93,7 @@ header {
       }
     }
   }
+  */
 }
 
 
@@ -90,8 +107,77 @@ header {
   .nav-page-container{
     position: absolute;
     width: 100%;
-    background: #e2723b;
+    background: $color-orange;
     z-index: 90;
+  }
+
+  .container{
+    position: relative;
+    max-width: 1040px;
+  }
+
+  .navbar-toggle{
+    float: left;
+    width: 46px;
+    height: 42px;
+    border-left: none;
+    border-right: 1px solid $color-brown;
+    @include transition(.3s ease-out background);
+
+    &:hover{
+      background: #be5f30;
+    }
+    
+    .icon-bar{
+      background: $color-brown;
+    }
+  }
+
+  .navbar-nav{
+    width: 100%;
+    padding-right: 47px;
+    border-left: 1px solid #be5f30;
+
+    li{
+      width: 33.33%;
+
+      > a{
+        color: $color-brown;
+        padding: 12px 0;
+        text-align: center;
+        border-right: 1px solid #be5f30;
+        @include transition(.3s ease-out background);
+
+        &:focus{
+          background: transparent;
+        }
+  
+        &:hover{
+          background: mix( $color-orange, #be5f30, 50% );
+        }
+      }
+
+      &.active > a{
+        color: white;
+        background: #be5f30;
+      }
+    }
+  }
+
+  .top-btn{
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 46px;
+    line-height: 42px;
+    color: $color-orange;
+    background: transparent;
+    text-align: center;
+    @include transition(.3s ease-out background);
+
+     
   }
 
   &.fixed{
@@ -99,33 +185,28 @@ header {
     width: 100%;
     top: 0;
     z-index: 90;
-  }
 
-  .container{
-    max-width: 1040px;
-  }
+    .navbar-nav{
+      border-right: 1px solid #be5f30;
+    }
 
-  .navbar-nav{
-    width: 100%;
-    border-right: 1px solid #be5f30;
+    .top-btn{
+      color: $color-brown;
+      visibility: visible;
+      background: mix( $color-orange, #be5f30, 50% );
 
-    li{
-      width: 33.33%;
-
-      > a{
-        color: #653015;
-        padding: 12px 0;
-        text-align: center;
-        border-left: 1px solid #be5f30;
-        @include transition(.3s ease-out background);
-
-        &.active,
-        &:hover,
-        &:focus{
-          color: white;
-          background: #be5f30;
-        }
+      &:hover{
+        background: #be5f30;
       }
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    
+    .top-btn{
+      right: 16px;
+      width: 48px;
+      line-height: 44px;
     }
   }
 }
