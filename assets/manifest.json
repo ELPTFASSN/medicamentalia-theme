@@ -6,7 +6,7 @@
       ],
       "main": true
     },
-    "main-visualization.js": {
+    "visualizations.js": {
       "files": [
         "scripts/main-visualization.js",
         "scripts/patents-visualization.js"

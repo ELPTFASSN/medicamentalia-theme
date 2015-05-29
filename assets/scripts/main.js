@@ -62,8 +62,15 @@
       init: function() {
 
         var w = $('.page-content').width();
-        console.log('W', w);
         var vis = main_visualization('#main-vis').width( w ).height( Math.round(w*9/16) ).init();
+      }
+    },
+    // Brasil Page
+    'brasil': {
+      init: function() {
+
+        var w = $('.page-content').width();
+        var vis = patents_visualization('#patents-vis').width( w ).height( Math.round(w*9/16) ).init();
       }
     }
   };
