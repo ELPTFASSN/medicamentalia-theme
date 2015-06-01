@@ -24,7 +24,7 @@
       <div class="row no-gutter">
         <?php $i = 0; ?>
         <?php $ids = array(2,8,10,12); ?>
-        <?php $home_query = new WP_Query( array('post_type' => 'page', 'post__in' => $ids) ); ?>
+        <?php $home_query = new WP_Query( array('post_type' => 'page', 'post__in' => $ids, 'order' => 'ASC') ); ?>
         <?php  while ( $home_query->have_posts() ) : $home_query->the_post(); ?>
           <?php $class = ($i != 0 ) ? 'col-lg-4 col-sm-6' : 'col-lg-12 col-sm-6'; ?>
           <div <?php post_class($class); ?>>

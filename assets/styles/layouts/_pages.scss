@@ -175,9 +175,7 @@ header {
     color: $color-orange;
     background: transparent;
     text-align: center;
-    @include transition(.3s ease-out background);
-
-     
+    @include transition(.3s ease-out background);     
   }
 
   &.fixed{
@@ -209,6 +207,10 @@ header {
       line-height: 44px;
     }
   }
+}
+
+body.brasil .nav-page .navbar-nav li{
+  width: 16.6666%;
 }
 
 

@@ -221,7 +221,7 @@ $btn-scroll-down-icon-size: 44px;
     background-image: url('http://lorempixel.com/g/1280/720/nature/');
     @include background-size( cover );
 
-    .post-12 &{
+    .post-2 &{
       background-image: url('../images/medicine-pattern.png');
       background-repeat: repeat;
       @include background-size( auto );
@@ -296,10 +296,10 @@ $btn-scroll-down-icon-size: 44px;
     }
   }
 
-  .post-12 & .portfolio-box-overlay{
+  .post-2 & .portfolio-box-overlay{
     background: $overlay-green;
   }
-  .post-12 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
+  .post-2 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-green;
   }
   .post-10 & .portfolio-box-overlay{
@@ -314,10 +314,10 @@ $btn-scroll-down-icon-size: 44px;
   .post-8 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-orange;
   }
-  .post-2 & .portfolio-box-overlay{
+  .post-12 & .portfolio-box-overlay{
     background: $overlay-yellow;
   }
-  .post-2 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
+  .post-12 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-yellow;
   }
 

@@ -105,8 +105,8 @@
     'brasil': {
       init: function() {
 
-        var w = $('.page-content').width();
-        var vis = patents_visualization('#patents-vis').width( w ).height( Math.round(w*0.5) ).init();
+        var w = $('#patents-vis').width();
+        var vis = patents_visualization('#patents-vis').width( w ).height( w*0.5625 ).init();
       }
     }
   };

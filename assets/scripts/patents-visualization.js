@@ -7,7 +7,7 @@ function patents_visualization( _id ) {
   var id = _id;
 
 
-  var margin = {top: 20, right: 20, bottom: 70, left: 50},
+  var margin = {top: 30, right: 20, bottom: 50, left: 50},
       widthCont = 1140,
       heightCont = 500,
       width, height;
@@ -52,6 +52,8 @@ function patents_visualization( _id ) {
     .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+    console.log('set size', widthCont, heightCont);
+
     // Load CSV
     d3.csv( $('body').data('url')+'/wp-content/uploads/csv/patents.csv', function(error, data) {
 
@@ -76,11 +78,7 @@ function patents_visualization( _id ) {
 
       svg.append("g")
         .attr("class", "y axis")
-          .call(yAxis)
-        .append("text")
-          .attr("y", -6)
-          .style("text-anchor", "end")
-          .text("Patents");
+          .call(yAxis);
 
       /*
       svg.append("path")
