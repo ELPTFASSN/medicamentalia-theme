@@ -107,8 +107,13 @@
 
         var w = $('#patents-vis').width();
         var vis = patents_visualization('#patents-vis').width( w ).height( w*0.5625 ).init();
+      }
+    },
+    // Patents Page
+    'patents': {
+      init: function() {
 
-        var vis2 = antimalaricos_visualization('#antimalaricos-vis-graph').init();
+        var vis = antimalaricos_visualization('#antimalaricos-vis-graph').init();
 
         $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-frame li').height( $(window).height() );
         $('#antimalaricos-vis-graph').height( $(window).height() - $('#antimalaricos-vis-graph').position().top - 30 );
@@ -154,7 +159,7 @@
 
             if( currentItem >= 0 ){
 
-              vis2.setState( currentItem );
+              vis.setState( currentItem );
 
               if( lastItem < currentItem ){
 
@@ -172,10 +177,9 @@
               $('#antimalaricos-vis-nav li').eq(currentItem).addClass('active');
             }
           }
-
         });
       }
-    }
+    },
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.
