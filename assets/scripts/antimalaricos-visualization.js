@@ -24,7 +24,7 @@ function antimalaricos_visualization( _id ) {
     width = widthCont - margin.left - margin.right;
     height = heightCont - margin.top - margin.bottom;
 
-    d3.xml( $('body').data('url') + '/wp-content/uploads/svg/antimalaricos.svg', 'image/svg+xml', function(xml) {
+    d3.xml( $('body').data('url') + '/dist/svg/antimalaricos.svg', 'image/svg+xml', function(xml) {
     
       // Append external SVG
       $(id).append( xml.documentElement );

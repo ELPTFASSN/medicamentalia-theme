@@ -55,7 +55,7 @@ function patents_visualization( _id ) {
     console.log('set size', widthCont, heightCont);
 
     // Load CSV
-    d3.csv( $('body').data('url')+'/wp-content/uploads/csv/patents.csv', function(error, data) {
+    d3.csv( $('body').data('url')+'/dist/csv/patents.csv', function(error, data) {
 
       data.forEach(function(d) {
        // d.date = parseDate(d.date);

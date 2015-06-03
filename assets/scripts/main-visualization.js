@@ -55,7 +55,7 @@ function main_visualization( _id ) {
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
     // Load CSV
-    d3.csv( $('body').data('url')+'/wp-content/uploads/csv/prices.csv', function(error, data) {
+    d3.csv( $('body').data('url')+'/dist/csv/prices.csv', function(error, data) {
 
       console.log(data);
 
