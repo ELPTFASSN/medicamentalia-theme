@@ -2,6 +2,21 @@
 .home header{
   margin-top: 0;
   min-height: 100%;
+  background: none;
+
+  #home-bkg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    @include background-size( cover );
+  }
 
   .header-content{
     width: 100%; 
@@ -308,9 +323,14 @@ $btn-scroll-down-icon-size: 44px;
   .post-10 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-blue;
   }
-  .post-8 &   .portfolio-box-overlay{
+  .post-8 & .portfolio-box-overlay{
     background: $overlay-orange;
   }
+  /*
+  .post-8 & .portfolio-box-background{
+    background-image: url('http://localhost/Medicamentalia/www/wp-content/uploads/brasil.jpg');
+  }
+  */
   .post-8 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-orange;
   }

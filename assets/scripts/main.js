@@ -107,6 +107,73 @@
 
         var w = $('#patents-vis').width();
         var vis = patents_visualization('#patents-vis').width( w ).height( w*0.5625 ).init();
+
+        var vis2 = antimalaricos_visualization('#antimalaricos-vis-graph').init();
+
+        $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-frame li').height( $(window).height() );
+        $('#antimalaricos-vis-graph').height( $(window).height() - $('#antimalaricos-vis-graph').position().top - 30 );
+      
+        $('#antimalaricos-vis-content li:first-child').addClass('active');
+
+        // Nav Buttons
+        $('#antimalaricos-vis-nav li a').click(function(e){
+          e.preventDefault();
+           
+          $('html, body').animate({
+            scrollTop: $('#antimalaricos-vis-frame li.frame-'+$(this).attr('href').substring(1)).offset().top + 2
+          }, '200');
+        });
+
+        var scrollTop, 
+            currentItem = -1,
+            $antimalaricosVis = $('#antimalaricos-vis');
+
+        $(window).scroll(function(e) {
+
+          scrollTop = $(this).scrollTop();
+
+          if ( scrollTop >= $antimalaricosVis.offset().top && scrollTop < $antimalaricosVis.offset().top+$antimalaricosVis.height()-$(window).height() ) {
+            $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-graph').addClass('fixed');
+          } else {
+            $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-graph').removeClass('fixed');
+          }
+
+          if ( scrollTop >= $antimalaricosVis.offset().top+$antimalaricosVis.height()-$(window).height() ) {
+              $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-graph').addClass('bottom');
+          }
+          else{
+            $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-graph').removeClass('bottom');
+          }
+
+          var lastItem = currentItem,
+              temp = Math.floor((scrollTop-$antimalaricosVis.offset().top) / $(window).height());
+
+          if( currentItem !== temp ) {
+
+            currentItem = temp;
+
+            if( currentItem >= 0 ){
+
+              vis2.setState( currentItem );
+
+              if( lastItem < currentItem ){
+
+                $('#antimalaricos-vis-content li').not('.active').css('top', '40px');
+                $('#antimalaricos-vis-content li.active').css('top', '-40px').removeClass('active');
+              }
+              else{
+                $('#antimalaricos-vis-content li').not('.active').css('top', '-40px');
+                $('#antimalaricos-vis-content li.active').css('top', '40px').removeClass('active');
+              }
+
+              $('#antimalaricos-vis-content li').eq(currentItem).css('top', '0px').addClass('active');
+
+              $('#antimalaricos-vis-nav li').removeClass('active');
+              $('#antimalaricos-vis-nav li').eq(currentItem).addClass('active');
+            }
+          }
+
+        });
       }
     }
   };

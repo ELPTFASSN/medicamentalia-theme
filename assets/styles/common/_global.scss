@@ -53,6 +53,24 @@ h3, h4, h5{
   border-radius: 0;
 }
 
+.fixed{
+  position: fixed !important;
+}
+
+.full-height{
+  min-height: 100%;
+
+  .container{
+    position: relative;
+  }
+}
+
+.bkg-green{
+  background: $color-green-dark;
+}
+
+
+
 @mixin background-size( $value ) {
   webkit-background-size:   $value;
   -moz-background-size:     $value;

@@ -9,7 +9,8 @@
     "visualizations.js": {
       "files": [
         "scripts/main-visualization.js",
-        "scripts/patents-visualization.js"
+        "scripts/patents-visualization.js",
+        "scripts/antimalaricos-visualization.js"
       ],
       "main": true
     },
