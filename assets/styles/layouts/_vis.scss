@@ -102,120 +102,127 @@ Patentes
 }
 
 /*
-Antimalaricos
+Infographic
 */
 
-#antimalaricos-vis{
+.infographic{
   position: relative;
   text-align: center;
-}
 
-#antimalaricos-vis-content{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  &.bottom{
-    top: auto;
-    bottom: 0;
-  }
-
-  h4{
-    color: $brand-secondary;
-    font-size: 36px;
-    letter-spacing: 0.05em;
-    font-weight: normal;
-    margin-top: 80px;
-  }
-
-  ul{
-    position: relative;
-    max-width: 620px;
-    margin: 0 auto;
-  }
-
-  li{
+  .infographic-content{
     position: absolute;
-    color: white;
-    list-style: none;
-    font-family: $font-family-sans-serif;
-    font-size: 1.125em;
-    line-height: 1.375em;
-    font-weight: 300;
-    opacity: 0;
-    @include transition( 0.4s ease-in-out all );
+    top: 0;
+    left: 0;
+    right: 0;
 
-    &.active{
-      opacity: 1;
+    &.bottom{
+      top: auto;
+      bottom: 0;
     }
 
-    h5{
-      color: $color-yellow;
-      margin: 0 0 20px;
+    h4{
+      color: $brand-secondary;
+      font-size: 36px;
+      letter-spacing: 0.05em;
+      font-weight: normal;
+      margin-top: 80px;
     }
-  }
-}
 
-#antimalaricos-vis-frame{
-  margin: 0;
-  padding: 0;
-
-  li{
-    list-style: none;
-   //outline: 1px solid white;
-  }
-}
-
-#antimalaricos-vis-nav{
-  display: none;
-  position: absolute;
-  right: 20px;
-  top: 64px;
-
-  li{
-    list-style: none;
-    margin-bottom: 10px;
-    opacity: 0;
-    @include transition( 0.4s ease-in-out all );
-
-    a{
-      display: block;
-      width: 12px;
-      height: 12px;
-      border-radius: 6px;
-      background: white;
+    ul{
+      position: relative;
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 0;
     }
-  }
-
-  &.fixed{
-    display: block;
 
     li{
-      opacity: 0.5;
+      position: absolute;
+      display: block;
+      width: 100%;
+      color: white;
+      list-style: none;
+      font-family: $font-family-sans-serif;
+      font-size: 1.125em;
+      line-height: 1.375em;
+      font-weight: 300;
+      opacity: 0;
+      @include transition( 0.4s ease-in-out all );
 
       &.active{
         opacity: 1;
       }
+
+      h5{
+        color: $color-yellow;
+        margin: 0 0 20px;
+      }
+    }
+  }
+
+  .infographic-frame{
+    margin: 0;
+    padding: 0;
+
+    li{
+      list-style: none;
+     //outline: 1px solid white;
+    }
+  }
+
+  .infographic-nav{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 64px;
+
+    li{
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      @include transition( 0.4s ease-in-out all );
+
+      a{
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        background: white;
+      }
+    }
+
+    &.fixed{
+      display: block;
+
+      li{
+        opacity: 0.5;
+
+        &.active{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .infographic-graph{
+    position: absolute;
+    top: 300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    &.bottom{
+      top: auto;
+      bottom: 20px;
+    }
+
+    svg{
+      width: auto;
+      height: 100%;
     }
   }
 }
 
-#antimalaricos-vis-graph{
-  position: absolute;
-  top: 300px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-
-  &.bottom{
-    top: auto;
-    bottom: 20px;
-  }
-
-  svg{
-    width: auto;
-    height: 100%;
-  }
+#fakes-infographic .infographic-graph{
+  top: 240px;
 }

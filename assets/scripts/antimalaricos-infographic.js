@@ -1,17 +1,9 @@
-function antimalaricos_visualization( _id ) {
+function antimalaricos_infographic( _id ) {
 
   var $ = jQuery.noConflict();
 
   var that = this;
-
   var id = _id;
-
-
-  var margin = {top: 30, right: 20, bottom: 50, left: 50},
-      widthCont = 1140,
-      heightCont = 500,
-      width, height;
-
   var svg;
 
 
@@ -19,18 +11,12 @@ function antimalaricos_visualization( _id ) {
 
   that.init = function() {
 
-    console.log('antimalaricos');
-
-    width = widthCont - margin.left - margin.right;
-    height = heightCont - margin.top - margin.bottom;
-
+    // Load external SVG
     d3.xml( $('body').data('url') + '/dist/svg/antimalaricos.svg', 'image/svg+xml', function(xml) {
     
-      // Append external SVG
-      $(id).append( xml.documentElement );
+      $(id).append( xml.documentElement );  // Append external SVG to Container
 
-      // Select SVG
-      svg = d3.select(id).select('svg');
+      svg = d3.select(id).select('svg');    // Get SVG Element
 
       // Initial Setup: all grups hidden
       svg.selectAll('#Bubble1, #Bubble2, #Bubble3, #Brasil, #Bolivia, #Venezuela, #World, #India, #PathIndia, #Ginebra').style('opacity', 0);
@@ -41,47 +27,7 @@ function antimalaricos_visualization( _id ) {
     return that;
   };
 
-  var bubbleIn = function( id ){
-
-    var center = svg.select(id).node().getBBox();
-
-    svg.select(id)
-      .attr('transform', 'translate('+(center.x+(center.width*0.5))+' '+(center.y+(center.height*0.5))+') scale(0.8) translate(-'+(center.x+(center.width*0.5))+' -'+(center.y+(center.height*0.5))+')')
-      .transition().duration(400).delay(300)
-      .attr('transform', 'translate(0 0) scale(1)')
-      .style('opacity', 1);
-  };
-
-  var bubbleOut = function( id ){
-
-    var center = svg.select(id).node().getBBox();
-
-    svg.select(id)
-      .transition().duration(400)
-      .attr('transform', 'translate('+(center.x+(center.width*0.5))+' '+(center.y+(center.height*0.5))+') scale(0.8) translate(-'+(center.x+(center.width*0.5))+' -'+(center.y+(center.height*0.5))+')')
-      .style('opacity', 0);
-  };
-
-  var markersIn = function( id, offset, delay ){
-
-    svg.select(id).selectAll('image')
-      //.attr('transform', 'translate(0 -10)')
-      .transition().duration(500).delay( function(d,i){ return offset+(delay*i); })
-      //.attr('transform', 'translate(0 0)')
-      .style('opacity', 1);
-  };
-
-  var markersOut = function( id ){
-  
-    svg.select(id).selectAll('image')
-      .transition().duration(300)
-      //.attr('transform', 'translate(0 -10)')
-      .style('opacity', 0);
-  };
-
   that.setState = function(stateID) {
-
-    console.log('state', stateID);
 
     if( stateID === 0 ){
 
@@ -135,20 +81,18 @@ function antimalaricos_visualization( _id ) {
         .style('opacity', 1);
 
       svg.select('#India')
-        .transition().duration(500).delay(600)
+        .transition().duration(500).delay(2000)
         .style('opacity', 1);
 
-      markersIn('#MarkersIndia', 300, 1500);
-
-      var w = svg.select('#PathIndia').select('#SVGID_1_').attr('width');
+      markersIn('#MarkersIndia', 600, 900);
 
       svg.select('#PathIndia')
         .style('opacity', 1);
 
       svg.select('#PathIndia').select('#SVGID_1_')
-        .attr('transform', 'translate('+w+' 0)')
-        .transition().duration(1500).delay(600)
-        .attr('transform', 'translate(0 0)');
+        .attr('transform', 'scale(0 1)')
+        .transition().duration(1500).delay(800)
+        .attr('transform', 'scale(1 1)');
     }
     else if( stateID === 4 ){
 
@@ -168,21 +112,47 @@ function antimalaricos_visualization( _id ) {
     return that;
   };
 
-  that.width = function(value) {
-    if (!arguments.length) {
-      return widthCont;
-    }
-    widthCont = value;
-    return that;
+
+  // Private Methods
+
+  var bubbleIn = function( id ){
+
+    var center = svg.select(id).node().getBBox();
+
+    svg.select(id)
+      .attr('transform', 'translate('+(center.x+(center.width*0.5))+' '+(center.y+(center.height*0.5))+') scale(0.8) translate(-'+(center.x+(center.width*0.5))+' -'+(center.y+(center.height*0.5))+')')
+      .transition().duration(400).delay(300)
+      .attr('transform', 'translate(0 0) scale(1)')
+      .style('opacity', 1);
   };
 
-  that.height = function(value) {
-    if (!arguments.length) {
-      return heightCont;
-    }
-    heightCont = value;
-    return that;
+  var bubbleOut = function( id ){
+
+    var center = svg.select(id).node().getBBox();
+
+    svg.select(id)
+      .transition().duration(400)
+      .attr('transform', 'translate('+(center.x+(center.width*0.5))+' '+(center.y+(center.height*0.5))+') scale(0.8) translate(-'+(center.x+(center.width*0.5))+' -'+(center.y+(center.height*0.5))+')')
+      .style('opacity', 0);
   };
+
+  var markersIn = function( id, offset, delay ){
+
+    svg.select(id).selectAll('image')
+      //.attr('transform', 'translate(0 -10)')
+      .transition().duration(500).delay( function(d,i){ return offset+(delay*i); })
+      //.attr('transform', 'translate(0 0)')
+      .style('opacity', 1);
+  };
+
+  var markersOut = function( id ){
+  
+    svg.select(id).selectAll('image')
+      .transition().duration(300)
+      //.attr('transform', 'translate(0 -10)')
+      .style('opacity', 0);
+  };
+
 
   return that;
 }

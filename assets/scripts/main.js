@@ -101,6 +101,15 @@
         var vis = main_visualization('#main-vis').width( w ).height( Math.round(w*9/16) ).init();
       }
     },
+    // Ghana Page
+    'ghana': {
+      init: function() {
+
+        var fakes_infographic = infographic('#fakes-infographic').init('fakes');
+        $(window).scroll( fakes_infographic.onScroll );
+        $(window).resize( fakes_infographic.onResize );
+      }
+    },
     // Brasil Page
     'brasil': {
       init: function() {
@@ -113,71 +122,9 @@
     'patents': {
       init: function() {
 
-        var vis = antimalaricos_visualization('#antimalaricos-vis-graph').init();
-
-        $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-frame li').height( $(window).height() );
-        $('#antimalaricos-vis-graph').height( $(window).height() - $('#antimalaricos-vis-graph').position().top - 30 );
-      
-        $('#antimalaricos-vis-content li:first-child').addClass('active');
-
-        // Nav Buttons
-        $('#antimalaricos-vis-nav li a').click(function(e){
-          e.preventDefault();
-           
-          $('html, body').animate({
-            scrollTop: $('#antimalaricos-vis-frame li.frame-'+$(this).attr('href').substring(1)).offset().top + 2
-          }, '200');
-        });
-
-        var scrollTop, 
-            currentItem = -1,
-            $antimalaricosVis = $('#antimalaricos-vis');
-
-        $(window).scroll(function(e) {
-
-          scrollTop = $(this).scrollTop();
-
-          if ( scrollTop >= $antimalaricosVis.offset().top && scrollTop < $antimalaricosVis.offset().top+$antimalaricosVis.height()-$(window).height() ) {
-            $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-graph').addClass('fixed');
-          } else {
-            $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-graph').removeClass('fixed');
-          }
-
-          if ( scrollTop >= $antimalaricosVis.offset().top+$antimalaricosVis.height()-$(window).height() ) {
-              $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-graph').addClass('bottom');
-          }
-          else{
-            $('#antimalaricos-vis-content, #antimalaricos-vis-nav, #antimalaricos-vis-graph').removeClass('bottom');
-          }
-
-          var lastItem = currentItem,
-              temp = Math.floor((scrollTop-$antimalaricosVis.offset().top) / $(window).height());
-
-          if( currentItem !== temp ) {
-
-            currentItem = temp;
-
-            if( currentItem >= 0 ){
-
-              vis.setState( currentItem );
-
-              if( lastItem < currentItem ){
-
-                $('#antimalaricos-vis-content li').not('.active').css('top', '40px');
-                $('#antimalaricos-vis-content li.active').css('top', '-40px').removeClass('active');
-              }
-              else{
-                $('#antimalaricos-vis-content li').not('.active').css('top', '-40px');
-                $('#antimalaricos-vis-content li.active').css('top', '40px').removeClass('active');
-              }
-
-              $('#antimalaricos-vis-content li').eq(currentItem).css('top', '0px').addClass('active');
-
-              $('#antimalaricos-vis-nav li').removeClass('active');
-              $('#antimalaricos-vis-nav li').eq(currentItem).addClass('active');
-            }
-          }
-        });
+        var antimalaricos_infographic = infographic('#antimalaricos-infographic').init('antimalaricos');
+        $(window).scroll( antimalaricos_infographic.onScroll );
+        $(window).resize( antimalaricos_infographic.onResize );
       }
     },
   };

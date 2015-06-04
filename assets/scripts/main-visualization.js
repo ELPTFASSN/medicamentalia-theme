@@ -13,7 +13,10 @@ function main_visualization( _id ) {
       heightCont = 500,
       width, height;
 
-  var color = d3.scale.category20();
+  //var color = d3.scale.category20();
+
+  var color = d3.scale.ordinal()
+    .range(['#C9AD4B', '#BBD646', '#63BA2D', '#34A893', '#3D91AD', '#5B8ACB', '#BA7DAF', '#BF6B80', '#F49D9D', '#E25453', '#B56631', '#E2773B', '#FFA951', '#F4CA00']);
 
   var svg,
       x, y,
@@ -119,7 +122,9 @@ function main_visualization( _id ) {
 
   var setData = function( data ){
 
-    y.domain(d3.extent(data, function(d) { return d.Price; })).nice();
+    y.domain( d3.extent(data, function(d) { return d.Price; }) ).nice();
+
+    color.domain( d3.extent(data, function(d) { return d.Drug; }) );
 
     xAxis.ticks( countries.length );
 
