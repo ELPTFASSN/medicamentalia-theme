@@ -8,9 +8,9 @@
     },
     "visualizations.js": {
       "files": [
-        "scripts/main-visualization.js",
-        "scripts/patents-visualization.js",
+        "scripts/patents-graph.js",
         "scripts/infographic.js",
+        "scripts/main-infographic.js",
         "scripts/fakes-infographic.js",
         "scripts/patents-infographic.js",
         "scripts/antimalaricos-infographic.js"

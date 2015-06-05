@@ -97,8 +97,16 @@
     'prices': {
       init: function() {
 
-        var w = $('.page-content').width();
-        var vis = main_visualization('#main-vis').width( w ).height( Math.round(w*9/16) ).init();
+        $('[data-toggle="tooltip"]').tooltip(); // Init tooltips
+
+        //var vis = main_visualization('#main-vis').init();
+
+        var main_infographic = new Infographic('#main-infographic', 'main');
+
+        $(window).scroll( main_infographic.onScroll );
+        $(window).resize( main_infographic.onResize );
+
+        //$(window).resize( vis.resize );
       }
     },
     // Ghana Page
@@ -116,7 +124,7 @@
       init: function() {
 
         var w = $('#patents-vis').width();
-        var vis = patents_visualization('#patents-vis').width( w ).height( w*0.5625 ).init();
+        var vis = patents_graph('#patents-vis').width( w ).height( w*0.5625 ).init();
       }
     },
     // Patents Page

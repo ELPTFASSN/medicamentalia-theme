@@ -31,6 +31,10 @@ var Infographic = function( _id, _type ) {
 
     $frame.append('<li class="frame-'+i+'"></li>');   // Add last frame item
 
+     if( type === 'main'){
+      $frame.append('<li class="frame-'+(i+1)+'"></li>');   // Add extra frame item for Main Infographic
+    }
+
     $el.append( $frame );
     $el.append( $nav );
   };
@@ -50,7 +54,10 @@ var Infographic = function( _id, _type ) {
     $fixedEl = $el.find('.infographic-content, .infographic-nav, .infographic-graph');
 
     // Setup Infographic by Type
-    if( type === 'antimalaricos'){
+    if( type === 'main'){
+      vis = new Main_Infographic( id+' .infographic-graph' ); 
+    }
+    else if( type === 'antimalaricos'){
       vis = new Antimalaricos_Infographic( id+' .infographic-graph' ).init(); 
     }
     else if( type === 'patentes'){
@@ -60,9 +67,11 @@ var Infographic = function( _id, _type ) {
       vis = new Fakes_Infographic( id+' .infographic-graph' ).init(); 
     }
 
-    console.log('vis', vis.setState );
-
     that.onResize();
+
+    if( type === 'main'){
+      vis.init(); 
+    }
     
     $contentList.first().addClass('active');    // Setup firs content item as active
 
@@ -90,20 +99,32 @@ var Infographic = function( _id, _type ) {
     if ( scrollTop >= endPosition ) {
       $fixedEl.addClass('bottom');
     }
-    else{
+    else {
       $fixedEl.removeClass('bottom');
     }
 
     var lastItem = currentItem,
         temp = Math.floor((scrollTop-$el.offset().top) / $(window).height());
 
-    if( currentItem !== temp ) {
+    if (currentItem !== temp) {
 
       currentItem = temp;
 
-      if( currentItem >= 0 ){
+      if (currentItem >= 0) {
 
-        console.log('state', type, currentItem);
+        console.log('state', type, currentItem, $contentList.size() );
+
+        // Show/hide Main Infographic Menu
+        if (type === 'main') {
+          if (currentItem !== $contentList.size()) {
+            $('#main-infographic-menu').removeClass('active');
+            $el.find('.infographic-nav').removeClass('invisible');
+          }
+          else {
+            $('#main-infographic-menu').addClass('active');
+            $el.find('.infographic-nav').addClass('invisible');
+          }
+        }
 
         vis.setState( currentItem );
 
@@ -130,6 +151,10 @@ var Infographic = function( _id, _type ) {
     $el.find('.infographic-graph').height( $(window).height() - $('.infographic-graph').position().top - 30 );
 
     endPosition = $el.offset().top + $el.height() - $(window).height();
+
+    if( type === 'main' && vis.isInitialized() ){
+      vis.resize(); 
+    }
   };
 
   // Init

@@ -1,4 +1,4 @@
-function patents_visualization( _id ) {
+function patents_graph( _id ) {
 
   var $ = jQuery.noConflict();
 

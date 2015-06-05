@@ -1,19 +1,19 @@
-function main_visualization( _id ) {
+function Main_Infographic( _id ) {
 
   var $ = jQuery.noConflict();
 
   var that = this;
 
   var id = _id;
+  var $el = $(id);
+
+  var initialized = false;
 
   var DOT_OPACITY = 0.7;
 
-  var margin = {top: 20, right: 20, bottom: 70, left: 50},
-      widthCont = 1140,
-      heightCont = 500,
+  var margin = {top: 150, right: 50, bottom: 50, left: 50},
+      widthCont, heightCont,
       width, height;
-
-  //var color = d3.scale.category20();
 
   var color = d3.scale.ordinal()
     .range(['#C9AD4B', '#BBD646', '#63BA2D', '#34A893', '#3D91AD', '#5B8ACB', '#BA7DAF', '#BF6B80', '#F49D9D', '#E25453', '#B56631', '#E2773B', '#FFA951', '#F4CA00']);
@@ -28,7 +28,12 @@ function main_visualization( _id ) {
 
   that.init = function() {
 
+    initialized = true;
+
     console.log('vis', widthCont, heightCont );
+
+    widthCont = $el.width();
+    heightCont = $el.height();
 
     width = widthCont - margin.left - margin.right;
     height = heightCont - margin.top - margin.bottom;
@@ -36,7 +41,7 @@ function main_visualization( _id ) {
     x = d3.scale.ordinal()
       .rangePoints([0, width]);
 
-    y = d3.scale.linear()
+    y = d3.scale.pow().exponent(0.5)
       .range([height, 0]);
 
     xAxis = d3.svg.axis()
@@ -52,6 +57,7 @@ function main_visualization( _id ) {
       .orient('left');
 
     svg = d3.select(id).append('svg')
+        .attr('id', 'main-vis-svg')
         .attr('width', widthCont)
         .attr('height', heightCont)
       .append('g')
@@ -118,6 +124,20 @@ function main_visualization( _id ) {
     return that;
   };
 
+
+  that.setState = function(stateID) {
+
+    console.log('main visualization state', stateID);
+
+    return that;
+  };
+
+  this.isInitialized = function(){
+    
+    return initialized;
+  };
+
+
   // Private Methods
 
   var setData = function( data ){
@@ -137,7 +157,7 @@ function main_visualization( _id ) {
         .attr('class', 'label')
         .attr('y', 7)
         .attr('x', 7)
-        .attr('transform', 'rotate(45)')
+       // .attr('transform', 'rotate(45)')
         .style('text-anchor', 'start');
 
     // Setup Y Axis
@@ -253,20 +273,46 @@ function main_visualization( _id ) {
 
   // Public Methods
 
-  that.width = function(value) {
-    if (!arguments.length) {
-      return widthCont;
-    }
-    widthCont = value;
-    return that;
-  };
+  that.resize = function() {
 
-  that.height = function(value) {
-    if (!arguments.length) {
-      return heightCont;
-    }
-    heightCont = value;
-    return that;
+    console.log('resize main vis');
+
+    // Update variables
+    widthCont = $el.width();
+    heightCont = $el.height();
+    
+    width = widthCont - margin.left - margin.right;
+    height = heightCont - margin.top - margin.bottom;
+
+    // Update SVG size
+    d3.select('#main-vis-svg')
+      .attr('width', widthCont)
+      .attr('height', heightCont);
+
+    //Update Axis
+    x.rangePoints([0, width]);
+    y.range([height, 0]);
+
+    xAxis.tickSize(-height);
+    yAxis.tickSize(-width);
+
+    d3.select('g.x.axis')
+      .attr('transform', 'translate(0,' + height + ')')
+      .call(xAxis);
+
+    d3.select('g.y.axis')
+      .call(yAxis);
+
+    // Update Dots & Lines
+    d3.selectAll('.dot-lines .line')
+      .attr('x1', function(d) { return x(d.Country); })
+      .attr('y1', height)
+      .attr('x2', function(d) { return x(d.Country); })
+      .attr('y2', function(d) { return y(d.Price); });
+
+    d3.selectAll('.dot')
+      .attr('cx', function(d) { return x(d.Country); })
+      .attr('cy', function(d) { return y(d.Price); });
   };
 
   return that;
