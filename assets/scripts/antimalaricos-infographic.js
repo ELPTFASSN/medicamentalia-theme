@@ -1,4 +1,4 @@
-function antimalaricos_infographic( _id ) {
+var Antimalaricos_Infographic = function( _id ) {
 
   var $ = jQuery.noConflict();
 
@@ -39,7 +39,7 @@ function antimalaricos_infographic( _id ) {
 
       bubbleIn('#Bubble1');
     }
-    if( stateID === 1 ){
+    else if( stateID === 1 ){
 
       bubbleOut('#Bubble1');
       markersOut('#Markers');
@@ -155,4 +155,4 @@ function antimalaricos_infographic( _id ) {
 
 
   return that;
-}
+};

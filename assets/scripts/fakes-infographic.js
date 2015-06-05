@@ -1,4 +1,4 @@
-function fakes_infographic( _id ) {
+var Fakes_Infographic = function( _id ) {
 
   var $ = jQuery.noConflict();
 
@@ -29,8 +29,6 @@ function fakes_infographic( _id ) {
 
   that.setState = function(stateID) {
 
-    var center;
-
     if( stateID === 0 ){
 
       svg.selectAll('#Path, #MumbaiMarker, #MumbaiLabel, #LomeMarker, #LomeLabel')
@@ -46,7 +44,7 @@ function fakes_infographic( _id ) {
         .transition().duration(300).delay(function(d,i){ return 400+(300*i); })
         .style('opacity', 1);
     }
-    if( stateID === 1 ){
+    else if( stateID === 1 ){
 
       svg.selectAll('#IndiaMarker, #IndiaLabel')
         .transition().duration(200)
@@ -119,24 +117,6 @@ function fakes_infographic( _id ) {
       .style('opacity', 0);
   };
 
-/*
-  var markersIn = function( id, offset, delay ){
-
-    svg.select(id).selectAll('image')
-      //.attr('transform', 'translate(0 -10)')
-      .transition().duration(500).delay( function(d,i){ return offset+(delay*i); })
-      //.attr('transform', 'translate(0 0)')
-      .style('opacity', 1);
-  };
-
-  var markersOut = function( id ){
-  
-    svg.select(id).selectAll('image')
-      .transition().duration(300)
-      //.attr('transform', 'translate(0 -10)')
-      .style('opacity', 0);
-  };
-  */
 
   return that;
-}
+};

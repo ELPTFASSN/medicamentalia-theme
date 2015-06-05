@@ -1,10 +1,11 @@
-function infographic( _id ) {
+var Infographic = function( _id, _type ) {
 
   var $ = jQuery.noConflict();
 
   var that = this;
 
   var id = _id;
+  var type = _type;
 
   var vis,
       scrollTop,
@@ -13,30 +14,59 @@ function infographic( _id ) {
       $el, $frame, $nav, $fixedEl, $contentList;
 
 
+  // Private Methods
+
+  var setItems = function(){
+
+    $frame = $('<ul class="infographic-frame"></ul>');
+    $nav = $('<ul class="infographic-nav"></ul>');
+
+    var i = 1;
+
+    $contentList.each(function(){
+      $frame.append('<li class="frame-'+i+'"></li>');
+      $nav.append('<li><a href="#'+i+'"></a></li>');
+      i++;
+    });
+
+    $frame.append('<li class="frame-'+i+'"></li>');   // Add last frame item
+
+    $el.append( $frame );
+    $el.append( $nav );
+  };
+
+
   // Public Methods
 
-  that.init = function( type ) {
+  that.init = function(){
+
+    console.log('infographic', id, type);
 
     $el = $( id );
-    $contentList = $('.infographic-content li');
+    $contentList = $el.find('.infographic-content li');
 
-    setItems();
+    setItems();   // Setup Frame & Navigation Items
 
-    $fixedEl = $('.infographic-content, .infographic-nav, .infographic-graph');
+    $fixedEl = $el.find('.infographic-content, .infographic-nav, .infographic-graph');
 
     // Setup Infographic by Type
     if( type === 'antimalaricos'){
-      vis = antimalaricos_infographic( id+' .infographic-graph' ).init(); 
+      vis = new Antimalaricos_Infographic( id+' .infographic-graph' ).init(); 
+    }
+    else if( type === 'patentes'){
+      vis = new Patents_Infographic( id+' .infographic-graph' ).init(); 
     }
     else if( type === 'fakes'){
-      vis = fakes_infographic( id+' .infographic-graph' ).init(); 
+      vis = new Fakes_Infographic( id+' .infographic-graph' ).init(); 
     }
+
+    console.log('vis', vis.setState );
 
     that.onResize();
     
-    $contentList.first().addClass('active');
+    $contentList.first().addClass('active');    // Setup firs content item as active
 
-    // Nav Buttons
+    // Nav Buttons Click Interaction
     $nav.find('li a').click(function(e){
       e.preventDefault();
        
@@ -44,13 +74,12 @@ function infographic( _id ) {
         scrollTop: $('.infographic-frame li.frame-'+$(this).attr('href').substring(1)).offset().top + 2
       }, '200');
     });
-
-    return that;
   };
+
 
   that.onScroll = function(e) {
 
-    scrollTop = $(this).scrollTop();
+    scrollTop = $(window).scrollTop();
 
     if ( scrollTop >= $el.offset().top && scrollTop < endPosition ) {
       $fixedEl.addClass('fixed');
@@ -74,6 +103,8 @@ function infographic( _id ) {
 
       if( currentItem >= 0 ){
 
+        console.log('state', type, currentItem);
+
         vis.setState( currentItem );
 
         if( lastItem < currentItem ){
@@ -91,39 +122,16 @@ function infographic( _id ) {
         $nav.find('li').eq(currentItem).addClass('active');
       }
     }
-
-    return that;
   };
 
   that.onResize = function() {
 
-    $('.infographic-content, .infographic-nav, .infographic-frame li').height( $(window).height() );
-    $('.infographic-graph').height( $(window).height() - $('.infographic-graph').position().top - 30 );
+    $el.find('.infographic-content, .infographic-nav, .infographic-frame li').height( $(window).height() );
+    $el.find('.infographic-graph').height( $(window).height() - $('.infographic-graph').position().top - 30 );
 
-    endPosition = $el.offset().top+$el.height()-$(window).height();
-
-    return that;
+    endPosition = $el.offset().top + $el.height() - $(window).height();
   };
 
-
-  var setItems = function(){
-
-    $frame = $('<ul class="infographic-frame"></ul>');
-    $nav = $('<ul class="infographic-nav"></ul>');
-
-    var i = 1;
-
-    $contentList.each(function(){
-      $frame.append('<li class="frame-'+i+'"></li>');
-      $nav.append('<li><a href="#'+i+'"></a></li>');
-      i++;
-    });
-
-    $frame.append('<li class="frame-'+i+'"></li>');   // Add last frame item
-
-    $el.append( $frame );
-    $el.append( $nav );
-  };
-
-  return that;
-}
+  // Init
+  that.init();
+};

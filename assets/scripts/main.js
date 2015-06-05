@@ -105,7 +105,8 @@
     'ghana': {
       init: function() {
 
-        var fakes_infographic = infographic('#fakes-infographic').init('fakes');
+        var fakes_infographic = new Infographic('#fakes-infographic', 'fakes');
+
         $(window).scroll( fakes_infographic.onScroll );
         $(window).resize( fakes_infographic.onResize );
       }
@@ -122,9 +123,17 @@
     'patents': {
       init: function() {
 
-        var antimalaricos_infographic = infographic('#antimalaricos-infographic').init('antimalaricos');
-        $(window).scroll( antimalaricos_infographic.onScroll );
-        $(window).resize( antimalaricos_infographic.onResize );
+        var patentes_infographic = new Infographic('#patentes-infographic', 'patentes');
+        var antimalaricos_infographic = new Infographic('#antimalaricos-infographic', 'antimalaricos');
+
+        $(window).scroll( function(e){
+          patentes_infographic.onScroll();
+          antimalaricos_infographic.onScroll();
+        });
+        $(window).resize( function(){
+          patentes_infographic.onResize();
+          antimalaricos_infographic.onResize(); 
+        });
       }
     },
   };
