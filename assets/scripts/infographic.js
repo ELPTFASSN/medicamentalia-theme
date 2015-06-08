@@ -24,15 +24,15 @@ var Infographic = function( _id, _type ) {
     var i = 1;
 
     $contentList.each(function(){
-      $frame.append('<li class="frame-'+i+'"></li>');
+      $frame.append('<li class="frame-'+i+'"><div class="scroller"></div></li>');
       $nav.append('<li><a href="#'+i+'"></a></li>');
       i++;
     });
 
-    $frame.append('<li class="frame-'+i+'"></li>');   // Add last frame item
+    $frame.append('<li class="frame-'+i+'"><div class="scroller"></div></li>');   // Add last frame item
 
      if( type === 'main'){
-      $frame.append('<li class="frame-'+(i+1)+'"></li>');   // Add extra frame item for Main Infographic
+      $frame.append('<li class="frame-'+(i+1)+'"><div class="scroller"></div></li>');   // Add extra frame item for Main Infographic
     }
 
     $el.append( $frame );
@@ -118,11 +118,11 @@ var Infographic = function( _id, _type ) {
         if (type === 'main') {
           if (currentItem !== $contentList.size()) {
             $('#main-infographic-menu').removeClass('active');
-            $el.find('.infographic-nav').removeClass('invisible');
+            $el.find('.infographic-nav, .infographic-content').removeClass('invisible');
           }
           else {
             $('#main-infographic-menu').addClass('active');
-            $el.find('.infographic-nav').addClass('invisible');
+            $el.find('.infographic-nav, .infographic-content').addClass('invisible');
           }
         }
 

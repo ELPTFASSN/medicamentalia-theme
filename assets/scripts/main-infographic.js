@@ -6,6 +6,7 @@ function Main_Infographic( _id ) {
 
   var id = _id;
   var $el = $(id);
+  var $tooltip = d3.select('#main-infographic-tooltip');
 
   var initialized = false;
 
@@ -22,6 +23,8 @@ function Main_Infographic( _id ) {
       x, y,
       xAxis, yAxis,
       dataPricesPublic, dataPricesPrivate, countries;
+
+  var bisectDate = d3.bisector( function(d) { return d.Country; } ).left;
 
 
   // Setup Visualization
@@ -51,10 +54,10 @@ function Main_Infographic( _id ) {
       .orient('bottom');
 
     yAxis = d3.svg.axis()
-      .scale(y)
-      .tickSize(-width)
-      .tickPadding(12)
-      .orient('left');
+        .scale(y)
+        .tickSize(-width)
+        .tickPadding(8)
+        .orient('left');
 
     svg = d3.select(id).append('svg')
         .attr('id', 'main-vis-svg')
@@ -167,8 +170,27 @@ function Main_Infographic( _id ) {
       .append('text')
         .attr('class', 'label')
         .attr('dy', '-1em')
+        .attr('dx', '-0.75em')
         .style('text-anchor', 'end')
-        .text('Price (MPR)');
+        .text('$');
+
+    // Mouse events overlay
+    svg.append("rect")
+        .attr("class", "overlay")
+        .style('opacity', 0)
+        .attr("width", width)
+        .attr("height", height)
+          .on('mouseout', onOverlayOut)
+          .on("mousemove", onOverlayMove);
+
+    // Country Marker
+    svg.append("line")
+        .attr("class", "country-marker")
+        .attr("x1", 0)
+        .attr("y1", height)
+        .attr("x2", 0)
+        .attr("y2", 0)
+        .style('opacity', 0);
 
     // Setup Lines
     svg.append('g')
@@ -198,20 +220,28 @@ function Main_Infographic( _id ) {
         .attr('cy', function(d) { return y(d.Price); })
         .style('opacity', DOT_OPACITY)
         .style('fill', function(d) { return color(d.Drug); })
-        .on('mouseover', onOverDot )
-        .on('mouseout', onOutDot );
+        .on('mouseover', onDotOver )
+        .on('mouseout', onDotOut );
   };
 
-  var onOverDot = function(){
+  var onDotOver = function(){
 
     var item = d3.select(this);
           
+    console.log('over dot', item);
+
+    d3.select('.country-marker').style('opacity', 0);
+
     // Update opacity
-    svg.selectAll('.dot').transition().style('opacity', 0.15).duration(400);
-    svg.selectAll('.dot.drug-'+item.attr('id')).transition().style('opacity', 1).duration(400);
+    svg.selectAll('.dot')
+      .style('fill', '#cacaca')
+      .style('opacity', DOT_OPACITY);
+
+    svg.selectAll('.dot.drug-'+item.attr('id'))
+      .style('fill', function(d) { return color(d.Drug); }).style('opacity', 1);
 
     // Show lines
-    svg.selectAll('.line.drug-'+item.attr('id')).transition().style('opacity', 1).duration(400);
+    svg.selectAll('.line.drug-'+item.attr('id')).style('opacity', 1);
 
     // Set selected dots on top
     svg.selectAll('.dot').sort(function (a, b) {  
@@ -219,24 +249,70 @@ function Main_Infographic( _id ) {
     });
 
     // Setup tooltip
-    d3.selectAll('#graph-tooltip .country').html( item.data()[0].Country );
-    d3.selectAll('#graph-tooltip .drug').html( item.data()[0].Drug );
-    d3.selectAll('#graph-tooltip .price').html( item.data()[0].Price );
+    $tooltip.select('.country').html( item.data()[0].Country );
+    $tooltip.select('.drug').html( item.data()[0].Drug );
+    $tooltip.select('.price').html( item.data()[0].Price );
 
-    d3.selectAll('#graph-tooltip')
-      .style('left', (Math.round(item.attr('cx'))+margin.left)+'px')
+    var left = item.attr('cx') > width*0.5;
+
+    if( left ){
+      $tooltip
+        .style('right', (widthCont-Math.round(item.attr('cx'))-margin.left)+'px')
+        .style('left', 'auto');
+    } else{
+      $tooltip
+        .style('right', 'auto')
+        .style('left', (Math.round(item.attr('cx'))+margin.left)+'px');
+    }
+
+    $tooltip
+      .classed('left', left)
       .style('top', (Math.round(item.attr('cy'))+margin.top)+'px')
       .style('opacity', '1');
   };
 
-  var onOutDot = function(){
-    
-    svg.selectAll('.dot').transition().style('opacity', DOT_OPACITY).duration(200);
-    svg.selectAll('.line').transition().style('opacity', 0).duration(200);
+  var onDotOut = function(){
 
-    d3.selectAll('#graph-tooltip')
+    svg.selectAll('.line')
+      .style('opacity', 0);
+
+    $tooltip
       .style('opacity', '0')
+      .style('right', 'auto')
       .style('left', '-1000px');
+
+    onOverlayMove();
+  };
+
+  var onOverlayMove = function(){
+
+    var xPos = d3.mouse(this)[0],
+        leftEdges = x.range(),
+        w = width / (countries.length-1),
+        j = 0;
+
+    while(xPos > (leftEdges[j] + (w*0.5))){ j++; }
+
+    d3.select('.country-marker')
+      .style('opacity', 1)
+      .attr('transform', 'translate('+ x(x.domain()[j]) +' 0)');
+
+    svg.selectAll('.dot')
+      .style('fill', '#cacaca')
+      .style('opacity', DOT_OPACITY );
+
+    svg.selectAll('.dot.country-'+niceName(x.domain()[j]))
+      .style('fill', function(d) { return color(d.Drug); })
+      .style('opacity', 1);
+  };
+
+  var onOverlayOut = function(){
+
+    svg.select('.country-marker').style('opacity', 0);
+
+    svg.selectAll('.dot')
+      .style('fill', function(d) { return color(d.Drug); })
+      .style('opacity', DOT_OPACITY );
   };
 
   var updateData = function( data ){
@@ -245,7 +321,7 @@ function Main_Infographic( _id ) {
 
     svg.select('.y.axis')
       .transition().duration(1200).ease('sin-in-out')
-      .call(yAxis);
+        .call(yAxis);
 
     var item;
 
@@ -267,7 +343,7 @@ function Main_Infographic( _id ) {
   };
 
   var niceName = function( drug ){
-    return drug.toLowerCase().replace(/[ +\/]/g,'-');
+    return drug.toLowerCase().replace(/[ +,\/]/g,'-');
   };
 
 

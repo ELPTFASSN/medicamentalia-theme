@@ -14,8 +14,8 @@
     height: auto;
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
-    background: url(/wp-content/uploads/2015/06/2015/06/home-bkg.jpg) no-repeat center center;
     transform: translateX(-50%) translateY(-50%);
+    background: url(/wp-content/uploads/2015/06/home-bkg.jpg) no-repeat center center;
     @include background-size( cover );
   }
 
