@@ -8,9 +8,10 @@
 
   <!-- Home Intro -->
   <header>
-    <video autoplay loop poster="<?php echo get_site_url(); ?>/wp-content/uploads/home-bkg.jpg" id="home-bkg">
+    <video autoplay loop poster="<?php echo get_site_url(); ?>/wp-content/uploads/2015/06/home-bkg.jpg" id="home-bkg">
+      <source src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/06/home-bkg.m4v" type="video/mp4">
       <source src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/06/home-bkg.webm" type="video/webm">
-      <source src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/06/home-bkg.mp4" type="video/mp4">
+      <source src="<?php echo get_site_url(); ?>/wp-content/uploads/2015/06/home-bkg.ogv" type="video/ogg">
     </video>
     <div class="header-content">
       <div class="header-content-inner">
