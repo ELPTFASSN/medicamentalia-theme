@@ -205,9 +205,12 @@ Infographic
 }
 
 #patentes-infographic .infographic-content{
+  
+  /*
   h4{
     color: $color-brown;
   }
+  */
 
   h5{
     color: white;
@@ -215,12 +218,12 @@ Infographic
 
   li{
     > strong{
-      color: $color-brown;
+      color: white; // $color-brown;
       font-weight: 600;
     }
     
     > em{
-      color: $color-brown;
+      color: white; //  $color-brown;
       font-style: normal;
       font-weight: 400;
     }
