@@ -5,9 +5,9 @@ function patents_graph( _id ) {
   var that = this;
 
   var id = _id;
+  var $el = $(id);
 
-
-  var margin = {top: 30, right: 20, bottom: 50, left: 50},
+  var margin = {top: 0, right: 0, bottom: 20, left: 0},
       widthCont = 1140,
       heightCont = 500,
       width, height;
@@ -17,13 +17,17 @@ function patents_graph( _id ) {
       xAxis, yAxis,
       line;
 
-      var parseDate = d3.time.format("%Y").parse;
+  var parseDate = d3.time.format('%Y').parse;
+
 
   // Public Methods
 
   that.init = function() {
 
-    console.log('patents');
+    console.log('patents', $el);
+
+    widthCont = $el.width();
+    heightCont = widthCont*0.5625;
 
     width = widthCont - margin.left - margin.right;
     height = heightCont - margin.top - margin.bottom;
@@ -36,21 +40,22 @@ function patents_graph( _id ) {
 
     xAxis = d3.svg.axis()
       .scale(x)
-      .orient("bottom");
+      .orient('bottom');
 
     yAxis = d3.svg.axis()
       .scale(y)
-      .orient("left");
+      .orient('left');
 
     line = d3.svg.line()
       .x(function(d) { return x(d.date); })
       .y(function(d) { return y(d.patents); });
 
-    svg = d3.select(id).append("svg")
-      .attr("width", widthCont)
-      .attr("height", heightCont)
-    .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    svg = d3.select(id).append('svg')
+      .attr('id', 'patents-graph-svg')
+      .attr('width', widthCont)
+      .attr('height', heightCont)
+    .append('g')
+      .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
     console.log('set size', widthCont, heightCont);
 
@@ -58,66 +63,98 @@ function patents_graph( _id ) {
     d3.csv( $('body').data('url')+'/dist/csv/patents.csv', function(error, data) {
 
       data.forEach(function(d) {
-       // d.date = parseDate(d.date);
         d.patents = +d.patents;
-      });   
-
-      console.log(error, data);   
-
-      //x.domain(d3.extent(data, function(d) { return d.date; }));
-     // y.domain([0, d3.max(data, function(d) { return d.patents; })]);
+      });
 
       x.domain(data.map(function(d) { return d.date; }));
       y.domain([0, d3.max(data, function(d) { return d.patents; })]);
 
-
-      svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
+      svg.append('g')
+        .attr('class', 'x axis')
+        .attr('transform', 'translate(0,' + height + ')')
         .call(xAxis);
 
-      svg.append("g")
-        .attr("class", "y axis")
-          .call(yAxis);
+      svg.append('line')
+        .attr('class', 'marker')
+        .attr("x1", function(d) { return x(2007); })
+        .attr("y1", height)
+        .attr("x2", function(d) { return x(2007); })
+        .attr("y2", height);
 
-      /*
-      svg.append("path")
-        .datum(data)
-        .attr("class", "line")
-        .attr("d", line);
-      */
-
-      svg.selectAll(".bar")
+      svg.selectAll('.bar')
         .data(data)
-      .enter().append("rect")
-        .attr("class", "bar")
-        .attr("x", function(d) { return x(d.date); })
-        .attr("y", height )
-        .attr("height", 0)
-        .attr("width", x.rangeBand());
+      .enter().append('rect')
+        .attr('class', 'bar')
+        .attr('x', function(d) { return x(d.date); })
+        .attr('y', height )
+        .attr('height', 0)
+        .attr('width', x.rangeBand());
 
-       svg.selectAll(".bar")
-        .transition().duration(1000).delay( function(d,i){ return 100*i; })
-        .attr("y", function(d) { return y(d.patents); })
-        .attr("height", function(d) { return height - y(d.patents); });
+      svg.selectAll('.bar-label')
+        .data(data)
+      .enter().append('text')
+        .attr('class', 'bar-label')
+        .attr('x', function(d) { return x(d.date); })
+        .attr('y', function(d) { return y(d.patents); })
+        .attr('dy', '1em')
+        .attr('dx', '4px')
+        .text( function(d){ return d.patents; });
+
+       d3.selectAll('.bar')
+        .transition().duration(800).delay( function(d,i){ return 100*i; })
+        .attr('y', function(d) { return y(d.patents); })
+        .attr('height', function(d) { return height - y(d.patents); });
+
+       d3.select('.marker')
+        .transition().duration(600).delay(1500)
+        .attr('y1', 0 );
     });
-  };
-  
 
-  that.width = function(value) {
-    if (!arguments.length) {
-      return widthCont;
-    }
-    widthCont = value;
     return that;
   };
 
-  that.height = function(value) {
-    if (!arguments.length) {
-      return heightCont;
-    }
-    heightCont = value;
+  that.onResize = function() {
+
+    widthCont = $el.width();
+    heightCont = widthCont*0.5625;
+
+    width = widthCont - margin.left - margin.right;
+    height = heightCont - margin.top - margin.bottom;
+
+    updateData();
+
     return that;
+  };
+
+  var updateData = function(){
+
+    console.log('update data');
+
+    d3.select('#patents-graph-svg')
+      .attr('width', widthCont)
+      .attr('height', heightCont);
+
+    x.rangeRoundBands([0, width], 0.1);
+    y.range([height, 0]);
+
+    d3.select('g.x.axis')
+      .attr('transform', 'translate(0,' + height + ')')
+      .call(xAxis);
+
+    d3.selectAll('.bar')
+      .attr('x', function(d) { return x(d.date); })
+      .attr('y', function(d) { return y(d.patents); })
+      .attr('width', x.rangeBand())
+      .attr('height', function(d) { return height - y(d.patents); });
+
+    d3.selectAll('.bar-label')
+      .attr('x', function(d) { return x(d.date); })
+      .attr('y', function(d) { return y(d.patents); });
+
+    d3.select('.marker')
+      .attr("x1", function(d) { return x(2007); })
+      .attr("x2", function(d) { return x(2007); })
+      .attr('y2', height );
   };
 
   return that;

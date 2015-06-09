@@ -2,29 +2,26 @@ function Main_Infographic( _id ) {
 
   var $ = jQuery.noConflict();
 
-  var that = this;
-
-  var id = _id;
-  var $el = $(id);
-  var $tooltip = d3.select('#main-infographic-tooltip');
-
-  var initialized = false;
-
-  var DOT_OPACITY = 0.7;
+  var that = this,
+      initialized = false,
+      DOT_OPACITY = 0.7,
+      currentState = 0;
 
   var margin = {top: 150, right: 50, bottom: 50, left: 50},
       widthCont, heightCont,
       width, height;
 
+  var id = _id,
+      $el = $(id),
+      $tooltip = d3.select('#main-infographic-tooltip');
+
   var color = d3.scale.ordinal()
-    .range(['#C9AD4B', '#BBD646', '#63BA2D', '#34A893', '#3D91AD', '#5B8ACB', '#BA7DAF', '#BF6B80', '#F49D9D', '#E25453', '#B56631', '#E2773B', '#FFA951', '#F4CA00']);
+      .range(['#C9AD4B', '#BBD646', '#63BA2D', '#34A893', '#3D91AD', '#5B8ACB', '#BA7DAF', '#BF6B80', '#F49D9D', '#E25453', '#B56631', '#E2773B', '#FFA951', '#F4CA00']);
 
   var svg,
       x, y,
       xAxis, yAxis,
       dataPricesPublic, dataPricesPrivate, countries;
-
-  var bisectDate = d3.bisector( function(d) { return d.Country; } ).left;
 
 
   // Setup Visualization
@@ -32,8 +29,6 @@ function Main_Infographic( _id ) {
   that.init = function() {
 
     initialized = true;
-
-    console.log('vis', widthCont, heightCont );
 
     widthCont = $el.width();
     heightCont = $el.height();
@@ -60,7 +55,7 @@ function Main_Infographic( _id ) {
         .orient('left');
 
     svg = d3.select(id).append('svg')
-        .attr('id', 'main-vis-svg')
+        .attr('id', 'main-infographic-svg')
         .attr('width', widthCont)
         .attr('height', heightCont)
       .append('g')
@@ -130,7 +125,22 @@ function Main_Infographic( _id ) {
 
   that.setState = function(stateID) {
 
-    console.log('main visualization state', stateID);
+    if( stateID === 5 ){
+
+      d3.select('.overlay')
+        .on('mouseout', onOverlayOut)
+        .on("mousemove", onOverlayMove);
+
+      d3.selectAll('.dot')
+        .on('mouseover', onDotOver )
+        .on('mouseout', onDotOut );
+
+    } else if( currentState === 5 ){
+
+      // Remove overlay & dot events
+    }
+
+    currentState = stateID;
 
     return that;
   };
@@ -176,21 +186,19 @@ function Main_Infographic( _id ) {
 
     // Mouse events overlay
     svg.append("rect")
-        .attr("class", "overlay")
-        .style('opacity', 0)
-        .attr("width", width)
-        .attr("height", height)
-          .on('mouseout', onOverlayOut)
-          .on("mousemove", onOverlayMove);
+      .attr("class", "overlay")
+      .style('opacity', 0)
+      .attr("width", width)
+      .attr("height", height);
 
     // Country Marker
     svg.append("line")
-        .attr("class", "country-marker")
-        .attr("x1", 0)
-        .attr("y1", height)
-        .attr("x2", 0)
-        .attr("y2", 0)
-        .style('opacity', 0);
+      .attr("class", "country-marker")
+      .attr("x1", 0)
+      .attr("y1", height)
+      .attr("x2", 0)
+      .attr("y2", 0)
+      .style('opacity', 0);
 
     // Setup Lines
     svg.append('g')
@@ -219,9 +227,7 @@ function Main_Infographic( _id ) {
         .attr('cx', function(d) { return x(d.Country); })
         .attr('cy', function(d) { return y(d.Price); })
         .style('opacity', DOT_OPACITY)
-        .style('fill', function(d) { return color(d.Drug); })
-        .on('mouseover', onDotOver )
-        .on('mouseout', onDotOut );
+        .style('fill', function(d) { return color(d.Drug); });
   };
 
   var onDotOver = function(){
@@ -361,7 +367,7 @@ function Main_Infographic( _id ) {
     height = heightCont - margin.top - margin.bottom;
 
     // Update SVG size
-    d3.select('#main-vis-svg')
+    d3.select('#main-infographic-svg')
       .attr('width', widthCont)
       .attr('height', heightCont);
 

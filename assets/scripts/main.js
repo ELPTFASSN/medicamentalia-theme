@@ -97,7 +97,8 @@
     'prices': {
       init: function() {
 
-        $('[data-toggle="tooltip"]').tooltip(); // Init tooltips
+        $('[data-toggle="tooltip"]').tooltip(); // Init Tooltips
+        $('.dropdown-toggle').dropdown();       // Init Dropdowns
 
         //var vis = main_visualization('#main-vis').init();
 
@@ -123,8 +124,9 @@
     'brasil': {
       init: function() {
 
-        var w = $('#patents-vis').width();
-        var vis = patents_graph('#patents-vis').width( w ).height( w*0.5625 ).init();
+        var graph = patents_graph('#patents-graph').init();
+
+        $(window).resize( graph.onResize );
       }
     },
     // Patents Page
