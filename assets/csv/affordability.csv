@@ -1,522 +1,522 @@
-Drug,Country,Year,Month,Duration,Units per treatment,Currency,Daily wage,Product type,Public sector - median treatment price,Public sector - number of days,Private sector - median treatment price,Private sector - number of days,Source
-Diazepam 5 mg cap/tab,Afghanistan,2011,November,7 days,7,1 US$ = 49.5 Afghani,150,Lowest price generic,5.25,0,7,0,Diazepam 5 mg.csv
-Paracetamol 120 mg/5ml suspension,Afghanistan,2011,November,3 days,45,1 US$ = 49.5 Afghani,150,Lowest price generic,18.38,0.1,18.45,0.1,Paracetamol 120 mg:5ml.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Afghanistan,2011,November,7 days,70,1 US$ = 49.5 Afghani,150,Lowest price generic,24.5,0.2,31.5,0.2,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Afghanistan,2011,November,30 days,30,1 US$ = 49.5 Afghani,150,Lowest price generic,21,0.1,25.77,0.2,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,Afghanistan,2011,November,30 days,60,1 US$ = 49.5 Afghani,150,Lowest price generic,37.5,0.2,42,0.3,Glibenclamide 5 mg.csv
-Diclofenac 50 mg cap/tab,Afghanistan,2011,November,30 days,60,1 US$ = 49.5 Afghani,150,Lowest price generic,40.8,0.3,66.55,0.4,Diclofenac 50 mg.csv
-Ceftriaxone 1 g/vial injection,Afghanistan,2011,November,1 days,1,1 US$ = 49.5 Afghani,150,Lowest price generic,45,0.3,60.15,0.4,Ceftriaxone 1 g:vial injection.csv
-Captopril 25 mg cap/tab,Afghanistan,2011,November,30 days,60,1 US$ = 49.5 Afghani,150,Lowest price generic,45.13,0.3,57.25,0.4,Captopril 25 mg.csv
-Amoxicillin 500 mg cap/tab,Afghanistan,2011,November,7 days,21,1 US$ = 49.5 Afghani,150,Lowest price generic,46.2,0.3,55.96,0.4,Amoxicillin 500 mg.csv
-Amitriptyline 25 mg cap/tab,Afghanistan,2011,November,30 days,90,1 US$ = 49.5 Afghani,150,Lowest price generic,60.3,0.4,78.48,0.5,Amitriptyline 25 mg.csv
-Ciprofloxacin 500 mg cap/tab,Afghanistan,2011,November,7 days,14,1 US$ = 49.5 Afghani,150,Lowest price generic,49,0.3,70,0.5,Ciprofloxacin 500 mg.csv
-Omeprazole 20 mg cap/tab,Afghanistan,2011,November,30 days,30,1 US$ = 49.5 Afghani,150,Lowest price generic,18,0.1,90,0.6,Omeprazole 20 mg.csv
-Salbutamol 100 mcg/dose inhaler,Afghanistan,2011,November,days,200,1 US$ = 49.5 Afghani,150,Lowest price generic,80,0.5,90,0.6,Salbutamol 100 mcg:dose.csv
-Simvastatin 20 mg cap/tab,Afghanistan,2011,November,30 days,30,1 US$ = 49.5 Afghani,150,Lowest price generic,120,0.8,160,1.1,Simvastatin 20 mg.csv
-Atenolol 50 mg cap/tab,Armenia,2001,October,30 days,30,1 US$ = 560 Dram,579.46,Lowest price generic,,,825,1.4,Atenolol 50 mg.csv
-Amitriptyline 25 mg cap/tab,Armenia,2001,October,30 days,90,1 US$ = 560 Dram,579.46,Lowest price generic,,,900,1.6,Amitriptyline 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,Armenia,2001,October,0 days,200,1 US$ = 560 Dram,579.46,Lowest price generic,,,1025,1.8,Salbutamol 100 mcg:dose.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Armenia,2001,October,7 days,70,1 US$ = 560 Dram,579.46,Lowest price generic,,,1134,2,Co-trimoxazole 40+200 mg:5ml.csv
-Diclofenac 50 mg cap/tab,Armenia,2001,October,30 days,60,1 US$ = 560 Dram,579.46,Lowest price generic,,,1800,3.1,Diclofenac 50 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Bolivia,2008,October,7 days,70,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,8.75,0.5,7.88,0.4,Co-trimoxazole 40+200 mg:5ml.csv
-Diazepam 5 mg cap/tab,Bolivia,2008,October,7 days,7,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,2.1,0.1,7,0.4,Diazepam 5 mg.csv
-Paracetamol 120 mg/5ml suspension,Bolivia,2008,October,3 days,45,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,3.75,0.2,6.97,0.4,Paracetamol 120 mg:5ml.csv
-Ceftriaxone 1 g/vial injection,Bolivia,2008,October,1 days,1,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,10,0.5,12,0.6,Ceftriaxone 1 g:vial injection.csv
-Ciprofloxacin 500 mg cap/tab,Bolivia,2008,October,7 days,14,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,9.8,0.5,14,0.7,Ciprofloxacin 500 mg.csv
-Amoxicillin 500 mg cap/tab,Bolivia,2008,October,7 days,21,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,12.6,0.7,15.75,0.8,Amoxicillin 500 mg.csv
-Diclofenac 50 mg cap/tab,Bolivia,2008,October,30 days,60,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,12,0.6,15,0.8,Diclofenac 50 mg.csv
-Atenolol 50 mg cap/tab,Bolivia,2008,October,30 days,30,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,12,0.6,21,1.1,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,Bolivia,2008,October,30 days,60,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,12,0.6,21,1.1,Glibenclamide 5 mg.csv
-Omeprazole 20 mg cap/tab,Bolivia,2008,October,30 days,30,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,18,0.9,30,1.6,Omeprazole 20 mg.csv
-Salbutamol 100 mcg/dose inhaler,Bolivia,2008,October,days,200,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,21.8,1.1,30,1.6,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Bolivia,2008,October,30 days,90,1 US$ = 7.07 Bolivianos,19.25,Lowest price generic,27,1.4,36,1.9,Amitriptyline 25 mg.csv
-Amitriptyline 25 mg cap/tab,Brazil Rio de Janeiro State,2001,October,30 days,90,1 US$ = 2.6858 Real,6,Lowest price generic,,,,,Amitriptyline 25 mg.csv
-Captopril 25 mg cap/tab,Brazil Rio de Janeiro State,2001,October,30 days,60,1 US$ = 2.6858 Real,6,Lowest price generic,,,,,Captopril 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,Brazil Rio de Janeiro State,2001,October,0 days,200,1 US$ = 2.6858 Real,6,Lowest price generic,,,,,Salbutamol 100 mcg:dose.csv
-Diazepam 5 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,7 days,7,1 US$ = 2.32 Real,12.73,Lowest price generic,,,1.36,0.1,Diazepam 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Brazil Rio Grande do Sul State,2008,November,7 days,70,1 US$ = 2.32 Real,12.73,Lowest price generic,,,5.43,0.4,Co-trimoxazole 40+200 mg:5ml.csv
-Amoxicillin 500 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,7 days,21,1 US$ = 2.32 Real,12.73,Lowest price generic,,,14.7,1.2,Amoxicillin 500 mg.csv
-Ceftriaxone 1 g/vial injection,Brazil Rio Grande do Sul State,2008,November,1 days,1,1 US$ = 2.32 Real,12.73,Lowest price generic,,,17.54,1.4,Ceftriaxone 1 g:vial injection.csv
-Captopril 25 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,30 days,60,1 US$ = 2.32 Real,12.73,Lowest price generic,,,23.87,1.9,Captopril 25 mg.csv
-Diclofenac 50 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,30 days,60,1 US$ = 2.32 Real,12.73,Lowest price generic,,,30,2.4,Diclofenac 50 mg.csv
-Omeprazole 20 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,30 days,30,1 US$ = 2.32 Real,12.73,Lowest price generic,,,45.84,3.6,Omeprazole 20 mg.csv
-Simvastatin 20 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,30 days,30,1 US$ = 2.32 Real,12.73,Lowest price generic,,,47.75,3.8,Simvastatin 20 mg.csv
-Diazepam 5 mg cap/tab,Burkina Faso,2009,July,7 days,7,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,21,0,35,0,Diazepam 5 mg.csv
-Paracetamol 120 mg/5ml suspension,Burkina Faso,2009,July,3 days,45,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,180,0.2,225,0.2,Paracetamol 120 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Burkina Faso,2009,July,30 days,60,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,,,600,0.6,Glibenclamide 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Burkina Faso,2009,July,7 days,70,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,437.5,0.4,583.33,0.6,Co-trimoxazole 40+200 mg:5ml.csv
-Diclofenac 50 mg cap/tab,Burkina Faso,2009,July,30 days,60,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,360,0.4,750,0.7,Diclofenac 50 mg.csv
-Ciprofloxacin 500 mg cap/tab,Burkina Faso,2009,July,7 days,14,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,420,0.4,700,0.7,Ciprofloxacin 500 mg.csv
-Amoxicillin 500 mg cap/tab,Burkina Faso,2009,July,7 days,21,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,945,0.9,1050,1,Amoxicillin 500 mg.csv
-Ceftriaxone 1 g/vial injection,Burkina Faso,2009,July,1 days,1,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,600,0.6,1120,1.1,Ceftriaxone 1 g:vial injection.csv
-Salbutamol 100 mcg/dose inhaler,Burkina Faso,2009,July,days,200,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,1200,1.2,1200,1.2,Salbutamol 100 mcg:dose.csv
-Omeprazole 20 mg cap/tab,Burkina Faso,2009,July,30 days,30,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,,,1475,1.4,Omeprazole 20 mg.csv
-Atenolol 50 mg cap/tab,Burkina Faso,2009,July,30 days,30,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,,,2527.5,2.5,Atenolol 50 mg.csv
-Captopril 25 mg cap/tab,Burkina Faso,2009,July,30 days,60,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,900,0.9,4650,4.5,Captopril 25 mg.csv
-Simvastatin 20 mg cap/tab,Burkina Faso,2009,July,30 days,30,1 US$ = 470.55 FCFA,1022.8,Lowest price generic,,,9920,9.7,Simvastatin 20 mg.csv
-Diazepam 5 mg cap/tab,Burundi,2013,August,7 days,7,1 US$ = 1509.6 Burundi Franc,2692,Lowest price generic,,,280,0.1,Diazepam 5 mg.csv
-Ciprofloxacin 500 mg cap/tab,Burundi,2013,August,7 days,14,1 US$ = 1509.6 Burundi Franc,2692,Lowest price generic,700,0.3,1400,0.5,Ciprofloxacin 500 mg.csv
-Omeprazole 20 mg cap/tab,Burundi,2013,August,30 days,30,1 US$ = 1509.6 Burundi Franc,2692,Lowest price generic,1264.26,0.5,2250,0.8,Omeprazole 20 mg.csv
-Amoxicillin 500 mg cap/tab,Burundi,2013,August,7 days,21,1 US$ = 1509.6 Burundi Franc,2692,Lowest price generic,1575,0.6,2100,0.8,Amoxicillin 500 mg.csv
-Glibenclamide 5 mg cap/tab,Burundi,2013,August,30 days,60,1 US$ = 1509.6 Burundi Franc,2692,Lowest price generic,,,3000,1.1,Glibenclamide 5 mg.csv
-Salbutamol 100 mcg/dose inhaler,Burundi,2013,August,days,200,1 US$ = 1509.6 Burundi Franc,2692,Lowest price generic,,,3750,1.4,Salbutamol 100 mcg:dose.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Cameroon,2005,July,7 days,70,1 US$ = 572 FCFA,833.33,Lowest price generic,290.5,0.3,1015,1.2,Co-trimoxazole 40+200 mg:5ml.csv
-Amoxicillin 500 mg cap/tab,Cameroon,2005,July,7 days,21,1 US$ = 572 FCFA,833.33,Lowest price generic,945,1.1,1846.25,2.2,Amoxicillin 500 mg.csv
-Salbutamol 100 mcg/dose inhaler,Cameroon,2005,July,days,200,1 US$ = 572 FCFA,833.33,Lowest price generic,,,2755,3.3,Salbutamol 100 mcg:dose.csv
-Diclofenac 50 mg cap/tab,Cameroon,2005,July,30 days,60,1 US$ = 572 FCFA,833.33,Lowest price generic,,,3000,3.6,Diclofenac 50 mg.csv
-Glibenclamide 5 mg cap/tab,Cameroon,2005,July,30 days,60,1 US$ = 572 FCFA,833.33,Lowest price generic,360,0.4,4911,5.9,Glibenclamide 5 mg.csv
-Amitriptyline 25 mg cap/tab,Chad,2004,May,30 days,90,1 US$ = 542.94 CFA Franc,849.4,Lowest price generic,,,5684.99,6.7,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Chad,2004,May,7 days,70,1 US$ = 542.94 CFA Franc,849.4,Lowest price generic,280,0.3,,,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Chad,2004,May,30 days,60,1 US$ = 542.94 CFA Franc,849.4,Lowest price generic,600,0.7,,,Glibenclamide 5 mg.csv
-Salbutamol 100 mcg/dose inhaler,Chad,2004,May,0 days,200,1 US$ = 542.94 CFA Franc,849.4,Lowest price generic,,,,,Salbutamol 100 mcg:dose.csv
-Captopril 25 mg cap/tab,China Shaanxi Province,2014,May,30 days,60,1 US$ = 6.1627 Chinese Yuan Renminb,37.3333,Lowest price generic,1.74,0,1.8,0,Captopril 25 mg.csv
-Ceftriaxone 1 g/vial injection,China Shaanxi Province,2014,May,1 days,1,1 US$ = 6.1627 Chinese Yuan Renminb,37.3333,Lowest price generic,1.5,0,2.5,0.1,Ceftriaxone 1 g:vial injection.csv
-Omeprazole 20 mg cap/tab,China Shaanxi Province,2014,May,30 days,30,1 US$ = 6.1627 Chinese Yuan Renminb,37.3333,Lowest price generic,12.64,0.3,12.86,0.3,Omeprazole 20 mg.csv
-Amoxicillin 500 mg cap/tab,China Shaanxi Province,2014,May,7 days,21,1 US$ = 6.1627 Chinese Yuan Renminb,37.3333,Lowest price generic,19.29,0.5,11.03,0.3,Amoxicillin 500 mg.csv
-Amitriptyline 25 mg cap/tab,China Shaanxi Province,2014,May,30 days,90,1 US$ = 6.1627 Chinese Yuan Renminb,37.3333,Lowest price generic,14.72,0.4,15.75,0.4,Amitriptyline 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,China Shaanxi Province,2014,May,days,200,1 US$ = 6.1627 Chinese Yuan Renminb,37.3333,Lowest price generic,16.8,0.5,15,0.4,Salbutamol 100 mcg:dose.csv
-Diclofenac 50 mg cap/tab,China Shaanxi Province,2014,May,30 days,60,1 US$ = 6.1627 Chinese Yuan Renminb,37.3333,Lowest price generic,34.25,0.9,38.75,1,Diclofenac 50 mg.csv
-Simvastatin 20 mg cap/tab,China Shaanxi Province,2014,May,30 days,30,1 US$ = 6.1627 Chinese Yuan Renminb,37.3333,Lowest price generic,32.28,0.9,47.14,1.3,Simvastatin 20 mg.csv
-Captopril 25 mg cap/tab,China Shandong Province,2004,October,30 days,60,1 US$ = 8.2144 Chinese Ruan,13.33,Lowest price generic,3,0.2,1.95,0.1,Captopril 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,China Shandong Province,2004,October,days,200,1 US$ = 8.2144 Chinese Ruan,13.33,Lowest price generic,,,4.75,0.4,Salbutamol 100 mcg:dose.csv
-Salbutamol 100 mcg/dose inhaler,China Shanghai,2006,September,0 days,200,1 US$ = 7.999 Chinese Yuan,25,Lowest price generic,22.4,0.9,18.55,0.7,Salbutamol 100 mcg:dose.csv
-Amoxicillin 500 mg cap/tab,China Shanghai,2006,September,7 days,21,1 US$ = 7.999 Chinese Yuan,25,Lowest price generic,22.31,0.9,22.31,0.9,Amoxicillin 500 mg.csv
-Amitriptyline 25 mg cap/tab,China Shanghai,2006,September,30 days,90,1 US$ = 7.999 Chinese Yuan,25,Lowest price generic,18.45,0.7,,,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Colombia,2008,October,7 days,70,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,2683.33,0.2,Co-trimoxazole 40+200 mg:5ml.csv
-Ciprofloxacin 500 mg cap/tab,Colombia,2008,October,7 days,14,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,5180,0.3,Ciprofloxacin 500 mg.csv
-Diclofenac 50 mg cap/tab,Colombia,2008,October,30 days,60,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,5100,0.3,Diclofenac 50 mg.csv
-Captopril 25 mg cap/tab,Colombia,2008,October,30 days,60,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,4000,0.3,Captopril 25 mg.csv
-Glibenclamide 5 mg cap/tab,Colombia,2008,October,30 days,60,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,4000,0.3,Glibenclamide 5 mg.csv
-Omeprazole 20 mg cap/tab,Colombia,2008,October,30 days,30,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,6597.75,0.4,Omeprazole 20 mg.csv
-Ceftriaxone 1 g/vial injection,Colombia,2008,October,1 days,1,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,6500,0.4,Ceftriaxone 1 g:vial injection.csv
-Salbutamol 100 mcg/dose inhaler,Colombia,2008,October,days,200,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,6000,0.4,Salbutamol 100 mcg:dose.csv
-Amoxicillin 500 mg cap/tab,Colombia,2008,October,7 days,21,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,5913.6,0.4,Amoxicillin 500 mg.csv
-Amitriptyline 25 mg cap/tab,Colombia,2008,October,30 days,90,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,9300,0.6,Amitriptyline 25 mg.csv
-Atenolol 50 mg cap/tab,Colombia,2008,October,30 days,30,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,11600,0.8,Atenolol 50 mg.csv
-Simvastatin 20 mg cap/tab,Colombia,2008,October,30 days,30,1 US$ = 2390.4 PESO COLOMBIANO,15383,Lowest price generic,,,56100,3.6,Simvastatin 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Congo,2007,June,7 days,70,1 US$ = 492.443 CFA Franc,1666.67,Lowest price generic,700,0.4,997.5,0.6,Co-trimoxazole 40+200 mg:5ml.csv
-Amoxicillin 500 mg cap/tab,Congo,2007,June,7 days,21,1 US$ = 492.443 CFA Franc,1666.67,Lowest price generic,1050,0.6,2537.5,1.5,Amoxicillin 500 mg.csv
-Glibenclamide 5 mg cap/tab,Congo,2007,June,30 days,60,1 US$ = 492.443 CFA Franc,1666.67,Lowest price generic,,,3040,1.8,Glibenclamide 5 mg.csv
-Ciprofloxacin 500 mg cap/tab,Congo,2007,June,7 days,14,1 US$ = 492.443 CFA Franc,1666.67,Lowest price generic,1400,0.8,3227,1.9,Ciprofloxacin 500 mg.csv
-Diclofenac 50 mg cap/tab,Congo,2007,June,30 days,60,1 US$ = 492.443 CFA Franc,1666.67,Lowest price generic,1500,0.9,3204,1.9,Diclofenac 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,Congo,2007,June,days,200,1 US$ = 492.443 CFA Franc,1666.67,Lowest price generic,,,3185,1.9,Salbutamol 100 mcg:dose.csv
-Omeprazole 20 mg cap/tab,Congo,2007,June,30 days,30,1 US$ = 492.443 CFA Franc,1666.67,Lowest price generic,,,21492.86,12.9,Omeprazole 20 mg.csv
-Diclofenac 50 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,60,1 US$ = 495.163 CD Franc,461.538,Lowest price generic,300,0.7,240,0.5,Diclofenac 50 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Democratic Republic of Congo,2007,July,7 days,70,1 US$ = 495.163 CD Franc,461.538,Lowest price generic,210,0.5,210,0.5,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,60,1 US$ = 495.163 CD Franc,461.538,Lowest price generic,900,2,900,2,Glibenclamide 5 mg.csv
-Omeprazole 20 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,30,1 US$ = 495.163 CD Franc,461.538,Lowest price generic,,,1500,3.2,Omeprazole 20 mg.csv
-Salbutamol 100 mcg/dose inhaler,Democratic Republic of Congo,2007,July,days,200,1 US$ = 495.163 CD Franc,461.538,Lowest price generic,,,1800,3.9,Salbutamol 100 mcg:dose.csv
-Atenolol 50 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,30,1 US$ = 495.163 CD Franc,461.538,Lowest price generic,,,4500,9.8,Atenolol 50 mg.csv
-Captopril 25 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,60,1 US$ = 495.163 CD Franc,461.538,Lowest price generic,,,4650,10.1,Captopril 25 mg.csv
-Amitriptyline 25 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,90,1 US$ = 495.163 CD Franc,461.538,Lowest price generic,,,,,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Ecuador,2008,September,7 days,70,1 US$ = 1 US dollar,6.67,Lowest price generic,,,0.98,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Paracetamol 120 mg/5ml suspension,Ecuador,2008,September,3 days,45,1 US$ = 1 US dollar,6.67,Lowest price generic,,,0.68,0.1,Paracetamol 120 mg:5ml.csv
-Diazepam 5 mg cap/tab,Ecuador,2008,September,7 days,7,1 US$ = 1 US dollar,6.67,Lowest price generic,,,0.42,0.1,Diazepam 5 mg.csv
-Glibenclamide 5 mg cap/tab,Ecuador,2008,September,30 days,60,1 US$ = 1 US dollar,6.67,Lowest price generic,,,3.48,0.5,Glibenclamide 5 mg.csv
-Amoxicillin 500 mg cap/tab,Ecuador,2008,September,7 days,21,1 US$ = 1 US dollar,6.67,Lowest price generic,,,3.32,0.5,Amoxicillin 500 mg.csv
-Atenolol 50 mg cap/tab,Ecuador,2008,September,30 days,30,1 US$ = 1 US dollar,6.67,Lowest price generic,,,4.2,0.6,Atenolol 50 mg.csv
-Diclofenac 50 mg cap/tab,Ecuador,2008,September,30 days,60,1 US$ = 1 US dollar,6.67,Lowest price generic,,,4.8,0.7,Diclofenac 50 mg.csv
-Captopril 25 mg cap/tab,Ecuador,2008,September,30 days,60,1 US$ = 1 US dollar,6.67,Lowest price generic,,,5.4,0.8,Captopril 25 mg.csv
-Ceftriaxone 1 g/vial injection,Ecuador,2008,September,1 days,1,1 US$ = 1 US dollar,6.67,Lowest price generic,,,6.09,0.9,Ceftriaxone 1 g:vial injection.csv
-Salbutamol 100 mcg/dose inhaler,Ecuador,2008,September,days,200,1 US$ = 1 US dollar,6.67,Lowest price generic,,,5.76,0.9,Salbutamol 100 mcg:dose.csv
-Ciprofloxacin 500 mg cap/tab,Ecuador,2008,September,7 days,14,1 US$ = 1 US dollar,6.67,Lowest price generic,,,8.28,1.2,Ciprofloxacin 500 mg.csv
-Omeprazole 20 mg cap/tab,Ecuador,2008,September,30 days,30,1 US$ = 1 US dollar,6.67,Lowest price generic,,,8.4,1.3,Omeprazole 20 mg.csv
-Simvastatin 20 mg cap/tab,Ecuador,2008,September,30 days,30,1 US$ = 1 US dollar,6.67,Lowest price generic,,,20.7,3.1,Simvastatin 20 mg.csv
-Atenolol 50 mg cap/tab,Egypt,2013,September,30 days,30,1 US$ = 6.8913 Egyptian Pounds,40,Lowest price generic,,,4.88,0.1,Atenolol 50 mg.csv
-Diazepam 5 mg cap/tab,Egypt,2013,September,7 days,7,1 US$ = 6.8913 Egyptian Pounds,40,Lowest price generic,,,2.1,0.1,Diazepam 5 mg.csv
-Glibenclamide 5 mg cap/tab,Egypt,2013,September,30 days,60,1 US$ = 6.8913 Egyptian Pounds,40,Lowest price generic,,,6,0.2,Glibenclamide 5 mg.csv
-Salbutamol 100 mcg/dose inhaler,Egypt,2013,September,days,200,1 US$ = 6.8913 Egyptian Pounds,40,Lowest price generic,,,12,0.3,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Egypt,2013,September,30 days,90,1 US$ = 6.8913 Egyptian Pounds,40,Lowest price generic,,,10.5,0.3,Amitriptyline 25 mg.csv
-Captopril 25 mg cap/tab,Egypt,2013,September,30 days,60,1 US$ = 6.8913 Egyptian Pounds,40,Lowest price generic,,,19.2,0.5,Captopril 25 mg.csv
-Omeprazole 20 mg cap/tab,Egypt,2013,September,30 days,30,1 US$ = 6.8913 Egyptian Pounds,40,Lowest price generic,,,28.93,0.7,Omeprazole 20 mg.csv
-Simvastatin 20 mg cap/tab,Egypt,2013,September,30 days,30,1 US$ = 6.8913 Egyptian Pounds,40,Lowest price generic,,,85.71,2.1,Simvastatin 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,El Salvador,2006,November,7 days,70,1 US$ = 1 US dollar,5.81,Lowest price generic,,,3.42,0.6,Co-trimoxazole 40+200 mg:5ml.csv
-Salbutamol 100 mcg/dose inhaler,El Salvador,2006,November,0 days,200,1 US$ = 1 US dollar,5.81,Lowest price generic,,,6.85,1.2,Salbutamol 100 mcg:dose.csv
-Glibenclamide 5 mg cap/tab,El Salvador,2006,November,30 days,60,1 US$ = 1 US dollar,5.81,Lowest price generic,,,12.6,2.2,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,El Salvador,2006,November,30 days,30,1 US$ = 1 US dollar,5.81,Lowest price generic,,,13.71,2.4,Atenolol 50 mg.csv
-Amitriptyline 25 mg cap/tab,El Salvador,2006,November,30 days,90,1 US$ = 1 US dollar,5.81,Lowest price generic,,,31.8,5.5,Amitriptyline 25 mg.csv
-Paracetamol 120 mg/5ml suspension,Ethiopia,2013,August,3 days,45,1 US$ = 18.72 Birr,14,Lowest price generic,6,0.4,7.5,0.5,Paracetamol 120 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Ethiopia,2013,August,30 days,60,1 US$ = 18.72 Birr,14,Lowest price generic,6,0.4,9,0.6,Glibenclamide 5 mg.csv
-Diclofenac 50 mg cap/tab,Ethiopia,2013,August,30 days,60,1 US$ = 18.72 Birr,14,Lowest price generic,8.4,0.6,12,0.9,Diclofenac 50 mg.csv
-Ciprofloxacin 500 mg cap/tab,Ethiopia,2013,August,7 days,14,1 US$ = 18.72 Birr,14,Lowest price generic,12,0.9,14,1,Ciprofloxacin 500 mg.csv
-Amoxicillin 500 mg cap/tab,Ethiopia,2013,August,7 days,21,1 US$ = 18.72 Birr,14,Lowest price generic,17.64,1.3,21,1.5,Amoxicillin 500 mg.csv
-Amitriptyline 25 mg cap/tab,Ethiopia,2013,August,30 days,90,1 US$ = 18.72 Birr,14,Lowest price generic,36,2.6,54,3.9,Amitriptyline 25 mg.csv
-Atenolol 50 mg cap/tab,Fiji,2004,September,30 days,30,1 US$ = 1.7035 Fiji Dollars,20,Lowest price generic,,,1.5,0.1,Atenolol 50 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Fiji,2004,September,7 days,70,1 US$ = 1.7035 Fiji Dollars,20,Lowest price generic,,,1.4,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Fiji,2004,September,30 days,60,1 US$ = 1.7035 Fiji Dollars,20,Lowest price generic,,,1.2,0.1,Glibenclamide 5 mg.csv
-Amitriptyline 25 mg cap/tab,Fiji,2004,September,30 days,90,1 US$ = 1.7035 Fiji Dollars,20,Lowest price generic,,,4.5,0.2,Amitriptyline 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,Fiji,2004,September,0 days,200,1 US$ = 1.7035 Fiji Dollars,20,Lowest price generic,,,4,0.2,Salbutamol 100 mcg:dose.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Ghana,2004,October,7 days,70,1 US$ = 8915.5 Cedi (old),9348.3,Lowest price generic,3500,0.4,4200,0.4,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Ghana,2004,October,30 days,60,1 US$ = 8915.5 Cedi (old),9348.3,Lowest price generic,12000,1.3,12000,1.3,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,Ghana,2004,October,30 days,30,1 US$ = 8915.5 Cedi (old),9348.3,Lowest price generic,13500,1.4,15000,1.6,Atenolol 50 mg.csv
-Amitriptyline 25 mg cap/tab,Ghana,2004,October,30 days,90,1 US$ = 8915.5 Cedi (old),9348.3,Lowest price generic,6750,0.7,25200,2.7,Amitriptyline 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,Ghana,2004,October,0 days,200,1 US$ = 8915.5 Cedi (old),9348.3,Lowest price generic,,,43000,4.6,Salbutamol 100 mcg:dose.csv
-Diazepam 5 mg cap/tab,Haiti,2011,August,7 days,7,1 US$ = 39.6862 Gourdes,200,Lowest price generic,35,0.2,35,0.2,Diazepam 5 mg.csv
-Paracetamol 120 mg/5ml suspension,Haiti,2011,August,3 days,45,1 US$ = 39.6862 Gourdes,200,Lowest price generic,27,0.1,33.75,0.2,Paracetamol 120 mg:5ml.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Haiti,2011,August,7 days,70,1 US$ = 39.6862 Gourdes,200,Lowest price generic,42,0.2,52.5,0.3,Co-trimoxazole 40+200 mg:5ml.csv
-Ciprofloxacin 500 mg cap/tab,Haiti,2011,August,7 days,14,1 US$ = 39.6862 Gourdes,200,Lowest price generic,70,0.4,86.31,0.4,Ciprofloxacin 500 mg.csv
-Amoxicillin 500 mg cap/tab,Haiti,2011,August,7 days,21,1 US$ = 39.6862 Gourdes,200,Lowest price generic,63,0.3,105,0.5,Amoxicillin 500 mg.csv
-Glibenclamide 5 mg cap/tab,Haiti,2011,August,30 days,60,1 US$ = 39.6862 Gourdes,200,Lowest price generic,150,0.8,165,0.8,Glibenclamide 5 mg.csv
-Salbutamol 100 mcg/dose inhaler,Haiti,2011,August,days,200,1 US$ = 39.6862 Gourdes,200,Lowest price generic,140,0.7,152.5,0.8,Salbutamol 100 mcg:dose.csv
-Ceftriaxone 1 g/vial injection,Haiti,2011,August,1 days,1,1 US$ = 39.6862 Gourdes,200,Lowest price generic,70,0.4,150,0.8,Ceftriaxone 1 g:vial injection.csv
-Omeprazole 20 mg cap/tab,Haiti,2011,August,30 days,30,1 US$ = 39.6862 Gourdes,200,Lowest price generic,150,0.8,150,0.8,Omeprazole 20 mg.csv
-Atenolol 50 mg cap/tab,Haiti,2011,August,30 days,30,1 US$ = 39.6862 Gourdes,200,Lowest price generic,87.45,0.4,180,0.9,Atenolol 50 mg.csv
-Diclofenac 50 mg cap/tab,Haiti,2011,August,30 days,60,1 US$ = 39.6862 Gourdes,200,Lowest price generic,120,0.6,258,1.3,Diclofenac 50 mg.csv
-Captopril 25 mg cap/tab,Haiti,2011,August,30 days,60,1 US$ = 39.6862 Gourdes,200,Lowest price generic,240,1.2,300,1.5,Captopril 25 mg.csv
-Amitriptyline 25 mg cap/tab,Haiti,2011,August,30 days,90,1 US$ = 39.6862 Gourdes,200,Lowest price generic,,,360,1.8,Amitriptyline 25 mg.csv
-Simvastatin 20 mg cap/tab,Haiti,2011,August,30 days,30,1 US$ = 39.6862 Gourdes,200,Lowest price generic,,,425,2.1,Simvastatin 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,India Chennai,2004,October,7 days,70,1 US$ = 45.32 Rupee,137,Lowest price generic,,,13.3,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,India Chennai,2004,October,30 days,60,1 US$ = 45.32 Rupee,137,Lowest price generic,,,34.2,0.2,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,India Chennai,2004,October,30 days,30,1 US$ = 45.32 Rupee,137,Lowest price generic,,,54.9,0.4,Atenolol 50 mg.csv
-Diclofenac 50 mg cap/tab,India Chennai,2004,October,30 days,60,1 US$ = 45.32 Rupee,137,Lowest price generic,,,64.2,0.5,Diclofenac 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,India Chennai,2004,October,0 days,200,1 US$ = 45.32 Rupee,137,Lowest price generic,,,76,0.6,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,India Chennai,2004,October,30 days,90,1 US$ = 45.32 Rupee,137,Lowest price generic,,,154.8,1.1,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,India Haryana,2004,October,7 days,70,1 US$ = 45.32 Rupee,143.93,Lowest price generic,,,14,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,India Haryana,2004,October,30 days,30,1 US$ = 45.32 Rupee,143.93,Lowest price generic,,,46.1,0.3,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,India Haryana,2004,October,30 days,60,1 US$ = 45.32 Rupee,143.93,Lowest price generic,,,39,0.3,Glibenclamide 5 mg.csv
-Salbutamol 100 mcg/dose inhaler,India Haryana,2004,October,0 days,200,1 US$ = 45.32 Rupee,143.93,Lowest price generic,,,77,0.5,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,India Haryana,2004,October,30 days,90,1 US$ = 45.32 Rupee,143.93,Lowest price generic,,,120.6,0.8,Amitriptyline 25 mg.csv
-Captopril 25 mg cap/tab,India Haryana,2004,October,30 days,60,1 US$ = 45.32 Rupee,143.93,Lowest price generic,,,210,1.5,Captopril 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,India Karnataka,2004,November,7 days,70,1 US$ = 45.32 Rupee,137,Lowest price generic,,,15.2,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,India Karnataka,2004,November,30 days,30,1 US$ = 45.32 Rupee,137,Lowest price generic,,,60.6,0.4,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,India Karnataka,2004,November,30 days,60,1 US$ = 45.32 Rupee,137,Lowest price generic,,,48,0.4,Glibenclamide 5 mg.csv
-Diclofenac 50 mg cap/tab,India Karnataka,2004,November,30 days,60,1 US$ = 45.32 Rupee,137,Lowest price generic,,,69.81,0.5,Diclofenac 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,India Karnataka,2004,November,0 days,200,1 US$ = 45.32 Rupee,137,Lowest price generic,,,84.66,0.6,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,India Karnataka,2004,November,30 days,90,1 US$ = 45.32 Rupee,137,Lowest price generic,,,151.16,1.1,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,India Maharashtra 4 regions,2005,January,7 days,70,1 US$ = 45.32 Rupee,120,Lowest price generic,,,14.35,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,India Maharashtra 4 regions,2005,January,30 days,60,1 US$ = 45.32 Rupee,120,Lowest price generic,,,48,0.4,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,India Maharashtra 4 regions,2005,January,30 days,30,1 US$ = 45.32 Rupee,120,Lowest price generic,,,42.86,0.4,Atenolol 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,India Maharashtra 4 regions,2005,January,0 days,200,1 US$ = 45.32 Rupee,120,Lowest price generic,,,82,0.7,Salbutamol 100 mcg:dose.csv
-Diclofenac 50 mg cap/tab,India Maharashtra 4 regions,2005,January,30 days,60,1 US$ = 45.32 Rupee,120,Lowest price generic,,,80.1,0.7,Diclofenac 50 mg.csv
-Amitriptyline 25 mg cap/tab,India Maharashtra 4 regions,2005,January,30 days,90,1 US$ = 45.32 Rupee,120,Lowest price generic,,,135,1.1,Amitriptyline 25 mg.csv
-Paracetamol 120 mg/5ml suspension,"India NCT, Delhi",2011,July,3 days,45,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,22.2,0.1,Paracetamol 120 mg:5ml.csv
-Diazepam 5 mg cap/tab,"India NCT, Delhi",2011,July,7 days,7,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,18.55,0.1,Diazepam 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,"India NCT, Delhi",2011,July,7 days,70,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,16.97,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Ceftriaxone 1 g/vial injection,"India NCT, Delhi",2011,July,1 days,1,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,69,0.3,Ceftriaxone 1 g:vial injection.csv
-Ciprofloxacin 500 mg cap/tab,"India NCT, Delhi",2011,July,7 days,14,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,67.9,0.3,Ciprofloxacin 500 mg.csv
-Salbutamol 100 mcg/dose inhaler,"India NCT, Delhi",2011,July,days,200,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,102.74,0.4,Salbutamol 100 mcg:dose.csv
-Diclofenac 50 mg cap/tab,"India NCT, Delhi",2011,July,30 days,60,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,93,0.4,Diclofenac 50 mg.csv
-Atenolol 50 mg cap/tab,"India NCT, Delhi",2011,July,30 days,30,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,90,0.4,Atenolol 50 mg.csv
-Omeprazole 20 mg cap/tab,"India NCT, Delhi",2011,July,30 days,30,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,125,0.5,Omeprazole 20 mg.csv
-Simvastatin 20 mg cap/tab,"India NCT, Delhi",2011,July,30 days,30,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,145.2,0.6,Simvastatin 20 mg.csv
-Amitriptyline 25 mg cap/tab,"India NCT, Delhi",2011,July,30 days,90,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,167.4,0.7,Amitriptyline 25 mg.csv
-Amoxicillin 500 mg cap/tab,"India NCT, Delhi",2011,July,7 days,21,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,195.93,0.8,Amoxicillin 500 mg.csv
-Captopril 25 mg cap/tab,"India NCT, Delhi",2011,July,30 days,60,1 US$ = 44.65 Indian Rupee,247,Lowest price generic,,,270,1.1,Captopril 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,India Rajasthan,2003,April,7 days,70,1 US$ = 47.8 Rupee,130,Lowest price generic,,,14,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,India Rajasthan,2003,April,30 days,60,1 US$ = 47.8 Rupee,130,Lowest price generic,,,38.4,0.3,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,India Rajasthan,2003,April,30 days,30,1 US$ = 47.8 Rupee,130,Lowest price generic,,,53.25,0.4,Atenolol 50 mg.csv
-Diclofenac 50 mg cap/tab,India Rajasthan,2003,April,30 days,60,1 US$ = 47.8 Rupee,130,Lowest price generic,,,68.4,0.5,Diclofenac 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,India Rajasthan,2003,April,0 days,200,1 US$ = 47.8 Rupee,130,Lowest price generic,,,76,0.6,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,India Rajasthan,2003,April,30 days,90,1 US$ = 47.8 Rupee,130,Lowest price generic,,,128.7,1,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,India West Bengal,2004,December,7 days,70,1 US$ = 45.32 Rupee,131.73,Lowest price generic,,,14,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,India West Bengal,2004,December,30 days,60,1 US$ = 45.32 Rupee,131.73,Lowest price generic,,,40.8,0.3,Glibenclamide 5 mg.csv
-Diclofenac 50 mg cap/tab,India West Bengal,2004,December,30 days,60,1 US$ = 45.32 Rupee,131.73,Lowest price generic,,,68.5,0.5,Diclofenac 50 mg.csv
-Atenolol 50 mg cap/tab,India West Bengal,2004,December,30 days,30,1 US$ = 45.32 Rupee,131.73,Lowest price generic,,,60,0.5,Atenolol 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,India West Bengal,2004,December,0 days,200,1 US$ = 45.32 Rupee,131.73,Lowest price generic,,,78,0.6,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,India West Bengal,2004,December,30 days,90,1 US$ = 45.32 Rupee,131.73,Lowest price generic,,,120.6,0.9,Amitriptyline 25 mg.csv
-Diazepam 5 mg cap/tab,Indonesia,2010,June,7 days,7,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,301.84,0,350,0,Diazepam 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Indonesia,2010,June,7 days,70,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,3891.37,0.1,3850,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Paracetamol 120 mg/5ml suspension,Indonesia,2010,June,3 days,45,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,1707.75,0,1875.15,0.1,Paracetamol 120 mg:5ml.csv
-Ciprofloxacin 500 mg cap/tab,Indonesia,2010,June,7 days,14,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,4900,0.1,6083,0.2,Ciprofloxacin 500 mg.csv
-Glibenclamide 5 mg cap/tab,Indonesia,2010,June,30 days,60,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,4500,0.1,5520,0.2,Glibenclamide 5 mg.csv
-Ceftriaxone 1 g/vial injection,Indonesia,2010,June,1 days,1,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,13000,0.4,12516.5,0.3,Ceftriaxone 1 g:vial injection.csv
-Captopril 25 mg cap/tab,Indonesia,2010,June,30 days,60,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,10425,0.3,11400,0.3,Captopril 25 mg.csv
-Amoxicillin 500 mg cap/tab,Indonesia,2010,June,7 days,21,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,9712.18,0.3,10500,0.3,Amoxicillin 500 mg.csv
-Amitriptyline 25 mg cap/tab,Indonesia,2010,June,30 days,90,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,10361.7,0.3,10440,0.3,Amitriptyline 25 mg.csv
-Diclofenac 50 mg cap/tab,Indonesia,2010,June,30 days,60,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,16500,0.5,17130,0.5,Diclofenac 50 mg.csv
-Omeprazole 20 mg cap/tab,Indonesia,2010,June,30 days,30,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,16260,0.4,16500,0.5,Omeprazole 20 mg.csv
-Simvastatin 20 mg cap/tab,Indonesia,2010,June,30 days,30,1 US$ = 9172 Indonesian Rupiah,36500,Lowest price generic,20253.9,0.6,21000,0.6,Simvastatin 20 mg.csv
-Diclofenac 50 mg cap/tab,Iran,2007,December,30 days,60,1 US$ = 9200 IR Rials,108400,Lowest price generic,4800,0,4800,0,Diclofenac 50 mg.csv
-Glibenclamide 5 mg cap/tab,Iran,2007,December,30 days,60,1 US$ = 9200 IR Rials,108400,Lowest price generic,4200,0,4200,0,Glibenclamide 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Iran,2007,December,7 days,70,1 US$ = 9200 IR Rials,108400,Lowest price generic,3150,0,3150,0,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Iran,2007,December,30 days,30,1 US$ = 9200 IR Rials,108400,Lowest price generic,2400,0,2400,0,Atenolol 50 mg.csv
-Paracetamol 120 mg/5ml suspension,Iran,2007,December,3 days,45,1 US$ = 9200 IR Rials,108400,Lowest price generic,2025,0,2025,0,Paracetamol 120 mg:5ml.csv
-Diazepam 5 mg cap/tab,Iran,2007,December,7 days,7,1 US$ = 9200 IR Rials,108400,Lowest price generic,385,0,385,0,Diazepam 5 mg.csv
-Ceftriaxone 1 g/vial injection,Iran,2007,December,1 days,1,1 US$ = 9200 IR Rials,108400,Lowest price generic,9500,0.1,9500,0.1,Ceftriaxone 1 g:vial injection.csv
-Amoxicillin 500 mg cap/tab,Iran,2007,December,7 days,21,1 US$ = 9200 IR Rials,108400,Lowest price generic,9450,0.1,9450,0.1,Amoxicillin 500 mg.csv
-Captopril 25 mg cap/tab,Iran,2007,December,30 days,60,1 US$ = 9200 IR Rials,108400,Lowest price generic,9240,0.1,9240,0.1,Captopril 25 mg.csv
-Ciprofloxacin 500 mg cap/tab,Iran,2007,December,7 days,14,1 US$ = 9200 IR Rials,108400,Lowest price generic,9100,0.1,9100,0.1,Ciprofloxacin 500 mg.csv
-Amitriptyline 25 mg cap/tab,Iran,2007,December,30 days,90,1 US$ = 9200 IR Rials,108400,Lowest price generic,5850,0.1,5850,0.1,Amitriptyline 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,Iran,2007,December,days,200,1 US$ = 9200 IR Rials,108400,Lowest price generic,17000,0.2,17000,0.2,Salbutamol 100 mcg:dose.csv
-Simvastatin 20 mg cap/tab,Iran,2007,December,30 days,30,1 US$ = 9200 IR Rials,108400,Lowest price generic,30000,0.3,30000,0.3,Simvastatin 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Jordan,2004,May,7 days,70,1 US$ = 0.71 Jordan Dinar,3,Lowest price generic,0.24,0.1,0.83,0.3,Co-trimoxazole 40+200 mg:5ml.csv
-Salbutamol 100 mcg/dose inhaler,Jordan,2004,May,0 days,200,1 US$ = 0.71 Jordan Dinar,3,Lowest price generic,,,1.52,0.5,Salbutamol 100 mcg:dose.csv
-Glibenclamide 5 mg cap/tab,Jordan,2004,May,30 days,60,1 US$ = 0.71 Jordan Dinar,3,Lowest price generic,0.15,0,3.22,1.1,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,Jordan,2004,May,30 days,30,1 US$ = 0.71 Jordan Dinar,3,Lowest price generic,,,3.64,1.2,Atenolol 50 mg.csv
-Amitriptyline 25 mg cap/tab,Jordan,2004,May,30 days,90,1 US$ = 0.71 Jordan Dinar,3,Lowest price generic,,,4.2,1.4,Amitriptyline 25 mg.csv
-Glibenclamide 5 mg cap/tab,Kazakhstan,2004,November,30 days,60,1 US$ = 131 Tenge,300,Lowest price generic,156,0.5,120,0.4,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,Kazakhstan,2004,November,30 days,30,1 US$ = 131 Tenge,300,Lowest price generic,,,138,0.5,Atenolol 50 mg.csv
-Omeprazole 20 mg cap/tab,Kazakhstan,2004,November,30 days,30,1 US$ = 131 Tenge,300,Lowest price generic,915,3.1,270,0.9,Omeprazole 20 mg.csv
-Salbutamol 100 mcg/dose inhaler,Kazakhstan,2004,November,0 days,200,1 US$ = 131 Tenge,300,Lowest price generic,,,340,1.1,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Kazakhstan,2004,November,30 days,90,1 US$ = 131 Tenge,300,Lowest price generic,,,396,1.3,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Kenya,2004,November,7 days,70,1 US$ = 81.2722 Kenyan shilling,166.167,Lowest price generic,28,0.2,35,0.2,Co-trimoxazole 40+200 mg:5ml.csv
-Amitriptyline 25 mg cap/tab,Kenya,2004,November,30 days,90,1 US$ = 81.2722 Kenyan shilling,166.167,Lowest price generic,90,0.5,90,0.5,Amitriptyline 25 mg.csv
-Atenolol 50 mg cap/tab,Kenya,2004,November,30 days,30,1 US$ = 81.2722 Kenyan shilling,166.167,Lowest price generic,,,180,1.1,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,Kenya,2004,November,30 days,60,1 US$ = 81.2722 Kenyan shilling,166.167,Lowest price generic,70,0.4,240,1.4,Glibenclamide 5 mg.csv
-Salbutamol 100 mcg/dose inhaler,Kenya,2004,November,0 days,200,1 US$ = 81.2722 Kenyan shilling,166.167,Lowest price generic,,,280,1.7,Salbutamol 100 mcg:dose.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Kuwait,2004,June,7 days,70,1 US$ = 0.2948 Kuwaiti Dinar,1.333,Lowest price generic,,,1.27,1,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Kuwait,2004,June,30 days,30,1 US$ = 0.2948 Kuwaiti Dinar,1.333,Lowest price generic,,,3.44,2.6,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,Kuwait,2004,June,30 days,60,1 US$ = 0.2948 Kuwaiti Dinar,1.333,Lowest price generic,,,4.4,3.3,Glibenclamide 5 mg.csv
-Omeprazole 20 mg cap/tab,Kuwait,2004,June,30 days,30,1 US$ = 0.2948 Kuwaiti Dinar,1.333,Lowest price generic,,,25.67,19.3,Omeprazole 20 mg.csv
-Amitriptyline 25 mg cap/tab,Kuwait,2004,June,30 days,90,1 US$ = 0.2948 Kuwaiti Dinar,1.333,Lowest price generic,,,,,Amitriptyline 25 mg.csv
-Atenolol 50 mg cap/tab,Kyrgyzstan,2010,July,30 days,30,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,20,0.7,Atenolol 50 mg.csv
-Paracetamol 120 mg/5ml suspension,Kyrgyzstan,2010,July,3 days,45,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,28.12,1.1,Paracetamol 120 mg:5ml.csv
-Ceftriaxone 1 g/vial injection,Kyrgyzstan,2010,July,1 days,1,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,45,1.7,Ceftriaxone 1 g:vial injection.csv
-Omeprazole 20 mg cap/tab,Kyrgyzstan,2010,July,30 days,30,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,53,2,Omeprazole 20 mg.csv
-Diclofenac 50 mg cap/tab,Kyrgyzstan,2010,July,30 days,60,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,60,2.3,Diclofenac 50 mg.csv
-Glibenclamide 5 mg cap/tab,Kyrgyzstan,2010,July,30 days,60,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,72,2.7,Glibenclamide 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Kyrgyzstan,2010,July,7 days,70,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,78.75,3,Co-trimoxazole 40+200 mg:5ml.csv
-Amitriptyline 25 mg cap/tab,Kyrgyzstan,2010,July,30 days,90,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,90,3.4,Amitriptyline 25 mg.csv
-Amoxicillin 500 mg cap/tab,Kyrgyzstan,2010,July,7 days,21,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,94.5,3.5,Amoxicillin 500 mg.csv
-Ciprofloxacin 500 mg cap/tab,Kyrgyzstan,2010,July,7 days,14,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,98,3.7,Ciprofloxacin 500 mg.csv
-Salbutamol 100 mcg/dose inhaler,Kyrgyzstan,2010,July,days,200,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,300,11.3,Salbutamol 100 mcg:dose.csv
-Simvastatin 20 mg cap/tab,Kyrgyzstan,2010,July,30 days,30,1 US$ = 46.4004 Som,26.6666,Lowest price generic,,,687.21,25.8,Simvastatin 20 mg.csv
-Paracetamol 120 mg/5ml suspension,Lao PDR,2013,November,3 days,45,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,3749.85,0.2,3749.85,0.2,Paracetamol 120 mg:5ml.csv
-Diazepam 5 mg cap/tab,Lao PDR,2013,November,7 days,7,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,3500,0.2,3500,0.2,Diazepam 5 mg.csv
-Ciprofloxacin 500 mg cap/tab,Lao PDR,2013,November,7 days,14,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,9800,0.5,7000,0.3,Ciprofloxacin 500 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Lao PDR,2013,November,7 days,70,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,7000,0.3,8166.2,0.4,Co-trimoxazole 40+200 mg:5ml.csv
-Amoxicillin 500 mg cap/tab,Lao PDR,2013,November,7 days,21,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,10500,0.5,10500,0.5,Amoxicillin 500 mg.csv
-Atenolol 50 mg cap/tab,Lao PDR,2013,November,30 days,30,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,,,10500,0.5,Atenolol 50 mg.csv
-Ceftriaxone 1 g/vial injection,Lao PDR,2013,November,1 days,1,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,12000,0.6,10000,0.5,Ceftriaxone 1 g:vial injection.csv
-Diclofenac 50 mg cap/tab,Lao PDR,2013,November,30 days,60,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,9000,0.4,12000,0.6,Diclofenac 50 mg.csv
-Glibenclamide 5 mg cap/tab,Lao PDR,2013,November,30 days,60,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,7680,0.4,18000,0.9,Glibenclamide 5 mg.csv
-Omeprazole 20 mg cap/tab,Lao PDR,2013,November,30 days,30,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,21000,1,18000,0.9,Omeprazole 20 mg.csv
-Simvastatin 20 mg cap/tab,Lao PDR,2013,November,30 days,30,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,39000,1.9,25500,1.2,Simvastatin 20 mg.csv
-Amitriptyline 25 mg cap/tab,Lao PDR,2013,November,30 days,90,1 US$ = 7955 Lao Kip,20866.7,Lowest price generic,38250,1.8,,,Amitriptyline 25 mg.csv
-Atenolol 50 mg cap/tab,Lebanon,2013,July,30 days,30,1 US$ = 1507 Lebanese Pound,22500,Lowest price generic,,,3700,0.2,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,Lebanon,2013,July,30 days,60,1 US$ = 1507 Lebanese Pound,22500,Lowest price generic,,,3600,0.2,Glibenclamide 5 mg.csv
-Simvastatin 20 mg cap/tab,Lebanon,2013,July,30 days,30,1 US$ = 1507 Lebanese Pound,22500,Lowest price generic,,,7428.21,0.3,Simvastatin 20 mg.csv
-Salbutamol 100 mcg/dose inhaler,Lebanon,2013,July,days,200,1 US$ = 1507 Lebanese Pound,22500,Lowest price generic,,,6895,0.3,Salbutamol 100 mcg:dose.csv
-Diclofenac 50 mg cap/tab,Lebanon,2013,July,30 days,60,1 US$ = 1507 Lebanese Pound,22500,Lowest price generic,,,14184,0.6,Diclofenac 50 mg.csv
-Captopril 25 mg cap/tab,Lebanon,2013,July,30 days,60,1 US$ = 1507 Lebanese Pound,22500,Lowest price generic,,,14907.6,0.7,Captopril 25 mg.csv
-Omeprazole 20 mg cap/tab,Lebanon,2013,July,30 days,30,1 US$ = 1507 Lebanese Pound,22500,Lowest price generic,,,19856.79,0.9,Omeprazole 20 mg.csv
-Glibenclamide 5 mg cap/tab,Malaysia,2004,October,30 days,60,1 US$ = 3.82 Ringgit Malaysian ,16.03,Lowest price generic,,,6,0.4,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,Malaysia,2004,October,30 days,30,1 US$ = 3.82 Ringgit Malaysian ,16.03,Lowest price generic,,,10.2,0.6,Atenolol 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,Malaysia,2004,October,0 days,200,1 US$ = 3.82 Ringgit Malaysian ,16.03,Lowest price generic,,,11,0.7,Salbutamol 100 mcg:dose.csv
-Omeprazole 20 mg cap/tab,Malaysia,2004,October,30 days,30,1 US$ = 3.82 Ringgit Malaysian ,16.03,Lowest price generic,,,57,3.6,Omeprazole 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Malaysia,2004,October,7 days,70,1 US$ = 3.82 Ringgit Malaysian ,16.03,Lowest price generic,,,,,Co-trimoxazole 40+200 mg:5ml.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Mali,2004,March,7 days,70,1 US$ = 516 CFA Franc,825,Lowest price generic,235.2,0.3,467.25,0.6,Co-trimoxazole 40+200 mg:5ml.csv
-Amoxicillin 500 mg cap/tab,Mali,2004,March,7 days,21,1 US$ = 516 CFA Franc,825,Lowest price generic,714,0.9,1575,1.9,Amoxicillin 500 mg.csv
-Diclofenac 50 mg cap/tab,Mali,2004,March,30 days,60,1 US$ = 516 CFA Franc,825,Lowest price generic,420,0.5,1830,2.2,Diclofenac 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,Mali,2004,March,0 days,200,1 US$ = 516 CFA Franc,825,Lowest price generic,,,2225,2.7,Salbutamol 100 mcg:dose.csv
-Glibenclamide 5 mg cap/tab,Mali,2004,March,30 days,60,1 US$ = 516 CFA Franc,825,Lowest price generic,,,2670,3.2,Glibenclamide 5 mg.csv
-Captopril 25 mg cap/tab,Mali,2004,March,30 days,60,1 US$ = 516 CFA Franc,825,Lowest price generic,,,4830,5.9,Captopril 25 mg.csv
-Paracetamol 120 mg/5ml suspension,Mauritius,2008,August,3 days,45,1 US$ = 26.01 Rupee,215,Lowest price generic,,,17.39,0.1,Paracetamol 120 mg:5ml.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Mauritius,2008,August,7 days,70,1 US$ = 26.01 Rupee,215,Lowest price generic,,,73.97,0.3,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Mauritius,2008,August,30 days,30,1 US$ = 26.01 Rupee,215,Lowest price generic,,,71.53,0.3,Atenolol 50 mg.csv
-Diclofenac 50 mg cap/tab,Mauritius,2008,August,30 days,60,1 US$ = 26.01 Rupee,215,Lowest price generic,,,67.05,0.3,Diclofenac 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,Mauritius,2008,August,days,200,1 US$ = 26.01 Rupee,215,Lowest price generic,,,75.3,0.4,Salbutamol 100 mcg:dose.csv
-Captopril 25 mg cap/tab,Mauritius,2008,August,30 days,60,1 US$ = 26.01 Rupee,215,Lowest price generic,,,117.57,0.5,Captopril 25 mg.csv
-Glibenclamide 5 mg cap/tab,Mauritius,2008,August,30 days,60,1 US$ = 26.01 Rupee,215,Lowest price generic,,,114.3,0.5,Glibenclamide 5 mg.csv
-Ciprofloxacin 500 mg cap/tab,Mauritius,2008,August,7 days,14,1 US$ = 26.01 Rupee,215,Lowest price generic,,,122.88,0.6,Ciprofloxacin 500 mg.csv
-Amoxicillin 500 mg cap/tab,Mauritius,2008,August,7 days,21,1 US$ = 26.01 Rupee,215,Lowest price generic,,,171.5,0.8,Amoxicillin 500 mg.csv
-Omeprazole 20 mg cap/tab,Mauritius,2008,August,30 days,30,1 US$ = 26.01 Rupee,215,Lowest price generic,,,190.5,0.9,Omeprazole 20 mg.csv
-Amitriptyline 25 mg cap/tab,Mauritius,2008,August,30 days,90,1 US$ = 26.01 Rupee,215,Lowest price generic,,,224.2,1,Amitriptyline 25 mg.csv
-Simvastatin 20 mg cap/tab,Mauritius,2008,August,30 days,30,1 US$ = 26.01 Rupee,215,Lowest price generic,,,223.55,1,Simvastatin 20 mg.csv
-Ceftriaxone 1 g/vial injection,Mauritius,2008,August,1 days,1,1 US$ = 26.01 Rupee,215,Lowest price generic,,,306.8,1.4,Ceftriaxone 1 g:vial injection.csv
-Glibenclamide 5 mg cap/tab,Mexico Mexico City,2009,December,30 days,60,1 US$ = 12.8727 Mexican Peso,57.64,Lowest price generic,,,18,0.3,Glibenclamide 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Mexico Mexico City,2009,December,7 days,70,1 US$ = 12.8727 Mexican Peso,57.64,Lowest price generic,,,16.04,0.3,Co-trimoxazole 40+200 mg:5ml.csv
-Salbutamol 100 mcg/dose inhaler,Mexico Mexico City,2009,December,days,200,1 US$ = 12.8727 Mexican Peso,57.64,Lowest price generic,,,48.4,0.8,Salbutamol 100 mcg:dose.csv
-Amoxicillin 500 mg cap/tab,Mexico Mexico City,2009,December,7 days,21,1 US$ = 12.8727 Mexican Peso,57.64,Lowest price generic,,,52.5,0.9,Amoxicillin 500 mg.csv
-Ceftriaxone 1 g/vial injection,Mexico Mexico City,2009,December,1 days,1,1 US$ = 12.8727 Mexican Peso,57.64,Lowest price generic,,,65,1.1,Ceftriaxone 1 g:vial injection.csv
-Ciprofloxacin 500 mg cap/tab,Mexico Mexico City,2009,December,7 days,14,1 US$ = 12.8727 Mexican Peso,57.64,Lowest price generic,,,84.88,1.5,Ciprofloxacin 500 mg.csv
-Omeprazole 20 mg cap/tab,Mexico Mexico City,2009,December,30 days,30,1 US$ = 12.8727 Mexican Peso,57.64,Lowest price generic,,,117.8,2,Omeprazole 20 mg.csv
-Diazepam 5 mg cap/tab,Moldova,2011,September,7 days,7,1 US$ = 11.8012 lei,20,Lowest price generic,2.49,0.1,2.66,0.1,Diazepam 5 mg.csv
-Glibenclamide 5 mg cap/tab,Moldova,2011,September,30 days,60,1 US$ = 11.8012 lei,20,Lowest price generic,18.56,0.9,15.6,0.8,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,Moldova,2011,September,30 days,30,1 US$ = 11.8012 lei,20,Lowest price generic,17.55,0.9,18.3,0.9,Atenolol 50 mg.csv
-Captopril 25 mg cap/tab,Moldova,2011,September,30 days,60,1 US$ = 11.8012 lei,20,Lowest price generic,24.64,1.2,25.15,1.3,Captopril 25 mg.csv
-Diclofenac 50 mg cap/tab,Moldova,2011,September,30 days,60,1 US$ = 11.8012 lei,20,Lowest price generic,27.4,1.4,29.08,1.5,Diclofenac 50 mg.csv
-Ciprofloxacin 500 mg cap/tab,Moldova,2011,September,7 days,14,1 US$ = 11.8012 lei,20,Lowest price generic,30.49,1.5,31.5,1.6,Ciprofloxacin 500 mg.csv
-Omeprazole 20 mg cap/tab,Moldova,2011,September,30 days,30,1 US$ = 11.8012 lei,20,Lowest price generic,34.28,1.7,35.01,1.8,Omeprazole 20 mg.csv
-Salbutamol 100 mcg/dose inhaler,Moldova,2011,September,days,200,1 US$ = 11.8012 lei,20,Lowest price generic,43.32,2.2,45.75,2.3,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Moldova,2011,September,30 days,90,1 US$ = 11.8012 lei,20,Lowest price generic,50.09,2.5,51.55,2.6,Amitriptyline 25 mg.csv
-Simvastatin 20 mg cap/tab,Moldova,2011,September,30 days,30,1 US$ = 11.8012 lei,20,Lowest price generic,168.82,8.4,129.99,6.5,Simvastatin 20 mg.csv
-Atenolol 50 mg cap/tab,Mongolia,2012,October,30 days,30,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,2400,0.4,3000,0.4,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,Mongolia,2012,October,30 days,60,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,,,3000,0.4,Glibenclamide 5 mg.csv
-Captopril 25 mg cap/tab,Mongolia,2012,October,30 days,60,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,2280,0.3,3600,0.5,Captopril 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Mongolia,2012,October,7 days,70,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,,,3208.33,0.5,Co-trimoxazole 40+200 mg:5ml.csv
-Amoxicillin 500 mg cap/tab,Mongolia,2012,October,7 days,21,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,1680,0.3,3150,0.5,Amoxicillin 500 mg.csv
-Ciprofloxacin 500 mg cap/tab,Mongolia,2012,October,7 days,14,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,1323,0.2,3010,0.5,Ciprofloxacin 500 mg.csv
-Ceftriaxone 1 g/vial injection,Mongolia,2012,October,1 days,1,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,680,0.1,5000,0.7,Ceftriaxone 1 g:vial injection.csv
-Diclofenac 50 mg cap/tab,Mongolia,2012,October,30 days,60,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,2880,0.4,4410,0.7,Diclofenac 50 mg.csv
-Omeprazole 20 mg cap/tab,Mongolia,2012,October,30 days,30,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,2568,0.4,5400,0.8,Omeprazole 20 mg.csv
-Salbutamol 100 mcg/dose inhaler,Mongolia,2012,October,days,200,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,5555.54,0.8,11111.1,1.7,Salbutamol 100 mcg:dose.csv
-Simvastatin 20 mg cap/tab,Mongolia,2012,October,30 days,30,1 US$ = 1395 Tugrik,6685.68,Lowest price generic,,,18000,2.7,Simvastatin 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Morocco,2004,April,7 days,70,1 US$ = 8.834 Dirham,62.6,Lowest price generic,,,12.85,0.2,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Morocco,2004,April,30 days,60,1 US$ = 8.834 Dirham,62.6,Lowest price generic,,,36.2,0.6,Glibenclamide 5 mg.csv
-Salbutamol 100 mcg/dose inhaler,Morocco,2004,April,0 days,200,1 US$ = 8.834 Dirham,62.6,Lowest price generic,,,50,0.8,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Morocco,2004,April,30 days,90,1 US$ = 8.834 Dirham,62.6,Lowest price generic,,,58.12,0.9,Amitriptyline 25 mg.csv
-Diazepam 5 mg cap/tab,Nicaragua,2008,October,7 days,7,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,7,0.1,Diazepam 5 mg.csv
-Paracetamol 120 mg/5ml suspension,Nicaragua,2008,October,3 days,45,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,10.56,0.2,Paracetamol 120 mg:5ml.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Nicaragua,2008,October,7 days,70,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,22.93,0.4,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Nicaragua,2008,October,30 days,30,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,37.5,0.6,Atenolol 50 mg.csv
-Amoxicillin 500 mg cap/tab,Nicaragua,2008,October,7 days,21,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,42,0.7,Amoxicillin 500 mg.csv
-Glibenclamide 5 mg cap/tab,Nicaragua,2008,October,30 days,60,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,46.5,0.8,Glibenclamide 5 mg.csv
-Diclofenac 50 mg cap/tab,Nicaragua,2008,October,30 days,60,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,60,1,Diclofenac 50 mg.csv
-Ceftriaxone 1 g/vial injection,Nicaragua,2008,October,1 days,1,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,63.5,1.1,Ceftriaxone 1 g:vial injection.csv
-Ciprofloxacin 500 mg cap/tab,Nicaragua,2008,October,7 days,14,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,70,1.2,Ciprofloxacin 500 mg.csv
-Captopril 25 mg cap/tab,Nicaragua,2008,October,30 days,60,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,90,1.5,Captopril 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,Nicaragua,2008,October,days,200,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,105.5,1.8,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Nicaragua,2008,October,30 days,90,1 US$ = 19.6219 C_rdoba,60.03,Lowest price generic,,,135,2.2,Amitriptyline 25 mg.csv
-Omeprazole 20 mg cap/tab,Nicaragua,2008,October,30 days,30,1 US$ = 19.6219 CÛrdoba,60.03,Lowest price generic,,,157.5,2.6,Omeprazole 20 mg.csv
-Simvastatin 20 mg cap/tab,Nicaragua,2008,October,30 days,30,1 US$ = 19.6219 C_rdoba,60.03,Lowest price generic,,,352.5,5.9,Simvastatin 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Nigeria,2004,September,7 days,70,1 US$ = 133 Naira,183.333,Lowest price generic,84,0.5,112,0.6,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Nigeria,2004,September,30 days,30,1 US$ = 133 Naira,183.333,Lowest price generic,300,1.6,262.5,1.4,Atenolol 50 mg.csv
-Amitriptyline 25 mg cap/tab,Nigeria,2004,September,30 days,90,1 US$ = 133 Naira,183.333,Lowest price generic,270,1.5,405,2.2,Amitriptyline 25 mg.csv
-Glibenclamide 5 mg cap/tab,Nigeria,2004,September,30 days,60,1 US$ = 133 Naira,183.333,Lowest price generic,600,3.3,600,3.3,Glibenclamide 5 mg.csv
-Omeprazole 20 mg cap/tab,Nigeria,2004,September,30 days,30,1 US$ = 133 Naira,183.333,Lowest price generic,1500,8.2,2357.14,12.9,Omeprazole 20 mg.csv
-Paracetamol 120 mg/5ml suspension,Oman,2007,October,3 days,45,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,0.2,0.1,Paracetamol 120 mg:5ml.csv
-Salbutamol 100 mcg/dose inhaler,Oman,2007,October,days,200,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,1.18,0.3,Salbutamol 100 mcg:dose.csv
-Atenolol 50 mg cap/tab,Oman,2007,October,30 days,30,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,1.54,0.4,Atenolol 50 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Oman,2007,October,7 days,70,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,1.41,0.4,Co-trimoxazole 40+200 mg:5ml.csv
-Amoxicillin 500 mg cap/tab,Oman,2007,October,7 days,21,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,1.26,0.4,Amoxicillin 500 mg.csv
-Ciprofloxacin 500 mg cap/tab,Oman,2007,October,7 days,14,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,2.1,0.6,Ciprofloxacin 500 mg.csv
-Diclofenac 50 mg cap/tab,Oman,2007,October,30 days,60,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,2.55,0.7,Diclofenac 50 mg.csv
-Glibenclamide 5 mg cap/tab,Oman,2007,October,30 days,60,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,3.01,0.9,Glibenclamide 5 mg.csv
-Ceftriaxone 1 g/vial injection,Oman,2007,October,1 days,1,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,4.5,1.3,Ceftriaxone 1 g:vial injection.csv
-Omeprazole 20 mg cap/tab,Oman,2007,October,30 days,30,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,10.71,3.1,Omeprazole 20 mg.csv
-Simvastatin 20 mg cap/tab,Oman,2007,October,30 days,30,1 US$ = 0.387 Omani Rial ,3.5,Lowest price generic,,,11.71,3.3,Simvastatin 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Pakistan,2004,July,7 days,70,1 US$ = 60.5 Pakistani Rupee,62.3,Lowest price generic,,,17.5,0.3,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Pakistan,2004,July,30 days,60,1 US$ = 60.5 Pakistani Rupee,62.3,Lowest price generic,,,53.6,0.9,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,Pakistan,2004,July,30 days,30,1 US$ = 60.5 Pakistani Rupee,62.3,Lowest price generic,,,68.57,1.1,Atenolol 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,Pakistan,2004,July,0 days,200,1 US$ = 60.5 Pakistani Rupee,62.3,Lowest price generic,,,84.74,1.4,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Pakistan,2004,July,30 days,90,1 US$ = 60.5 Pakistani Rupee,62.3,Lowest price generic,,,,,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Peru,2005,September,7 days,70,1 US$ = 3.317 Nuevo Sol,15.33,Lowest price generic,1.46,0.1,4.43,0.3,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Peru,2005,September,30 days,30,1 US$ = 3.317 Nuevo Sol,15.33,Lowest price generic,6.75,0.4,9,0.6,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,Peru,2005,September,30 days,60,1 US$ = 3.317 Nuevo Sol,15.33,Lowest price generic,1.2,0.1,12,0.8,Glibenclamide 5 mg.csv
-Salbutamol 100 mcg/dose inhaler,Peru,2005,September,0 days,200,1 US$ = 3.317 Nuevo Sol,15.33,Lowest price generic,5.4,0.4,12,0.8,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Peru,2005,September,30 days,90,1 US$ = 3.317 Nuevo Sol,15.33,Lowest price generic,18,1.2,45.45,3,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Philippines,2005,February,7 days,70,1 US$ = 54.74 Philippine Pesos,254.1,Lowest price generic,64.17,0.3,52.5,0.2,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Philippines,2005,February,30 days,30,1 US$ = 54.74 Philippine Pesos,254.1,Lowest price generic,165,0.6,226.5,0.9,Atenolol 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,Philippines,2005,February,0 days,200,1 US$ = 54.74 Philippine Pesos,254.1,Lowest price generic,,,268,1.1,Salbutamol 100 mcg:dose.csv
-Glibenclamide 5 mg cap/tab,Philippines,2005,February,30 days,60,1 US$ = 54.74 Philippine Pesos,254.1,Lowest price generic,183,0.7,300,1.2,Glibenclamide 5 mg.csv
-Captopril 25 mg cap/tab,Philippines,2005,February,30 days,60,1 US$ = 54.74 Philippine Pesos,254.1,Lowest price generic,645,2.5,600,2.4,Captopril 25 mg.csv
-Ceftriaxone 1 g/vial injection,Russia Tatarstan,2011,February,1 days,1,1 US$ = 27.7 Roubles,144,Lowest price generic,12.03,0.1,20.4,0.1,Ceftriaxone 1 g:vial injection.csv
-Paracetamol 120 mg/5ml suspension,Russia Tatarstan,2011,February,3 days,45,1 US$ = 27.7 Roubles,144,Lowest price generic,20.02,0.1,20.02,0.1,Paracetamol 120 mg:5ml.csv
-Amitriptyline 25 mg cap/tab,Russia Tatarstan,2011,February,30 days,90,1 US$ = 27.7 Roubles,144,Lowest price generic,40.68,0.3,33.75,0.2,Amitriptyline 25 mg.csv
-Captopril 25 mg cap/tab,Russia Tatarstan,2011,February,30 days,60,1 US$ = 27.7 Roubles,144,Lowest price generic,12.45,0.1,27,0.2,Captopril 25 mg.csv
-Ciprofloxacin 500 mg cap/tab,Russia Tatarstan,2011,February,7 days,14,1 US$ = 27.7 Roubles,144,Lowest price generic,31.36,0.2,45.36,0.3,Ciprofloxacin 500 mg.csv
-Omeprazole 20 mg cap/tab,Russia Tatarstan,2011,February,30 days,30,1 US$ = 27.7 Roubles,144,Lowest price generic,24.3,0.2,38.57,0.3,Omeprazole 20 mg.csv
-Atenolol 50 mg cap/tab,Russia Tatarstan,2011,February,30 days,30,1 US$ = 27.7 Roubles,144,Lowest price generic,11.94,0.1,38.15,0.3,Atenolol 50 mg.csv
-Diclofenac 50 mg cap/tab,Russia Tatarstan,2011,February,30 days,60,1 US$ = 27.7 Roubles,144,Lowest price generic,44.85,0.3,77.85,0.5,Diclofenac 50 mg.csv
-Glibenclamide 5 mg cap/tab,Russia Tatarstan,2011,February,30 days,60,1 US$ = 27.7 Roubles,144,Lowest price generic,64,0.4,64.88,0.5,Glibenclamide 5 mg.csv
-Amoxicillin 500 mg cap/tab,Russia Tatarstan,2011,February,7 days,21,1 US$ = 27.7 Roubles,144,Lowest price generic,29.09,0.2,82.69,0.6,Amoxicillin 500 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Russia Tatarstan,2011,February,7 days,70,1 US$ = 27.7 Roubles,144,Lowest price generic,33.55,0.2,107.62,0.7,Co-trimoxazole 40+200 mg:5ml.csv
-Salbutamol 100 mcg/dose inhaler,Russia Tatarstan,2011,February,days,200,1 US$ = 27.7 Roubles,144,Lowest price generic,114.66,0.8,126.22,0.9,Salbutamol 100 mcg:dose.csv
-Simvastatin 20 mg cap/tab,Russia Tatarstan,2011,February,30 days,30,1 US$ = 27.7 Roubles,144,Lowest price generic,137,1,359.5,2.5,Simvastatin 20 mg.csv
-Ceftriaxone 1 g/vial injection,Sao TomÈ en Principe,2008,June,1 days,1,1 US$ = 14533 Dobra,18150,Lowest price generic,9152.68,0.5,3000,0.2,Ceftriaxone 1 g:vial injection.csv
-Diazepam 5 mg cap/tab,Sao TomÈ en Principe,2008,June,7 days,7,1 US$ = 14533 Dobra,18150,Lowest price generic,2733.29,0.2,14000,0.8,Diazepam 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Sao TomÈ en Principe,2008,June,7 days,70,1 US$ = 14533 Dobra,18150,Lowest price generic,7706.65,0.4,35000,1.9,Co-trimoxazole 40+200 mg:5ml.csv
-Paracetamol 120 mg/5ml suspension,Sao TomÈ en Principe,2008,June,3 days,45,1 US$ = 14533 Dobra,18150,Lowest price generic,10125,0.6,36595.57,2,Paracetamol 120 mg:5ml.csv
-Amoxicillin 500 mg cap/tab,Sao TomÈ en Principe,2008,June,7 days,21,1 US$ = 14533 Dobra,18150,Lowest price generic,17745,1,42000,2.3,Amoxicillin 500 mg.csv
-Atenolol 50 mg cap/tab,Sao TomÈ en Principe,2008,June,30 days,30,1 US$ = 14533 Dobra,18150,Lowest price generic,15007.2,0.8,75000,4.1,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,Sao TomÈ en Principe,2008,June,30 days,60,1 US$ = 14533 Dobra,18150,Lowest price generic,8580,0.5,120000,6.6,Glibenclamide 5 mg.csv
-Captopril 25 mg cap/tab,Sao TomÈ en Principe,2008,June,30 days,60,1 US$ = 14533 Dobra,18150,Lowest price generic,19777.8,1.1,180000,9.9,Captopril 25 mg.csv
-Diclofenac 50 mg cap/tab,Sao TomÈ en Principe,2008,June,30 days,60,1 US$ = 14533 Dobra,18150,Lowest price generic,,,360000,19.8,Diclofenac 50 mg.csv
-Ciprofloxacin 500 mg cap/tab,Sao TomÈ en Principe,2008,June,7 days,14,1 US$ = 14533 Dobra,18150,Lowest price generic,18100.46,1,700000,38.6,Ciprofloxacin 500 mg.csv
-Omeprazole 20 mg cap/tab,Sao TomÈ en Principe,2008,June,30 days,30,1 US$ = 14533 Dobra,18150,Lowest price generic,12346.2,0.7,750000,41.3,Omeprazole 20 mg.csv
-Salbutamol 100 mcg/dose inhaler,Sao TomÈ en Principe,2008,June,days,200,1 US$ = 14533 Dobra,18150,Lowest price generic,36744,2,,,Salbutamol 100 mcg:dose.csv
-Co-trimoxazole 40+200 mg/5ml suspension,South Africa Gauteng Province,2004,Nov,7 days,70,1 US$ = 5.8493 Rand,90.58,Lowest price generic,,,4.98,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Salbutamol 100 mcg/dose inhaler,South Africa Gauteng Province,2004,Nov,0 days,200,1 US$ = 5.8493 Rand,90.58,Lowest price generic,,,21.78,0.2,Salbutamol 100 mcg:dose.csv
-Glibenclamide 5 mg cap/tab,South Africa Gauteng Province,2004,Nov,30 days,60,1 US$ = 5.8493 Rand,90.58,Lowest price generic,,,18.1,0.2,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,South Africa Gauteng Province,2004,Nov,30 days,30,1 US$ = 5.8493 Rand,90.58,Lowest price generic,,,31.55,0.3,Atenolol 50 mg.csv
-Amitriptyline 25 mg cap/tab,South Africa Gauteng Province,2004,Nov,30 days,90,1 US$ = 5.8493 Rand,90.58,Lowest price generic,,,74.78,0.8,Amitriptyline 25 mg.csv
-Diazepam 5 mg cap/tab,Sudan,2013,February,7 days,7,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,1.26,0.1,1.4,0.1,Diazepam 5 mg.csv
-Paracetamol 120 mg/5ml suspension,Sudan,2013,February,3 days,45,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,3,0.2,3.75,0.3,Paracetamol 120 mg:5ml.csv
-Atenolol 50 mg cap/tab,Sudan,2013,February,30 days,30,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,8,0.7,6,0.5,Atenolol 50 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Sudan,2013,February,7 days,70,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,4.67,0.4,5.6,0.5,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Sudan,2013,February,30 days,60,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,6,0.5,9,0.8,Glibenclamide 5 mg.csv
-Amoxicillin 500 mg cap/tab,Sudan,2013,February,7 days,21,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,13.12,1.1,13.12,1.1,Amoxicillin 500 mg.csv
-Ciprofloxacin 500 mg cap/tab,Sudan,2013,February,7 days,14,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,14,1.2,14,1.2,Ciprofloxacin 500 mg.csv
-Salbutamol 100 mcg/dose inhaler,Sudan,2013,February,days,200,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,19,1.6,17,1.4,Salbutamol 100 mcg:dose.csv
-Simvastatin 20 mg cap/tab,Sudan,2013,February,30 days,30,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,25.2,2.1,24,2,Simvastatin 20 mg.csv
-Amitriptyline 25 mg cap/tab,Sudan,2013,February,30 days,90,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,27,2.2,27,2.2,Amitriptyline 25 mg.csv
-Omeprazole 20 mg cap/tab,Sudan,2013,February,30 days,30,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,32.14,2.7,30,2.5,Omeprazole 20 mg.csv
-Captopril 25 mg cap/tab,Sudan,2013,February,30 days,60,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,39,3.2,39,3.2,Captopril 25 mg.csv
-Ceftriaxone 1 g/vial injection,Sudan,2013,February,3 days,3,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,166.5,13.9,45,3.8,Ceftriaxone 1 g:vial injection.csv
-Diclofenac 50 mg cap/tab,Sudan,2013,February,30 days,60,1 US$ = 6.5 Sudanese Pound SDG,12,Lowest price generic,64,5.3,59.25,4.9,Diclofenac 50 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Syria,2003,December,7 days,70,1 US$ = 51.5 Syria Pound,100,Lowest price generic,,,24.5,0.2,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Syria,2003,December,30 days,60,1 US$ = 51.5 Syria Pound,100,Lowest price generic,,,37.98,0.4,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,Syria,2003,December,30 days,30,1 US$ = 51.5 Syria Pound,100,Lowest price generic,,,63,0.6,Atenolol 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,Syria,2003,December,0 days,200,1 US$ = 51.5 Syria Pound,100,Lowest price generic,,,102,1,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Syria,2003,December,30 days,90,1 US$ = 51.5 Syria Pound,100,Lowest price generic,,,126,1.3,Amitriptyline 25 mg.csv
-Captopril 25 mg cap/tab,Syria,2003,December,30 days,60,1 US$ = 51.5 Syria Pound,100,Lowest price generic,,,210,2.1,Captopril 25 mg.csv
-Paracetamol 120 mg/5ml suspension,Tajikistan,2013,June,3 days,45,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,2.25,0.3,2.25,0.3,Paracetamol 120 mg:5ml.csv
-Atenolol 50 mg cap/tab,Tajikistan,2013,June,30 days,30,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,2.01,0.3,2,0.3,Atenolol 50 mg.csv
-Ceftriaxone 1 g/vial injection,Tajikistan,2013,June,1 days,1,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,3.5,0.5,3.5,0.5,Ceftriaxone 1 g:vial injection.csv
-Diazepam 5 mg cap/tab,Tajikistan,2013,June,7 days,7,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,,,4.55,0.7,Diazepam 5 mg.csv
-Omeprazole 20 mg cap/tab,Tajikistan,2013,June,30 days,30,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,4.5,0.7,4.5,0.7,Omeprazole 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Tajikistan,2013,June,7 days,70,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,6.3,0.9,5.6,0.8,Co-trimoxazole 40+200 mg:5ml.csv
-Ciprofloxacin 500 mg cap/tab,Tajikistan,2013,June,7 days,14,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,7,1,6.3,0.9,Ciprofloxacin 500 mg.csv
-Glibenclamide 5 mg cap/tab,Tajikistan,2013,June,30 days,60,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,6,0.9,6,0.9,Glibenclamide 5 mg.csv
-Captopril 25 mg cap/tab,Tajikistan,2013,June,30 days,60,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,7.5,1.1,6,0.9,Captopril 25 mg.csv
-Diclofenac 50 mg cap/tab,Tajikistan,2013,June,30 days,60,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,6,0.9,9,1.3,Diclofenac 50 mg.csv
-Amoxicillin 500 mg cap/tab,Tajikistan,2013,June,7 days,21,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,8.4,1.3,8.4,1.3,Amoxicillin 500 mg.csv
-Amitriptyline 25 mg cap/tab,Tajikistan,2013,June,30 days,90,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,14.4,2.2,10.8,1.6,Amitriptyline 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,Tajikistan,2013,June,days,200,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,20,3,20.5,3.1,Salbutamol 100 mcg:dose.csv
-Simvastatin 20 mg cap/tab,Tajikistan,2013,June,30 days,30,1 US$ = 4.7625 Somoni,6.67,Lowest price generic,71.85,10.8,42.9,6.4,Simvastatin 20 mg.csv
-Ceftriaxone 1 g/vial injection,Tanzania,2012,September,1 days,1,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,550,0.1,200,0,Ceftriaxone 1 g:vial injection.csv
-Diazepam 5 mg cap/tab,Tanzania,2012,September,7 days,7,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,140,0,350,0.1,Diazepam 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Tanzania,2012,September,7 days,70,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,875,0.2,1155,0.2,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Tanzania,2012,September,30 days,30,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,2000,0.4,3000,0.5,Atenolol 50 mg.csv
-Diclofenac 50 mg cap/tab,Tanzania,2012,September,30 days,60,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,3000,0.5,3000,0.5,Diclofenac 50 mg.csv
-Omeprazole 20 mg cap/tab,Tanzania,2012,September,30 days,30,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,3000,0.5,3000,0.5,Omeprazole 20 mg.csv
-Ciprofloxacin 500 mg cap/tab,Tanzania,2012,September,7 days,14,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,2800,0.5,2800,0.5,Ciprofloxacin 500 mg.csv
-Salbutamol 100 mcg/dose inhaler,Tanzania,2012,September,days,200,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,3750,0.7,5000,0.9,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Tanzania,2012,September,30 days,90,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,1800,0.3,5400,1,Amitriptyline 25 mg.csv
-Glibenclamide 5 mg cap/tab,Tanzania,2012,September,30 days,60,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,6000,1.1,6000,1.1,Glibenclamide 5 mg.csv
-Captopril 25 mg cap/tab,Tanzania,2012,September,30 days,60,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,6000,1.1,7500,1.3,Captopril 25 mg.csv
-Simvastatin 20 mg cap/tab,Tanzania,2012,September,30 days,30,1 US$ = 1552.27 Tanzania Shilling,5667,Lowest price generic,,,22500,4,Simvastatin 20 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Thailand,2006,October,7 days,70,1 US$ = 37.78 Baht,211.5,Lowest price generic,14,0.1,29.17,0.1,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Thailand,2006,October,30 days,30,1 US$ = 37.78 Baht,211.5,Lowest price generic,30,0.1,60,0.3,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,Thailand,2006,October,30 days,60,1 US$ = 37.78 Baht,211.5,Lowest price generic,60,0.3,60,0.3,Glibenclamide 5 mg.csv
-Amitriptyline 25 mg cap/tab,Thailand,2006,October,30 days,90,1 US$ = 37.78 Baht,211.5,Lowest price generic,67.5,0.3,90,0.4,Amitriptyline 25 mg.csv
-Captopril 25 mg cap/tab,Thailand,2006,October,30 days,60,1 US$ = 37.78 Baht,211.5,Lowest price generic,180,0.9,,,Captopril 25 mg.csv
-Glibenclamide 5 mg cap/tab,Tunisia,2004,March,30 days,60,1 US$ = 1.225 Tunisian Dinar,7.0373,Lowest price generic,,,2.11,0.3,Glibenclamide 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Tunisia,2004,March,7 days,70,1 US$ = 1.225 Tunisian Dinar,7.0373,Lowest price generic,,,1.98,0.3,Co-trimoxazole 40+200 mg:5ml.csv
-Amoxicillin 500 mg cap/tab,Tunisia,2004,March,7 days,21,1 US$ = 1.225 Tunisian Dinar,7.0373,Lowest price generic,,,4.43,0.6,Amoxicillin 500 mg.csv
-Atenolol 50 mg cap/tab,Tunisia,2004,March,30 days,30,1 US$ = 1.225 Tunisian Dinar,7.0373,Lowest price generic,,,5.14,0.7,Atenolol 50 mg.csv
-Captopril 25 mg cap/tab,Tunisia,2004,March,30 days,60,1 US$ = 1.225 Tunisian Dinar,7.0373,Lowest price generic,,,13.23,1.9,Captopril 25 mg.csv
-Omeprazole 20 mg cap/tab,Tunisia,2004,March,30 days,30,1 US$ = 1.225 Tunisian Dinar,7.0373,Lowest price generic,,,49.24,7,Omeprazole 20 mg.csv
-Amitriptyline 25 mg cap/tab,Tunisia,2004,March,30 days,90,1 US$ = 1.225 Tunisian Dinar,7.0373,Lowest price generic,,,,,Amitriptyline 25 mg.csv
-Salbutamol 100 mcg/dose inhaler,Tunisia,2004,March,0 days,200,1 US$ = 1.225 Tunisian Dinar,7.0373,Lowest price generic,,,,,Salbutamol 100 mcg:dose.csv
-Diazepam 5 mg cap/tab,Uganda,2013,September,7 days,7,1 US$ = 2559.6 Ugandan Shilling,5200,Lowest price generic,,,700,0.1,Diazepam 5 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Uganda,2013,September,7 days,70,1 US$ = 2559.6 Ugandan Shilling,5200,Lowest price generic,,,2100,0.4,Co-trimoxazole 40+200 mg:5ml.csv
-Ciprofloxacin 500 mg cap/tab,Uganda,2013,September,7 days,14,1 US$ = 2559.6 Ugandan Shilling,5200,Lowest price generic,,,2800,0.5,Ciprofloxacin 500 mg.csv
-Ceftriaxone 1 g/vial injection,Uganda,2013,September,1 days,1,1 US$ = 2559.6 Ugandan Shilling,5200,Lowest price generic,,,2500,0.5,Ceftriaxone 1 g:vial injection.csv
-Diclofenac 50 mg cap/tab,Uganda,2013,September,30 days,60,1 US$ = 2559.6 Ugandan Shilling,5200,Lowest price generic,,,3000,0.6,Diclofenac 50 mg.csv
-Glibenclamide 5 mg cap/tab,Uganda,2013,September,30 days,60,1 US$ = 2559.6 Ugandan Shilling,5200,Lowest price generic,,,6000,1.2,Glibenclamide 5 mg.csv
-Omeprazole 20 mg cap/tab,Uganda,2013,September,30 days,30,1 US$ = 2559.6 Ugandan Shilling,5200,Lowest price generic,,,6000,1.2,Omeprazole 20 mg.csv
-Salbutamol 100 mcg/dose inhaler,Uganda,2013,September,days,200,1 US$ = 2559.6 Ugandan Shilling,5200,Lowest price generic,,,7500,1.4,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Uganda,2013,September,30 days,90,1 US$ = 2559.6 Ugandan Shilling,5200,Lowest price generic,,,9000,1.7,Amitriptyline 25 mg.csv
-Paracetamol 120 mg/5ml suspension,Ukraine,2012,March,3 days,45,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,4.37,0.1,4.19,0.1,Paracetamol 120 mg:5ml.csv
-Ciprofloxacin 500 mg cap/tab,Ukraine,2012,March,7 days,14,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,10.29,0.2,9.38,0.2,Ciprofloxacin 500 mg.csv
-Diclofenac 50 mg cap/tab,Ukraine,2012,March,30 days,60,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,9.6,0.2,8.8,0.2,Diclofenac 50 mg.csv
-Glibenclamide 5 mg cap/tab,Ukraine,2012,March,30 days,60,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,9.22,0.2,8.4,0.2,Glibenclamide 5 mg.csv
-Atenolol 50 mg cap/tab,Ukraine,2012,March,30 days,30,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,5.85,0.1,6.75,0.2,Atenolol 50 mg.csv
-Omeprazole 20 mg cap/tab,Ukraine,2012,March,30 days,30,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,16.19,0.4,14.4,0.3,Omeprazole 20 mg.csv
-Captopril 25 mg cap/tab,Ukraine,2012,March,30 days,60,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,21,0.5,22.12,0.5,Captopril 25 mg.csv
-Amoxicillin 500 mg cap/tab,Ukraine,2012,March,7 days,21,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,22.49,0.5,21.32,0.5,Amoxicillin 500 mg.csv
-Salbutamol 100 mcg/dose inhaler,Ukraine,2012,March,days,200,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,21.2,0.5,20.98,0.5,Salbutamol 100 mcg:dose.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Ukraine,2012,March,7 days,70,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,20.01,0.5,20.12,0.5,Co-trimoxazole 40+200 mg:5ml.csv
-Simvastatin 20 mg cap/tab,Ukraine,2012,March,30 days,30,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,60,1.4,57.6,1.4,Simvastatin 20 mg.csv
-Diazepam 5 mg cap/tab,Ukraine,2012,March,7 days,7,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,2.15,0.1,,,Diazepam 5 mg.csv
-Amitriptyline 25 mg cap/tab,Ukraine,2012,March,30 days,90,1 US$ = 7.9867 Hryvnia,41.5915,Lowest price generic,32.49,0.8,,,Amitriptyline 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,United Arab Emirates,2006,December,7 days,70,1 US$ = 3.67 Dirham,30,Lowest price generic,,,5.25,0.2,Co-trimoxazole 40+200 mg:5ml.csv
-Salbutamol 100 mcg/dose inhaler,United Arab Emirates,2006,December,0 days,200,1 US$ = 3.67 Dirham,30,Lowest price generic,,,16.5,0.6,Salbutamol 100 mcg:dose.csv
-Atenolol 50 mg cap/tab,United Arab Emirates,2006,December,30 days,30,1 US$ = 3.67 Dirham,30,Lowest price generic,,,19.5,0.7,Atenolol 50 mg.csv
-Glibenclamide 5 mg cap/tab,United Arab Emirates,2006,December,30 days,60,1 US$ = 3.67 Dirham,30,Lowest price generic,,,23.7,0.8,Glibenclamide 5 mg.csv
-Amitriptyline 25 mg cap/tab,United Arab Emirates,2006,December,30 days,90,1 US$ = 3.67 Dirham,30,Lowest price generic,,,,,Amitriptyline 25 mg.csv
-Atenolol 50 mg cap/tab,Uzbekistan,2004,December,30 days,30,1 US$ = 1056 Som,716.818,Lowest price generic,,,727.5,1,Atenolol 50 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Uzbekistan,2004,December,7 days,70,1 US$ = 1056 Som,716.818,Lowest price generic,,,1120,1.6,Co-trimoxazole 40+200 mg:5ml.csv
-Glibenclamide 5 mg cap/tab,Uzbekistan,2004,December,30 days,60,1 US$ = 1056 Som,716.818,Lowest price generic,,,1115,1.6,Glibenclamide 5 mg.csv
-Diclofenac 50 mg cap/tab,Uzbekistan,2004,December,30 days,60,1 US$ = 1056 Som,716.818,Lowest price generic,,,1200,1.7,Diclofenac 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,Uzbekistan,2004,December,30 days,200,1 US$ = 1056 Som,716.818,Lowest price generic,,,2000,2.8,Salbutamol 100 mcg:dose.csv
-Amitriptyline 25 mg cap/tab,Uzbekistan,2004,December,30 days,90,1 US$ = 1056 Som,716.818,Lowest price generic,,,2376,3.3,Amitriptyline 25 mg.csv
-Captopril 25 mg cap/tab,Uzbekistan,2004,December,30 days,60,1 US$ = 1056 Som,716.818,Lowest price generic,,,2940,4.1,Captopril 25 mg.csv
-Co-trimoxazole 40+200 mg/5ml suspension,Yemen,2006,July,7 days,70,1 US$ = 197.56 Yemeni Rial,555,Lowest price generic,66.5,0.1,116.9,0.2,Co-trimoxazole 40+200 mg:5ml.csv
-Atenolol 50 mg cap/tab,Yemen,2006,July,30 days,30,1 US$ = 197.56 Yemeni Rial,555,Lowest price generic,,,300,0.5,Atenolol 50 mg.csv
-Salbutamol 100 mcg/dose inhaler,Yemen,2006,July,0 days,200,1 US$ = 197.56 Yemeni Rial,555,Lowest price generic,,,335,0.6,Salbutamol 100 mcg:dose.csv
-Glibenclamide 5 mg cap/tab,Yemen,2006,July,30 days,60,1 US$ = 197.56 Yemeni Rial,555,Lowest price generic,,,405,0.7,Glibenclamide 5 mg.csv
-Captopril 25 mg cap/tab,Yemen,2006,July,30 days,60,1 US$ = 197.56 Yemeni Rial,555,Lowest price generic,186,0.3,750,1.4,Captopril 25 mg.csv
-Amitriptyline 25 mg cap/tab,Yemen,2006,July,30 days,90,1 US$ = 197.56 Yemeni Rial,555,Lowest price generic,,,975.15,1.8,Amitriptyline 25 mg.csv
+Drug,Country,Year,Month,Duration,Units per treatment,Public sector,Private sector
+Diazepam 5 mg cap/tab,Afghanistan,2011,November,7 days,7.00,0.00,0.00
+Paracetamol 120 mg/5ml suspension,Afghanistan,2011,November,3 days,45.00,0.10,0.10
+Co-trimoxazole 40+200 mg/5ml suspension,Afghanistan,2011,November,7 days,70.00,0.20,0.20
+Atenolol 50 mg cap/tab,Afghanistan,2011,November,30 days,30.00,0.10,0.20
+Glibenclamide 5 mg cap/tab,Afghanistan,2011,November,30 days,60.00,0.20,0.30
+Diclofenac 50 mg cap/tab,Afghanistan,2011,November,30 days,60.00,0.30,0.40
+Ceftriaxone 1 g/vial injection,Afghanistan,2011,November,1 days,1.00,0.30,0.40
+Captopril 25 mg cap/tab,Afghanistan,2011,November,30 days,60.00,0.30,0.40
+Amoxicillin 500 mg cap/tab,Afghanistan,2011,November,7 days,21.00,0.30,0.40
+Amitriptyline 25 mg cap/tab,Afghanistan,2011,November,30 days,90.00,0.40,0.50
+Ciprofloxacin 500 mg cap/tab,Afghanistan,2011,November,7 days,14.00,0.30,0.50
+Omeprazole 20 mg cap/tab,Afghanistan,2011,November,30 days,30.00,0.10,0.60
+Salbutamol 100 mcg/dose inhaler,Afghanistan,2011,November,days,200.00,0.50,0.60
+Simvastatin 20 mg cap/tab,Afghanistan,2011,November,30 days,30.00,0.80,1.10
+Atenolol 50 mg cap/tab,Armenia,2001,October,30 days,30.00,NO DATA,1.40
+Amitriptyline 25 mg cap/tab,Armenia,2001,October,30 days,90.00,NO DATA,1.60
+Salbutamol 100 mcg/dose inhaler,Armenia,2001,October,0 days,200.00,NO DATA,1.80
+Co-trimoxazole 40+200 mg/5ml suspension,Armenia,2001,October,7 days,70.00,NO DATA,2.00
+Diclofenac 50 mg cap/tab,Armenia,2001,October,30 days,60.00,NO DATA,3.10
+Co-trimoxazole 40+200 mg/5ml suspension,Bolivia,2008,October,7 days,70.00,0.50,0.40
+Diazepam 5 mg cap/tab,Bolivia,2008,October,7 days,7.00,0.10,0.40
+Paracetamol 120 mg/5ml suspension,Bolivia,2008,October,3 days,45.00,0.20,0.40
+Ceftriaxone 1 g/vial injection,Bolivia,2008,October,1 days,1.00,0.50,0.60
+Ciprofloxacin 500 mg cap/tab,Bolivia,2008,October,7 days,14.00,0.50,0.70
+Amoxicillin 500 mg cap/tab,Bolivia,2008,October,7 days,21.00,0.70,0.80
+Diclofenac 50 mg cap/tab,Bolivia,2008,October,30 days,60.00,0.60,0.80
+Atenolol 50 mg cap/tab,Bolivia,2008,October,30 days,30.00,0.60,1.10
+Glibenclamide 5 mg cap/tab,Bolivia,2008,October,30 days,60.00,0.60,1.10
+Omeprazole 20 mg cap/tab,Bolivia,2008,October,30 days,30.00,0.90,1.60
+Salbutamol 100 mcg/dose inhaler,Bolivia,2008,October,days,200.00,1.10,1.60
+Amitriptyline 25 mg cap/tab,Bolivia,2008,October,30 days,90.00,1.40,1.90
+Amitriptyline 25 mg cap/tab,Brazil Rio de Janeiro State,2001,October,30 days,90.00,NO DATA,NO DATA
+Captopril 25 mg cap/tab,Brazil Rio de Janeiro State,2001,October,30 days,60.00,NO DATA,NO DATA
+Salbutamol 100 mcg/dose inhaler,Brazil Rio de Janeiro State,2001,October,0 days,200.00,NO DATA,NO DATA
+Diazepam 5 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,7 days,7.00,NO DATA,0.10
+Co-trimoxazole 40+200 mg/5ml suspension,Brazil Rio Grande do Sul State,2008,November,7 days,70.00,NO DATA,0.40
+Amoxicillin 500 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,7 days,21.00,NO DATA,1.20
+Ceftriaxone 1 g/vial injection,Brazil Rio Grande do Sul State,2008,November,1 days,1.00,NO DATA,1.40
+Captopril 25 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,30 days,60.00,NO DATA,1.90
+Diclofenac 50 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,30 days,60.00,NO DATA,2.40
+Omeprazole 20 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,30 days,30.00,NO DATA,3.60
+Simvastatin 20 mg cap/tab,Brazil Rio Grande do Sul State,2008,November,30 days,30.00,NO DATA,3.80
+Diazepam 5 mg cap/tab,Burkina Faso,2009,July,7 days,7.00,0.00,0.00
+Paracetamol 120 mg/5ml suspension,Burkina Faso,2009,July,3 days,45.00,0.20,0.20
+Glibenclamide 5 mg cap/tab,Burkina Faso,2009,July,30 days,60.00,NO DATA,0.60
+Co-trimoxazole 40+200 mg/5ml suspension,Burkina Faso,2009,July,7 days,70.00,0.40,0.60
+Diclofenac 50 mg cap/tab,Burkina Faso,2009,July,30 days,60.00,0.40,0.70
+Ciprofloxacin 500 mg cap/tab,Burkina Faso,2009,July,7 days,14.00,0.40,0.70
+Amoxicillin 500 mg cap/tab,Burkina Faso,2009,July,7 days,21.00,0.90,1.00
+Ceftriaxone 1 g/vial injection,Burkina Faso,2009,July,1 days,1.00,0.60,1.10
+Salbutamol 100 mcg/dose inhaler,Burkina Faso,2009,July,days,200.00,1.20,1.20
+Omeprazole 20 mg cap/tab,Burkina Faso,2009,July,30 days,30.00,NO DATA,1.40
+Atenolol 50 mg cap/tab,Burkina Faso,2009,July,30 days,30.00,NO DATA,2.50
+Captopril 25 mg cap/tab,Burkina Faso,2009,July,30 days,60.00,0.90,4.50
+Simvastatin 20 mg cap/tab,Burkina Faso,2009,July,30 days,30.00,NO DATA,9.70
+Diazepam 5 mg cap/tab,Burundi,2013,August,7 days,7.00,NO DATA,0.10
+Ciprofloxacin 500 mg cap/tab,Burundi,2013,August,7 days,14.00,0.30,0.50
+Omeprazole 20 mg cap/tab,Burundi,2013,August,30 days,30.00,0.50,0.80
+Amoxicillin 500 mg cap/tab,Burundi,2013,August,7 days,21.00,0.60,0.80
+Glibenclamide 5 mg cap/tab,Burundi,2013,August,30 days,60.00,NO DATA,1.10
+Salbutamol 100 mcg/dose inhaler,Burundi,2013,August,days,200.00,NO DATA,1.40
+Co-trimoxazole 40+200 mg/5ml suspension,Cameroon,2005,July,7 days,70.00,0.30,1.20
+Amoxicillin 500 mg cap/tab,Cameroon,2005,July,7 days,21.00,1.10,2.20
+Salbutamol 100 mcg/dose inhaler,Cameroon,2005,July,days,200.00,NO DATA,3.30
+Diclofenac 50 mg cap/tab,Cameroon,2005,July,30 days,60.00,NO DATA,3.60
+Glibenclamide 5 mg cap/tab,Cameroon,2005,July,30 days,60.00,0.40,5.90
+Amitriptyline 25 mg cap/tab,Chad,2004,May,30 days,90.00,NO DATA,6.70
+Co-trimoxazole 40+200 mg/5ml suspension,Chad,2004,May,7 days,70.00,0.30,NO DATA
+Glibenclamide 5 mg cap/tab,Chad,2004,May,30 days,60.00,0.70,NO DATA
+Salbutamol 100 mcg/dose inhaler,Chad,2004,May,0 days,200.00,NO DATA,NO DATA
+Captopril 25 mg cap/tab,China Shaanxi Province,2014,May,30 days,60.00,0.00,0.00
+Ceftriaxone 1 g/vial injection,China Shaanxi Province,2014,May,1 days,1.00,0.00,0.10
+Omeprazole 20 mg cap/tab,China Shaanxi Province,2014,May,30 days,30.00,0.30,0.30
+Amoxicillin 500 mg cap/tab,China Shaanxi Province,2014,May,7 days,21.00,0.50,0.30
+Amitriptyline 25 mg cap/tab,China Shaanxi Province,2014,May,30 days,90.00,0.40,0.40
+Salbutamol 100 mcg/dose inhaler,China Shaanxi Province,2014,May,days,200.00,0.50,0.40
+Diclofenac 50 mg cap/tab,China Shaanxi Province,2014,May,30 days,60.00,0.90,1.00
+Simvastatin 20 mg cap/tab,China Shaanxi Province,2014,May,30 days,30.00,0.90,1.30
+Captopril 25 mg cap/tab,China Shandong Province,2004,October,30 days,60.00,0.20,0.10
+Salbutamol 100 mcg/dose inhaler,China Shandong Province,2004,October,days,200.00,NO DATA,0.40
+Salbutamol 100 mcg/dose inhaler,China Shanghai,2006,September,0 days,200.00,0.90,0.70
+Amoxicillin 500 mg cap/tab,China Shanghai,2006,September,7 days,21.00,0.90,0.90
+Amitriptyline 25 mg cap/tab,China Shanghai,2006,September,30 days,90.00,0.70,NO DATA
+Co-trimoxazole 40+200 mg/5ml suspension,Colombia,2008,October,7 days,70.00,NO DATA,0.20
+Ciprofloxacin 500 mg cap/tab,Colombia,2008,October,7 days,14.00,NO DATA,0.30
+Diclofenac 50 mg cap/tab,Colombia,2008,October,30 days,60.00,NO DATA,0.30
+Captopril 25 mg cap/tab,Colombia,2008,October,30 days,60.00,NO DATA,0.30
+Glibenclamide 5 mg cap/tab,Colombia,2008,October,30 days,60.00,NO DATA,0.30
+Omeprazole 20 mg cap/tab,Colombia,2008,October,30 days,30.00,NO DATA,0.40
+Ceftriaxone 1 g/vial injection,Colombia,2008,October,1 days,1.00,NO DATA,0.40
+Salbutamol 100 mcg/dose inhaler,Colombia,2008,October,days,200.00,NO DATA,0.40
+Amoxicillin 500 mg cap/tab,Colombia,2008,October,7 days,21.00,NO DATA,0.40
+Amitriptyline 25 mg cap/tab,Colombia,2008,October,30 days,90.00,NO DATA,0.60
+Atenolol 50 mg cap/tab,Colombia,2008,October,30 days,30.00,NO DATA,0.80
+Simvastatin 20 mg cap/tab,Colombia,2008,October,30 days,30.00,NO DATA,3.60
+Co-trimoxazole 40+200 mg/5ml suspension,Congo,2007,June,7 days,70.00,0.40,0.60
+Amoxicillin 500 mg cap/tab,Congo,2007,June,7 days,21.00,0.60,1.50
+Glibenclamide 5 mg cap/tab,Congo,2007,June,30 days,60.00,NO DATA,1.80
+Ciprofloxacin 500 mg cap/tab,Congo,2007,June,7 days,14.00,0.80,1.90
+Diclofenac 50 mg cap/tab,Congo,2007,June,30 days,60.00,0.90,1.90
+Salbutamol 100 mcg/dose inhaler,Congo,2007,June,days,200.00,NO DATA,1.90
+Omeprazole 20 mg cap/tab,Congo,2007,June,30 days,30.00,NO DATA,12.90
+Diclofenac 50 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,60.00,0.70,0.50
+Co-trimoxazole 40+200 mg/5ml suspension,Democratic Republic of Congo,2007,July,7 days,70.00,0.50,0.50
+Glibenclamide 5 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,60.00,2.00,2.00
+Omeprazole 20 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,30.00,NO DATA,3.20
+Salbutamol 100 mcg/dose inhaler,Democratic Republic of Congo,2007,July,days,200.00,NO DATA,3.90
+Atenolol 50 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,30.00,NO DATA,9.80
+Captopril 25 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,60.00,NO DATA,10.10
+Amitriptyline 25 mg cap/tab,Democratic Republic of Congo,2007,July,30 days,90.00,NO DATA,NO DATA
+Co-trimoxazole 40+200 mg/5ml suspension,Ecuador,2008,September,7 days,70.00,NO DATA,0.10
+Paracetamol 120 mg/5ml suspension,Ecuador,2008,September,3 days,45.00,NO DATA,0.10
+Diazepam 5 mg cap/tab,Ecuador,2008,September,7 days,7.00,NO DATA,0.10
+Glibenclamide 5 mg cap/tab,Ecuador,2008,September,30 days,60.00,NO DATA,0.50
+Amoxicillin 500 mg cap/tab,Ecuador,2008,September,7 days,21.00,NO DATA,0.50
+Atenolol 50 mg cap/tab,Ecuador,2008,September,30 days,30.00,NO DATA,0.60
+Diclofenac 50 mg cap/tab,Ecuador,2008,September,30 days,60.00,NO DATA,0.70
+Captopril 25 mg cap/tab,Ecuador,2008,September,30 days,60.00,NO DATA,0.80
+Ceftriaxone 1 g/vial injection,Ecuador,2008,September,1 days,1.00,NO DATA,0.90
+Salbutamol 100 mcg/dose inhaler,Ecuador,2008,September,days,200.00,NO DATA,0.90
+Ciprofloxacin 500 mg cap/tab,Ecuador,2008,September,7 days,14.00,NO DATA,1.20
+Omeprazole 20 mg cap/tab,Ecuador,2008,September,30 days,30.00,NO DATA,1.30
+Simvastatin 20 mg cap/tab,Ecuador,2008,September,30 days,30.00,NO DATA,3.10
+Atenolol 50 mg cap/tab,Egypt,2013,September,30 days,30.00,NO DATA,0.10
+Diazepam 5 mg cap/tab,Egypt,2013,September,7 days,7.00,NO DATA,0.10
+Glibenclamide 5 mg cap/tab,Egypt,2013,September,30 days,60.00,NO DATA,0.20
+Salbutamol 100 mcg/dose inhaler,Egypt,2013,September,days,200.00,NO DATA,0.30
+Amitriptyline 25 mg cap/tab,Egypt,2013,September,30 days,90.00,NO DATA,0.30
+Captopril 25 mg cap/tab,Egypt,2013,September,30 days,60.00,NO DATA,0.50
+Omeprazole 20 mg cap/tab,Egypt,2013,September,30 days,30.00,NO DATA,0.70
+Simvastatin 20 mg cap/tab,Egypt,2013,September,30 days,30.00,NO DATA,2.10
+Co-trimoxazole 40+200 mg/5ml suspension,El Salvador,2006,November,7 days,70.00,NO DATA,0.60
+Salbutamol 100 mcg/dose inhaler,El Salvador,2006,November,0 days,200.00,NO DATA,1.20
+Glibenclamide 5 mg cap/tab,El Salvador,2006,November,30 days,60.00,NO DATA,2.20
+Atenolol 50 mg cap/tab,El Salvador,2006,November,30 days,30.00,NO DATA,2.40
+Amitriptyline 25 mg cap/tab,El Salvador,2006,November,30 days,90.00,NO DATA,5.50
+Paracetamol 120 mg/5ml suspension,Ethiopia,2013,August,3 days,45.00,0.40,0.50
+Glibenclamide 5 mg cap/tab,Ethiopia,2013,August,30 days,60.00,0.40,0.60
+Diclofenac 50 mg cap/tab,Ethiopia,2013,August,30 days,60.00,0.60,0.90
+Ciprofloxacin 500 mg cap/tab,Ethiopia,2013,August,7 days,14.00,0.90,1.00
+Amoxicillin 500 mg cap/tab,Ethiopia,2013,August,7 days,21.00,1.30,1.50
+Amitriptyline 25 mg cap/tab,Ethiopia,2013,August,30 days,90.00,2.60,3.90
+Atenolol 50 mg cap/tab,Fiji,2004,September,30 days,30.00,NO DATA,0.10
+Co-trimoxazole 40+200 mg/5ml suspension,Fiji,2004,September,7 days,70.00,NO DATA,0.10
+Glibenclamide 5 mg cap/tab,Fiji,2004,September,30 days,60.00,NO DATA,0.10
+Amitriptyline 25 mg cap/tab,Fiji,2004,September,30 days,90.00,NO DATA,0.20
+Salbutamol 100 mcg/dose inhaler,Fiji,2004,September,0 days,200.00,NO DATA,0.20
+Co-trimoxazole 40+200 mg/5ml suspension,Ghana,2004,October,7 days,70.00,0.40,0.40
+Glibenclamide 5 mg cap/tab,Ghana,2004,October,30 days,60.00,1.30,1.30
+Atenolol 50 mg cap/tab,Ghana,2004,October,30 days,30.00,1.40,1.60
+Amitriptyline 25 mg cap/tab,Ghana,2004,October,30 days,90.00,0.70,2.70
+Salbutamol 100 mcg/dose inhaler,Ghana,2004,October,0 days,200.00,NO DATA,4.60
+Diazepam 5 mg cap/tab,Haiti,2011,August,7 days,7.00,0.20,0.20
+Paracetamol 120 mg/5ml suspension,Haiti,2011,August,3 days,45.00,0.10,0.20
+Co-trimoxazole 40+200 mg/5ml suspension,Haiti,2011,August,7 days,70.00,0.20,0.30
+Ciprofloxacin 500 mg cap/tab,Haiti,2011,August,7 days,14.00,0.40,0.40
+Amoxicillin 500 mg cap/tab,Haiti,2011,August,7 days,21.00,0.30,0.50
+Glibenclamide 5 mg cap/tab,Haiti,2011,August,30 days,60.00,0.80,0.80
+Salbutamol 100 mcg/dose inhaler,Haiti,2011,August,days,200.00,0.70,0.80
+Ceftriaxone 1 g/vial injection,Haiti,2011,August,1 days,1.00,0.40,0.80
+Omeprazole 20 mg cap/tab,Haiti,2011,August,30 days,30.00,0.80,0.80
+Atenolol 50 mg cap/tab,Haiti,2011,August,30 days,30.00,0.40,0.90
+Diclofenac 50 mg cap/tab,Haiti,2011,August,30 days,60.00,0.60,1.30
+Captopril 25 mg cap/tab,Haiti,2011,August,30 days,60.00,1.20,1.50
+Amitriptyline 25 mg cap/tab,Haiti,2011,August,30 days,90.00,NO DATA,1.80
+Simvastatin 20 mg cap/tab,Haiti,2011,August,30 days,30.00,NO DATA,2.10
+Co-trimoxazole 40+200 mg/5ml suspension,India Chennai,2004,October,7 days,70.00,NO DATA,0.10
+Glibenclamide 5 mg cap/tab,India Chennai,2004,October,30 days,60.00,NO DATA,0.20
+Atenolol 50 mg cap/tab,India Chennai,2004,October,30 days,30.00,NO DATA,0.40
+Diclofenac 50 mg cap/tab,India Chennai,2004,October,30 days,60.00,NO DATA,0.50
+Salbutamol 100 mcg/dose inhaler,India Chennai,2004,October,0 days,200.00,NO DATA,0.60
+Amitriptyline 25 mg cap/tab,India Chennai,2004,October,30 days,90.00,NO DATA,1.10
+Co-trimoxazole 40+200 mg/5ml suspension,India Haryana,2004,October,7 days,70.00,NO DATA,0.10
+Atenolol 50 mg cap/tab,India Haryana,2004,October,30 days,30.00,NO DATA,0.30
+Glibenclamide 5 mg cap/tab,India Haryana,2004,October,30 days,60.00,NO DATA,0.30
+Salbutamol 100 mcg/dose inhaler,India Haryana,2004,October,0 days,200.00,NO DATA,0.50
+Amitriptyline 25 mg cap/tab,India Haryana,2004,October,30 days,90.00,NO DATA,0.80
+Captopril 25 mg cap/tab,India Haryana,2004,October,30 days,60.00,NO DATA,1.50
+Co-trimoxazole 40+200 mg/5ml suspension,India Karnataka,2004,November,7 days,70.00,NO DATA,0.10
+Atenolol 50 mg cap/tab,India Karnataka,2004,November,30 days,30.00,NO DATA,0.40
+Glibenclamide 5 mg cap/tab,India Karnataka,2004,November,30 days,60.00,NO DATA,0.40
+Diclofenac 50 mg cap/tab,India Karnataka,2004,November,30 days,60.00,NO DATA,0.50
+Salbutamol 100 mcg/dose inhaler,India Karnataka,2004,November,0 days,200.00,NO DATA,0.60
+Amitriptyline 25 mg cap/tab,India Karnataka,2004,November,30 days,90.00,NO DATA,1.10
+Co-trimoxazole 40+200 mg/5ml suspension,India Maharashtra 4 regions,2005,January,7 days,70.00,NO DATA,0.10
+Glibenclamide 5 mg cap/tab,India Maharashtra 4 regions,2005,January,30 days,60.00,NO DATA,0.40
+Atenolol 50 mg cap/tab,India Maharashtra 4 regions,2005,January,30 days,30.00,NO DATA,0.40
+Salbutamol 100 mcg/dose inhaler,India Maharashtra 4 regions,2005,January,0 days,200.00,NO DATA,0.70
+Diclofenac 50 mg cap/tab,India Maharashtra 4 regions,2005,January,30 days,60.00,NO DATA,0.70
+Amitriptyline 25 mg cap/tab,India Maharashtra 4 regions,2005,January,30 days,90.00,NO DATA,1.10
+Paracetamol 120 mg/5ml suspension,"India NCT, Delhi",2011,July,3 days,45.00,NO DATA,0.10
+Diazepam 5 mg cap/tab,"India NCT, Delhi",2011,July,7 days,7.00,NO DATA,0.10
+Co-trimoxazole 40+200 mg/5ml suspension,"India NCT, Delhi",2011,July,7 days,70.00,NO DATA,0.10
+Ceftriaxone 1 g/vial injection,"India NCT, Delhi",2011,July,1 days,1.00,NO DATA,0.30
+Ciprofloxacin 500 mg cap/tab,"India NCT, Delhi",2011,July,7 days,14.00,NO DATA,0.30
+Salbutamol 100 mcg/dose inhaler,"India NCT, Delhi",2011,July,days,200.00,NO DATA,0.40
+Diclofenac 50 mg cap/tab,"India NCT, Delhi",2011,July,30 days,60.00,NO DATA,0.40
+Atenolol 50 mg cap/tab,"India NCT, Delhi",2011,July,30 days,30.00,NO DATA,0.40
+Omeprazole 20 mg cap/tab,"India NCT, Delhi",2011,July,30 days,30.00,NO DATA,0.50
+Simvastatin 20 mg cap/tab,"India NCT, Delhi",2011,July,30 days,30.00,NO DATA,0.60
+Amitriptyline 25 mg cap/tab,"India NCT, Delhi",2011,July,30 days,90.00,NO DATA,0.70
+Amoxicillin 500 mg cap/tab,"India NCT, Delhi",2011,July,7 days,21.00,NO DATA,0.80
+Captopril 25 mg cap/tab,"India NCT, Delhi",2011,July,30 days,60.00,NO DATA,1.10
+Co-trimoxazole 40+200 mg/5ml suspension,India Rajasthan,2003,April,7 days,70.00,NO DATA,0.10
+Glibenclamide 5 mg cap/tab,India Rajasthan,2003,April,30 days,60.00,NO DATA,0.30
+Atenolol 50 mg cap/tab,India Rajasthan,2003,April,30 days,30.00,NO DATA,0.40
+Diclofenac 50 mg cap/tab,India Rajasthan,2003,April,30 days,60.00,NO DATA,0.50
+Salbutamol 100 mcg/dose inhaler,India Rajasthan,2003,April,0 days,200.00,NO DATA,0.60
+Amitriptyline 25 mg cap/tab,India Rajasthan,2003,April,30 days,90.00,NO DATA,1.00
+Co-trimoxazole 40+200 mg/5ml suspension,India West Bengal,2004,December,7 days,70.00,NO DATA,0.10
+Glibenclamide 5 mg cap/tab,India West Bengal,2004,December,30 days,60.00,NO DATA,0.30
+Diclofenac 50 mg cap/tab,India West Bengal,2004,December,30 days,60.00,NO DATA,0.50
+Atenolol 50 mg cap/tab,India West Bengal,2004,December,30 days,30.00,NO DATA,0.50
+Salbutamol 100 mcg/dose inhaler,India West Bengal,2004,December,0 days,200.00,NO DATA,0.60
+Amitriptyline 25 mg cap/tab,India West Bengal,2004,December,30 days,90.00,NO DATA,0.90
+Diazepam 5 mg cap/tab,Indonesia,2010,June,7 days,7.00,0.00,0.00
+Co-trimoxazole 40+200 mg/5ml suspension,Indonesia,2010,June,7 days,70.00,0.10,0.10
+Paracetamol 120 mg/5ml suspension,Indonesia,2010,June,3 days,45.00,0.00,0.10
+Ciprofloxacin 500 mg cap/tab,Indonesia,2010,June,7 days,14.00,0.10,0.20
+Glibenclamide 5 mg cap/tab,Indonesia,2010,June,30 days,60.00,0.10,0.20
+Ceftriaxone 1 g/vial injection,Indonesia,2010,June,1 days,1.00,0.40,0.30
+Captopril 25 mg cap/tab,Indonesia,2010,June,30 days,60.00,0.30,0.30
+Amoxicillin 500 mg cap/tab,Indonesia,2010,June,7 days,21.00,0.30,0.30
+Amitriptyline 25 mg cap/tab,Indonesia,2010,June,30 days,90.00,0.30,0.30
+Diclofenac 50 mg cap/tab,Indonesia,2010,June,30 days,60.00,0.50,0.50
+Omeprazole 20 mg cap/tab,Indonesia,2010,June,30 days,30.00,0.40,0.50
+Simvastatin 20 mg cap/tab,Indonesia,2010,June,30 days,30.00,0.60,0.60
+Diclofenac 50 mg cap/tab,Iran,2007,December,30 days,60.00,0.00,0.00
+Glibenclamide 5 mg cap/tab,Iran,2007,December,30 days,60.00,0.00,0.00
+Co-trimoxazole 40+200 mg/5ml suspension,Iran,2007,December,7 days,70.00,0.00,0.00
+Atenolol 50 mg cap/tab,Iran,2007,December,30 days,30.00,0.00,0.00
+Paracetamol 120 mg/5ml suspension,Iran,2007,December,3 days,45.00,0.00,0.00
+Diazepam 5 mg cap/tab,Iran,2007,December,7 days,7.00,0.00,0.00
+Ceftriaxone 1 g/vial injection,Iran,2007,December,1 days,1.00,0.10,0.10
+Amoxicillin 500 mg cap/tab,Iran,2007,December,7 days,21.00,0.10,0.10
+Captopril 25 mg cap/tab,Iran,2007,December,30 days,60.00,0.10,0.10
+Ciprofloxacin 500 mg cap/tab,Iran,2007,December,7 days,14.00,0.10,0.10
+Amitriptyline 25 mg cap/tab,Iran,2007,December,30 days,90.00,0.10,0.10
+Salbutamol 100 mcg/dose inhaler,Iran,2007,December,days,200.00,0.20,0.20
+Simvastatin 20 mg cap/tab,Iran,2007,December,30 days,30.00,0.30,0.30
+Co-trimoxazole 40+200 mg/5ml suspension,Jordan,2004,May,7 days,70.00,0.10,0.30
+Salbutamol 100 mcg/dose inhaler,Jordan,2004,May,0 days,200.00,NO DATA,0.50
+Glibenclamide 5 mg cap/tab,Jordan,2004,May,30 days,60.00,0.00,1.10
+Atenolol 50 mg cap/tab,Jordan,2004,May,30 days,30.00,NO DATA,1.20
+Amitriptyline 25 mg cap/tab,Jordan,2004,May,30 days,90.00,NO DATA,1.40
+Glibenclamide 5 mg cap/tab,Kazakhstan,2004,November,30 days,60.00,0.50,0.40
+Atenolol 50 mg cap/tab,Kazakhstan,2004,November,30 days,30.00,NO DATA,0.50
+Omeprazole 20 mg cap/tab,Kazakhstan,2004,November,30 days,30.00,3.10,0.90
+Salbutamol 100 mcg/dose inhaler,Kazakhstan,2004,November,0 days,200.00,NO DATA,1.10
+Amitriptyline 25 mg cap/tab,Kazakhstan,2004,November,30 days,90.00,NO DATA,1.30
+Co-trimoxazole 40+200 mg/5ml suspension,Kenya,2004,November,7 days,70.00,0.20,0.20
+Amitriptyline 25 mg cap/tab,Kenya,2004,November,30 days,90.00,0.50,0.50
+Atenolol 50 mg cap/tab,Kenya,2004,November,30 days,30.00,NO DATA,1.10
+Glibenclamide 5 mg cap/tab,Kenya,2004,November,30 days,60.00,0.40,1.40
+Salbutamol 100 mcg/dose inhaler,Kenya,2004,November,0 days,200.00,NO DATA,1.70
+Co-trimoxazole 40+200 mg/5ml suspension,Kuwait,2004,June,7 days,70.00,NO DATA,1.00
+Atenolol 50 mg cap/tab,Kuwait,2004,June,30 days,30.00,NO DATA,2.60
+Glibenclamide 5 mg cap/tab,Kuwait,2004,June,30 days,60.00,NO DATA,3.30
+Omeprazole 20 mg cap/tab,Kuwait,2004,June,30 days,30.00,NO DATA,19.30
+Amitriptyline 25 mg cap/tab,Kuwait,2004,June,30 days,90.00,NO DATA,NO DATA
+Atenolol 50 mg cap/tab,Kyrgyzstan,2010,July,30 days,30.00,NO DATA,0.70
+Paracetamol 120 mg/5ml suspension,Kyrgyzstan,2010,July,3 days,45.00,NO DATA,1.10
+Ceftriaxone 1 g/vial injection,Kyrgyzstan,2010,July,1 days,1.00,NO DATA,1.70
+Omeprazole 20 mg cap/tab,Kyrgyzstan,2010,July,30 days,30.00,NO DATA,2.00
+Diclofenac 50 mg cap/tab,Kyrgyzstan,2010,July,30 days,60.00,NO DATA,2.30
+Glibenclamide 5 mg cap/tab,Kyrgyzstan,2010,July,30 days,60.00,NO DATA,2.70
+Co-trimoxazole 40+200 mg/5ml suspension,Kyrgyzstan,2010,July,7 days,70.00,NO DATA,3.00
+Amitriptyline 25 mg cap/tab,Kyrgyzstan,2010,July,30 days,90.00,NO DATA,3.40
+Amoxicillin 500 mg cap/tab,Kyrgyzstan,2010,July,7 days,21.00,NO DATA,3.50
+Ciprofloxacin 500 mg cap/tab,Kyrgyzstan,2010,July,7 days,14.00,NO DATA,3.70
+Salbutamol 100 mcg/dose inhaler,Kyrgyzstan,2010,July,days,200.00,NO DATA,11.30
+Simvastatin 20 mg cap/tab,Kyrgyzstan,2010,July,30 days,30.00,NO DATA,25.80
+Paracetamol 120 mg/5ml suspension,Lao PDR,2013,November,3 days,45.00,0.20,0.20
+Diazepam 5 mg cap/tab,Lao PDR,2013,November,7 days,7.00,0.20,0.20
+Ciprofloxacin 500 mg cap/tab,Lao PDR,2013,November,7 days,14.00,0.50,0.30
+Co-trimoxazole 40+200 mg/5ml suspension,Lao PDR,2013,November,7 days,70.00,0.30,0.40
+Amoxicillin 500 mg cap/tab,Lao PDR,2013,November,7 days,21.00,0.50,0.50
+Atenolol 50 mg cap/tab,Lao PDR,2013,November,30 days,30.00,,0.50
+Ceftriaxone 1 g/vial injection,Lao PDR,2013,November,1 days,1.00,0.60,0.50
+Diclofenac 50 mg cap/tab,Lao PDR,2013,November,30 days,60.00,0.40,0.60
+Glibenclamide 5 mg cap/tab,Lao PDR,2013,November,30 days,60.00,0.40,0.90
+Omeprazole 20 mg cap/tab,Lao PDR,2013,November,30 days,30.00,1.00,0.90
+Simvastatin 20 mg cap/tab,Lao PDR,2013,November,30 days,30.00,1.90,1.20
+Amitriptyline 25 mg cap/tab,Lao PDR,2013,November,30 days,90.00,1.80,NO DATA
+Atenolol 50 mg cap/tab,Lebanon,2013,July,30 days,30.00,NO DATA,0.20
+Glibenclamide 5 mg cap/tab,Lebanon,2013,July,30 days,60.00,NO DATA,0.20
+Simvastatin 20 mg cap/tab,Lebanon,2013,July,30 days,30.00,NO DATA,0.30
+Salbutamol 100 mcg/dose inhaler,Lebanon,2013,July,days,200.00,NO DATA,0.30
+Diclofenac 50 mg cap/tab,Lebanon,2013,July,30 days,60.00,NO DATA,0.60
+Captopril 25 mg cap/tab,Lebanon,2013,July,30 days,60.00,NO DATA,0.70
+Omeprazole 20 mg cap/tab,Lebanon,2013,July,30 days,30.00,NO DATA,0.90
+Glibenclamide 5 mg cap/tab,Malaysia,2004,October,30 days,60.00,NO DATA,0.40
+Atenolol 50 mg cap/tab,Malaysia,2004,October,30 days,30.00,NO DATA,0.60
+Salbutamol 100 mcg/dose inhaler,Malaysia,2004,October,0 days,200.00,NO DATA,0.70
+Omeprazole 20 mg cap/tab,Malaysia,2004,October,30 days,30.00,NO DATA,3.60
+Co-trimoxazole 40+200 mg/5ml suspension,Malaysia,2004,October,7 days,70.00,NO DATA,NO DATA
+Co-trimoxazole 40+200 mg/5ml suspension,Mali,2004,March,7 days,70.00,0.30,0.60
+Amoxicillin 500 mg cap/tab,Mali,2004,March,7 days,21.00,0.90,1.90
+Diclofenac 50 mg cap/tab,Mali,2004,March,30 days,60.00,0.50,2.20
+Salbutamol 100 mcg/dose inhaler,Mali,2004,March,0 days,200.00,NO DATA,2.70
+Glibenclamide 5 mg cap/tab,Mali,2004,March,30 days,60.00,NO DATA,3.20
+Captopril 25 mg cap/tab,Mali,2004,March,30 days,60.00,NO DATA,5.90
+Paracetamol 120 mg/5ml suspension,Mauritius,2008,August,3 days,45.00,NO DATA,0.10
+Co-trimoxazole 40+200 mg/5ml suspension,Mauritius,2008,August,7 days,70.00,NO DATA,0.30
+Atenolol 50 mg cap/tab,Mauritius,2008,August,30 days,30.00,NO DATA,0.30
+Diclofenac 50 mg cap/tab,Mauritius,2008,August,30 days,60.00,NO DATA,0.30
+Salbutamol 100 mcg/dose inhaler,Mauritius,2008,August,days,200.00,NO DATA,0.40
+Captopril 25 mg cap/tab,Mauritius,2008,August,30 days,60.00,NO DATA,0.50
+Glibenclamide 5 mg cap/tab,Mauritius,2008,August,30 days,60.00,NO DATA,0.50
+Ciprofloxacin 500 mg cap/tab,Mauritius,2008,August,7 days,14.00,NO DATA,0.60
+Amoxicillin 500 mg cap/tab,Mauritius,2008,August,7 days,21.00,NO DATA,0.80
+Omeprazole 20 mg cap/tab,Mauritius,2008,August,30 days,30.00,NO DATA,0.90
+Amitriptyline 25 mg cap/tab,Mauritius,2008,August,30 days,90.00,NO DATA,1.00
+Simvastatin 20 mg cap/tab,Mauritius,2008,August,30 days,30.00,NO DATA,1.00
+Ceftriaxone 1 g/vial injection,Mauritius,2008,August,1 days,1.00,NO DATA,1.40
+Glibenclamide 5 mg cap/tab,Mexico Mexico City,2009,December,30 days,60.00,NO DATA,0.30
+Co-trimoxazole 40+200 mg/5ml suspension,Mexico Mexico City,2009,December,7 days,70.00,NO DATA,0.30
+Salbutamol 100 mcg/dose inhaler,Mexico Mexico City,2009,December,days,200.00,NO DATA,0.80
+Amoxicillin 500 mg cap/tab,Mexico Mexico City,2009,December,7 days,21.00,NO DATA,0.90
+Ceftriaxone 1 g/vial injection,Mexico Mexico City,2009,December,1 days,1.00,NO DATA,1.10
+Ciprofloxacin 500 mg cap/tab,Mexico Mexico City,2009,December,7 days,14.00,NO DATA,1.50
+Omeprazole 20 mg cap/tab,Mexico Mexico City,2009,December,30 days,30.00,NO DATA,2.00
+Diazepam 5 mg cap/tab,Moldova,2011,September,7 days,7.00,0.10,0.10
+Glibenclamide 5 mg cap/tab,Moldova,2011,September,30 days,60.00,0.90,0.80
+Atenolol 50 mg cap/tab,Moldova,2011,September,30 days,30.00,0.90,0.90
+Captopril 25 mg cap/tab,Moldova,2011,September,30 days,60.00,1.20,1.30
+Diclofenac 50 mg cap/tab,Moldova,2011,September,30 days,60.00,1.40,1.50
+Ciprofloxacin 500 mg cap/tab,Moldova,2011,September,7 days,14.00,1.50,1.60
+Omeprazole 20 mg cap/tab,Moldova,2011,September,30 days,30.00,1.70,1.80
+Salbutamol 100 mcg/dose inhaler,Moldova,2011,September,days,200.00,2.20,2.30
+Amitriptyline 25 mg cap/tab,Moldova,2011,September,30 days,90.00,2.50,2.60
+Simvastatin 20 mg cap/tab,Moldova,2011,September,30 days,30.00,8.40,6.50
+Atenolol 50 mg cap/tab,Mongolia,2012,October,30 days,30.00,0.40,0.40
+Glibenclamide 5 mg cap/tab,Mongolia,2012,October,30 days,60.00,NO DATA,0.40
+Captopril 25 mg cap/tab,Mongolia,2012,October,30 days,60.00,0.30,0.50
+Co-trimoxazole 40+200 mg/5ml suspension,Mongolia,2012,October,7 days,70.00,NO DATA,0.50
+Amoxicillin 500 mg cap/tab,Mongolia,2012,October,7 days,21.00,0.30,0.50
+Ciprofloxacin 500 mg cap/tab,Mongolia,2012,October,7 days,14.00,0.20,0.50
+Ceftriaxone 1 g/vial injection,Mongolia,2012,October,1 days,1.00,0.10,0.70
+Diclofenac 50 mg cap/tab,Mongolia,2012,October,30 days,60.00,0.40,0.70
+Omeprazole 20 mg cap/tab,Mongolia,2012,October,30 days,30.00,0.40,0.80
+Salbutamol 100 mcg/dose inhaler,Mongolia,2012,October,days,200.00,0.80,1.70
+Simvastatin 20 mg cap/tab,Mongolia,2012,October,30 days,30.00,NO DATA,2.70
+Co-trimoxazole 40+200 mg/5ml suspension,Morocco,2004,April,7 days,70.00,NO DATA,0.20
+Glibenclamide 5 mg cap/tab,Morocco,2004,April,30 days,60.00,NO DATA,0.60
+Salbutamol 100 mcg/dose inhaler,Morocco,2004,April,0 days,200.00,NO DATA,0.80
+Amitriptyline 25 mg cap/tab,Morocco,2004,April,30 days,90.00,NO DATA,0.90
+Diazepam 5 mg cap/tab,Nicaragua,2008,October,7 days,7.00,NO DATA,0.10
+Paracetamol 120 mg/5ml suspension,Nicaragua,2008,October,3 days,45.00,NO DATA,0.20
+Co-trimoxazole 40+200 mg/5ml suspension,Nicaragua,2008,October,7 days,70.00,NO DATA,0.40
+Atenolol 50 mg cap/tab,Nicaragua,2008,October,30 days,30.00,NO DATA,0.60
+Amoxicillin 500 mg cap/tab,Nicaragua,2008,October,7 days,21.00,NO DATA,0.70
+Glibenclamide 5 mg cap/tab,Nicaragua,2008,October,30 days,60.00,NO DATA,0.80
+Diclofenac 50 mg cap/tab,Nicaragua,2008,October,30 days,60.00,NO DATA,1.00
+Ceftriaxone 1 g/vial injection,Nicaragua,2008,October,1 days,1.00,NO DATA,1.10
+Ciprofloxacin 500 mg cap/tab,Nicaragua,2008,October,7 days,14.00,NO DATA,1.20
+Captopril 25 mg cap/tab,Nicaragua,2008,October,30 days,60.00,NO DATA,1.50
+Salbutamol 100 mcg/dose inhaler,Nicaragua,2008,October,days,200.00,NO DATA,1.80
+Amitriptyline 25 mg cap/tab,Nicaragua,2008,October,30 days,90.00,NO DATA,2.20
+Omeprazole 20 mg cap/tab,Nicaragua,2008,October,30 days,30.00,NO DATA,2.60
+Simvastatin 20 mg cap/tab,Nicaragua,2008,October,30 days,30.00,NO DATA,5.90
+Co-trimoxazole 40+200 mg/5ml suspension,Nigeria,2004,September,7 days,70.00,0.50,0.60
+Atenolol 50 mg cap/tab,Nigeria,2004,September,30 days,30.00,1.60,1.40
+Amitriptyline 25 mg cap/tab,Nigeria,2004,September,30 days,90.00,1.50,2.20
+Glibenclamide 5 mg cap/tab,Nigeria,2004,September,30 days,60.00,3.30,3.30
+Omeprazole 20 mg cap/tab,Nigeria,2004,September,30 days,30.00,8.20,12.90
+Paracetamol 120 mg/5ml suspension,Oman,2007,October,3 days,45.00,NO DATA,0.10
+Salbutamol 100 mcg/dose inhaler,Oman,2007,October,days,200.00,NO DATA,0.30
+Atenolol 50 mg cap/tab,Oman,2007,October,30 days,30.00,NO DATA,0.40
+Co-trimoxazole 40+200 mg/5ml suspension,Oman,2007,October,7 days,70.00,NO DATA,0.40
+Amoxicillin 500 mg cap/tab,Oman,2007,October,7 days,21.00,NO DATA,0.40
+Ciprofloxacin 500 mg cap/tab,Oman,2007,October,7 days,14.00,NO DATA,0.60
+Diclofenac 50 mg cap/tab,Oman,2007,October,30 days,60.00,NO DATA,0.70
+Glibenclamide 5 mg cap/tab,Oman,2007,October,30 days,60.00,NO DATA,0.90
+Ceftriaxone 1 g/vial injection,Oman,2007,October,1 days,1.00,NO DATA,1.30
+Omeprazole 20 mg cap/tab,Oman,2007,October,30 days,30.00,NO DATA,3.10
+Simvastatin 20 mg cap/tab,Oman,2007,October,30 days,30.00,NO DATA,3.30
+Co-trimoxazole 40+200 mg/5ml suspension,Pakistan,2004,July,7 days,70.00,NO DATA,0.30
+Glibenclamide 5 mg cap/tab,Pakistan,2004,July,30 days,60.00,NO DATA,0.90
+Atenolol 50 mg cap/tab,Pakistan,2004,July,30 days,30.00,NO DATA,1.10
+Salbutamol 100 mcg/dose inhaler,Pakistan,2004,July,0 days,200.00,NO DATA,1.40
+Amitriptyline 25 mg cap/tab,Pakistan,2004,July,30 days,90.00,NO DATA,NO DATA
+Co-trimoxazole 40+200 mg/5ml suspension,Peru,2005,September,7 days,70.00,0.10,0.30
+Atenolol 50 mg cap/tab,Peru,2005,September,30 days,30.00,0.40,0.60
+Glibenclamide 5 mg cap/tab,Peru,2005,September,30 days,60.00,0.10,0.80
+Salbutamol 100 mcg/dose inhaler,Peru,2005,September,0 days,200.00,0.40,0.80
+Amitriptyline 25 mg cap/tab,Peru,2005,September,30 days,90.00,1.20,3.00
+Co-trimoxazole 40+200 mg/5ml suspension,Philippines,2005,February,7 days,70.00,0.30,0.20
+Atenolol 50 mg cap/tab,Philippines,2005,February,30 days,30.00,0.60,0.90
+Salbutamol 100 mcg/dose inhaler,Philippines,2005,February,0 days,200.00,NO DATA,1.10
+Glibenclamide 5 mg cap/tab,Philippines,2005,February,30 days,60.00,0.70,1.20
+Captopril 25 mg cap/tab,Philippines,2005,February,30 days,60.00,2.50,2.40
+Ceftriaxone 1 g/vial injection,Russia Tatarstan,2011,February,1 days,1.00,0.10,0.10
+Paracetamol 120 mg/5ml suspension,Russia Tatarstan,2011,February,3 days,45.00,0.10,0.10
+Amitriptyline 25 mg cap/tab,Russia Tatarstan,2011,February,30 days,90.00,0.30,0.20
+Captopril 25 mg cap/tab,Russia Tatarstan,2011,February,30 days,60.00,0.10,0.20
+Ciprofloxacin 500 mg cap/tab,Russia Tatarstan,2011,February,7 days,14.00,0.20,0.30
+Omeprazole 20 mg cap/tab,Russia Tatarstan,2011,February,30 days,30.00,0.20,0.30
+Atenolol 50 mg cap/tab,Russia Tatarstan,2011,February,30 days,30.00,0.10,0.30
+Diclofenac 50 mg cap/tab,Russia Tatarstan,2011,February,30 days,60.00,0.30,0.50
+Glibenclamide 5 mg cap/tab,Russia Tatarstan,2011,February,30 days,60.00,0.40,0.50
+Amoxicillin 500 mg cap/tab,Russia Tatarstan,2011,February,7 days,21.00,0.20,0.60
+Co-trimoxazole 40+200 mg/5ml suspension,Russia Tatarstan,2011,February,7 days,70.00,0.20,0.70
+Salbutamol 100 mcg/dose inhaler,Russia Tatarstan,2011,February,days,200.00,0.80,0.90
+Simvastatin 20 mg cap/tab,Russia Tatarstan,2011,February,30 days,30.00,1.00,2.50
+Ceftriaxone 1 g/vial injection,Sao Tomè en Principe,2008,June,1 days,1.00,0.50,0.20
+Diazepam 5 mg cap/tab,Sao Tomè en Principe,2008,June,7 days,7.00,0.20,0.80
+Co-trimoxazole 40+200 mg/5ml suspension,Sao Tomè en Principe,2008,June,7 days,70.00,0.40,1.90
+Paracetamol 120 mg/5ml suspension,Sao Tomè en Principe,2008,June,3 days,45.00,0.60,2.00
+Amoxicillin 500 mg cap/tab,Sao Tomè en Principe,2008,June,7 days,21.00,1.00,2.30
+Atenolol 50 mg cap/tab,Sao Tomè en Principe,2008,June,30 days,30.00,0.80,4.10
+Glibenclamide 5 mg cap/tab,Sao Tomè en Principe,2008,June,30 days,60.00,0.50,6.60
+Captopril 25 mg cap/tab,Sao Tomè en Principe,2008,June,30 days,60.00,1.10,9.90
+Diclofenac 50 mg cap/tab,Sao Tomè en Principe,2008,June,30 days,60.00,NO DATA,19.80
+Ciprofloxacin 500 mg cap/tab,Sao Tomè en Principe,2008,June,7 days,14.00,1.00,38.60
+Omeprazole 20 mg cap/tab,Sao Tomè en Principe,2008,June,30 days,30.00,0.70,41.30
+Salbutamol 100 mcg/dose inhaler,Sao Tomè en Principe,2008,June,days,200.00,2.00,NO DATA
+Co-trimoxazole 40+200 mg/5ml suspension,South Africa Gauteng Province,2004,Nov,7 days,70.00,NO DATA,0.10
+Salbutamol 100 mcg/dose inhaler,South Africa Gauteng Province,2004,Nov,0 days,200.00,NO DATA,0.20
+Glibenclamide 5 mg cap/tab,South Africa Gauteng Province,2004,Nov,30 days,60.00,NO DATA,0.20
+Atenolol 50 mg cap/tab,South Africa Gauteng Province,2004,Nov,30 days,30.00,NO DATA,0.30
+Amitriptyline 25 mg cap/tab,South Africa Gauteng Province,2004,Nov,30 days,90.00,NO DATA,0.80
+Diazepam 5 mg cap/tab,Sudan,2013,February,7 days,7.00,0.10,0.10
+Paracetamol 120 mg/5ml suspension,Sudan,2013,February,3 days,45.00,0.20,0.30
+Atenolol 50 mg cap/tab,Sudan,2013,February,30 days,30.00,0.70,0.50
+Co-trimoxazole 40+200 mg/5ml suspension,Sudan,2013,February,7 days,70.00,0.40,0.50
+Glibenclamide 5 mg cap/tab,Sudan,2013,February,30 days,60.00,0.50,0.80
+Amoxicillin 500 mg cap/tab,Sudan,2013,February,7 days,21.00,1.10,1.10
+Ciprofloxacin 500 mg cap/tab,Sudan,2013,February,7 days,14.00,1.20,1.20
+Salbutamol 100 mcg/dose inhaler,Sudan,2013,February,days,200.00,1.60,1.40
+Simvastatin 20 mg cap/tab,Sudan,2013,February,30 days,30.00,2.10,2.00
+Amitriptyline 25 mg cap/tab,Sudan,2013,February,30 days,90.00,2.20,2.20
+Omeprazole 20 mg cap/tab,Sudan,2013,February,30 days,30.00,2.70,2.50
+Captopril 25 mg cap/tab,Sudan,2013,February,30 days,60.00,3.20,3.20
+Ceftriaxone 1 g/vial injection,Sudan,2013,February,3 days,3.00,13.90,3.80
+Diclofenac 50 mg cap/tab,Sudan,2013,February,30 days,60.00,5.30,4.90
+Co-trimoxazole 40+200 mg/5ml suspension,Syria,2003,December,7 days,70.00,NO DATA,0.20
+Glibenclamide 5 mg cap/tab,Syria,2003,December,30 days,60.00,NO DATA,0.40
+Atenolol 50 mg cap/tab,Syria,2003,December,30 days,30.00,NO DATA,0.60
+Salbutamol 100 mcg/dose inhaler,Syria,2003,December,0 days,200.00,NO DATA,1.00
+Amitriptyline 25 mg cap/tab,Syria,2003,December,30 days,90.00,NO DATA,1.30
+Captopril 25 mg cap/tab,Syria,2003,December,30 days,60.00,NO DATA,2.10
+Paracetamol 120 mg/5ml suspension,Tajikistan,2013,June,3 days,45.00,0.30,0.30
+Atenolol 50 mg cap/tab,Tajikistan,2013,June,30 days,30.00,0.30,0.30
+Ceftriaxone 1 g/vial injection,Tajikistan,2013,June,1 days,1.00,0.50,0.50
+Diazepam 5 mg cap/tab,Tajikistan,2013,June,7 days,7.00,NO DATA,0.70
+Omeprazole 20 mg cap/tab,Tajikistan,2013,June,30 days,30.00,0.70,0.70
+Co-trimoxazole 40+200 mg/5ml suspension,Tajikistan,2013,June,7 days,70.00,0.90,0.80
+Ciprofloxacin 500 mg cap/tab,Tajikistan,2013,June,7 days,14.00,1.00,0.90
+Glibenclamide 5 mg cap/tab,Tajikistan,2013,June,30 days,60.00,0.90,0.90
+Captopril 25 mg cap/tab,Tajikistan,2013,June,30 days,60.00,1.10,0.90
+Diclofenac 50 mg cap/tab,Tajikistan,2013,June,30 days,60.00,0.90,1.30
+Amoxicillin 500 mg cap/tab,Tajikistan,2013,June,7 days,21.00,1.30,1.30
+Amitriptyline 25 mg cap/tab,Tajikistan,2013,June,30 days,90.00,2.20,1.60
+Salbutamol 100 mcg/dose inhaler,Tajikistan,2013,June,days,200.00,3.00,3.10
+Simvastatin 20 mg cap/tab,Tajikistan,2013,June,30 days,30.00,10.80,6.40
+Ceftriaxone 1 g/vial injection,Tanzania,2012,September,1 days,1.00,0.10,0.00
+Diazepam 5 mg cap/tab,Tanzania,2012,September,7 days,7.00,0.00,0.10
+Co-trimoxazole 40+200 mg/5ml suspension,Tanzania,2012,September,7 days,70.00,0.20,0.20
+Atenolol 50 mg cap/tab,Tanzania,2012,September,30 days,30.00,0.40,0.50
+Diclofenac 50 mg cap/tab,Tanzania,2012,September,30 days,60.00,0.50,0.50
+Omeprazole 20 mg cap/tab,Tanzania,2012,September,30 days,30.00,0.50,0.50
+Ciprofloxacin 500 mg cap/tab,Tanzania,2012,September,7 days,14.00,0.50,0.50
+Salbutamol 100 mcg/dose inhaler,Tanzania,2012,September,days,200.00,0.70,0.90
+Amitriptyline 25 mg cap/tab,Tanzania,2012,September,30 days,90.00,0.30,1.00
+Glibenclamide 5 mg cap/tab,Tanzania,2012,September,30 days,60.00,1.10,1.10
+Captopril 25 mg cap/tab,Tanzania,2012,September,30 days,60.00,1.10,1.30
+Simvastatin 20 mg cap/tab,Tanzania,2012,September,30 days,30.00,NO DATA,4.00
+Co-trimoxazole 40+200 mg/5ml suspension,Thailand,2006,October,7 days,70.00,0.10,0.10
+Atenolol 50 mg cap/tab,Thailand,2006,October,30 days,30.00,0.10,0.30
+Glibenclamide 5 mg cap/tab,Thailand,2006,October,30 days,60.00,0.30,0.30
+Amitriptyline 25 mg cap/tab,Thailand,2006,October,30 days,90.00,0.30,0.40
+Captopril 25 mg cap/tab,Thailand,2006,October,30 days,60.00,0.90,NO DATA
+Glibenclamide 5 mg cap/tab,Tunisia,2004,March,30 days,60.00,NO DATA,0.30
+Co-trimoxazole 40+200 mg/5ml suspension,Tunisia,2004,March,7 days,70.00,NO DATA,0.30
+Amoxicillin 500 mg cap/tab,Tunisia,2004,March,7 days,21.00,NO DATA,0.60
+Atenolol 50 mg cap/tab,Tunisia,2004,March,30 days,30.00,NO DATA,0.70
+Captopril 25 mg cap/tab,Tunisia,2004,March,30 days,60.00,NO DATA,1.90
+Omeprazole 20 mg cap/tab,Tunisia,2004,March,30 days,30.00,NO DATA,7.00
+Amitriptyline 25 mg cap/tab,Tunisia,2004,March,30 days,90.00,NO DATA,NO DATA
+Salbutamol 100 mcg/dose inhaler,Tunisia,2004,March,0 days,200.00,NO DATA,NO DATA
+Diazepam 5 mg cap/tab,Uganda,2013,September,7 days,7.00,NO DATA,0.10
+Co-trimoxazole 40+200 mg/5ml suspension,Uganda,2013,September,7 days,70.00,NO DATA,0.40
+Ciprofloxacin 500 mg cap/tab,Uganda,2013,September,7 days,14.00,NO DATA,0.50
+Ceftriaxone 1 g/vial injection,Uganda,2013,September,1 days,1.00,NO DATA,0.50
+Diclofenac 50 mg cap/tab,Uganda,2013,September,30 days,60.00,NO DATA,0.60
+Glibenclamide 5 mg cap/tab,Uganda,2013,September,30 days,60.00,NO DATA,1.20
+Omeprazole 20 mg cap/tab,Uganda,2013,September,30 days,30.00,NO DATA,1.20
+Salbutamol 100 mcg/dose inhaler,Uganda,2013,September,days,200.00,NO DATA,1.40
+Amitriptyline 25 mg cap/tab,Uganda,2013,September,30 days,90.00,NO DATA,1.70
+Paracetamol 120 mg/5ml suspension,Ukraine,2012,March,3 days,45.00,0.10,0.10
+Ciprofloxacin 500 mg cap/tab,Ukraine,2012,March,7 days,14.00,0.20,0.20
+Diclofenac 50 mg cap/tab,Ukraine,2012,March,30 days,60.00,0.20,0.20
+Glibenclamide 5 mg cap/tab,Ukraine,2012,March,30 days,60.00,0.20,0.20
+Atenolol 50 mg cap/tab,Ukraine,2012,March,30 days,30.00,0.10,0.20
+Omeprazole 20 mg cap/tab,Ukraine,2012,March,30 days,30.00,0.40,0.30
+Captopril 25 mg cap/tab,Ukraine,2012,March,30 days,60.00,0.50,0.50
+Amoxicillin 500 mg cap/tab,Ukraine,2012,March,7 days,21.00,0.50,0.50
+Salbutamol 100 mcg/dose inhaler,Ukraine,2012,March,days,200.00,0.50,0.50
+Co-trimoxazole 40+200 mg/5ml suspension,Ukraine,2012,March,7 days,70.00,0.50,0.50
+Simvastatin 20 mg cap/tab,Ukraine,2012,March,30 days,30.00,1.40,1.40
+Diazepam 5 mg cap/tab,Ukraine,2012,March,7 days,7.00,0.10,NO DATA
+Amitriptyline 25 mg cap/tab,Ukraine,2012,March,30 days,90.00,0.80,NO DATA
+Co-trimoxazole 40+200 mg/5ml suspension,United Arab Emirates,2006,December,7 days,70.00,NO DATA,0.20
+Salbutamol 100 mcg/dose inhaler,United Arab Emirates,2006,December,0 days,200.00,NO DATA,0.60
+Atenolol 50 mg cap/tab,United Arab Emirates,2006,December,30 days,30.00,NO DATA,0.70
+Glibenclamide 5 mg cap/tab,United Arab Emirates,2006,December,30 days,60.00,NO DATA,0.80
+Amitriptyline 25 mg cap/tab,United Arab Emirates,2006,December,30 days,90.00,NO DATA,NO DATA
+Atenolol 50 mg cap/tab,Uzbekistan,2004,December,30 days,30.00,NO DATA,1.00
+Co-trimoxazole 40+200 mg/5ml suspension,Uzbekistan,2004,December,7 days,70.00,NO DATA,1.60
+Glibenclamide 5 mg cap/tab,Uzbekistan,2004,December,30 days,60.00,NO DATA,1.60
+Diclofenac 50 mg cap/tab,Uzbekistan,2004,December,30 days,60.00,NO DATA,1.70
+Salbutamol 100 mcg/dose inhaler,Uzbekistan,2004,December,30 days,200.00,NO DATA,2.80
+Amitriptyline 25 mg cap/tab,Uzbekistan,2004,December,30 days,90.00,NO DATA,3.30
+Captopril 25 mg cap/tab,Uzbekistan,2004,December,30 days,60.00,NO DATA,4.10
+Co-trimoxazole 40+200 mg/5ml suspension,Yemen,2006,July,7 days,70.00,0.10,0.20
+Atenolol 50 mg cap/tab,Yemen,2006,July,30 days,30.00,NO DATA,0.50
+Salbutamol 100 mcg/dose inhaler,Yemen,2006,July,0 days,200.00,NO DATA,0.60
+Glibenclamide 5 mg cap/tab,Yemen,2006,July,30 days,60.00,NO DATA,0.70
+Captopril 25 mg cap/tab,Yemen,2006,July,30 days,60.00,0.30,1.40
+Amitriptyline 25 mg cap/tab,Yemen,2006,July,30 days,90.00,NO DATA,1.80

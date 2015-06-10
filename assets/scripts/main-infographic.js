@@ -5,6 +5,15 @@ function Main_Infographic( _id ) {
   var that = this,
       initialized = false,
       DOT_OPACITY = 0.7,
+      current = {
+        data: 'prices',
+        type: 'public',
+        label: 'Price'
+      },
+      tooltipTxt = {
+        prices: ' x MPR',
+        affordability: ' days of work'
+      },
       currentState = 0;
 
   var margin = {top: 150, right: 50, bottom: 50, left: 50},
@@ -19,9 +28,8 @@ function Main_Infographic( _id ) {
       .range(['#C9AD4B', '#BBD646', '#63BA2D', '#34A893', '#3D91AD', '#5B8ACB', '#BA7DAF', '#BF6B80', '#F49D9D', '#E25453', '#B56631', '#E2773B', '#FFA951', '#F4CA00']);
 
   var svg,
-      x, y,
-      xAxis, yAxis,
-      dataPricesPublic, dataPricesPrivate, countries;
+      x, y, xAxis, yAxis,
+      dataPricesPublic, dataPricesPrivate, dataAffordability, dataCountries;
 
 
   // Setup Visualization
@@ -30,11 +38,7 @@ function Main_Infographic( _id ) {
 
     initialized = true;
 
-    widthCont = $el.width();
-    heightCont = $el.height();
-
-    width = widthCont - margin.left - margin.right;
-    height = heightCont - margin.top - margin.bottom;
+    setDimensions();
 
     x = d3.scale.ordinal()
       .rangePoints([0, width]);
@@ -61,129 +65,176 @@ function Main_Infographic( _id ) {
       .append('g')
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-    // Load CSV
-    d3.csv( $('body').data('url')+'/dist/csv/prices.csv', function(error, data) {
 
-      console.log(data);
+    // Load CSVs
+    d3.csv( $('body').data('url')+'/dist/csv/prices.csv', function(error, prices) {
 
-      var dataPrices = data.filter(function(d){ return d['Unit/MPR'] === 'MPR'; });
+      d3.csv( $('body').data('url')+'/dist/csv/affordability.csv', function(error, affordability) {
 
-      dataPrices = dataPrices.filter(function(d){ return d.Price !== 'NO DATA'; });
-      dataPrices.forEach(function(d) {
-        d.Price = (d.Price !== 'free') ? +d.Price : 0;
+        d3.csv( $('body').data('url')+'/dist/csv/countries.csv', function(error, countries) {
+
+          // Parse Data
+          prices = prices.filter(function(d){ return d['Unit/MPR'] === 'MPR'; });
+          prices.forEach(function(d) {
+            d.Price = (d.Price === 'NO DATA') ? null : ((d.Price !== 'free') ? +d.Price : 0);
+          });
+          
+          affordability.forEach(function(d) {
+            d['Public sector']  = (d['Public sector'] !== 'NO DATA') ? +d['Public sector'] : null;
+            d['Private sector'] = (d['Private sector'] !== 'NO DATA') ? +d['Private sector'] : null;
+          });
+
+          dataCountries = d3.nest()
+            .key(function(d) { return d.Pais; })
+            .entries(countries);
+
+          dataPricesPublic  = prices.filter(function(d){ return d['Public/Private'] === 'Public'; });
+          dataPricesPrivate = prices.filter(function(d){ return d['Public/Private'] === 'Private'; });
+          dataAffordability = affordability;
+
+          console.dir(dataCountries);
+          console.dir(dataPricesPublic);
+          console.dir(dataAffordability);
+
+          prices = affordability = countries = null;  // reset temp variables for garbage collector
+
+          setData();
+        });
       });
-      
-      dataPricesPublic = dataPrices.filter(function(d){ return d['Public/Private'] === 'Public'; });
-      dataPricesPrivate = dataPrices.filter(function(d){ return d['Public/Private'] === 'Private'; });
+    });
 
-      // Set Countries
+    // Setup MPR/Affordability Btns
+    $('#mpr-btn, #affordability-btn').click(function(e){
 
-      var nestedData = d3.nest()
-        .key(function(d) { return d.Country; })
-        .entries(dataPrices);
+      if( $(this).hasClass('active') ){ return; }
 
-      countries = [];
-      nestedData.forEach(function(d) { countries.push( d.key ); });
-
-      x.domain( countries );
-
-      //console.dir( dataPricesPublic );
-      //console.dir( dataPricesPrivate );
-
-      $('.btn-group').css('visibility', 'visible');
-
-      setData( dataPricesPublic );
+      $('#mpr-btn, #affordability-btn').removeClass('active');
+      $(this).addClass('active');
+      updateData();
     });
 
     // Setup Public/Private Btns
-    $('#public-btn').click(function(e){
+    $('#public-btn, #private-btn').click(function(e){
 
-      if( $(this).hasClass('active') ){
-        return;
-      }
+      if( $(this).hasClass('active') ){ return; }
 
-      $('#private-btn').removeClass('active');
+      $('#private-btn, #public-btn').removeClass('active');
       $(this).addClass('active');
-
-      updateData( dataPricesPublic );
-    });
-
-    $('#private-btn').click(function(e){
-      if( $(this).hasClass('active') ){
-        return;
-      }
-
-      $('#public-btn').removeClass('active');
-      $(this).addClass('active');
-
-      updateData( dataPricesPrivate );
+      updateData();
     });
 
     return that;
   };
 
-
   that.setState = function(stateID) {
 
     if( stateID === 5 ){
 
+      /*
       d3.select('.overlay')
         .on('mouseout', onOverlayOut)
         .on("mousemove", onOverlayMove);
+      */
 
+      // Add dot events
       d3.selectAll('.dot')
         .on('mouseover', onDotOver )
         .on('mouseout', onDotOut );
 
     } else if( currentState === 5 ){
 
-      // Remove overlay & dot events
+      // Remove dot events
+      d3.selectAll('.dot')
+        .on('mouseover', null )
+        .on('mouseout', null );
     }
 
     currentState = stateID;
 
     return that;
+  }; 
+
+  that.resize = function() {
+
+    setDimensions();  // Update width/height
+
+    // Update SVG size
+    d3.select('#main-infographic-svg')
+      .attr('width', widthCont)
+      .attr('height', heightCont);
+
+    //Update Axis
+    x.rangePoints([0, width]);
+    y.range([height, 0]);
+
+    xAxis.tickSize(-height);
+    yAxis.tickSize(-width);
+
+    d3.select('g.x.axis')
+      .attr('transform', 'translate(0,' + height + ')')
+      .call(xAxis)
+      .selectAll('text')
+        .data( dataCountries )
+        .attr('class', 'label')
+        .attr('dy', '1.5em')
+        .attr('dx', '-0.5em')
+        .text(function(d){ return d.values[0].Code; })
+        .style('text-anchor', 'start');
+
+    d3.select('g.y.axis')
+      .call(yAxis);
+
+    // Update Dots & Lines
+    d3.selectAll('.dot-lines .line')
+      .attr('x1', setValueX)
+      .attr('y1', height)
+      .attr('x2', setValueX)
+      .attr('y2', setValueY);
+
+    d3.selectAll('.dot')
+      .attr('cx', setValueX)
+      .attr('cy', setValueY);
   };
 
-  this.isInitialized = function(){
-    
+  that.isInitialized = function(){  
     return initialized;
   };
 
 
   // Private Methods
 
-  var setData = function( data ){
+  var setData = function(){
 
-    y.domain( d3.extent(data, function(d) { return d.Price; }) ).nice();
+    var currentData = getCurrentData();
 
-    color.domain( d3.extent(data, function(d) { return d.Drug; }) );
+    var countrieNames = [];
+    dataCountries.forEach(function(d) { countrieNames.push( d.key ); });
 
-    xAxis.ticks( countries.length );
+    x.domain( countrieNames );
+    y.domain( d3.extent(currentData, function(d) { return d[ current.label ]; }) ).nice();
+    color.domain( d3.extent(currentData, function(d) { return d.Drug; }) );
+
+    xAxis.ticks( dataCountries.length );
 
     // Setup X Axis
     svg.append('g')
-        .attr('class', 'x axis')
-        .attr('transform', 'translate(0,' + height + ')')
-        .call(xAxis)
-      .selectAll('text')
-        .attr('class', 'label')
-        .attr('y', 7)
-        .attr('x', 7)
-       // .attr('transform', 'rotate(45)')
-        .style('text-anchor', 'start');
+      .attr('class', 'x axis')
+      .attr('transform', 'translate(0,' + height + ')')
+      .call(xAxis)
+    .selectAll('text')
+      .data( dataCountries )
+      .attr('class', 'label')
+      .attr('dy', '1.5em')
+      .attr('dx', '-0.5em')
+      .text(function(d){ return d.values[0].Code; })
+      .style('text-anchor', 'start');
 
     // Setup Y Axis
     svg.append('g')
-        .attr('class', 'y axis')
-        .call(yAxis)
-      .append('text')
-        .attr('class', 'label')
-        .attr('dy', '-1em')
-        .attr('dx', '-0.75em')
-        .style('text-anchor', 'end')
-        .text('$');
+      .attr('class', 'y axis')
+      .call(yAxis);
 
+    /*
     // Mouse events overlay
     svg.append("rect")
       .attr("class", "overlay")
@@ -199,42 +250,117 @@ function Main_Infographic( _id ) {
       .attr("x2", 0)
       .attr("y2", 0)
       .style('opacity', 0);
+    */
 
     // Setup Lines
     svg.append('g')
-        .attr('class', 'dot-lines')
-      .selectAll('.dot-line')
-        .data(data)
-      .enter().append('line')
-        .attr('id', function(d) { return niceName(d.Drug); })
-        .attr('class', function(d) { return 'line country-'+niceName(d.Country)+' drug-'+niceName(d.Drug); })
-        .attr('x1', function(d) { return x(d.Country); })
-        .attr('y1', height)
-        .attr('x2', function(d) { return x(d.Country); })
-        .attr('y2', function(d) { return y(d.Price); })
-        .style('opacity', 0)
-        .style('stroke', function(d) { return color(d.Drug); });
+      .attr('class', 'dot-lines')
+    .selectAll('.dot-line')
+      .data( currentData )
+    .enter().append('line')
+      .attr('id', setId)
+      .attr('class', function(d) { return 'line'+setClass(d); })
+      .attr('x1', setValueX)
+      .attr('y1', height)
+      .attr('x2', setValueX)
+      .attr('y2', setValueY)
+      .style('visibility', setVisibility)
+      .style('opacity', 0)
+      .style('stroke', setColor);
 
     // Setup Circles
     svg.append('g')
-        .attr('class', 'dots')
-      .selectAll('.dot')
-        .data(data)
-      .enter().append('circle')
-        .attr('id', function(d) { return niceName(d.Drug); })
-        .attr('class', function(d) { return 'dot country-'+niceName(d.Country)+' drug-'+niceName(d.Drug); })
-        .attr('r', 7)
-        .attr('cx', function(d) { return x(d.Country); })
-        .attr('cy', function(d) { return y(d.Price); })
-        .style('opacity', DOT_OPACITY)
-        .style('fill', function(d) { return color(d.Drug); });
+      .attr('class', 'dots')
+    .selectAll('.dot')
+      .data( currentData )
+    .enter().append('circle')
+      .attr('id', setId)
+      .attr('class', function(d) { return 'dot'+setClass(d); })
+      .attr('r', 7)
+      .attr('cx', setValueX)
+      .attr('cy', setValueY)
+      .style('visibility', setVisibility)
+      .style('opacity', DOT_OPACITY)
+      .style('fill', setColor);
+  };
+
+  var updateData = function(){
+
+    // Setup current data
+    current.data = $('#mpr-btn').hasClass('active') ? 'prices' : 'affordability';
+    current.type = $('#public-btn').hasClass('active') ? 'public' : 'private';
+    current.label = (current.data === 'prices') ? 'Price' : ((current.type === 'public') ? 'Public sector' : 'Private sector');
+    
+    var item,
+        currentData = getCurrentData();
+
+    y.domain( d3.extent(currentData, function(d) { return d[ current.label ]; }) ).nice();
+
+    svg.select('.y.axis')
+      .transition().duration(1200).ease('sin-in-out')
+        .call(yAxis);
+
+    // Reset visibility for all dots & lines
+    svg.selectAll('.dot, .line').style('visibility', 'hidden');
+
+    currentData.forEach(function(d){
+
+      item = svg.select('.dot'+getClass(d));
+
+      // Update item
+      if (!item.empty()) {
+
+        item.datum(d)
+          .style('visibility', setVisibility)
+          .transition().duration(1200)
+          .attr('cx', setValueX)
+          .attr('cy', setValueY);
+
+        item = svg.select('.line'+getClass(d));
+        item.datum(d)
+          .style('visibility', setVisibility)
+          .attr('y2', setValueY);
+      } 
+      // Create item
+      else{
+
+        // Setup Lines
+        d3.select('.dot-lines')
+          .append('line')
+          .datum(d)
+          .attr('id', setId)
+          .attr('class', function(d) { return 'line'+setClass(d); })
+          .attr('x1', setValueX)
+          .attr('y1', height)
+          .attr('x2', setValueX)
+          .attr('y2', setValueY)
+          .style('visibility', setVisibility)
+          .style('opacity', 0)
+          .style('stroke', setColor);
+
+        // Setup Circles
+        d3.select('.dots')
+          .append('circle')
+          .datum(d)
+          .attr('id', setId)
+          .attr('class', function(d) { return 'dot'+setClass(d); })
+          .attr('r', 7)
+          .attr('cx', setValueX)
+          .attr('cy', setValueY)
+          .style('visibility', setVisibility)
+          .style('opacity', DOT_OPACITY)
+          .style('fill', setColor)
+          .on('mouseover', onDotOver )
+          .on('mouseout', onDotOut );
+      }
+    });
   };
 
   var onDotOver = function(){
 
     var item = d3.select(this);
           
-    console.log('over dot', item);
+    console.log('over dot', item.data() );
 
     d3.select('.country-marker').style('opacity', 0);
 
@@ -257,7 +383,7 @@ function Main_Infographic( _id ) {
     // Setup tooltip
     $tooltip.select('.country').html( item.data()[0].Country );
     $tooltip.select('.drug').html( item.data()[0].Drug );
-    $tooltip.select('.price').html( item.data()[0].Price );
+    $tooltip.select('.price').html( item.data()[0][ current.label ] + tooltipTxt[ current.data ] );
 
     var left = item.attr('cx') > width*0.5;
 
@@ -282,19 +408,22 @@ function Main_Infographic( _id ) {
     svg.selectAll('.line')
       .style('opacity', 0);
 
+    svg.selectAll('.dot')
+      .style('fill', function(d) { return color(d.Drug); })
+      .style('opacity', DOT_OPACITY );
+
     $tooltip
       .style('opacity', '0')
       .style('right', 'auto')
       .style('left', '-1000px');
-
-    onOverlayMove();
   };
 
+  /*
   var onOverlayMove = function(){
 
     var xPos = d3.mouse(this)[0],
         leftEdges = x.range(),
-        w = width / (countries.length-1),
+        w = width / (dataCountries.length-1),
         j = 0;
 
     while(xPos > (leftEdges[j] + (w*0.5))){ j++; }
@@ -320,82 +449,51 @@ function Main_Infographic( _id ) {
       .style('fill', function(d) { return color(d.Drug); })
       .style('opacity', DOT_OPACITY );
   };
-
-  var updateData = function( data ){
-
-    y.domain(d3.extent(data, function(d) { return d.Price; })).nice();
-
-    svg.select('.y.axis')
-      .transition().duration(1200).ease('sin-in-out')
-        .call(yAxis);
-
-    var item;
-
-    data.forEach(function(d){
-
-      item = svg.select('.dot.country-'+niceName(d.Country)+'.drug-'+niceName(d.Drug));
-
-      if( !item.empty() ){
-        item.datum(d)
-          .transition().duration(1200)
-          .attr('cx', function(d) { return x(d.Country); })
-          .attr('cy', function(d) { return y(d.Price); });
-
-        item = svg.select('.line.country-'+niceName(d.Country)+'.drug-'+niceName(d.Drug));
-        item.datum(d)
-          .attr('y2', function(d) { return y(d.Price); });
-      }
-    });
-  };
+  */
 
   var niceName = function( drug ){
     return drug.toLowerCase().replace(/[ +,\/]/g,'-');
   };
 
+  var setId = function(d){
+    return niceName(d.Drug); 
+  };
 
-  // Public Methods
+  var getClass = function(d){
+   return '.country-' + niceName(d.Country) + '.drug-' + niceName(d.Drug);
+  };
 
-  that.resize = function() {
+  var setClass = function(d){
+   return ' country-' + niceName(d.Country) + ' drug-' + niceName(d.Drug);
+  };
 
-    console.log('resize main vis');
+  var setValueX = function(d){
+    return x(d.Country);
+  };
 
-    // Update variables
+  var setValueY = function(d){
+    return (d[ current.label ] !== null) ? y(d[ current.label ]) : height;
+  };
+
+  var setVisibility = function(d){
+    return (d[ current.label ] !== null) ? 'visible' : 'hidden';
+  };
+
+  var setColor = function(d){
+    return color(d.Drug);
+  };
+
+  var getCurrentData = function(){
+    return (current.data === 'affordability') ? dataAffordability : ((current.type === 'public') ? dataPricesPublic : dataPricesPrivate);
+  };
+
+  var setDimensions = function(){
     widthCont = $el.width();
     heightCont = $el.height();
-    
     width = widthCont - margin.left - margin.right;
     height = heightCont - margin.top - margin.bottom;
-
-    // Update SVG size
-    d3.select('#main-infographic-svg')
-      .attr('width', widthCont)
-      .attr('height', heightCont);
-
-    //Update Axis
-    x.rangePoints([0, width]);
-    y.range([height, 0]);
-
-    xAxis.tickSize(-height);
-    yAxis.tickSize(-width);
-
-    d3.select('g.x.axis')
-      .attr('transform', 'translate(0,' + height + ')')
-      .call(xAxis);
-
-    d3.select('g.y.axis')
-      .call(yAxis);
-
-    // Update Dots & Lines
-    d3.selectAll('.dot-lines .line')
-      .attr('x1', function(d) { return x(d.Country); })
-      .attr('y1', height)
-      .attr('x2', function(d) { return x(d.Country); })
-      .attr('y2', function(d) { return y(d.Price); });
-
-    d3.selectAll('.dot')
-      .attr('cx', function(d) { return x(d.Country); })
-      .attr('cy', function(d) { return y(d.Price); });
   };
+
 
   return that;
 }

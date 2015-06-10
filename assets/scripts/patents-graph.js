@@ -7,7 +7,7 @@ function patents_graph( _id ) {
   var id = _id;
   var $el = $(id);
 
-  var margin = {top: 0, right: 0, bottom: 20, left: 0},
+  var margin = {top: 20, right: 0, bottom: 20, left: 0},
       widthCont = 1140,
       heightCont = 500,
       width, height;
@@ -80,6 +80,12 @@ function patents_graph( _id ) {
         .attr("y1", height)
         .attr("x2", function(d) { return x(2007); })
         .attr("y2", height);
+
+      svg.append('g')
+        .attr('class', 'marker-label')
+        .attr('x1', function(d) { return x(2007); })
+        .append('text')
+        .txt('Se aprueba la licencia obligatoria');
 
       svg.selectAll('.bar')
         .data(data)
