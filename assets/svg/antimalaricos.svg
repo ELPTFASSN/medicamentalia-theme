@@ -2738,15 +2738,15 @@ ffH4Nmys0iiPkysRvlvhd3FX8LiFMCn1HhJMrvXaSVyGzb07wvbSb7nm57UROw7tCpElGOKr7n3z
 <g id="PathIndia">
 	<g>
 		<defs>
-			<rect id="SVGID_1_" x="344.167" y="273.452" width="312.048" height="203.202"/>
+			<rect id="SVGID_antimalaricos_1_" x="344.167" y="273.452" width="312.048" height="203.202"/>
 		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		<clipPath id="SVGID_antimalaricos_2_">
+			<use xlink:href="#SVGID_antimalaricos_1_"  overflow="visible"/>
 		</clipPath>
-		
-			<path clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="6.9999,5.9999" d="
-			M348.859,403.997c17.512,20.156,39.854,36.986,64.116,47.653c51.789,22.77,104.354,10.314,139.854-31.578
-			c19.521-23.037,29.06-56.321,45.194-81.608c14.935-23.406,35.069-47.6,58.188-60.104"/>
+
+		<path clip-path="url(#SVGID_antimalaricos_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="7,6" d="
+		M348.859,403.997c17.512,20.156,39.854,36.986,64.116,47.653c51.789,22.77,104.354,10.314,139.854-31.578
+		c19.521-23.037,29.06-56.321,45.194-81.608c14.935-23.406,35.069-47.6,58.188-60.104"/>
 	</g>
 </g>
 </svg>

@@ -89,7 +89,7 @@ var Antimalaricos_Infographic = function( _id ) {
       svg.select('#PathIndia')
         .style('opacity', 1);
 
-      svg.select('#PathIndia').select('#SVGID_1_')
+      svg.select('#PathIndia').select('#SVGID_antimalaricos_1_')
         .attr('transform', 'scale(0 1)')
         .transition().duration(1500).delay(800)
         .attr('transform', 'scale(1 1)');
