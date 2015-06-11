@@ -8,6 +8,7 @@ function Main_Infographic( _id ) {
       current = {
         data: 'prices',
         type: 'public',
+        order: 'alf',
         label: 'Price'
       },
       tooltipTxt = {
@@ -49,14 +50,15 @@ function Main_Infographic( _id ) {
     xAxis = d3.svg.axis()
       .scale(x)
       .tickSize(-height)
+      .tickPadding(12)
       .tickSubdivide(true)
       .orient('bottom');
 
     yAxis = d3.svg.axis()
-        .scale(y)
-        .tickSize(-width)
-        .tickPadding(8)
-        .orient('left');
+      .scale(y)
+      .tickSize(-width)
+      .tickPadding(8)
+      .orient('left');
 
     svg = d3.select(id).append('svg')
         .attr('id', 'main-infographic-svg')
@@ -84,10 +86,7 @@ function Main_Infographic( _id ) {
             d['Private sector'] = (d['Private sector'] !== 'NO DATA') ? +d['Private sector'] : null;
           });
 
-          dataCountries = d3.nest()
-            .key(function(d) { return d.Pais; })
-            .entries(countries);
-
+          dataCountries     = countries;
           dataPricesPublic  = prices.filter(function(d){ return d['Public/Private'] === 'Public'; });
           dataPricesPrivate = prices.filter(function(d){ return d['Public/Private'] === 'Private'; });
           dataAffordability = affordability;
@@ -99,28 +98,9 @@ function Main_Infographic( _id ) {
           prices = affordability = countries = null;  // reset temp variables for garbage collector
 
           setData();
+          setupMenuBtns();
         });
       });
-    });
-
-    // Setup MPR/Affordability Btns
-    $('#mpr-btn, #affordability-btn').click(function(e){
-
-      if( $(this).hasClass('active') ){ return; }
-
-      $('#mpr-btn, #affordability-btn').removeClass('active');
-      $(this).addClass('active');
-      updateData();
-    });
-
-    // Setup Public/Private Btns
-    $('#public-btn, #private-btn').click(function(e){
-
-      if( $(this).hasClass('active') ){ return; }
-
-      $('#private-btn, #public-btn').removeClass('active');
-      $(this).addClass('active');
-      updateData();
     });
 
     return that;
@@ -172,14 +152,7 @@ function Main_Infographic( _id ) {
 
     d3.select('g.x.axis')
       .attr('transform', 'translate(0,' + height + ')')
-      .call(xAxis)
-      .selectAll('text')
-        .data( dataCountries )
-        .attr('class', 'label')
-        .attr('dy', '1.5em')
-        .attr('dx', '-0.5em')
-        .text(function(d){ return d.values[0].Code; })
-        .style('text-anchor', 'start');
+      .call(xAxis);
 
     d3.select('g.y.axis')
       .call(yAxis);
@@ -194,6 +167,8 @@ function Main_Infographic( _id ) {
     d3.selectAll('.dot')
       .attr('cx', setValueX)
       .attr('cy', setValueY);
+
+    return that;
   };
 
   that.isInitialized = function(){  
@@ -207,10 +182,7 @@ function Main_Infographic( _id ) {
 
     var currentData = getCurrentData();
 
-    var countrieNames = [];
-    dataCountries.forEach(function(d) { countrieNames.push( d.key ); });
-
-    x.domain( countrieNames );
+    x.domain( dataCountries.map(function(d){ return d.Code; }) );
     y.domain( d3.extent(currentData, function(d) { return d[ current.label ]; }) ).nice();
     color.domain( d3.extent(currentData, function(d) { return d.Drug; }) );
 
@@ -220,14 +192,17 @@ function Main_Infographic( _id ) {
     svg.append('g')
       .attr('class', 'x axis')
       .attr('transform', 'translate(0,' + height + ')')
-      .call(xAxis)
-    .selectAll('text')
+      .call(xAxis);
+
+    /*
+     .selectAll('text')
       .data( dataCountries )
       .attr('class', 'label')
       .attr('dy', '1.5em')
       .attr('dx', '-0.5em')
       .text(function(d){ return d.values[0].Code; })
       .style('text-anchor', 'start');
+    */
 
     // Setup Y Axis
     svg.append('g')
@@ -290,7 +265,9 @@ function Main_Infographic( _id ) {
     current.data = $('#mpr-btn').hasClass('active') ? 'prices' : 'affordability';
     current.type = $('#public-btn').hasClass('active') ? 'public' : 'private';
     current.label = (current.data === 'prices') ? 'Price' : ((current.type === 'public') ? 'Public sector' : 'Private sector');
-    
+
+    if( !initialized ){ return that; }
+
     var item,
         currentData = getCurrentData();
 
@@ -354,8 +331,74 @@ function Main_Infographic( _id ) {
           .on('mouseout', onDotOut );
       }
     });
+
+    return that;
   };
 
+  var setupMenuBtns = function(){
+
+    // MPR/Affordability Btns
+    $('#mpr-btn, #affordability-btn').click(function(e){
+      if( $(this).hasClass('active') ){ return; }
+      $('#mpr-btn, #affordability-btn').removeClass('active');
+      $(this).addClass('active');
+      updateData();
+    });
+
+    // Public/Private Btns
+    $('#public-btn, #private-btn').click(function(e){
+      if( $(this).hasClass('active') ){ return; }
+      $('#public-btn, #private-btn').removeClass('active');
+      $(this).addClass('active');
+      updateData();
+    });
+
+    // Public/Private Btns
+    $('#alf-btn, #pib-btn').click(function(e){
+      if( $(this).hasClass('active') ){ return; }
+      $('#alf-btn, #pib-btn').removeClass('active');
+      $(this).addClass('active');
+      reorderData();
+    });
+  };
+
+  var reorderData = function(){
+
+    current.order = $('#alf-btn').hasClass('active') ? 'alf' : 'pib';
+
+    // Order Countries
+    if (current.order === 'alf') {
+      dataCountries.sort(function(x, y){
+        return d3.ascending(x.Pais, y.Pais);
+      });
+    } else {
+      dataCountries.sort(function(x, y){
+        return d3.ascending(+x.PIB, +y.PIB);
+      });
+    }
+
+    // Update X Axis
+    x.domain( dataCountries.map(function(d){ return d.Code; }) );
+
+    d3.selectAll('.line')
+      .attr('x1', setValueX)
+      .attr('x2', setValueX);
+
+    var transition = svg.transition().duration(1000);
+    // var delay = function(d, i) { return i * 50; };
+
+    transition.selectAll('.dot')
+        //.delay(delay)
+        .attr('cx', setValueX);
+
+    transition.select('.x.axis')
+      .call(xAxis)
+    .selectAll('g');
+      //.delay(delay);
+
+    return that;
+  };
+  
   var onDotOver = function(){
 
     var item = d3.select(this);
@@ -468,7 +511,8 @@ function Main_Infographic( _id ) {
   };
 
   var setValueX = function(d){
-    return x(d.Country);
+    var country = dataCountries.filter(function(e){ return e.Pais === d.Country; });
+    return x( country[0].Code );
   };
 
   var setValueY = function(d){

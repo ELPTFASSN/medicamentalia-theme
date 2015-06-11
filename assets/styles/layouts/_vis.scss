@@ -261,6 +261,11 @@ Infographic
       font-weight: 400;
     }
 
+    .x.axis text{
+      font-size: 0.75em;
+      //text-anchor: start !important;
+    }
+
     .y.axis text{
       font-size: 0.75em;
       font-weight: 300;

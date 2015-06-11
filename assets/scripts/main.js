@@ -100,14 +100,10 @@
         $('[data-toggle="tooltip"]').tooltip(); // Init Tooltips
         $('.dropdown-toggle').dropdown();       // Init Dropdowns
 
-        //var vis = main_visualization('#main-vis').init();
-
         var main_infographic = new Infographic('#main-infographic', 'main');
 
         $(window).scroll( main_infographic.onScroll );
         $(window).resize( main_infographic.onResize );
-
-        //$(window).resize( vis.resize );
       }
     },
     // Ghana Page

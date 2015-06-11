@@ -69,9 +69,7 @@ var Infographic = function( _id, _type ) {
 
     that.onResize();
 
-    if( type === 'main'){
-      vis.init(); 
-    }
+    if( type === 'main'){ vis.init(); }
     
     $contentList.first().addClass('active');    // Setup firs content item as active
 
