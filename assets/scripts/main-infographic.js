@@ -23,7 +23,7 @@ function Main_Infographic( _id ) {
 
   var id = _id,
       $el = $(id),
-      $tooltip = d3.select('#main-infographic-tooltip');
+      $tooltip = $('#main-infographic-tooltip');
 
   var color = d3.scale.ordinal()
       .range(['#C9AD4B', '#BBD646', '#63BA2D', '#34A893', '#3D91AD', '#5B8ACB', '#BA7DAF', '#BF6B80', '#F49D9D', '#E25453', '#B56631', '#E2773B', '#FFA951', '#F4CA00']);
@@ -115,7 +115,7 @@ function Main_Infographic( _id ) {
       /*
       d3.select('.overlay')
         .on('mouseout', onOverlayOut)
-        .on("mousemove", onOverlayMove);
+        .on('mousemove', onOverlayMove);
       */
 
       // Add dot events
@@ -196,16 +196,6 @@ function Main_Infographic( _id ) {
       .attr('transform', 'translate(0,' + height + ')')
       .call(xAxis);
 
-    /*
-     .selectAll('text')
-      .data( dataCountries )
-      .attr('class', 'label')
-      .attr('dy', '1.5em')
-      .attr('dx', '-0.5em')
-      .text(function(d){ return d.values[0].Code; })
-      .style('text-anchor', 'start');
-    */
-
     // Setup Y Axis
     svg.append('g')
       .attr('class', 'y axis')
@@ -213,21 +203,38 @@ function Main_Infographic( _id ) {
 
     /*
     // Mouse events overlay
-    svg.append("rect")
-      .attr("class", "overlay")
+    svg.append('rect')
+      .attr('class', 'overlay')
       .style('opacity', 0)
-      .attr("width", width)
-      .attr("height", height);
+      .attr('width', width)
+      .attr('height', height);
 
     // Country Marker
-    svg.append("line")
-      .attr("class", "country-marker")
-      .attr("x1", 0)
-      .attr("y1", height)
-      .attr("x2", 0)
-      .attr("y2", 0)
+    svg.append('line')
+      .attr('class', 'country-marker')
+      .attr('x1', 0)
+      .attr('y1', height)
+      .attr('x2', 0)
+      .attr('y2', 0)
       .style('opacity', 0);
     */
+
+    // MPR Line
+    svg.append('g')
+      .attr('class', 'mpr-line')
+      .attr('transform', 'translate(0 ' + y(1) + ')')
+    .append('line')
+      .attr('x1', 0)
+      .attr('y1', 0)
+      .attr('x2', width)
+      .attr('y2', 0);
+
+    d3.select('.mpr-line')
+      .append('text')
+      .attr('x', -8)
+      .attr('y', 0)
+      .attr('dy', '0.32em')
+      .text('MPR');
 
     // Setup Lines
     svg.append('g')
@@ -278,6 +285,17 @@ function Main_Infographic( _id ) {
     svg.select('.y.axis')
       .transition().duration(1200).ease('sin-in-out')
         .call(yAxis);
+
+    if (current.data === 'prices') {
+      d3.select('.mpr-line')
+        .transition().duration(1200)
+        .attr('transform', 'translate(0 ' + y(1) + ')')
+        .style('opacity', 1);
+    } else {
+      d3.select('.mpr-line')
+        .transition().duration(1200)
+        .style('opacity', 0);
+    }
 
     // Reset visibility for all dots & lines
     svg.selectAll('.dot, .line').style('visibility', 'hidden');
@@ -418,7 +436,7 @@ function Main_Infographic( _id ) {
     var regions = '';
 
     $('#region-dropdown-menu .checkbox input').each(function(){
-      if( $(this).is(":checked") ){
+      if( $(this).is(':checked') ){
         regions += $(this).attr('name')+' ';
       }
     });
@@ -458,8 +476,6 @@ function Main_Infographic( _id ) {
   var onDotOver = function(){
 
     var item = d3.select(this);
-          
-    //console.log('over dot', item.data() );
 
     d3.select('.country-marker').style('opacity', 0);
 
@@ -480,26 +496,19 @@ function Main_Infographic( _id ) {
     });
 
     // Setup tooltip
-    $tooltip.select('.country').html( item.data()[0].Country );
-    $tooltip.select('.drug').html( item.data()[0].Drug );
-    $tooltip.select('.price').html( item.data()[0][ current.label ] + tooltipTxt[ current.data ] );
+    $tooltip.find('.country').html( item.data()[0].Country );
+    $tooltip.find('.drug').removeClass().addClass('drug '+niceName(item.data()[0].Drug)).html( item.data()[0].Drug );
+    $tooltip.find('.price').html( item.data()[0][ current.label ] + tooltipTxt[ current.data ] );
 
     var left = item.attr('cx') > width*0.5;
 
     if( left ){
-      $tooltip
-        .style('right', (widthCont-Math.round(item.attr('cx'))-margin.left)+'px')
-        .style('left', 'auto');
+      $tooltip.addClass('left').css({'right': (widthCont-Math.round(item.attr('cx'))-margin.left)+'px', 'left': 'auto'});
     } else{
-      $tooltip
-        .style('right', 'auto')
-        .style('left', (Math.round(item.attr('cx'))+margin.left)+'px');
+      $tooltip.removeClass('left').css({'right': 'auto', 'left': (Math.round(item.attr('cx'))+margin.left)+'px'});
     }
 
-    $tooltip
-      .classed('left', left)
-      .style('top', (Math.round(item.attr('cy'))+margin.top)+'px')
-      .style('opacity', '1');
+    $tooltip.css({'top': (Math.round(item.attr('cy'))+margin.top)+'px', 'opacity': '1'});
   };
 
   var onDotOut = function(){
@@ -511,10 +520,7 @@ function Main_Infographic( _id ) {
       .style('fill', function(d) { return color(d.Drug); })
       .style('opacity', DOT_OPACITY );
 
-    $tooltip
-      .style('opacity', '0')
-      .style('right', 'auto')
-      .style('left', '-1000px');
+    $tooltip.css({'opacity': '0', 'right': 'auto', 'left': '-1000px'});
   };
 
   /*

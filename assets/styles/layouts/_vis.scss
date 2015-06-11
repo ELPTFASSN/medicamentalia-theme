@@ -287,6 +287,18 @@ Infographic
       display: none;
     }
 
+    .mpr-line{
+      text{
+        fill: $gray-light;
+        font-size: 0.75em;
+        text-anchor: end;
+      }
+      line{
+        stroke: mix( $gray-lighter, $gray-light, 60% );
+        shape-rendering: crispEdges
+      }
+    }
+
     .country-marker{
       stroke: mix( $gray-lighter, $gray-light, 70% );
     }
@@ -395,7 +407,8 @@ Infographic
 #main-infographic-tooltip{
   top: 80px;
   color: $color-brown;
-  background: $color-orange;
+  background: white;  // $color-orange;
+  border: 1px solid $color-orange;
   padding: 10px 10px 2px;
   width: auto;
   margin: -40px 16px 10px;
@@ -405,14 +418,75 @@ Infographic
 
   p{
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     line-height: 1em;
     font-weight: 600;
 
+    .glyphicon{
+      color: $color-orange;
+      width: 18px;
+      font-size: 0.875em;
+    }
+
     .country{
-      color: white;
+      color: $color-orange;
       text-transform: uppercase;
-      font-weight: 300;
+    }
+
+    .drug{
+
+      &:before{
+        content: "";
+        float: left;
+        display: block;
+        width: 18px;
+        height: 13px;
+        overflow: hidden;
+        background: url(../images/pills.png) no-repeat 0 0 transparent;
+      }
+
+      &.amitriptyline-25-mg-cap-tab:before{
+        background-position: 0 0;
+      }
+      &.simvastatin-20-mg-cap-tab:before{
+        background-position: 0 -13px;
+      }
+      &.amoxicillin-500-mg-cap-tab:before{
+        background-position: 0 -26px;
+      }
+      &.atenolol-50-mg-cap-tab:before{
+        background-position: 0 -39px;
+      }
+      &.captopril-25-mg-cap-tab:before{
+        background-position: 0 -52px;
+      }
+      &.ceftriaxone-1-g-vial-injection:before{
+        background-position: 0 -65px;
+      }
+      &.ciprofloxacin-500-mg-cap-tab:before{
+        background-position: 0 -78px;
+      }
+      &.co-trimoxazole-40-200-mg-5ml-suspension:before{
+        background-position: 0 -91px;
+      }
+      &.diazepam-5-mg-cap-tab:before{
+        background-position: 0 -104px;
+      }
+      &.diclofenac-50-mg-cap-tab:before{
+        background-position: 0 -117px;
+      }
+      &.glibenclamide-5-mg-cap-tab:before{
+        background-position: 0 -130px;
+      }
+      &.omeprazole-20-mg-cap-tab:before{
+        background-position: 0 -143px;
+      }
+      &.paracetamol-120-mg-5ml-suspension:before{
+        background-position: 0 -156px;        
+      }
+      &.salbutamol-100-mcg-dose-inhaler:before{
+        background-position: 0 -169px;
+      }
     }
   }
   
