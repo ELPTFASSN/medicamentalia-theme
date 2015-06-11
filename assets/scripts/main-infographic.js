@@ -30,7 +30,7 @@ function Main_Infographic( _id ) {
 
   var svg,
       x, y, xAxis, yAxis,
-      dataPricesPublic, dataPricesPrivate, dataAffordability, dataCountries;
+      dataPricesPublic, dataPricesPrivate, dataAffordability, dataCountries, dataCountriesAll;
 
 
   // Setup Visualization
@@ -86,14 +86,16 @@ function Main_Infographic( _id ) {
             d['Private sector'] = (d['Private sector'] !== 'NO DATA') ? +d['Private sector'] : null;
           });
 
-          dataCountries     = countries;
+          dataCountries = dataCountriesAll = countries;
           dataPricesPublic  = prices.filter(function(d){ return d['Public/Private'] === 'Public'; });
           dataPricesPrivate = prices.filter(function(d){ return d['Public/Private'] === 'Private'; });
           dataAffordability = affordability;
 
+          /*
           console.dir(dataCountries);
           console.dir(dataPricesPublic);
           console.dir(dataAffordability);
+          */
 
           prices = affordability = countries = null;  // reset temp variables for garbage collector
 
@@ -360,6 +362,18 @@ function Main_Infographic( _id ) {
       $(this).addClass('active');
       reorderData();
     });
+
+    // Public/Private Btns
+    $('#alf-btn, #pib-btn').click(function(e){
+      if( $(this).hasClass('active') ){ return; }
+      $('#alf-btn, #pib-btn').removeClass('active');
+      $(this).addClass('active');
+      reorderData();
+    });
+
+    $('#region-dropdown-menu .checkbox input').change(function(e){
+      filterByRegion();
+    });
   };
 
   var reorderData = function(){
@@ -399,11 +413,53 @@ function Main_Infographic( _id ) {
     return that;
   };
   
+  var filterByRegion = function(){
+
+    var regions = '';
+
+    $('#region-dropdown-menu .checkbox input').each(function(){
+      if( $(this).is(":checked") ){
+        regions += $(this).attr('name')+' ';
+      }
+    });
+
+    // Filter Countries
+    dataCountries = dataCountriesAll.filter(function(d){
+      return regions.indexOf( d.Region ) > -1;
+    });
+
+    // Reorder Countries if order is PIB
+    if (current.order === 'pib') {
+      dataCountries.sort(function(x, y){
+        return d3.ascending(+x.PIB, +y.PIB);
+      });
+    }
+
+    // Update X Axis
+    x.domain( dataCountries.map(function(d){ return d.Code; }) );
+
+    d3.selectAll('.dot, .line')
+      .style('visibility', setVisibility);
+
+    d3.selectAll('.line')
+      .attr('x1', setValueX)
+      .attr('x2', setValueX);
+
+    var transition = svg.transition().duration(1000);
+  
+    transition.selectAll('.dot')
+      .attr('cx', setValueX);
+
+    transition.select('.x.axis')
+      .call(xAxis)
+      .selectAll('g');
+  };
+
   var onDotOver = function(){
 
     var item = d3.select(this);
           
-    console.log('over dot', item.data() );
+    //console.log('over dot', item.data() );
 
     d3.select('.country-marker').style('opacity', 0);
 
@@ -512,7 +568,7 @@ function Main_Infographic( _id ) {
 
   var setValueX = function(d){
     var country = dataCountries.filter(function(e){ return e.Pais === d.Country; });
-    return x( country[0].Code );
+    return ( country.length > 0 ) ? x( country[0].Code ) : 0;
   };
 
   var setValueY = function(d){
@@ -520,7 +576,7 @@ function Main_Infographic( _id ) {
   };
 
   var setVisibility = function(d){
-    return (d[ current.label ] !== null) ? 'visible' : 'hidden';
+    return (d[ current.label ] !== null && dataCountries.some(function(e){ return e.Pais === d.Country; }) ) ? 'visible' : 'hidden';
   };
 
   var setColor = function(d){
