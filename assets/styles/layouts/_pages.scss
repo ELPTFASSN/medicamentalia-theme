@@ -50,8 +50,12 @@ header {
       margin-left: auto;
       margin-right: auto;
       padding-top: 40px;
+
+      >p{
+        max-width: 640px;
+        margin: 0 auto 15px;
+      }
     }
-    
 
     h1 {
       color: $brand-secondary;
@@ -133,19 +137,24 @@ header {
     }
   }
 
+  .navbar-collapse{
+    padding: 0;
+    border-color: $color-brown;
+  }
+
   .navbar-nav{
     width: 100%;
-    padding-right: 47px;
-    border-left: 1px solid #be5f30;
+    padding-right: 0;
+    margin: 0;
 
     li{
-      width: 33.33%;
+      width: 100%;
 
       > a{
         color: $color-brown;
         padding: 12px 0;
         text-align: center;
-        border-right: 1px solid #be5f30;
+        border-bottom: 1px solid mix( $color-brown, $color-orange, 50% );
         @include transition(.3s ease-out background);
 
         &:focus{
@@ -153,13 +162,13 @@ header {
         }
   
         &:hover{
-          background: mix( $color-orange, #be5f30, 50% );
+          background: mix( $color-orange, $color-brown, 75% );
         }
       }
 
       &.active > a{
         color: white;
-        background: #be5f30;
+        background: mix( $color-orange, $color-brown, 75% );
       }
     }
   }
@@ -170,11 +179,12 @@ header {
     position: absolute;
     right: 0;
     top: 0;
-    width: 46px;
+    width: 47px;
     line-height: 42px;
     color: $color-orange;
     background: transparent;
     text-align: center;
+    border-left: 1px solid $color-brown;
     @include transition(.3s ease-out background);     
   }
 
@@ -185,16 +195,16 @@ header {
     z-index: 90;
 
     .navbar-nav{
-      border-right: 1px solid #be5f30;
+      border-right: 1px solid $color-brown;
     }
 
     .top-btn{
       color: $color-brown;
       visibility: visible;
-      background: mix( $color-orange, #be5f30, 50% );
+      background: mix( $color-orange, $color-brown, 75% );
 
       &:hover{
-        background: #be5f30;
+        background: mix( $color-orange, $color-brown, 50% );
       }
     }
   }
@@ -203,8 +213,27 @@ header {
     
     .top-btn{
       right: 16px;
-      width: 48px;
       line-height: 44px;
+      border-left: none;
+    }
+
+    .navbar-collapse{
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .navbar-nav{
+      padding-right: 47px;
+      border-left: 1px solid $color-brown;
+
+      li{
+        width: 33.33%;
+
+        > a{
+          border-bottom: 0;
+          border-right: 1px solid $color-brown;
+        }
+      }
     }
   }
 }
@@ -213,8 +242,11 @@ body.brasil header{
   background-image: url('http://localhost/Medicamentalia/www/wp-content/uploads/brasil.jpg');
 }
 
-body.brasil .nav-page .navbar-nav li{
-  width: 16.6666%;
+@media (min-width: $screen-sm) {
+    
+  body.brasil .nav-page .navbar-nav li{
+    width: 16.6666%;
+  }
 }
 
 
@@ -226,6 +258,19 @@ body.brasil .nav-page .navbar-nav li{
 
   .page-content-container{
     width: 100%;
+  }
+
+  .author{
+    font-family: $font-family-sans-serif;
+    color: $brand-primary;
+    font-size: 1em;
+    margin-top: 80px;
+    font-weight: 300;
+
+    span{
+      text-transform: uppercase;
+      font-weight: 400;
+    }
   }
 
   h2{
@@ -374,6 +419,26 @@ blockquote{
     background-position: center;
     @include background-size( cover );
   }
+}
+
+.carousel-control{
+  width: 80px;
+
+  &:hover{
+    color: $color-orange;
+  }
+}
+
+.carousel-caption{
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: $color-brown;
+  background: white;
+  background: rgba(255,255,255,0.7);
+  text-shadow: none;
 }
 
 

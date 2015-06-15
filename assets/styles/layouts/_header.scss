@@ -59,14 +59,21 @@
 
 
 #main-menu{
-  float: right;
-  padding-right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: none;
+  overflow-y: visible;
 
   .navbar-nav{
+    margin: 0 -15px;
+    border-top: 1px solid $brand-secondary;
   
     >li{
       //float: right;
       text-transform: uppercase;
+      padding-left: 15px;
+      border-bottom: 1px solid $color-green;
 
       &.menu-item-language{
         background: $color-green;
@@ -76,6 +83,8 @@
           color: $color-green-dark;
           opacity: 1;
           font-weight: 400;
+          padding-right: 10px;
+          padding-left: 0;
         }
 
         &:hover{
@@ -90,6 +99,8 @@
         letter-spacing: 0.04em;
         padding-top: 0;
         padding-bottom: 0;
+        padding-right: 20px;
+        padding-left: 0;
         line-height: $navbar-height - 1px;
         font-weight: 300;
         opacity: 0.5;
@@ -104,6 +115,28 @@
       &.current-menu-item a{
         opacity: 1;
         font-weight: 400;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $screen-sm) {
+
+  #main-menu{
+    float: right;
+    width: auto;
+
+    .navbar-nav{
+      border-top: none;
+
+      >li{
+        padding-left: 0;
+        border-bottom: none;
+      }
+
+      >li.menu-item-language > a{
+        padding-left: 10px;
       }
     }
   }
