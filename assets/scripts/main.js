@@ -98,7 +98,8 @@
       init: function() {
 
         $('[data-toggle="tooltip"]').tooltip(); // Init Tooltips
-        $('.dropdown-toggle').dropdown();       // Init Dropdowns
+        $('.dropdown-toggle').dropdown();       // Init Dropdown
+        $('#region-dropdown-menu').click(function(e){ e.stopPropagation(); });
 
         var main_infographic = new Infographic('#main-infographic', 'main');
 

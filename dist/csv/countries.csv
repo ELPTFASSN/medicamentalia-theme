@@ -2,15 +2,15 @@ Pais,Country,Code,Region,PIB
 Afghanistan,Afghanistan,AF,Asia,664.76
 Armenia,Armenia,AM,Asia,3504.77
 Bolivia,Bolivia,BO,America,2867.64
-Brazil Rio de Janeiro State,Brazil,BR,America,11208.08
-Brazil Rio Grande do Sul State,Brazil,BR,America,11208.08
+"Brazil, Rio de Janeiro State",Brazil,BR,America,11208.08
+"Brazil, Rio Grande do Sul State",Brazil,BR,America,11208.08
 Burkina Faso,Burkina Faso,BF,Africa,760.85
 Burundi,Burundi,BI,Africa,267.11
 Cameroon,Cameroon,CM,Africa,1328.64
 Chad,Chad,TD,Africa,1053.66
-China Shaanxi Province,China,CN,Asia,6807.43
-China Shandong Province,China,CN,Asia,6807.43
-China Shanghai,Shanghai,CN,Asia,9572.86
+"China, Shaanxi Province",China,CN,Asia,6807.43
+"China, Shandong Province",China,CN,Asia,6807.43
+"China, Shanghai",Shanghai,CN,Asia,9572.86
 Colombia,Colombia,CO,America,7831.22
 Congo,Congo,CG,Africa,3167.05
 Democratic Republic of Congo,Democratic Republic of Congo,CD,Africa,484.21
@@ -21,13 +21,13 @@ Ethiopia,Ethiopia,ET,Africa,505.05
 Fiji,Fiji,FJ,Oceania,4375.41
 Ghana,Ghana,GH,Africa,1858.24
 Haiti,Haiti,HT,America,819.90
-India Chennai,India,IN,Asia,1497.55
-India Haryana,India,IN,Asia,1497.55
-India Karnataka,India,IN,Asia,1497.55
-India Maharashtra 4 regions,India,IN,Asia,1497.55
-"India NCT, Delhi",India,IN,Asia,1497.55
-India Rajasthan,India,IN,Asia,1497.55
-India West Bengal,India,IN,Asia,1497.55
+"India, Chennai",India,IN,Asia,1497.55
+"India, Haryana",India,IN,Asia,1497.55
+"India, Karnataka",India,IN,Asia,1497.55
+"India, Maharashtra 4 regions",India,IN,Asia,1497.55
+"India, NCT, Delhi",India,IN,Asia,1497.55
+"India, Rajasthan",India,IN,Asia,1497.55
+"India, West Bengal",India,IN,Asia,1497.55
 Indonesia,Indonesia,ID,Asia,3475.25
 Iran,Iran,IR,Asia,4763.30
 Jordan,Jordan,JO,Asia,5213.39
@@ -40,7 +40,7 @@ Lebanon,Lebanon,LB,Asia,9928.04
 Malaysia,Malaysia,MY,Asia,10538.06
 Mali,Mali,ML,Africa,715.13
 Mauritius,Mauritius,MU,Africa,9477.79
-Mexico Mexico City,Mexico,MX,America,10307.28
+"Mexico, Mexico City",Mexico,MX,America,10307.28
 Moldova,Moldova,MD,Europe,2239.56
 Mongolia,Mongolia,MN,Asia,4056.40
 Morocco,Morocco,MA,Africa,3092.61
@@ -50,11 +50,10 @@ Oman,Oman,OM,Asia,21929.01
 Pakistan,Pakistan,PK,Asia,1275.30
 Peru,Peru,PE,America,6661.59
 Philippines,Philippines,PH,Asia,2765.08
-Russia Tatarstan,Russia,RU,Europe,14611.70
-Sao Tomè en Principe,Sao Tome & Principe,ST,Africa,1609.82
-South Africa Gauteng Province,South Africa,ZA,Africa,6886.29
-South Africa Kwazulu Natal State,South Africa,ZA,Africa,6886.29
-Sri Lanka,Sri Lanka,LK,Asia,3279.89
+"Russia, Tatarstan",Russia,RU,Europe,14611.70
+São Tomé and Príncipe,Sao Tome & Principe,ST,Africa,1609.82
+"South Africa, Gauteng Province",South Africa,ZA,Africa,6886.29
+"South Africa, Kwazulu Natal State",South Africa,ZA,Africa,6886.29
 Sudan,Sudan,SD,Africa,1753.38
 Syria,Syria,SY,Asia,2065.54
 Tajikistan,Tajikistan,TJ,Asia,1036.58

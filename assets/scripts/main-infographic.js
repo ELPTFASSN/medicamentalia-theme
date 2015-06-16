@@ -8,12 +8,8 @@ function Main_Infographic( _id ) {
       current = {
         data: 'prices',
         type: 'public',
-        order: 'alf',
+        order: 'area',
         label: 'Price'
-      },
-      tooltipTxt = {
-        prices: ' x MPR',
-        affordability: ' days of work'
       },
       currentState = 0;
 
@@ -32,6 +28,19 @@ function Main_Infographic( _id ) {
       x, y, xAxis, yAxis,
       dataPricesPublic, dataPricesPrivate, dataAffordability, dataCountries, dataCountriesAll;
 
+  var tickFormatPrices = function(d){ 
+        if (d === 0) {
+          return 'gratis'; 
+        }
+        return d+'x'; 
+      };
+
+  var tickFormatAffordability = function(d){ 
+        if (d === 0) {
+          return 'gratis'; 
+        }
+        return d; 
+      };
 
   // Setup Visualization
 
@@ -58,6 +67,7 @@ function Main_Infographic( _id ) {
       .scale(y)
       .tickSize(-width)
       .tickPadding(8)
+      .tickFormat(tickFormatPrices)
       .orient('left');
 
     svg = d3.select(id).append('svg')
@@ -67,43 +77,12 @@ function Main_Infographic( _id ) {
       .append('g')
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-
     // Load CSVs
-    d3.csv( $('body').data('url')+'/dist/csv/prices.csv', function(error, prices) {
-
-      d3.csv( $('body').data('url')+'/dist/csv/affordability.csv', function(error, affordability) {
-
-        d3.csv( $('body').data('url')+'/dist/csv/countries.csv', function(error, countries) {
-
-          // Parse Data
-          prices = prices.filter(function(d){ return d['Unit/MPR'] === 'MPR'; });
-          prices.forEach(function(d) {
-            d.Price = (d.Price === 'NO DATA') ? null : ((d.Price !== 'free') ? +d.Price : 0);
-          });
-          
-          affordability.forEach(function(d) {
-            d['Public sector']  = (d['Public sector'] !== 'NO DATA') ? +d['Public sector'] : null;
-            d['Private sector'] = (d['Private sector'] !== 'NO DATA') ? +d['Private sector'] : null;
-          });
-
-          dataCountries = dataCountriesAll = countries;
-          dataPricesPublic  = prices.filter(function(d){ return d['Public/Private'] === 'Public'; });
-          dataPricesPrivate = prices.filter(function(d){ return d['Public/Private'] === 'Private'; });
-          dataAffordability = affordability;
-
-          /*
-          console.dir(dataCountries);
-          console.dir(dataPricesPublic);
-          console.dir(dataAffordability);
-          */
-
-          prices = affordability = countries = null;  // reset temp variables for garbage collector
-
-          setData();
-          setupMenuBtns();
-        });
-      });
-    });
+    queue()
+      .defer(d3.csv, $('body').data('url')+'/dist/csv/prices.csv')
+      .defer(d3.csv, $('body').data('url')+'/dist/csv/affordability.csv')
+      .defer(d3.csv, $('body').data('url')+'/dist/csv/countries.csv')
+      .await( onDataReady );
 
     return that;
   };
@@ -180,9 +159,43 @@ function Main_Infographic( _id ) {
 
   // Private Methods
 
+  var onDataReady = function( error, prices, affordability, countries ){
+
+    prices = prices.filter(function(d){ return d['Unit/MPR'] === 'MPR'; });
+    prices.forEach(function(d) {
+      d.Price = (d.Price === 'NO DATA') ? null : ((d.Price !== 'free') ? +d.Price : 0);
+    });
+    
+    affordability.forEach(function(d) {
+      d['Public sector']  = (d['Public sector'] !== 'NO DATA') ? +d['Public sector'] : null;
+      d['Private sector'] = (d['Private sector'] !== 'NO DATA') ? +d['Private sector'] : null;
+    });
+
+    dataCountries = dataCountriesAll = countries;
+    dataPricesPublic  = prices.filter(function(d){ return d['Public/Private'] === 'Public'; });
+    dataPricesPrivate = prices.filter(function(d){ return d['Public/Private'] === 'Private'; });
+    dataAffordability = affordability;
+
+    reorderCountriesByArea();
+
+    /*
+    console.dir(dataCountries);
+    console.dir(dataPricesPublic);
+    console.dir(dataAffordability);
+    */
+
+    prices = affordability = countries = null;  // reset temp variables for garbage collector
+
+    setData();
+    setupMenuBtns();
+  };
+
   var setData = function(){
 
     var currentData = getCurrentData();
+
+    // Set title
+    $('#main-infographic-menu .'+current.data+'-'+current.type).show();
 
     x.domain( dataCountries.map(function(d){ return d.Code; }) );
     y.domain( d3.extent(currentData, function(d) { return d[ current.label ]; }) ).nice();
@@ -199,7 +212,13 @@ function Main_Infographic( _id ) {
     // Setup Y Axis
     svg.append('g')
       .attr('class', 'y axis')
-      .call(yAxis);
+      .call(yAxis)
+      .append('text')
+        .attr('class', 'y-label')
+        .attr('y', -15)
+        .style('opacity', 0)
+        .style('text-anchor', 'end')
+        .text('Días');
 
     /*
     // Mouse events overlay
@@ -273,12 +292,28 @@ function Main_Infographic( _id ) {
     // Setup current data
     current.data = $('#mpr-btn').hasClass('active') ? 'prices' : 'affordability';
     current.type = $('#public-btn').hasClass('active') ? 'public' : 'private';
-    current.label = (current.data === 'prices') ? 'Price' : ((current.type === 'public') ? 'Public sector' : 'Private sector');
+    current.label = (current.data === 'prices') ? 'Price' : ((current.type === 'public') ? 'Public sector - number of days' : 'Private sector - number of days');
 
     if( !initialized ){ return that; }
 
+    // Set title
+    $('#main-infographic-menu h4').hide();
+    $('#main-infographic-menu .'+current.data+'-'+current.type).show();
+
     var item,
         currentData = getCurrentData();
+
+    if (current.data === 'prices') {
+      yAxis.tickFormat(tickFormatPrices);
+      d3.select('.y-label')
+        .transition().duration(1000)
+        .style('opacity', 0);
+    } else {
+      yAxis.tickFormat(tickFormatAffordability);
+      d3.select('.y-label')
+        .transition().duration(1000)
+        .style('opacity', 1);
+    }
 
     y.domain( d3.extent(currentData, function(d) { return d[ current.label ]; }) ).nice();
 
@@ -373,18 +408,10 @@ function Main_Infographic( _id ) {
       updateData();
     });
 
-    // Public/Private Btns
-    $('#alf-btn, #pib-btn').click(function(e){
+    // Order Btns
+    $('#area-btn, #pib-btn').click(function(e){
       if( $(this).hasClass('active') ){ return; }
-      $('#alf-btn, #pib-btn').removeClass('active');
-      $(this).addClass('active');
-      reorderData();
-    });
-
-    // Public/Private Btns
-    $('#alf-btn, #pib-btn').click(function(e){
-      if( $(this).hasClass('active') ){ return; }
-      $('#alf-btn, #pib-btn').removeClass('active');
+      $('#area-btn, #pib-btn').removeClass('active');
       $(this).addClass('active');
       reorderData();
     });
@@ -396,13 +423,11 @@ function Main_Infographic( _id ) {
 
   var reorderData = function(){
 
-    current.order = $('#alf-btn').hasClass('active') ? 'alf' : 'pib';
+    current.order = $('#area-btn').hasClass('active') ? 'area' : 'pib';
 
     // Order Countries
-    if (current.order === 'alf') {
-      dataCountries.sort(function(x, y){
-        return d3.ascending(x.Pais, y.Pais);
-      });
+    if (current.order === 'area') {
+      reorderCountriesByArea();
     } else {
       dataCountries.sort(function(x, y){
         return d3.ascending(+x.PIB, +y.PIB);
@@ -417,18 +442,25 @@ function Main_Infographic( _id ) {
       .attr('x2', setValueX);
 
     var transition = svg.transition().duration(1000);
-    // var delay = function(d, i) { return i * 50; };
-
+    
     transition.selectAll('.dot')
-        //.delay(delay)
-        .attr('cx', setValueX);
+      .attr('cx', setValueX);
 
     transition.select('.x.axis')
       .call(xAxis)
-    .selectAll('g');
-      //.delay(delay);
+      .selectAll('g');
 
     return that;
+  };
+
+  var reorderCountriesByArea = function(){
+    dataCountries.sort(function(x, y){
+      if (x.Region === y.Region){
+        return d3.ascending(x.Pais, y.Pais);
+      }
+      return d3.ascending(x.Region, y.Region);
+      //x.Region == y.Region ? : (x.Region > y.Region ? 1 : -1);
+    });
   };
   
   var filterByRegion = function(){
@@ -440,6 +472,14 @@ function Main_Infographic( _id ) {
         regions += $(this).attr('name')+' ';
       }
     });
+
+    // Select all regions if there's no one
+    if (regions === '') {
+      $('#region-dropdown-menu .checkbox input').each(function(){
+        $(this).attr('checked',true);
+        regions += $(this).attr('name')+' ';
+      });
+    }
 
     // Filter Countries
     dataCountries = dataCountriesAll.filter(function(d){
@@ -495,10 +535,17 @@ function Main_Infographic( _id ) {
       return ( item.attr('id') === niceName(a.Drug) ) ? 1 : -1;
     });
 
+    var data = +item.data()[0][ current.label ];
+    var dataIcon = (current.data !== 'prices') ? 'glyphicon-time' : ( (data < 1) ? 'glyphicon-arrow-down' : 'glyphicon-arrow-up' );
+
     // Setup tooltip
     $tooltip.find('.country').html( item.data()[0].Country );
-    $tooltip.find('.drug').removeClass().addClass('drug '+niceName(item.data()[0].Drug)).html( item.data()[0].Drug );
-    $tooltip.find('.price').html( item.data()[0][ current.label ] + tooltipTxt[ current.data ] );
+    $tooltip.find('.year').html( '('+item.data()[0].Year+')' );
+    $tooltip.find('.price').html( data );
+    $tooltip.find('.drug, .green .glyphicon, .green .txt').hide();
+    $tooltip.find('.drug-'+item.data()[0].Drug.toLowerCase()).show();
+    $tooltip.find('.green .'+current.data+'-txt').show(); 
+    $tooltip.find('.green .'+dataIcon).show();
 
     var left = item.attr('cx') > width*0.5;
 
@@ -508,7 +555,7 @@ function Main_Infographic( _id ) {
       $tooltip.removeClass('left').css({'right': 'auto', 'left': (Math.round(item.attr('cx'))+margin.left)+'px'});
     }
 
-    $tooltip.css({'top': (Math.round(item.attr('cy'))+margin.top)+'px', 'opacity': '1'});
+    $tooltip.css({'top': (Math.round(item.attr('cy'))+margin.top-8-($tooltip.height()*0.5))+'px', 'opacity': '1'});
   };
 
   var onDotOut = function(){
