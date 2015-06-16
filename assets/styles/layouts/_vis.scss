@@ -300,7 +300,17 @@ Infographic
     }
 
     .country-marker{
-      stroke: mix( $gray-lighter, $gray-light, 70% );
+      stroke: mix( $gray-lighter, $gray-light, 80% );
+      shape-rendering: crispEdges;
+    }
+
+    .country-label,
+    .country-label-code{
+      fill: $color-orange;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-anchor: middle;
     }
 
     .dot{
@@ -649,6 +659,8 @@ Infographic
 
     .btn{
       width: 50%;
+      padding-left: 0;
+      padding-right: 0;
       color: $gray-light;
       font-family: $font-family-sans-serif;
       border-color: $color-orange;

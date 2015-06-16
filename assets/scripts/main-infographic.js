@@ -91,11 +91,9 @@ function Main_Infographic( _id ) {
 
     if( stateID === 5 ){
 
-      /*
       d3.select('.overlay')
         .on('mouseout', onOverlayOut)
         .on('mousemove', onOverlayMove);
-      */
 
       // Add dot events
       d3.selectAll('.dot')
@@ -138,6 +136,19 @@ function Main_Infographic( _id ) {
     d3.select('g.y.axis')
       .call(yAxis);
 
+    // Country Marker
+    d3.select('.country-marker').attr('y1', height);
+    d3.select('.country-label').attr('y', height+36);
+
+    // MPR Line
+    d3.select('.mpr-line').attr('transform', 'translate(0 ' + y(1) + ')');
+    d3.select('.mpr-line line').attr('x2', width);
+
+    // Mouse events overlay
+    d3.select('.overlay')
+      .attr('width', width)
+      .attr('height', height);
+
     // Update Dots & Lines
     d3.selectAll('.dot-lines .line')
       .attr('x1', setValueX)
@@ -167,8 +178,10 @@ function Main_Infographic( _id ) {
     });
     
     affordability.forEach(function(d) {
-      d['Public sector']  = (d['Public sector'] !== 'NO DATA') ? +d['Public sector'] : null;
-      d['Private sector'] = (d['Private sector'] !== 'NO DATA') ? +d['Private sector'] : null;
+      var affordabilityPublic =  d['Public sector - number of days'];
+      var affordabilityPrivate =  d['Private sector - number of days'];
+      d['Public sector - number of days']  = (affordabilityPublic !== 'NO DATA' && affordabilityPublic !== '') ? 8*affordabilityPublic : null;
+      d['Private sector - number of days'] = (affordabilityPrivate !== 'NO DATA' && affordabilityPrivate !== '') ? 8*affordabilityPrivate : null;
     });
 
     dataCountries = dataCountriesAll = countries;
@@ -218,15 +231,7 @@ function Main_Infographic( _id ) {
         .attr('y', -15)
         .style('opacity', 0)
         .style('text-anchor', 'end')
-        .text('Días');
-
-    /*
-    // Mouse events overlay
-    svg.append('rect')
-      .attr('class', 'overlay')
-      .style('opacity', 0)
-      .attr('width', width)
-      .attr('height', height);
+        .text('Horas');
 
     // Country Marker
     svg.append('line')
@@ -236,7 +241,16 @@ function Main_Infographic( _id ) {
       .attr('x2', 0)
       .attr('y2', 0)
       .style('opacity', 0);
-    */
+
+    svg.append('text')
+      .attr('class', 'country-label-code')
+      .attr('y', height+21)
+      .style('opacity', 0);
+
+    svg.append('text')
+      .attr('class', 'country-label')
+      .attr('y', height+36)
+      .style('opacity', 0);
 
     // MPR Line
     svg.append('g')
@@ -254,6 +268,13 @@ function Main_Infographic( _id ) {
       .attr('y', 0)
       .attr('dy', '0.32em')
       .text('MPR');
+
+    // Mouse events overlay
+    svg.append('rect')
+      .attr('class', 'overlay')
+      .style('opacity', 0)
+      .attr('width', width)
+      .attr('height', height);
 
     // Setup Lines
     svg.append('g')
@@ -517,8 +538,6 @@ function Main_Infographic( _id ) {
 
     var item = d3.select(this);
 
-    d3.select('.country-marker').style('opacity', 0);
-
     // Update opacity
     svg.selectAll('.dot')
       .style('fill', '#cacaca')
@@ -527,8 +546,8 @@ function Main_Infographic( _id ) {
     svg.selectAll('.dot.drug-'+item.attr('id'))
       .style('fill', function(d) { return color(d.Drug); }).style('opacity', 1);
 
-    // Show lines
-    svg.selectAll('.line.drug-'+item.attr('id')).style('opacity', 1);
+    // Show lines & country marker labels
+    svg.selectAll('.line.drug-'+item.attr('id')+', .country-label, .country-label-code').style('opacity', 1);
 
     // Set selected dots on top
     svg.selectAll('.dot').sort(function (a, b) {  
@@ -570,7 +589,6 @@ function Main_Infographic( _id ) {
     $tooltip.css({'opacity': '0', 'right': 'auto', 'left': '-1000px'});
   };
 
-  /*
   var onOverlayMove = function(){
 
     var xPos = d3.mouse(this)[0],
@@ -580,10 +598,26 @@ function Main_Infographic( _id ) {
 
     while(xPos > (leftEdges[j] + (w*0.5))){ j++; }
 
+    var countryCode = x.domain()[j];
+
     d3.select('.country-marker')
       .style('opacity', 1)
-      .attr('transform', 'translate('+ x(x.domain()[j]) +' 0)');
+      .attr('transform', 'translate('+ x(countryCode) +' 0)');
 
+    var countryData = dataCountries.filter(function(d){ return d.Code === countryCode; });
+
+    d3.select('.country-label-code')
+      .attr('x', x(countryCode))
+      .style('opacity', 1)
+      .text( countryCode );
+
+    d3.select('.country-label')
+      .attr('x', x(countryCode))  //-6)
+      .style('opacity', 1)
+      .text( countryData[0].Country );
+
+
+    /*
     svg.selectAll('.dot')
       .style('fill', '#cacaca')
       .style('opacity', DOT_OPACITY );
@@ -591,17 +625,19 @@ function Main_Infographic( _id ) {
     svg.selectAll('.dot.country-'+niceName(x.domain()[j]))
       .style('fill', function(d) { return color(d.Drug); })
       .style('opacity', 1);
+    */
   };
 
   var onOverlayOut = function(){
 
-    svg.select('.country-marker').style('opacity', 0);
+    d3.selectAll('.country-marker, .country-label, .country-label-code').style('opacity', 0);
 
+    /*
     svg.selectAll('.dot')
       .style('fill', function(d) { return color(d.Drug); })
       .style('opacity', DOT_OPACITY );
+    */
   };
-  */
 
   var niceName = function( drug ){
     return drug.toLowerCase().replace(/[ +,\/]/g,'-');
