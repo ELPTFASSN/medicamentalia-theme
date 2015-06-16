@@ -1,4 +1,4 @@
-Full Drug Name,Drug,Country,Year,Month,Duration,Units per treatment,Rate,Daily wage,Public unit price,Public sector - number of days - calculated,Public sector - median treatment price,Public sector - number of days (HAI Affordability),Public sector - number of days,Private unit price,Private sector - number of days - calculated,Private sector - median treatment price,Private sector - number of days (HAI Affordability),Private sector - number of days
+Full Drug Name,Drug,Country,Year,Month,Duration,Units per treatment,Rate,Daily wage,Public unit price,Public sector - number of days - calculated,Public sector - median treatment price,Public sector - number of days (HAI Affordability),Public sector - number of days - HAI,Private unit price,Private sector - number of days - calculated,Private sector - median treatment price,Private sector - number of days (HAI Affordability),Private sector - number of days - HAI
 Amitriptyline 25 mg cap/tab,Amitriptyline,Afghanistan,2011,November,November,90,49.5,150,0.014,0.4158,60.3,0.4,0.4,0.018,0.5346,78.48,0.5,0.5
 Amoxicillin 500 mg cap/tab,Amoxicillin,Afghanistan,2011,November,November,21,49.5,150,0.044,0.30492,46.2,0.3,0.3,0.054,0.37422,55.96,0.4,0.4
 Atenolol 50 mg cap/tab,Atenolol,Afghanistan,2011,November,November,30,49.5,150,0.014,0.1386,21,0.1,0.1,0.017,0.1683,25.77,0.2,0.2
@@ -510,19 +510,19 @@ Co-trimoxazole 40+200 mg/5ml suspension,Co-trimoxazole,Philippines,2005,February
 Glibenclamide 5 mg cap/tab,Glibenclamide,Philippines,2005,February,November,60,54.74,254.1,0.056,0.723834710744,183,0.7,0.7,0.091,1.17623140496,300,1.2,1.2
 Omeprazole 20 mg cap/tab,Omeprazole,Philippines,2005,February,November,30,54.74,254.1,NO DATA,,,,,0.759,4.90527272727,,,4.90527272727
 Salbutamol 100 mcg/dose inhaler,Salbutamol,Philippines,2005,February,November,200,54.74,254.1,NO DATA,,,,,0.024,1.03404958678,268,1.1,1.1
-Amitriptyline 25 mg cap/tab,Amitriptyline,"Russia, Tatarstan",2011,February,November,90,#N/A,#N/A,0.016,#N/A,,,#N/A,0.014,#N/A,,,#N/A
-Amoxicillin 500 mg cap/tab,Amoxicillin,"Russia, Tatarstan",2011,February,November,21,#N/A,#N/A,0.05,#N/A,,,#N/A,0.142,#N/A,,,#N/A
-Atenolol 50 mg cap/tab,Atenolol,"Russia, Tatarstan",2011,February,November,30,#N/A,#N/A,0.014,#N/A,,,#N/A,0.046,#N/A,,,#N/A
-Captopril 25 mg cap/tab,Captopril,"Russia, Tatarstan",2011,February,November,60,#N/A,#N/A,0.007,#N/A,,,#N/A,0.016,#N/A,,,#N/A
-Ceftriaxone 1 g/vial injection,Ceftriaxone,"Russia, Tatarstan",2011,February,November,1,#N/A,#N/A,0.435,#N/A,,,#N/A,0.738,#N/A,,,#N/A
-Ciprofloxacin 500 mg cap/tab,Ciprofloxacin,"Russia, Tatarstan",2011,February,November,14,#N/A,#N/A,0.081,#N/A,,,#N/A,0.117,#N/A,,,#N/A
-Co-trimoxazole 40+200 mg/5ml suspension,Co-trimoxazole,"Russia, Tatarstan",2011,February,November,70,#N/A,#N/A,0.017,#N/A,,,#N/A,0.056,#N/A,,,#N/A
-Diclofenac 50 mg cap/tab,Diclofenac,"Russia, Tatarstan",2011,February,November,60,#N/A,#N/A,0.027,#N/A,,,#N/A,0.047,#N/A,,,#N/A
-Glibenclamide 5 mg cap/tab,Glibenclamide,"Russia, Tatarstan",2011,February,November,60,#N/A,#N/A,0.039,#N/A,,,#N/A,0.039,#N/A,,,#N/A
-Omeprazole 20 mg cap/tab,Omeprazole,"Russia, Tatarstan",2011,February,November,30,#N/A,#N/A,0.029,#N/A,,,#N/A,0.047,#N/A,,,#N/A
-Paracetamol 120 mg/5ml suspension,Paracetamol,"Russia, Tatarstan",2011,February,November,45,#N/A,#N/A,0.016,#N/A,,,#N/A,0.016,#N/A,,,#N/A
-Salbutamol 100 mcg/dose inhaler,Salbutamol,"Russia, Tatarstan",2011,February,November,200,#N/A,#N/A,0.021,#N/A,,,#N/A,0.023,#N/A,,,#N/A
-Simvastatin 20 mg cap/tab,Simvastatin,"Russia, Tatarstan",2011,February,November,30,#N/A,#N/A,0.165,#N/A,,,#N/A,0.433,#N/A,,,#N/A
+Amitriptyline 25 mg cap/tab,Amitriptyline,"Russia, Tatarstan",2011,February,November,90,27.7,144,0.016,0.277,40.68,0.3,0.3,0.014,0.242375,33.75,0.2,0.2
+Amoxicillin 500 mg cap/tab,Amoxicillin,"Russia, Tatarstan",2011,February,November,21,27.7,144,0.05,0.201979166667,29.09,0.2,0.2,0.142,0.573620833333,82.69,0.6,0.6
+Atenolol 50 mg cap/tab,Atenolol,"Russia, Tatarstan",2011,February,November,30,27.7,144,0.014,0.0807916666667,11.94,0.1,0.1,0.046,0.265458333333,38.15,0.3,0.3
+Captopril 25 mg cap/tab,Captopril,"Russia, Tatarstan",2011,February,November,60,27.7,144,0.007,0.0807916666667,12.45,0.1,0.1,0.016,0.184666666667,27,0.2,0.2
+Ceftriaxone 1 g/vial injection,Ceftriaxone,"Russia, Tatarstan",2011,February,November,1,27.7,144,0.435,0.0836770833333,12.03,0.1,0.1,0.738,0.1419625,20.4,0.1,0.1
+Ciprofloxacin 500 mg cap/tab,Ciprofloxacin,"Russia, Tatarstan",2011,February,November,14,27.7,144,0.081,0.2181375,31.36,0.2,0.2,0.117,0.3150875,45.36,0.3,0.3
+Co-trimoxazole 40+200 mg/5ml suspension,Co-trimoxazole,"Russia, Tatarstan",2011,February,November,70,27.7,144,0.017,0.228909722222,33.55,0.2,0.2,0.056,0.754055555556,107.62,0.7,0.7
+Diclofenac 50 mg cap/tab,Diclofenac,"Russia, Tatarstan",2011,February,November,60,27.7,144,0.027,0.311625,44.85,0.3,0.3,0.047,0.542458333333,77.85,0.5,0.5
+Glibenclamide 5 mg cap/tab,Glibenclamide,"Russia, Tatarstan",2011,February,November,60,27.7,144,0.039,0.450125,64,0.4,0.4,0.039,0.450125,64.88,0.5,0.5
+Omeprazole 20 mg cap/tab,Omeprazole,"Russia, Tatarstan",2011,February,November,30,27.7,144,0.029,0.167354166667,24.3,0.2,0.2,0.047,0.271229166667,38.57,0.3,0.3
+Paracetamol 120 mg/5ml suspension,Paracetamol,"Russia, Tatarstan",2011,February,November,45,27.7,144,0.016,0.1385,20.02,0.1,0.1,0.016,0.1385,20.02,0.1,0.1
+Salbutamol 100 mcg/dose inhaler,Salbutamol,"Russia, Tatarstan",2011,February,November,200,27.7,144,0.021,0.807916666667,114.66,0.8,0.8,0.023,0.884861111111,126.22,0.9,0.9
+Simvastatin 20 mg cap/tab,Simvastatin,"Russia, Tatarstan",2011,February,November,30,27.7,144,0.165,0.9521875,137,1,1,0.433,2.49877083333,359.5,2.5,2.5
 Amoxicillin 500 mg cap/tab,Amoxicillin,São Tomé and Príncipe,2008,June,November,21,14533,18150,0.058,0.975272396694,17745,1,1,0.138,2.32047570248,42000,2.3,2.3
 Atenolol 50 mg cap/tab,Atenolol,São Tomé and Príncipe,2008,June,November,30,14533,18150,0.035,0.840752066116,15007.2,0.8,0.8,0.172,4.13169586777,75000,4.1,4.1
 Captopril 25 mg cap/tab,Captopril,São Tomé and Príncipe,2008,June,November,60,14533,18150,0.023,1.10498842975,19777.8,1.1,1.1,0.206,9.89685289256,180000,9.9,9.9
