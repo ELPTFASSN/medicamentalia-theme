@@ -76,6 +76,7 @@
       border-bottom: 1px solid $color-green;
 
       &.menu-item-language{
+        position: relative;
         background: $color-green;
         @include transition(.3s ease-in-out background);
 
@@ -89,6 +90,37 @@
 
         &:hover{
           background: $color-green-light;
+        }
+
+        .submenu-languages{
+          position: absolute;
+          right: 0;
+          left: 0;
+          padding: 0;
+          margin: 0;
+          top: 50px;
+          z-index: 99;
+
+          li{
+            list-style: none;
+
+            > a{
+              display: block;
+              width: 100%;
+              padding: 8px 0;
+              color: $color-green-light;
+              background: $color-green-dark;
+              border-bottom: 1px solid $color-green-light;
+              font-size: 0.875em;
+              text-align: center;
+
+              &:hover{
+                color: $color-green-dark;
+                background: $color-green-light;
+                text-decoration: none;
+              }
+            }
+          }
         }
       }
 

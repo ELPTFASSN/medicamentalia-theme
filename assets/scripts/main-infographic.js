@@ -180,8 +180,8 @@ function Main_Infographic( _id ) {
     affordability.forEach(function(d) {
       var affordabilityPublic =  d['Public sector - number of days'];
       var affordabilityPrivate =  d['Private sector - number of days'];
-      d['Public sector - number of days']  = (affordabilityPublic !== 'NO DATA' && affordabilityPublic !== '') ? 8*affordabilityPublic : null;
-      d['Private sector - number of days'] = (affordabilityPrivate !== 'NO DATA' && affordabilityPrivate !== '') ? 8*affordabilityPrivate : null;
+      d['Public sector - number of days']  = (affordabilityPublic !== 'NO DATA' && affordabilityPublic !== '') ? +affordabilityPublic : null;
+      d['Private sector - number of days'] = (affordabilityPrivate !== 'NO DATA' && affordabilityPrivate !== '') ? +affordabilityPrivate : null;
     });
 
     dataCountries = dataCountriesAll = countries;
@@ -231,7 +231,7 @@ function Main_Infographic( _id ) {
         .attr('y', -15)
         .style('opacity', 0)
         .style('text-anchor', 'end')
-        .text('Horas');
+        .text('Días');
 
     // Country Marker
     svg.append('line')
@@ -560,11 +560,20 @@ function Main_Infographic( _id ) {
     // Setup tooltip
     $tooltip.find('.country').html( item.data()[0].Country );
     $tooltip.find('.year').html( '('+item.data()[0].Year+')' );
-    $tooltip.find('.price').html( data );
     $tooltip.find('.drug, .green .glyphicon, .green .txt').hide();
     $tooltip.find('.drug-'+item.data()[0].Drug.toLowerCase()).show();
-    $tooltip.find('.green .'+current.data+'-txt').show(); 
     $tooltip.find('.green .'+dataIcon).show();
+
+    if( data !== 0 ){
+      $tooltip.find('.price').html( data );
+      $tooltip.find('.green .'+current.data+'-txt').show();
+    } else {
+      $tooltip.find('.price').html( 'gratis' );
+    }
+
+    if (current.data !== 'prices' && data < 1 && data !== 0) {
+      $tooltip.find('.affordability-txt-hour').html( '  ('+Math.round(data*8)+' horas)' ).show();
+    }
 
     var left = item.attr('cx') > width*0.5;
 

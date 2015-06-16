@@ -18,7 +18,11 @@
     // All pages
     'common': {
       init: function() {
+        
         // JavaScript to be fired on all pages
+        $('#menu-main-menu>li.menu-item-language>a').click(function(e){
+          $('#menu-main-menu .submenu-languages').toggle();
+        });
 
         // Smooth page scroll to an anchor on the same page.
         $(function() {
