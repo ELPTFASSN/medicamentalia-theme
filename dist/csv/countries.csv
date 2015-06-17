@@ -1,67 +1,67 @@
-Pais,Country,Code,Region,PIB
-Afghanistan,Afghanistan,AF,Asia,664.76
-Armenia,Armenia,AM,Asia,3504.77
-Bolivia,Bolivia,BO,America,2867.64
-"Brazil, Rio de Janeiro State",Brazil,BR,America,11208.08
-"Brazil, Rio Grande do Sul State",Brazil,BR,America,11208.08
-Burkina Faso,Burkina Faso,BF,Africa,760.85
-Burundi,Burundi,BI,Africa,267.11
-Cameroon,Cameroon,CM,Africa,1328.64
-Chad,Chad,TD,Africa,1053.66
-"China, Shaanxi Province",China,CN,Asia,6807.43
-"China, Shandong Province",China,CN,Asia,6807.43
-"China, Shanghai",Shanghai,CN,Asia,9572.86
-Colombia,Colombia,CO,America,7831.22
-Congo,Congo,CG,Africa,3167.05
-Democratic Republic of Congo,Democratic Republic of Congo,CD,Africa,484.21
-Ecuador,Ecuador,EC,America,6002.89
-Egypt,Egypt,EG,Africa,3314.46
-El Salvador,El Salvador,SV,America,3826.08
-Ethiopia,Ethiopia,ET,Africa,505.05
-Fiji,Fiji,FJ,Oceania,4375.41
-Ghana,Ghana,GH,Africa,1858.24
-Haiti,Haiti,HT,America,819.90
-"India, Chennai",India,IN,Asia,1497.55
-"India, Haryana",India,IN,Asia,1497.55
-"India, Karnataka",India,IN,Asia,1497.55
-"India, Maharashtra 4 regions",India,IN,Asia,1497.55
-"India, NCT, Delhi",India,IN,Asia,1497.55
-"India, Rajasthan",India,IN,Asia,1497.55
-"India, West Bengal",India,IN,Asia,1497.55
-Indonesia,Indonesia,ID,Asia,3475.25
-Iran,Iran,IR,Asia,4763.30
-Jordan,Jordan,JO,Asia,5213.39
-Kazakhstan,Kazakhstan,KZ,Asia,13611.54
-Kenya,Kenya,KE,Africa,1245.51
-Kuwait,Kuwait,KW,Asia,52197.34
-Kyrgyzstan,Kyrgyzstan,KG,Asia,1263.43
-Lao PDR,Laos,LA,Asia,1660.71
-Lebanon,Lebanon,LB,Asia,9928.04
-Malaysia,Malaysia,MY,Asia,10538.06
-Mali,Mali,ML,Africa,715.13
-Mauritius,Mauritius,MU,Africa,9477.79
-"Mexico, Mexico City",Mexico,MX,America,10307.28
-Moldova,Moldova,MD,Europe,2239.56
-Mongolia,Mongolia,MN,Asia,4056.40
-Morocco,Morocco,MA,Africa,3092.61
-Nicaragua,Nicaragua,NI,America,1851.11
-Nigeria,Nigeria,NG,Africa,3005.51
-Oman,Oman,OM,Asia,21929.01
-Pakistan,Pakistan,PK,Asia,1275.30
-Peru,Peru,PE,America,6661.59
-Philippines,Philippines,PH,Asia,2765.08
-"Russia, Tatarstan",Russia,RU,Europe,14611.70
-São Tomé and Príncipe,Sao Tome & Principe,ST,Africa,1609.82
-"South Africa, Gauteng Province",South Africa,ZA,Africa,6886.29
-"South Africa, Kwazulu Natal State",South Africa,ZA,Africa,6886.29
-Sudan,Sudan,SD,Africa,1753.38
-Syria,Syria,SY,Asia,2065.54
-Tajikistan,Tajikistan,TJ,Asia,1036.58
-Tanzania,Tanzania,TZ,Africa,912.70
-Thailand,Thailand,TH,Asia,5778.98
-Tunisia,Tunisia,TN,Africa,4316.69
-Uganda,Uganda,UG,Africa,657.37
-Ukraine,Ukraine,UA,Europe,3900.47
-United Arab Emirates,United Arab Emirates,AE,Asia,43048.85
-Uzbekistan,Uzbekistan,UZ,Asia,1877.96
-Yemen,Yemen,YE,Asia,1473.10
+Region,Country_en,Country_es,Code,Area,PIB
+Afghanistan,Afghanistan,Afganistán,AF,Asia,664.76
+Armenia,Armenia,Armenia,AM,Asia,3504.77
+Bolivia,Bolivia,Bolivia,BO,America,2867.64
+"Brazil, Rio de Janeiro State",Brazil,Brasil,BR,America,11208.08
+"Brazil, Rio Grande do Sul State",Brazil,Brasil,BR,America,11208.08
+Burkina Faso,Burkina Faso,Burkina Faso,BF,Africa,760.85
+Burundi,Burundi,Burundi,BI,Africa,267.11
+Cameroon,Cameroon,Camerún,CM,Africa,1328.64
+Chad,Chad,Chad,TD,Africa,1053.66
+"China, Shaanxi Province",China,China,CN,Asia,6807.43
+"China, Shandong Province",China,China,CN,Asia,6807.43
+"China, Shanghai",China,China,CN,Asia,9572.86
+Colombia,Colombia,Colombia,CO,America,7831.22
+Congo,Congo,Congo,CG,Africa,3167.05
+Democratic Republic of Congo,Democratic Republic of Congo,República Democrática del Congo,CD,Africa,484.21
+Ecuador,Ecuador,Ecuador,EC,America,6002.89
+Egypt,Egypt,Egipto,EG,Africa,3314.46
+El Salvador,El Salvador,El Salvador,SV,America,3826.08
+Ethiopia,Ethiopia,Etiopía,ET,Africa,505.05
+Fiji,Fiji,Fiyi,FJ,Oceania,4375.41
+Ghana,Ghana,Ghana,GH,Africa,1858.24
+Haiti,Haiti,Haití,HT,America,819.90
+"India, Chennai",India,India,IN,Asia,1497.55
+"India, Haryana",India,India,IN,Asia,1497.55
+"India, Karnataka",India,India,IN,Asia,1497.55
+"India, Maharashtra 4 regions",India,India,IN,Asia,1497.55
+"India, NCT, Delhi",India,India,IN,Asia,1497.55
+"India, Rajasthan",India,India,IN,Asia,1497.55
+"India, West Bengal",India,India,IN,Asia,1497.55
+Indonesia,Indonesia,Indonesia,ID,Asia,3475.25
+Iran,Iran,Irán,IR,Asia,4763.30
+Jordan,Jordan,Jordania,JO,Asia,5213.39
+Kazakhstan,Kazakhstan,Kazajistán,KZ,Asia,13611.54
+Kenya,Kenya,Kenia,KE,Africa,1245.51
+Kuwait,Kuwait,Kuwait,KW,Asia,52197.34
+Kyrgyzstan,Kyrgyzstan,Kirguistán,KG,Asia,1263.43
+Lao PDR,Laos,Laos,LA,Asia,1660.71
+Lebanon,Lebanon,Líbano,LB,Asia,9928.04
+Malaysia,Malaysia,Malasia,MY,Asia,10538.06
+Mali,Mali,Malí,ML,Africa,715.13
+Mauritius,Mauritius,Mauricio,MU,Africa,9477.79
+"Mexico, Mexico City",Mexico,México,MX,America,10307.28
+Moldova,Moldova,Moldavia,MD,Europe,2239.56
+Mongolia,Mongolia,Mongolia,MN,Asia,4056.40
+Morocco,Morocco,Marruecos,MA,Africa,3092.61
+Nicaragua,Nicaragua,Nicaragua,NI,America,1851.11
+Nigeria,Nigeria,Nigeria,NG,Africa,3005.51
+Oman,Oman,Omán,OM,Asia,21929.01
+Pakistan,Pakistan,Pakistán,PK,Asia,1275.30
+Peru,Peru,Perú,PE,America,6661.59
+Philippines,Philippines,Filipinas,PH,Asia,2765.08
+"Russia, Tatarstan",Russia,Rusia,RU,Europe,14611.70
+São Tomé and Príncipe,Sao Tome & Principe,Santo Tomé y Príncipe,ST,Africa,1609.82
+"South Africa, Gauteng Province",South Africa,Sudáfrica,ZA,Africa,6886.29
+"South Africa, Kwazulu Natal State",South Africa,Sudáfrica,ZA,Africa,6886.29
+Sudan,Sudan,Sudán,SD,Africa,1753.38
+Syria,Syria,Syria,SY,Asia,2065.54
+Tajikistan,Tajikistan,Tadjikistan,TJ,Asia,1036.58
+Tanzania,Tanzania,Tanzania,TZ,Africa,912.70
+Thailand,Thailand,Tailandia,TH,Asia,5778.98
+Tunisia,Tunisia,Túnez,TN,Africa,4316.69
+Uganda,Uganda,Uganda,UG,Africa,657.37
+Ukraine,Ukraine,Ucrania,UA,Europe,3900.47
+United Arab Emirates,United Arab Emirates,Emiratos Árabes Unidos,AE,Asia,43048.85
+Uzbekistan,Uzbekistan,Uzbekistán,UZ,Asia,1877.96
+Yemen,Yemen,Yemen,YE,Asia,1473.10

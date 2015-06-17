@@ -11,6 +11,18 @@ function Main_Infographic( _id ) {
         order: 'area',
         label: 'Price'
       },
+      txt = {
+        'es': {
+          'gratis': 'gratis',
+          'dias': 'Días',
+          'horas': 'horas'
+        },
+        'en': {
+          'gratis': 'free',
+          'dias': 'Days',
+          'horas': 'hours'
+        }
+      },
       currentState = 0;
 
   var margin = {top: 150, right: 50, bottom: 50, left: 50},
@@ -21,6 +33,8 @@ function Main_Infographic( _id ) {
       $el = $(id),
       $tooltip = $('#main-infographic-tooltip');
 
+  var lang = $el.parent().data('lang');
+
   var color = d3.scale.ordinal()
       .range(['#C9AD4B', '#BBD646', '#63BA2D', '#34A893', '#3D91AD', '#5B8ACB', '#BA7DAF', '#BF6B80', '#F49D9D', '#E25453', '#B56631', '#E2773B', '#FFA951', '#F4CA00']);
 
@@ -30,14 +44,14 @@ function Main_Infographic( _id ) {
 
   var tickFormatPrices = function(d){ 
         if (d === 0) {
-          return 'gratis'; 
+          return txt[lang].gratis; 
         }
         return d+'x'; 
       };
 
   var tickFormatAffordability = function(d){ 
         if (d === 0) {
-          return 'gratis'; 
+          return txt[lang].gratis;
         }
         return d; 
       };
@@ -231,7 +245,7 @@ function Main_Infographic( _id ) {
         .attr('y', -15)
         .style('opacity', 0)
         .style('text-anchor', 'end')
-        .text('Días');
+        .text( txt[lang].dias );
 
     // Country Marker
     svg.append('line')
@@ -476,11 +490,10 @@ function Main_Infographic( _id ) {
 
   var reorderCountriesByArea = function(){
     dataCountries.sort(function(x, y){
-      if (x.Region === y.Region){
-        return d3.ascending(x.Pais, y.Pais);
+      if (x.Area === y.Area){
+        return d3.ascending(x.Region, y.Region);
       }
-      return d3.ascending(x.Region, y.Region);
-      //x.Region == y.Region ? : (x.Region > y.Region ? 1 : -1);
+      return d3.ascending(x.Area, y.Area);
     });
   };
   
@@ -504,7 +517,7 @@ function Main_Infographic( _id ) {
 
     // Filter Countries
     dataCountries = dataCountriesAll.filter(function(d){
-      return regions.indexOf( d.Region ) > -1;
+      return regions.indexOf( d.Area ) > -1;
     });
 
     // Reorder Countries if order is PIB
@@ -572,7 +585,7 @@ function Main_Infographic( _id ) {
     }
 
     if (current.data !== 'prices' && data < 1 && data !== 0) {
-      $tooltip.find('.affordability-txt-hour').html( '  ('+Math.round(data*8)+' horas)' ).show();
+      $tooltip.find('.affordability-txt-hour').html( '  ('+Math.round(data*8)+' '+txt[lang].horas+')' ).show();
     }
 
     var left = item.attr('cx') > width*0.5;
@@ -623,7 +636,7 @@ function Main_Infographic( _id ) {
     d3.select('.country-label')
       .attr('x', x(countryCode))  //-6)
       .style('opacity', 1)
-      .text( countryData[0].Country );
+      .text( countryData[0]['Country_'+lang] );
 
 
     /*
@@ -665,7 +678,7 @@ function Main_Infographic( _id ) {
   };
 
   var setValueX = function(d){
-    var country = dataCountries.filter(function(e){ return e.Pais === d.Country; });
+    var country = dataCountries.filter(function(e){ return e.Region === d.Country; });
     return ( country.length > 0 ) ? x( country[0].Code ) : 0;
   };
 
@@ -674,7 +687,7 @@ function Main_Infographic( _id ) {
   };
 
   var setVisibility = function(d){
-    return (d[ current.label ] !== null && dataCountries.some(function(e){ return e.Pais === d.Country; }) ) ? 'visible' : 'hidden';
+    return (d[ current.label ] !== null && dataCountries.some(function(e){ return e.Region === d.Country; }) ) ? 'visible' : 'hidden';
   };
 
   var setColor = function(d){
