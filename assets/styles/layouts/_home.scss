@@ -313,37 +313,30 @@ $btn-scroll-down-icon-size: 44px;
     }
   }
 
-  .post-2 & .portfolio-box-overlay{
+  &.portfolio-id-2 .portfolio-box-overlay{
     background: $overlay-green;
   }
-  .post-2 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
+  &.portfolio-id-2:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-green;
   }
-  .post-10 & .portfolio-box-overlay,
-  .post-269 & .portfolio-box-overlay{
+  &.portfolio-id-10 .portfolio-box-overlay{
     background: $overlay-blue;
   }
-  .post-10 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn
-  .post-269 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
+  &.portfolio-id-10:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-blue;
   }
-  .post-8 & .portfolio-box-overlay,
-  .post-271 & .portfolio-box-overlay{
+  &.portfolio-id-8 .portfolio-box-overlay{
     background: $overlay-orange;
   }
-  .post-8 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn,
-  .post-271 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
+  &.portfolio-id-8:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-orange;
   }
-  .post-12 & .portfolio-box-overlay,
-  .post-270 & .portfolio-box-overlay{
+  &.portfolio-id-12 .portfolio-box-overlay{
     background: $overlay-yellow;
   }
-  .post-12 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn,
-  .post-270 &:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
+  &.portfolio-id-12:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-yellow;
   }
-
 
   @media (min-width: $screen-sm) {
     .portfolio-box-caption {
