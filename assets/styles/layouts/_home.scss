@@ -268,9 +268,9 @@ $btn-scroll-down-icon-size: 44px;
 
       h3 {
         color: $brand-secondary;
-        font-size: 2.25em;
+        font-size: 2em;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 600;
         letter-spacing: .075em;
         margin: 0 0 20px;
       }
@@ -301,7 +301,7 @@ $btn-scroll-down-icon-size: 44px;
     }
     .portfolio-box-caption-content {
       .read-more-btn{
-        border-color: $brand-secondary;
+        border-color:  $brand-secondary;
         background: $brand-secondary;
       }
     }
@@ -311,7 +311,7 @@ $btn-scroll-down-icon-size: 44px;
     background: $overlay-green;
   }
   &.portfolio-id-2:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
-    color: $overlay-green;
+    color: darken($overlay-green,10%);
   }
   &.portfolio-id-2 .portfolio-box-background{
     background-image: url('../images/medicine-pattern.png');
@@ -323,21 +323,21 @@ $btn-scroll-down-icon-size: 44px;
     background: $overlay-blue;
   }
   &.portfolio-id-10:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
-    color: $overlay-blue;
+    color: darken($overlay-blue,10%);
   }
 
   &.portfolio-id-8 .portfolio-box-overlay{
     background: $overlay-orange;
   }
   &.portfolio-id-8:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
-    color: $overlay-orange;
+    color: darken($overlay-orange,10%);
   }
 
   &.portfolio-id-12 .portfolio-box-overlay{
     background: $overlay-yellow;
   }
   &.portfolio-id-12:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
-    color: $overlay-yellow;
+    color: darken($overlay-yellow,20%);
   }
 
   @media (min-width: $screen-sm) {

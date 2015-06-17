@@ -1,10 +1,11 @@
 <?php use Roots\Sage\Titles; ?>
+<?php $origin_post_ID = icl_object_id(get_the_ID(), 'page', false, 'es'); ?>
 
 <?php $bkg = wp_get_attachment_url( get_post_thumbnail_id(), 'large' ); ?>
 <?php if( $bkg ) : ?>
-<header style="background-image: url('<?php echo $bkg; ?>')">
+<header class="page-<?= $origin_post_ID ?>" style="background-image: url('<?php echo $bkg; ?>')">
 <?php else : ?>
-<header>
+<header class="page-<?= $origin_post_ID ?>">
 <?php endif; ?>
   <div class="header-overlay"></div>
   <div class="header-content">

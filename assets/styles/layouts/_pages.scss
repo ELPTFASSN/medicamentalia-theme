@@ -18,19 +18,19 @@ header {
     bottom: 0;
     background: $brand-primary;
     opacity: 0.5;
+  }
 
-    .prices &{
-      background: $overlay-green;
-    }
-    .ghana &{
-      background: $overlay-blue;
-    }
-    .brasil &{
-      background: $overlay-orange;
-    }
-    .patents &{
-      background: $overlay-yellow;
-    }
+  &.page-2 .header-overlay{
+    background: $overlay-green;
+  }
+  &.page-10 .header-overlay{
+    background: $overlay-blue;
+  }
+  &.page-8 .header-overlay{
+    background: $overlay-orange;
+  }
+  &.page-12 .header-overlay{
+    background: $overlay-yellow;
   }
 
   .header-content {
