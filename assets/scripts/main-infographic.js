@@ -152,6 +152,7 @@ function Main_Infographic( _id ) {
 
     // Country Marker
     d3.select('.country-marker').attr('y1', height);
+    d3.select('.country-label-code').attr('y', height+21);
     d3.select('.country-label').attr('y', height+36);
 
     // MPR Line
@@ -491,7 +492,7 @@ function Main_Infographic( _id ) {
   var reorderCountriesByArea = function(){
     dataCountries.sort(function(x, y){
       if (x.Area === y.Area){
-        return d3.ascending(x.Region, y.Region);
+        return d3.ascending(x['Country_'+lang], y['Country_'+lang]);
       }
       return d3.ascending(x.Area, y.Area);
     });
@@ -571,7 +572,7 @@ function Main_Infographic( _id ) {
     var dataIcon = (current.data !== 'prices') ? 'glyphicon-time' : ( (data < 1) ? 'glyphicon-arrow-down' : 'glyphicon-arrow-up' );
 
     // Setup tooltip
-    $tooltip.find('.country').html( item.data()[0].Country );
+    $tooltip.find('.country').html( getCountryData( item.data()[0].Country )[0]['Region_'+lang] ); 
     $tooltip.find('.year').html( '('+item.data()[0].Year+')' );
     $tooltip.find('.drug, .green .glyphicon, .green .txt').hide();
     $tooltip.find('.drug-'+item.data()[0].Drug.toLowerCase()).show();
@@ -638,7 +639,6 @@ function Main_Infographic( _id ) {
       .style('opacity', 1)
       .text( countryData[0]['Country_'+lang] );
 
-
     /*
     svg.selectAll('.dot')
       .style('fill', '#cacaca')
@@ -678,8 +678,8 @@ function Main_Infographic( _id ) {
   };
 
   var setValueX = function(d){
-    var country = dataCountries.filter(function(e){ return e.Region === d.Country; });
-    return ( country.length > 0 ) ? x( country[0].Code ) : 0;
+    var countryData = getCountryData(d.Country);
+    return ( countryData.length > 0 ) ? x(countryData[0].Code) : 0;
   };
 
   var setValueY = function(d){
@@ -687,7 +687,7 @@ function Main_Infographic( _id ) {
   };
 
   var setVisibility = function(d){
-    return (d[ current.label ] !== null && dataCountries.some(function(e){ return e.Region === d.Country; }) ) ? 'visible' : 'hidden';
+    return (d[ current.label ] !== null && dataCountries.some(function(e){ return e.Region_en === d.Country; }) ) ? 'visible' : 'hidden';
   };
 
   var setColor = function(d){
@@ -696,6 +696,10 @@ function Main_Infographic( _id ) {
 
   var getCurrentData = function(){
     return (current.data === 'affordability') ? dataAffordability : ((current.type === 'public') ? dataPricesPublic : dataPricesPrivate);
+  };
+
+  var getCountryData = function( region ){
+    return dataCountries.filter(function(e){ return e.Region_en === region; });
   };
 
   var setDimensions = function(){
