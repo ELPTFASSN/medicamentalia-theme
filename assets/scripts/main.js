@@ -39,9 +39,6 @@
             }
           });
         });
-      },
-      finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
       }
     },
     // Pages
@@ -95,56 +92,37 @@
           }
 
         });
-      }
-    },
-    // Prices Page
-    'prices': {
-      init: function() {
 
         $('[data-toggle="tooltip"]').tooltip(); // Init Tooltips
         $('.dropdown-toggle').dropdown();       // Init Dropdown
         $('#region-dropdown-menu').click(function(e){ e.stopPropagation(); });
 
-        var main_infographic = new Infographic('#main-infographic', 'main');
-
-        $(window).scroll( main_infographic.onScroll );
-        $(window).resize( main_infographic.onResize );
-      }
-    },
-    // Ghana Page
-    'ghana': {
-      init: function() {
-
-        var fakes_infographic = new Infographic('#fakes-infographic', 'fakes');
-
-        $(window).scroll( fakes_infographic.onScroll );
-        $(window).resize( fakes_infographic.onResize );
-      }
-    },
-    // Brasil Page
-    'brasil': {
-      init: function() {
-
-        var graph = patents_graph('#patents-graph').init();
-
-        $(window).resize( graph.onResize );
-      }
-    },
-    // Patents Page
-    'patents': {
-      init: function() {
-
-        var patentes_infographic = new Infographic('#patentes-infographic', 'patentes');
-        var antimalaricos_infographic = new Infographic('#antimalaricos-infographic', 'antimalaricos');
-
-        $(window).scroll( function(e){
-          patentes_infographic.onScroll();
-          antimalaricos_infographic.onScroll();
-        });
-        $(window).resize( function(){
-          patentes_infographic.onResize();
-          antimalaricos_infographic.onResize(); 
-        });
+        if ($('#main-infographic').size() > 0) {
+          var main_infographic = new Infographic('#main-infographic', 'main');
+          $(window).scroll( main_infographic.onScroll );
+          $(window).resize( main_infographic.onResize );
+        } 
+        else if ($('#fakes-infographic').size() > 0) {
+          var fakes_infographic = new Infographic('#fakes-infographic', 'fakes');
+          $(window).scroll( fakes_infographic.onScroll );
+          $(window).resize( fakes_infographic.onResize );
+        }
+        else if ($('#patents-graph').size() > 0) {
+          var graph = patents_graph('#patents-graph').init();
+          $(window).resize( graph.onResize );
+        }
+        else if ($('#patentes-infographic').size() > 0) {
+          var patentes_infographic = new Infographic('#patentes-infographic', 'patentes');
+          var antimalaricos_infographic = new Infographic('#antimalaricos-infographic', 'antimalaricos');
+          $(window).scroll( function(e){
+            patentes_infographic.onScroll();
+            antimalaricos_infographic.onScroll();
+          });
+          $(window).resize( function(){
+            patentes_infographic.onResize();
+            antimalaricos_infographic.onResize(); 
+          });
+        }
       }
     },
   };

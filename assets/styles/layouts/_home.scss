@@ -235,14 +235,8 @@ $btn-scroll-down-icon-size: 44px;
     width: 100%;
     height: 100%;
     background-position: center;
-    background-image: url('http://lorempixel.com/g/1280/720/nature/');
+    //background-image: url('http://lorempixel.com/g/1280/720/nature/');
     @include background-size( cover );
-
-    .post-2 &{
-      background-image: url('../images/medicine-pattern.png');
-      background-repeat: repeat;
-      @include background-size( auto );
-    }
   }
 
   .portfolio-box-caption,
@@ -312,25 +306,33 @@ $btn-scroll-down-icon-size: 44px;
       }
     }
   }
-
+  
   &.portfolio-id-2 .portfolio-box-overlay{
     background: $overlay-green;
   }
   &.portfolio-id-2:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-green;
   }
+  &.portfolio-id-2 .portfolio-box-background{
+    background-image: url('../images/medicine-pattern.png');
+    background-repeat: repeat;
+    @include background-size( auto );
+  }
+
   &.portfolio-id-10 .portfolio-box-overlay{
     background: $overlay-blue;
   }
   &.portfolio-id-10:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-blue;
   }
+
   &.portfolio-id-8 .portfolio-box-overlay{
     background: $overlay-orange;
   }
   &.portfolio-id-8:hover .portfolio-box-caption .portfolio-box-caption-content .read-more-btn{
     color: $overlay-orange;
   }
+
   &.portfolio-id-12 .portfolio-box-overlay{
     background: $overlay-yellow;
   }
