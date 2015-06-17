@@ -1,8 +1,9 @@
 <?php $content = get_the_content(); ?>
+<?php $origin_post_ID = icl_object_id(get_the_ID(), 'page', false, 'es'); ?>
 
 <?php // Check if there is h2 into content in order to generate Page Menu ?>
 <?php if (strpos($content,'h2') !== false) : ?>
-<nav class="nav-page">
+<nav class="nav-page page-<?= $origin_post_ID ?>">
   <div class="nav-page-container">
     <div class="container">
       <div class="row">

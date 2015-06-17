@@ -238,13 +238,9 @@ header {
   }
 }
 
-body.brasil header{
-  background-image: url('http://localhost/Medicamentalia/www/wp-content/uploads/brasil.jpg');
-}
-
 @media (min-width: $screen-sm) {
     
-  body.brasil .nav-page .navbar-nav li{
+  .nav-page.page-8 .navbar-nav li{
     width: 16.6666%;
   }
 }
