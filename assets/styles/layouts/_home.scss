@@ -250,7 +250,7 @@ $btn-scroll-down-icon-size: 44px;
 
   .portfolio-box-overlay {
     background: $brand-primary;
-    opacity: 0.5;
+    opacity: 0.3;
     @include transition(.5s ease-out opacity);
   }
 
@@ -297,7 +297,7 @@ $btn-scroll-down-icon-size: 44px;
 
   &:hover {
     .portfolio-box-overlay {
-      opacity: 0.7;
+      opacity: 0.5;
     }
     .portfolio-box-caption-content {
       .read-more-btn{
