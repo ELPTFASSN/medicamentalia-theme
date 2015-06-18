@@ -32,7 +32,10 @@ function Main_Infographic( _id ) {
 
   var id = _id,
       $el = $(id),
-      $tooltip = $('#main-infographic-tooltip');
+      $menu = $('#main-infographic-menu'),
+      $tooltip = $('#main-infographic-tooltip'),
+      $regionDropdownInputs = $('#region-dropdown-menu .checkbox input'),
+      $drugDropdownInputs = $('#drug-dropdown-menu .checkbox input');
 
   var lang = $el.parent().data('lang');
 
@@ -41,9 +44,10 @@ function Main_Infographic( _id ) {
 
   var svg,
       x, y, xAxis, yAxis,
+      drugsFiltered,
       dataPricesPublic, dataPricesPrivate, dataAffordability, dataCountries, dataCountriesAll;
 
-  var $dots;
+  var $dots, $lines, $countryMarker, $countryLabel, $countryLabelCode, $overlay, $mprLine, $yAxis, $xAxis, $yLabel;
 
   var tickFormatPrices = function(d){ 
         if (d === 0) {
@@ -94,6 +98,12 @@ function Main_Infographic( _id ) {
       .append('g')
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
+    // Set drug filtered
+    drugsFiltered = '';
+    $drugDropdownInputs.each(function(){
+      drugsFiltered += $(this).attr('name')+' ';
+    });
+
     // Load CSVs
     queue()
       .defer(d3.csv, $('body').data('url')+'/dist/csv/prices.csv')
@@ -108,9 +118,10 @@ function Main_Infographic( _id ) {
 
     if( stateID === 5 ){
 
-      d3.select('.overlay')
+      $overlay
         .on('mouseout', onOverlayOut)
-        .on('mousemove', onOverlayMove);
+        .on('mousemove', onOverlayMove)
+        .on('click', resetDotClicked);
 
       // Add dot events
       $dots
@@ -146,29 +157,28 @@ function Main_Infographic( _id ) {
     xAxis.tickSize(-height);
     yAxis.tickSize(-width);
 
-    d3.select('g.x.axis')
+    $xAxis
       .attr('transform', 'translate(0,' + height + ')')
       .call(xAxis);
 
-    d3.select('g.y.axis')
-      .call(yAxis);
+    $yAxis.call(yAxis);
 
     // Country Marker
-    d3.select('.country-marker').attr('y1', height);
-    d3.select('.country-label-code').attr('y', height+21);
-    d3.select('.country-label').attr('y', height+36);
+    $countryMarker.attr('y1', height);
+    $countryLabelCode.attr('y', height+21);
+    $countryLabel.attr('y', height+36);
 
     // MPR Line
-    d3.select('.mpr-line').attr('transform', 'translate(0 ' + y(1) + ')');
-    d3.select('.mpr-line line').attr('x2', width);
+    $mprLine.attr('transform', 'translate(0 ' + y(1) + ')');
+    $mprLine.selectAll('line').attr('x2', width);
 
     // Mouse events overlay
-    d3.select('.overlay')
+    $overlay
       .attr('width', width)
       .attr('height', height);
 
     // Update Dots & Lines
-    d3.selectAll('.dot-lines .line')
+    $lines
       .attr('x1', setValueX)
       .attr('y1', height)
       .attr('x2', setValueX)
@@ -226,7 +236,7 @@ function Main_Infographic( _id ) {
     var currentData = getCurrentData();
 
     // Set title
-    $('#main-infographic-menu .'+current.data+'-'+current.type).show();
+    $menu.find('.'+current.data+'-'+current.type).show();
 
     x.domain( dataCountries.map(function(d){ return d.Code; }) );
     y.domain( d3.extent(currentData, function(d) { return d[ current.label ]; }) ).nice();
@@ -235,16 +245,17 @@ function Main_Infographic( _id ) {
     xAxis.ticks( dataCountries.length );
 
     // Setup X Axis
-    svg.append('g')
+    $xAxis = svg.append('g')
       .attr('class', 'x axis')
       .attr('transform', 'translate(0,' + height + ')')
       .call(xAxis);
 
     // Setup Y Axis
-    svg.append('g')
+    $yAxis = svg.append('g')
       .attr('class', 'y axis')
-      .call(yAxis)
-      .append('text')
+      .call(yAxis);
+
+    $yLabel = $yAxis.append('text')
         .attr('class', 'y-label')
         .attr('y', -15)
         .style('opacity', 0)
@@ -252,7 +263,7 @@ function Main_Infographic( _id ) {
         .text( txt[lang].dias );
 
     // Country Marker
-    svg.append('line')
+    $countryMarker = svg.append('line')
       .attr('class', 'country-marker')
       .attr('x1', 0)
       .attr('y1', height)
@@ -260,35 +271,33 @@ function Main_Infographic( _id ) {
       .attr('y2', 0)
       .style('opacity', 0);
 
-    svg.append('text')
+    $countryLabelCode = svg.append('text')
       .attr('class', 'country-label-code')
       .attr('y', height+21)
       .style('opacity', 0);
 
-    svg.append('text')
+    $countryLabel = svg.append('text')
       .attr('class', 'country-label')
       .attr('y', height+36)
       .style('opacity', 0);
 
     // MPR Line
-    svg.append('g')
+    $mprLine = svg.append('g')
       .attr('class', 'mpr-line')
-      .attr('transform', 'translate(0 ' + y(1) + ')')
-    .append('line')
+      .attr('transform', 'translate(0 ' + y(1) + ')');
+    $mprLine.append('line')
       .attr('x1', 0)
       .attr('y1', 0)
       .attr('x2', width)
       .attr('y2', 0);
-
-    d3.select('.mpr-line')
-      .append('text')
+    $mprLine.append('text')
       .attr('x', -8)
       .attr('y', 0)
       .attr('dy', '0.32em')
       .text('MPR');
 
     // Mouse events overlay
-    svg.append('rect')
+    $overlay = svg.append('rect')
       .attr('class', 'overlay')
       .style('opacity', 0)
       .attr('width', width)
@@ -326,6 +335,8 @@ function Main_Infographic( _id ) {
       .style('fill', setColor);
 
     $dots = d3.selectAll('.dot');
+    $lines = d3.selectAll('.line');
+
   };
 
   var updateData = function(){
@@ -337,19 +348,11 @@ function Main_Infographic( _id ) {
 
     if( !initialized ){ return that; }
 
-    // Reset clicked items
-    if (dotClicked !== null) {
-      dotClicked = null;
-      $dots
-        .style('fill', function(d){ return color(d.Drug); })
-        .style('opacity', DOT_OPACITY);
-      svg.selectAll('.line')
-        .style('opacity', 0);
-    }
+    resetDotClicked();
 
     // Set title
-    $('#main-infographic-menu h4').hide();
-    $('#main-infographic-menu .'+current.data+'-'+current.type).show();
+    $menu.find('h4').hide();
+    $menu.find('.'+current.data+'-'+current.type).show();
 
     var item,
         currentData = getCurrentData();
@@ -368,24 +371,22 @@ function Main_Infographic( _id ) {
 
     y.domain( d3.extent(currentData, function(d) { return d[ current.label ]; }) ).nice();
 
-    svg.select('.y.axis')
-      .transition().duration(1200).ease('sin-in-out')
-        .call(yAxis);
+    $yAxis.transition().duration(1200).ease('sin-in-out').call(yAxis);
 
     if (current.data === 'prices') {
-      d3.select('.mpr-line')
+      $mprLine
         .transition().duration(1200)
         .attr('transform', 'translate(0 ' + y(1) + ')')
         .style('opacity', 1);
     } else {
-      d3.select('.mpr-line')
+      $mprLine
         .transition().duration(1200)
         .style('opacity', 0);
     }
 
     // Reset visibility for all dots & lines
     $dots.style('visibility', 'hidden');
-    svg.selectAll('.line').style('visibility', 'hidden');
+    $lines.style('visibility', 'hidden');
 
     currentData.forEach(function(d){
 
@@ -440,6 +441,7 @@ function Main_Infographic( _id ) {
     });
 
     $dots = d3.selectAll('.dot');
+    $lines = d3.selectAll('.line');
 
     return that;
   };
@@ -470,9 +472,9 @@ function Main_Infographic( _id ) {
       reorderData();
     });
 
-    $('#region-dropdown-menu .checkbox input').change(function(e){
-      filterByRegion();
-    });
+    $regionDropdownInputs.change(function(e){ filterByRegion(); });
+
+    $drugDropdownInputs.change(function(e){ filterByDrug(); });
   };
 
   var reorderData = function(){
@@ -491,7 +493,7 @@ function Main_Infographic( _id ) {
     // Update X Axis
     x.domain( dataCountries.map(function(d){ return d.Code; }) );
 
-    d3.selectAll('.line')
+    $lines
       .attr('x1', setValueX)
       .attr('x2', setValueX);
 
@@ -520,7 +522,7 @@ function Main_Infographic( _id ) {
 
     var regions = '';
 
-    $('#region-dropdown-menu .checkbox input').each(function(){
+    $regionDropdownInputs.each(function(){
       if( $(this).is(':checked') ){
         regions += $(this).attr('name')+' ';
       }
@@ -528,7 +530,7 @@ function Main_Infographic( _id ) {
 
     // Select all regions if there's no one
     if (regions === '') {
-      $('#region-dropdown-menu .checkbox input').each(function(){
+      $regionDropdownInputs.each(function(){
         $(this).attr('checked',true);
         regions += $(this).attr('name')+' ';
       });
@@ -550,12 +552,11 @@ function Main_Infographic( _id ) {
     x.domain( dataCountries.map(function(d){ return d.Code; }) );
 
     $dots.style('visibility', setVisibility);
-    d3.selectAll('.line')
-      .style('visibility', setVisibility);
-
-    d3.selectAll('.line')
+   
+    $lines
       .attr('x1', setValueX)
-      .attr('x2', setValueX);
+      .attr('x2', setValueX)
+      .style('visibility', setVisibility);
 
     var transition = svg.transition().duration(1000);
   
@@ -565,6 +566,27 @@ function Main_Infographic( _id ) {
     transition.select('.x.axis')
       .call(xAxis)
       .selectAll('g');
+  };
+
+  var filterByDrug = function(){
+
+    drugsFiltered = '';
+
+    $drugDropdownInputs.each(function(){
+      if( $(this).is(':checked') ){
+        drugsFiltered += $(this).attr('name')+' ';
+      }
+    });
+
+    // Select all regions if there's no one
+    if (drugsFiltered === '') {
+      $drugDropdownInputs.each(function(){
+        $(this).attr('checked',true);
+        drugsFiltered += $(this).attr('name')+' ';
+      });
+    }
+
+    $dots.style('visibility', setVisibility);
   };
 
   var onDotOver = function(){
@@ -582,7 +604,9 @@ function Main_Infographic( _id ) {
       .style('fill', function(d) { return color(d.Drug); }).style('opacity', 1);
 
     // Show lines & country marker labels
-    svg.selectAll('.line.drug-'+item.attr('id')+', .country-label, .country-label-code').style('opacity', 1);
+    svg.selectAll('.line.drug-'+item.attr('id')).style('opacity', 1);
+    $countryLabel.style('opacity', 1);
+    $countryLabelCode.style('opacity', 1);
 
     // Set selected dots on top
     $dots.sort(function (a, b) {  
@@ -630,16 +654,14 @@ function Main_Infographic( _id ) {
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY);
 
-      svg.selectAll('.line')
-        .style('opacity', 0);
+      $lines.style('opacity', 0);
     }
     else {
       $dots
         .style('fill', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? '#cacaca' : color(d.Drug); })
         .style('opacity', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? DOT_OPACITY : 1; });
       
-      svg.selectAll('.line')
-        .style('opacity', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? 0 : 1; });
+      $lines.style('opacity', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? 0 : 1; });
     }
   
     $tooltip.css({'opacity': '0', 'right': 'auto', 'left': '-1000px'});
@@ -662,18 +684,18 @@ function Main_Infographic( _id ) {
 
     var countryCode = x.domain()[j];
 
-    d3.select('.country-marker')
+    $countryMarker
       .style('opacity', 1)
       .attr('transform', 'translate('+ x(countryCode) +' 0)');
 
     var countryData = dataCountries.filter(function(d){ return d.Code === countryCode; });
 
-    d3.select('.country-label-code')
+    $countryLabelCode
       .attr('x', x(countryCode))
       .style('opacity', 1)
       .text( countryCode );
 
-    d3.select('.country-label')
+    $countryLabel
       .attr('x', x(countryCode))  //-6)
       .style('opacity', 1)
       .text( countryData[0]['Country_'+lang] );
@@ -691,13 +713,19 @@ function Main_Infographic( _id ) {
 
   var onOverlayOut = function(){
 
-    d3.selectAll('.country-marker, .country-label, .country-label-code').style('opacity', 0);
+    $countryMarker.style('opacity', 0);
+    $countryLabel.style('opacity', 0);
+    $countryLabelCode.style('opacity', 0);
+  };
 
-    /*
-    svg.selectAll('.dot')
-      .style('fill', function(d) { return color(d.Drug); })
-      .style('opacity', DOT_OPACITY );
-    */
+  var resetDotClicked = function(){
+    if (dotClicked !== null) {
+      dotClicked = null;
+      $dots
+        .style('fill', function(d){ return color(d.Drug); })
+        .style('opacity', DOT_OPACITY);
+      $lines.style('opacity', 0);
+    }
   };
 
   var niceName = function( drug ) {
@@ -730,7 +758,7 @@ function Main_Infographic( _id ) {
   };
 
   var setVisibility = function(d) {
-    return (d[ current.label ] !== null && dataCountries.some(function(e){ return e.Region_en === d.Country; }) ) ? 'visible' : 'hidden';
+    return (d[ current.label ] !== null && drugsFiltered.indexOf( d.Drug ) > -1 && dataCountries.some(function(e){ return e.Region_en === d.Country; }) ) ? 'visible' : 'hidden';
   };
 
   var setColor = function(d) {

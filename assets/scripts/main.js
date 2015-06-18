@@ -102,7 +102,7 @@
 
     $('[data-toggle="tooltip"]').tooltip(); // Init Tooltips
     $('.dropdown-toggle').dropdown();       // Init Dropdown
-    $('#region-dropdown-menu').click(function(e){ e.stopPropagation(); });
+    $('#region-dropdown-menu, #drug-dropdown-menu').click(function(e){ e.stopPropagation(); });
 
     if ($('#main-infographic').size() > 0) {
       var main_infographic = new Infographic('#main-infographic', 'main');
