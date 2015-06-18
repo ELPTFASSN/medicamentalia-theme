@@ -636,32 +636,14 @@ Omeprazole,Argentina,2015,0.126791277259,0.211318795431
 Salbutamol,Argentina,2015,0.22497403946,0.37492211838
 Simvastatin,Argentina,2015,0.0747663551402,0.249221183801
 Amitriptyline,Italy,2015,,0.0931074615285
-Amoxicillin,Italy,2015,,0.0996408105599
-Atenolol,Italy,2015,,0.0627664728215
-Captopril,Italy,2015,,0.0979712841457
-Ceftriaxone,Italy,2015,,0.0957323816711
-Ciprofloxacin,Italy,2015,,0.301737143842
+Amoxicillin,Italy,2015,0.0689041537431,0.0996408105599
+Atenolol,Italy,2015,0.0289513251021,0.0627664728215
+Captopril,Italy,2015,0.0231610600817,0.0979712841457
+Ceftriaxone,Italy,2015,0.0193008834014,0.0957323816711
+Ciprofloxacin,Italy,2015,0.0900707892067,0.301737143842
 Co-trimoxazole,Italy,2015,,0.0579605528545
-Diclofenac,Italy,2015,,0.149002819859
+Diclofenac,Italy,2015,0.0521123851839,0.149002819859
 Glibenclamide,Italy,2015,,0.1134891944
-Omeprazole,Italy,2015,,0.251049347672
-Salbutamol,Italy,2015,,0.0484452173376
-Simvastatin,Italy,2015,,0.116632481126
-Amoxicillin,"Italy, 1",2015,0.0351276077906,
-Atenolol,"Italy, 1",2015,0.00579026502043,
-Captopril,"Italy, 1",2015,0,
-Ceftriaxone,"Italy, 1",2015,0,
-Ciprofloxacin,"Italy, 1",2015,0,
-Diclofenac,"Italy, 1",2015,0.013510618381,
-Omeprazole,"Italy, 1",2015,0,
-Salbutamol,"Italy, 1",2015,0,
-Simvastatin,"Italy, 1",2015,0,
-Amoxicillin,"Italy, 2",2015,0.153345518624,
-Atenolol,"Italy, 2",2015,0.0463221201634,
-Captopril,"Italy, 2",2015,0.081063710286,
-Ceftriaxone,"Italy, 2",2015,0.067553091905,
-Ciprofloxacin,"Italy, 2",2015,0.157623881112,
-Diclofenac,"Italy, 2",2015,0.148616802191,
-Omeprazole,"Italy, 2",2015,0.144756625511,
-Salbutamol,"Italy, 2",2015,0.067553091905,
-Simvastatin,"Italy, 2",2015,0.0723783127554,
+Omeprazole,Italy,2015,0.0827180717204,0.251049347672
+Salbutamol,Italy,2015,0.0193008834014,0.0484452173376
+Simvastatin,Italy,2015,0.0413590358602,0.116632481126
