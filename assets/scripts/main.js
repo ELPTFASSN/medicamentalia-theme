@@ -93,38 +93,43 @@
 
         });
 
-        $('[data-toggle="tooltip"]').tooltip(); // Init Tooltips
-        $('.dropdown-toggle').dropdown();       // Init Dropdown
-        $('#region-dropdown-menu').click(function(e){ e.stopPropagation(); });
-
-        if ($('#main-infographic').size() > 0) {
-          var main_infographic = new Infographic('#main-infographic', 'main');
-          $(window).scroll( main_infographic.onScroll );
-          $(window).resize( main_infographic.onResize );
-        } 
-        else if ($('#fakes-infographic').size() > 0) {
-          var fakes_infographic = new Infographic('#fakes-infographic', 'fakes');
-          $(window).scroll( fakes_infographic.onScroll );
-          $(window).resize( fakes_infographic.onResize );
-        }
-        else if ($('#patents-graph').size() > 0) {
-          var graph = patents_graph('#patents-graph').init();
-          $(window).resize( graph.onResize );
-        }
-        else if ($('#patentes-infographic').size() > 0) {
-          var patentes_infographic = new Infographic('#patentes-infographic', 'patentes');
-          var antimalaricos_infographic = new Infographic('#antimalaricos-infographic', 'antimalaricos');
-          $(window).scroll( function(e){
-            patentes_infographic.onScroll();
-            antimalaricos_infographic.onScroll();
-          });
-          $(window).resize( function(){
-            patentes_infographic.onResize();
-            antimalaricos_infographic.onResize(); 
-          });
-        }
+        setupInfographics();
       }
     },
+  };
+
+  var setupInfographics = function(){
+
+    $('[data-toggle="tooltip"]').tooltip(); // Init Tooltips
+    $('.dropdown-toggle').dropdown();       // Init Dropdown
+    $('#region-dropdown-menu').click(function(e){ e.stopPropagation(); });
+
+    if ($('#main-infographic').size() > 0) {
+      var main_infographic = new Infographic('#main-infographic', 'main');
+      $(window).scroll( main_infographic.onScroll );
+      $(window).resize( main_infographic.onResize );
+    } 
+    else if ($('#fakes-infographic').size() > 0) {
+      var fakes_infographic = new Infographic('#fakes-infographic', 'fakes');
+      $(window).scroll( fakes_infographic.onScroll );
+      $(window).resize( fakes_infographic.onResize );
+    }
+    else if ($('#patents-graph').size() > 0) {
+      var graph = patents_graph('#patents-graph').init();
+      $(window).resize( graph.onResize );
+    }
+    else if ($('#patentes-infographic').size() > 0) {
+      var patentes_infographic = new Infographic('#patentes-infographic', 'patentes');
+      var antimalaricos_infographic = new Infographic('#antimalaricos-infographic', 'antimalaricos');
+      $(window).scroll( function(e){
+        patentes_infographic.onScroll();
+        antimalaricos_infographic.onScroll();
+      });
+      $(window).resize( function(){
+        patentes_infographic.onResize();
+        antimalaricos_infographic.onResize(); 
+      });
+    }
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.

@@ -13,16 +13,20 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
     <?php
+    if(!is_page_template('template-iframe.php')){
       do_action('get_header');
       get_template_part('templates/header');
+    }
     ?>
     
     <?php include Wrapper\template_path(); ?>
 
     <?php
+    if(!is_page_template('template-iframe.php')){
       do_action('get_footer');
       get_template_part('templates/footer');
-      wp_footer();
+    }
+    wp_footer();
     ?>
   </body>
 </html>
