@@ -86,17 +86,6 @@ Glibenclamide,"China, Shaanxi Province",2014,,0.0297130443866
 Omeprazole,"China, Shaanxi Province",2014,0.3,0.3
 Salbutamol,"China, Shaanxi Province",2014,0.5,0.4
 Simvastatin,"China, Shaanxi Province",2014,0.9,1.3
-Captopril,"China, Shandong Province",2004,0.2,0.1
-Ceftriaxone,"China, Shandong Province",2004,0.520101545386,0.299489752438
-Omeprazole,"China, Shandong Province",2004,3.95622265566,1.84870217554
-Salbutamol,"China, Shandong Province",2004,,0.4
-Amitriptyline,"China, Shanghai",2006,0.7,
-Amoxicillin,"China, Shanghai",2006,0.9,0.9
-Captopril,"China, Shanghai",2006,0.3455568,0.2111736
-Ceftriaxone,"China, Shanghai",2006,0.335958,0.30172228
-Omeprazole,"China, Shanghai",2006,3.5803524,3.3211848
-Salbutamol,"China, Shanghai",2006,0.9,0.7
-Simvastatin,"China, Shanghai",2006,5.1641544,
 Amitriptyline,Colombia,2008,0,0.6
 Amoxicillin,Colombia,2008,0,0.4
 Atenolol,Colombia,2008,0,0.8
@@ -201,48 +190,6 @@ Omeprazole,Haiti,2011,0.8,0.8
 Paracetamol,Haiti,2011,0.1,0.2
 Salbutamol,Haiti,2011,0.7,0.8
 Simvastatin,Haiti,2011,,2.1
-Amitriptyline,"India, Chennai",2004,0,1.1
-Atenolol,"India, Chennai",2004,0,0.4
-Captopril,"India, Chennai",2004,,1.52830948905
-Ceftriaxone,"India, Chennai",2004,0,0.516052554745
-Ciprofloxacin,"India, Chennai",2004,0,0.773417226277
-Co-trimoxazole,"India, Chennai",2004,0,0.1
-Diazepam,"India, Chennai",2004,0,0.0787310948905
-Diclofenac,"India, Chennai",2004,0,0.5
-Glibenclamide,"India, Chennai",2004,0,0.2
-Omeprazole,"India, Chennai",2004,0,0.873319708029
-Salbutamol,"India, Chennai",2004,,0.6
-Amitriptyline,"India, Haryana",2004,0,0.8
-Atenolol,"India, Haryana",2004,0,0.3
-Captopril,"India, Haryana",2004,,1.5
-Ceftriaxone,"India, Haryana",2004,0,0.507264086709
-Ciprofloxacin,"India, Haryana",2004,0,0.290944764816
-Co-trimoxazole,"India, Haryana",2004,0,0.1
-Diazepam,"India, Haryana",2004,0,0.048490794136
-Glibenclamide,"India, Haryana",2004,0,0.3
-Omeprazole,"India, Haryana",2004,0,0.425081636907
-Salbutamol,"India, Haryana",2004,,0.5
-Amitriptyline,"India, Karnataka",2004,0,1.1
-Atenolol,"India, Karnataka",2004,0,0.4
-Ceftriaxone,"India, Karnataka",2004,0,0.53292350365
-Ciprofloxacin,"India, Karnataka",2004,0,0.653004963504
-Co-trimoxazole,"India, Karnataka",2004,0,0.1
-Diazepam,"India, Karnataka",2004,0,0.0810467153285
-Diclofenac,"India, Karnataka",2004,0,0.5
-Glibenclamide,"India, Karnataka",2004,0,0.4
-Omeprazole,"India, Karnataka",2004,0,0.932864233577
-Salbutamol,"India, Karnataka",2004,,0.6
-Amitriptyline,"India, Maharashtra 4 regions",2005,0,1.1
-Atenolol,"India, Maharashtra 4 regions",2005,0,0.4
-Captopril,"India, Maharashtra 4 regions",2005,,1.88078
-Ceftriaxone,"India, Maharashtra 4 regions",2005,0,0.637501333333
-Ciprofloxacin,"India, Maharashtra 4 regions",2005,0,0.449423333333
-Co-trimoxazole,"India, Maharashtra 4 regions",2005,0,0.1
-Diazepam,"India, Maharashtra 4 regions",2005,0,0.087241
-Diclofenac,"India, Maharashtra 4 regions",2005,0,0.7
-Glibenclamide,"India, Maharashtra 4 regions",2005,0,0.4
-Omeprazole,"India, Maharashtra 4 regions",2005,0,1.08768
-Salbutamol,"India, Maharashtra 4 regions",2005,0,0.7
 Amitriptyline,"India, NCT, Delhi",2011,0,0.7
 Amoxicillin,"India, NCT, Delhi",2011,0,0.8
 Atenolol,"India, NCT, Delhi",2011,0,0.4
@@ -257,27 +204,6 @@ Omeprazole,"India, NCT, Delhi",2011,0,0.5
 Paracetamol,"India, NCT, Delhi",2011,0,0.1
 Salbutamol,"India, NCT, Delhi",2011,0,0.4
 Simvastatin,"India, NCT, Delhi",2011,0,0.6
-Amitriptyline,"India, Rajasthan",2003,0,1
-Atenolol,"India, Rajasthan",2003,0,0.4
-Captopril,"India, Rajasthan",2003,,1.61049230769
-Ceftriaxone,"India, Rajasthan",2003,0,0.453732307692
-Ciprofloxacin,"India, Rajasthan",2003,0,0.3346
-Co-trimoxazole,"India, Rajasthan",2003,0,0.1
-Diazepam,"India, Rajasthan",2003,0,0.0566246153846
-Diclofenac,"India, Rajasthan",2003,0,0.5
-Glibenclamide,"India, Rajasthan",2003,0,0.3
-Omeprazole,"India, Rajasthan",2003,0,0.816276923077
-Salbutamol,"India, Rajasthan",2003,0,0.6
-Amitriptyline,"India, West Bengal",2004,0,0.9
-Atenolol,"India, West Bengal",2004,0,0.5
-Ceftriaxone,"India, West Bengal",2004,0,0.545642754118
-Ciprofloxacin,"India, West Bengal",2004,,0.929588096865
-Co-trimoxazole,"India, West Bengal",2004,0,0.1
-Diazepam,"India, West Bengal",2004,,0.079472557504
-Diclofenac,"India, West Bengal",2004,,0.5
-Glibenclamide,"India, West Bengal",2004,0,0.3
-Omeprazole,"India, West Bengal",2004,0,0.805046686404
-Salbutamol,"India, West Bengal",2004,,0.6
 Amitriptyline,Indonesia,2010,0.3,0.3
 Amoxicillin,Indonesia,2010,0.3,0.3
 Captopril,Indonesia,2010,0.3,0.3

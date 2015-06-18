@@ -192,46 +192,6 @@ Salbutamol,Private,MPR,"China, Shaanxi Province",2014,1.07
 Salbutamol,Public,MPR,"China, Shaanxi Province",2014,1.2
 Simvastatin,Private,MPR,"China, Shaanxi Province",2014,10.12
 Simvastatin,Public,MPR,"China, Shaanxi Province",2014,6.93
-Amitriptyline,Private,MPR,"China, Shandong Province",2004,NO DATA
-Amitriptyline,Public,MPR,"China, Shandong Province",2004,NO DATA
-Atenolol,Private,MPR,"China, Shandong Province",2004,NO DATA
-Atenolol,Public,MPR,"China, Shandong Province",2004,NO DATA
-Captopril,Private,MPR,"China, Shandong Province",2004,0.15
-Captopril,Public,MPR,"China, Shandong Province",2004,0.23
-Ceftriaxone,Private,MPR,"China, Shandong Province",2004,0.19
-Ceftriaxone,Public,MPR,"China, Shandong Province",2004,0.33
-Ciprofloxacin,Private,MPR,"China, Shandong Province",2004,NO DATA
-Ciprofloxacin,Public,MPR,"China, Shandong Province",2004,NO DATA
-Co-trimoxazole,Private,MPR,"China, Shandong Province",2004,NO DATA
-Co-trimoxazole,Public,MPR,"China, Shandong Province",2004,NO DATA
-Diazepam,Private,MPR,"China, Shandong Province",2004,NO DATA
-Diazepam,Public,MPR,"China, Shandong Province",2004,NO DATA
-Glibenclamide,Private,MPR,"China, Shandong Province",2004,NO DATA
-Glibenclamide,Public,MPR,"China, Shandong Province",2004,NO DATA
-Omeprazole,Private,MPR,"China, Shandong Province",2004,0.51
-Omeprazole,Public,MPR,"China, Shandong Province",2004,1.09
-Salbutamol,Private,MPR,"China, Shandong Province",2004,0.3
-Salbutamol,Public,MPR,"China, Shandong Province",2004,NO DATA
-Simvastatin,Private,MPR,"China, Shandong Province",2004,NO DATA
-Simvastatin,Public,MPR,"China, Shandong Province",2004,NO DATA
-Amitriptyline,Private,MPR,"China, Shanghai",2006,NO DATA
-Amitriptyline,Public,MPR,"China, Shanghai",2006,5.23
-Amoxicillin,Private,MPR,"China, Shanghai",2006,4.92
-Amoxicillin,Public,MPR,"China, Shanghai",2006,4.92
-Atenolol,Private,MPR,"China, Shanghai",2006,NO DATA
-Atenolol,Public,MPR,"China, Shanghai",2006,NO DATA
-Captopril,Private,MPR,"China, Shanghai",2006,0.62
-Captopril,Public,MPR,"China, Shanghai",2006,1.01
-Ceftriaxone,Private,MPR,"China, Shanghai",2006,0.79
-Ceftriaxone,Public,MPR,"China, Shanghai",2006,0.88
-Glibenclamide,Private,MPR,"China, Shanghai",2006,NO DATA
-Glibenclamide,Public,MPR,"China, Shanghai",2006,NO DATA
-Omeprazole,Private,MPR,"China, Shanghai",2006,5.83
-Omeprazole,Public,MPR,"China, Shanghai",2006,6.28
-Salbutamol,Private,MPR,"China, Shanghai",2006,1.43
-Salbutamol,Public,MPR,"China, Shanghai",2006,1.73
-Simvastatin,Private,MPR,"China, Shanghai",2006,NO DATA
-Simvastatin,Public,MPR,"China, Shanghai",2006,0.65
 Amitriptyline,Private,MPR,Colombia,2008,6.36
 Amitriptyline,Public,MPR,Colombia,2008,free
 Amoxicillin,Private,MPR,Colombia,2008,2.52
@@ -430,92 +390,6 @@ Salbutamol,Private,MPR,Haiti,2011,2.26
 Salbutamol,Public,MPR,Haiti,2011,2.08
 Simvastatin,Private,MPR,Haiti,2011,6.08
 Simvastatin,Public,MPR,Haiti,2011,NO DATA
-Amitriptyline,Private,MPR,"India, Chennai",2004,4.99
-Amitriptyline,Public,MPR,"India, Chennai",2004,free
-Atenolol,Private,MPR,"India, Chennai",2004,4.34
-Atenolol,Public,MPR,"India, Chennai",2004,free
-Captopril,Private,MPR,"India, Chennai",2004,2.93
-Captopril,Public,MPR,"India, Chennai",2004,NO DATA
-Ceftriaxone,Private,MPR,"India, Chennai",2004,0.61
-Ceftriaxone,Public,MPR,"India, Chennai",2004,free
-Ciprofloxacin,Private,MPR,"India, Chennai",2004,5.24
-Ciprofloxacin,Public,MPR,"India, Chennai",2004,free
-Co-trimoxazole,Private,MPR,"India, Chennai",2004,1.16
-Co-trimoxazole,Public,MPR,"India, Chennai",2004,free
-Diazepam,Private,MPR,"India, Chennai",2004,9.77
-Diazepam,Public,MPR,"India, Chennai",2004,free
-Diclofenac,Private,MPR,"India, Chennai",2004,4.82
-Diclofenac,Public,MPR,"India, Chennai",2004,free
-Glibenclamide,Private,MPR,"India, Chennai",2004,3.07
-Glibenclamide,Public,MPR,"India, Chennai",2004,free
-Omeprazole,Private,MPR,"India, Chennai",2004,0.45
-Omeprazole,Public,MPR,"India, Chennai",2004,free
-Salbutamol,Private,MPR,"India, Chennai",2004,0.86
-Salbutamol,Public,MPR,"India, Chennai",2004,NO DATA
-Amitriptyline,Private,MPR,"India, Haryana",2004,3.89
-Amitriptyline,Public,MPR,"India, Haryana",2004,free
-Atenolol,Private,MPR,"India, Haryana",2004,3.65
-Atenolol,Public,MPR,"India, Haryana",2004,free
-Captopril,Private,MPR,"India, Haryana",2004,2.93
-Captopril,Public,MPR,"India, Haryana",2004,NO DATA
-Ceftriaxone,Private,MPR,"India, Haryana",2004,0.63
-Ceftriaxone,Public,MPR,"India, Haryana",2004,free
-Ciprofloxacin,Private,MPR,"India, Haryana",2004,2.08
-Ciprofloxacin,Public,MPR,"India, Haryana",2004,free
-Co-trimoxazole,Private,MPR,"India, Haryana",2004,1.23
-Co-trimoxazole,Public,MPR,"India, Haryana",2004,free
-Diazepam,Private,MPR,"India, Haryana",2004,6.15
-Diazepam,Public,MPR,"India, Haryana",2004,free
-Glibenclamide,Private,MPR,"India, Haryana",2004,3.5
-Glibenclamide,Public,MPR,"India, Haryana",2004,free
-Omeprazole,Private,MPR,"India, Haryana",2004,0.23
-Omeprazole,Public,MPR,"India, Haryana",2004,free
-Salbutamol,Private,MPR,"India, Haryana",2004,0.88
-Salbutamol,Public,MPR,"India, Haryana",2004,NO DATA
-Amitriptyline,Private,MPR,"India, Karnataka",2004,4.88
-Amitriptyline,Public,MPR,"India, Karnataka",2004,free
-Atenolol,Private,MPR,"India, Karnataka",2004,4.79
-Atenolol,Public,MPR,"India, Karnataka",2004,free
-Captopril,Private,MPR,"India, Karnataka",2004,NO DATA
-Captopril,Public,MPR,"India, Karnataka",2004,NO DATA
-Ceftriaxone,Private,MPR,"India, Karnataka",2004,0.63
-Ceftriaxone,Public,MPR,"India, Karnataka",2004,free
-Ciprofloxacin,Private,MPR,"India, Karnataka",2004,4.44
-Ciprofloxacin,Public,MPR,"India, Karnataka",2004,free
-Co-trimoxazole,Private,MPR,"India, Karnataka",2004,1.33
-Co-trimoxazole,Public,MPR,"India, Karnataka",2004,free
-Diazepam,Private,MPR,"India, Karnataka",2004,10.06
-Diazepam,Public,MPR,"India, Karnataka",2004,free
-Diclofenac,Private,MPR,"India, Karnataka",2004,5.24
-Diclofenac,Public,MPR,"India, Karnataka",2004,free
-Glibenclamide,Private,MPR,"India, Karnataka",2004,4.31
-Glibenclamide,Public,MPR,"India, Karnataka",2004,free
-Omeprazole,Private,MPR,"India, Karnataka",2004,0.48
-Omeprazole,Public,MPR,"India, Karnataka",2004,free
-Salbutamol,Private,MPR,"India, Karnataka",2004,0.96
-Salbutamol,Public,MPR,"India, Karnataka",2004,NO DATA
-Amitriptyline,Private,MPR,"India, Maharashtra 4 regions",2005,4.35
-Amitriptyline,Public,MPR,"India, Maharashtra 4 regions",2005,free
-Atenolol,Private,MPR,"India, Maharashtra 4 regions",2005,3.39
-Atenolol,Public,MPR,"India, Maharashtra 4 regions",2005,free
-Captopril,Private,MPR,"India, Maharashtra 4 regions",2005,3.16
-Captopril,Public,MPR,"India, Maharashtra 4 regions",2005,NO DATA
-Ceftriaxone,Private,MPR,"India, Maharashtra 4 regions",2005,0.66
-Ceftriaxone,Public,MPR,"India, Maharashtra 4 regions",2005,free
-Ciprofloxacin,Private,MPR,"India, Maharashtra 4 regions",2005,2.67
-Ciprofloxacin,Public,MPR,"India, Maharashtra 4 regions",2005,free
-Co-trimoxazole,Private,MPR,"India, Maharashtra 4 regions",2005,1.26
-Co-trimoxazole,Public,MPR,"India, Maharashtra 4 regions",2005,free
-Diazepam,Private,MPR,"India, Maharashtra 4 regions",2005,9.46
-Diazepam,Public,MPR,"India, Maharashtra 4 regions",2005,free
-Diclofenac,Private,MPR,"India, Maharashtra 4 regions",2005,6.01
-Diclofenac,Public,MPR,"India, Maharashtra 4 regions",2005,free
-Glibenclamide,Private,MPR,"India, Maharashtra 4 regions",2005,4.31
-Glibenclamide,Public,MPR,"India, Maharashtra 4 regions",2005,free
-Omeprazole,Private,MPR,"India, Maharashtra 4 regions",2005,0.49
-Omeprazole,Public,MPR,"India, Maharashtra 4 regions",2005,free
-Salbutamol,Private,MPR,"India, Maharashtra 4 regions",2005,0.93
-Salbutamol,Public,MPR,"India, Maharashtra 4 regions",2005,free
 Amitriptyline,Private,MPR,"India, NCT, Delhi",2011,5.48
 Amitriptyline,Public,MPR,"India, NCT, Delhi",2011,free
 Amoxicillin,Private,MPR,"India, NCT, Delhi",2011,7.21
@@ -544,48 +418,6 @@ Salbutamol,Private,MPR,"India, NCT, Delhi",2011,1.35
 Salbutamol,Public,MPR,"India, NCT, Delhi",2011,free
 Simvastatin,Private,MPR,"India, NCT, Delhi",2011,1.85
 Simvastatin,Public,MPR,"India, NCT, Delhi",2011,free
-Amitriptyline,Private,MPR,"India, Rajasthan",2003,4.27
-Amitriptyline,Public,MPR,"India, Rajasthan",2003,free
-Atenolol,Private,MPR,"India, Rajasthan",2003,4.53
-Atenolol,Public,MPR,"India, Rajasthan",2003,free
-Captopril,Private,MPR,"India, Rajasthan",2003,2.77
-Captopril,Public,MPR,"India, Rajasthan",2003,NO DATA
-Ceftriaxone,Private,MPR,"India, Rajasthan",2003,0.38
-Ceftriaxone,Public,MPR,"India, Rajasthan",2003,free
-Ciprofloxacin,Private,MPR,"India, Rajasthan",2003,1.82
-Ciprofloxacin,Public,MPR,"India, Rajasthan",2003,free
-Co-trimoxazole,Private,MPR,"India, Rajasthan",2003,1
-Co-trimoxazole,Public,MPR,"India, Rajasthan",2003,free
-Diazepam,Private,MPR,"India, Rajasthan",2003,7.57
-Diazepam,Public,MPR,"India, Rajasthan",2003,free
-Diclofenac,Private,MPR,"India, Rajasthan",2003,4.18
-Diclofenac,Public,MPR,"India, Rajasthan",2003,free
-Glibenclamide,Private,MPR,"India, Rajasthan",2003,2.73
-Glibenclamide,Public,MPR,"India, Rajasthan",2003,free
-Omeprazole,Private,MPR,"India, Rajasthan",2003,0.4
-Omeprazole,Public,MPR,"India, Rajasthan",2003,free
-Salbutamol,Private,MPR,"India, Rajasthan",2003,0.94
-Salbutamol,Public,MPR,"India, Rajasthan",2003,free
-Amitriptyline,Private,MPR,"India, West Bengal",2004,3.89
-Amitriptyline,Public,MPR,"India, West Bengal",2004,free
-Atenolol,Private,MPR,"India, West Bengal",2004,4.75
-Atenolol,Public,MPR,"India, West Bengal",2004,free
-Ceftriaxone,Private,MPR,"India, West Bengal",2004,0.62
-Ceftriaxone,Public,MPR,"India, West Bengal",2004,free
-Ciprofloxacin,Private,MPR,"India, West Bengal",2004,6.06
-Ciprofloxacin,Public,MPR,"India, West Bengal",2004,NO DATA
-Co-trimoxazole,Private,MPR,"India, West Bengal",2004,1.23
-Co-trimoxazole,Public,MPR,"India, West Bengal",2004,free
-Diazepam,Private,MPR,"India, West Bengal",2004,9.46
-Diazepam,Public,MPR,"India, West Bengal",2004,NO DATA
-Diclofenac,Private,MPR,"India, West Bengal",2004,5.14
-Diclofenac,Public,MPR,"India, West Bengal",2004,NO DATA
-Glibenclamide,Private,MPR,"India, West Bengal",2004,3.66
-Glibenclamide,Public,MPR,"India, West Bengal",2004,free
-Omeprazole,Private,MPR,"India, West Bengal",2004,0.4
-Omeprazole,Public,MPR,"India, West Bengal",2004,free
-Salbutamol,Private,MPR,"India, West Bengal",2004,0.89
-Salbutamol,Public,MPR,"India, West Bengal",2004,NO DATA
 Amitriptyline,Private,MPR,Indonesia,2010,2.22
 Amitriptyline,Public,MPR,Indonesia,2010,2.2
 Amoxicillin,Private,MPR,Indonesia,2010,1.37
