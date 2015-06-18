@@ -22,6 +22,7 @@
           </ul>
         </div>
         <a href="#top" class="top-btn" title="Top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+        <a class="home-btn" href="<?= esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
       </div>
     </div>
   </div>
@@ -34,6 +35,7 @@
       <div class="page-content-container">
         <p class="author"><?= __('Por', 'sage'); ?> <span><?php the_field('author'); ?></span></p>
         <?php the_content(); ?>
+        <?php get_template_part('templates/social'); ?>
       </div>
     </div>
   </div>
