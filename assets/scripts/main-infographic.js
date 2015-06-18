@@ -579,7 +579,7 @@ function Main_Infographic( _id ) {
     $tooltip.find('.green .'+dataIcon).show();
 
     if( data !== 0 ){
-      $tooltip.find('.price').html( data );
+      $tooltip.find('.price').html( niceData(data) );
       $tooltip.find('.green .'+current.data+'-txt').show();
     } else {
       $tooltip.find('.price').html( 'gratis' );
@@ -661,48 +661,52 @@ function Main_Infographic( _id ) {
     */
   };
 
-  var niceName = function( drug ){
+  var niceName = function( drug ) {
     return drug.toLowerCase().replace(/[ +,\/]/g,'-');
   };
 
-  var setId = function(d){
+  var niceData = function( data ) {
+    return (lang !== 'es') ? data.toFixed(2) : data.toFixed(2).toString().replace(/\./g,',');
+  };
+
+  var setId = function(d) {
     return niceName(d.Drug); 
   };
 
-  var getClass = function(d){
+  var getClass = function(d) {
    return '.country-' + niceName(d.Country) + '.drug-' + niceName(d.Drug);
   };
 
-  var setClass = function(d){
+  var setClass = function(d) {
    return ' country-' + niceName(d.Country) + ' drug-' + niceName(d.Drug);
   };
 
-  var setValueX = function(d){
+  var setValueX = function(d) {
     var countryData = getCountryData(d.Country);
     return ( countryData.length > 0 ) ? x(countryData[0].Code) : 0;
   };
 
-  var setValueY = function(d){
+  var setValueY = function(d) {
     return (d[ current.label ] !== null) ? y(d[ current.label ]) : height;
   };
 
-  var setVisibility = function(d){
+  var setVisibility = function(d) {
     return (d[ current.label ] !== null && dataCountries.some(function(e){ return e.Region_en === d.Country; }) ) ? 'visible' : 'hidden';
   };
 
-  var setColor = function(d){
+  var setColor = function(d) {
     return color(d.Drug);
   };
 
-  var getCurrentData = function(){
+  var getCurrentData = function() {
     return (current.data === 'affordability') ? dataAffordability : ((current.type === 'public') ? dataPricesPublic : dataPricesPrivate);
   };
 
-  var getCountryData = function( region ){
+  var getCountryData = function( region ) {
     return dataCountries.filter(function(e){ return e.Region_en === region; });
   };
 
-  var setDimensions = function(){
+  var setDimensions = function() {
     widthCont = $el.width();
     heightCont = $el.height();
     width = widthCont - margin.left - margin.right;

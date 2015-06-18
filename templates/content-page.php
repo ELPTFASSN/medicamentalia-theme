@@ -32,7 +32,7 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="page-content-container">
-        <p class="author"><?= __('Por', 'sage'); ?> <span><?= get_the_author(); ?></span></p>
+        <p class="author"><?= __('Por', 'sage'); ?> <span><?php the_field('author'); ?></span></p>
         <?php the_content(); ?>
       </div>
     </div>

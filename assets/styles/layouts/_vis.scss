@@ -33,6 +33,11 @@ Patentes
   .marker{
     stroke: $color-orange;
   }
+
+  .marker-label text{
+    font-size: 0.75em;
+    fill: $brand-primary;
+  }
 }
 
 /*
@@ -681,5 +686,23 @@ Infographic
         font-weight: 300;
       }
     }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .infographic .infographic-nav,
+  .infographic .infographic-nav.fixed{
+    display: none;
+  }
+
+  .infographic .infographic-graph svg{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+  #patents-graph .axis text{
+    font-size: 0.6em;
   }
 }
