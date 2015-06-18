@@ -196,14 +196,19 @@ $btn-scroll-down-icon-size: 44px;
   }
 
   [class*=col-] {
-    height: 25%;
+    height: 300px;
   }
 
   &.page-footer{
-    height: 150%;
+    height: auto;
+
+    .container-fluid,
+    .row {
+      height: auto;
+    }
 
     [class*=col-] {
-      height: 33.33%;
+      height: 300px;
     }
   }
 
@@ -218,14 +223,6 @@ $btn-scroll-down-icon-size: 44px;
     [class*=col-] {
       height: 50%;
     }
-
-    &.page-footer{
-      height: 150%;
-
-      [class*=col-] {
-        height: 33.33%;
-      }
-    }
   }
 }
 
@@ -234,6 +231,8 @@ $btn-scroll-down-icon-size: 44px;
   #home.page-footer{
     height: 50%;
 
+    .container-fluid,
+    .row,
     [class*=col-] {
       height: 100%;
     }

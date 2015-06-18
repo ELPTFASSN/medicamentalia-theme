@@ -621,6 +621,11 @@ Infographic
         }
       }
 
+      .dropdown{
+        float: left;
+        width: 50%;
+      }
+
       .dropdown.open .glyphicon-chevron-down:before{
         content: "\e113";
       }
@@ -631,14 +636,30 @@ Infographic
         color: $gray-light;
         font-size: 0.875em;
         line-height: 1.5em;
-        padding: 5px 10px;
+        padding: 5px 0;
+        text-indent: -12px;
+        border-right: none;
+        
+        &.hover,
+        &:hover,
+        &.active,
+        &.active:hover, 
+        &.focus, 
+        &:active, 
+        &:focus{
+          background: mix( $color-orange, white, 10% );
+        }
 
         .glyphicon{
           position: absolute;
           top: 10px;
-          right: 10px;
+          right: 6px;
           color: $color-orange;
           font-size: 1.125em;
+        }
+
+        &#drug-dropdown{
+          border-right: 1px solid $color-orange;
         }
       }
 
@@ -652,15 +673,25 @@ Infographic
           font-weight: 300;
           font-size: 0.875em;
           text-align: left;
-          padding-left: 10px;
+          padding-left: 8px;
+          margin: 5px 0;
+          line-height: 1.375em;
+
+          &.checkbox label{
+            font-weight: 300;
+          }
         }
+      }
+
+      .dropdown:first-child{
+        border-right: none;
       }
     }
   }
 
   .btn-group{
     display: block;
-    padding: 0 10px;
+    padding: 0 10px 0 0;
 
     .btn{
       width: 50%;
