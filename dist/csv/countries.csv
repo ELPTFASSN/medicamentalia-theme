@@ -1,5 +1,6 @@
 Region_en,Region_es,Country_en,Country_es,Code,Area,PIB
 Afghanistan,Afganistán,Afghanistan,Afganistán,AF,Asia,664.76
+Argentina,Argentina,Argentina,Argentina,AR,America,14715.18
 Armenia,Armenia,Armenia,Armenia,AM,Asia,3504.77
 Bolivia,Bolivia,Bolivia,Bolivia,BO,America,2867.64
 "Brazil, Rio de Janeiro State","Brasil, Estado Rio de Janeiro",Brazil,Brasil,BR,America,11208.08
@@ -19,6 +20,7 @@ Egypt,Egipto,Egypt,Egipto,EG,Africa,3314.46
 El Salvador,El Salvador,El Salvador,El Salvador,SV,America,3826.08
 Ethiopia,Etiopía,Ethiopia,Etiopía,ET,Africa,505.05
 Fiji,Fiyi,Fiji,Fiyi,FJ,Oceania,4375.41
+Germany,Alemania,Germany,Alemania,DE,Europe,46251.38
 Ghana,Ghana,Ghana,Ghana,GH,Africa,1858.24
 Haiti,Haití,Haiti,Haití,HT,America,819.90
 "India, Chennai","India, Chennai",India,India,IN,Asia,1497.55
@@ -30,6 +32,9 @@ Haiti,Haití,Haiti,Haití,HT,America,819.90
 "India, West Bengal","India, West Bengal",India,India,IN,Asia,1497.55
 Indonesia,Indonesia,Indonesia,Indonesia,ID,Asia,3475.25
 Iran,Irán,Iran,Irán,IR,Asia,4763.30
+Italy,Italia,Italy,Italia,IT,Europe,35685.60
+"Italy, 1","Italia, 1",Italy,Italia,IT,Europe,35685.60
+"Italy, 2","Italia, 2",Italy,Italia,IT,Europe,35685.60
 Jordan,Jordania,Jordan,Jordania,JO,Asia,5213.39
 Kazakhstan,Kazajistán,Kazakhstan,Kazajistán,KZ,Asia,13611.54
 Kenya,Kenia,Kenya,Kenia,KE,Africa,1245.51
@@ -54,6 +59,7 @@ Philippines,Filipinas,Philippines,Filipinas,PH,Asia,2765.08
 São Tomé and Príncipe,Santo Tomé y Príncipe,Sao Tome & Principe,Santo Tomé y Príncipe,ST,Africa,1609.82
 "South Africa, Gauteng Province","Sudáfrica, Gauteng",South Africa,Sudáfrica,ZA,Africa,6886.29
 "South Africa, Kwazulu Natal State","Sudáfrica, Kwazulu Natal",South Africa,Sudáfrica,ZA,Africa,6886.29
+Spain,España,Spain,España,ES,Europe,29882.14
 Sudan,Sudán,Sudan,Sudán,SD,Africa,1753.38
 Syria,Syria,Syria,Syria,SY,Asia,2065.54
 Tajikistan,Tadjikistan,Tajikistan,Tadjikistan,TJ,Asia,1036.58
@@ -65,7 +71,3 @@ Ukraine,Ucrania,Ukraine,Ucrania,UA,Europe,3900.47
 United Arab Emirates,Emiratos Árabes Unidos,United Arab Emirates,Emiratos Árabes Unidos,AE,Asia,43048.85
 Uzbekistan,Uzbekistán,Uzbekistan,Uzbekistán,UZ,Asia,1877.96
 Yemen,Yemen,Yemen,Yemen,YE,Asia,1473.10
-Spain,España,Spain,España,ES,Europe,20000
-Germany,Alemania,Germany,Alemania,DE,Europe,20000
-Argentina,Argentina,Argentina,Argentina,AR,America,20000
-Italy,Italia,Italy,Italia,IT,Europe,20000
