@@ -53,13 +53,14 @@
         menuItems.click(function(e){
           menuItems.parent().removeClass('active');
           $(this).parent().addClass('active');
+          $('#page-menu').removeClass('in');
         });
 
         // Anchors corresponding to menu items
         var scrollItems = menuItems.map(function(){
-            var item = $($(this).attr("href"));
-            if (item.length) { return item; }
-          });
+          var item = $($(this).attr("href"));
+          if (item.length) { return item; }
+        });
 
         // Fix Nav Page & activate items when scroll down
         $(window).scroll(function(e) {

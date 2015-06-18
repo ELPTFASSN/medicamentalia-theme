@@ -184,13 +184,29 @@ header {
     position: absolute;
     right: 0;
     top: 0;
-    width: 47px;
+    width: 44px;
     line-height: 42px;
     color: $color-orange;
     background: transparent;
     text-align: center;
     border-left: 1px solid $color-brown;
-    @include transition(.3s ease-out background);     
+    @include transition(.3s ease-out background);
+  }
+
+  .home-btn{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    text-indent: -9999px;
+    border-left: 1px solid $color-brown;
+    opacity: 0;
+    background: url(../images/medicamentalia-small-brown.png) no-repeat center center transparent;
+    @include transition(.3s ease-out opacity);
   }
 
   &.fixed{
@@ -212,6 +228,15 @@ header {
         background: mix( $color-orange, $color-brown, 50% );
       }
     }
+
+    .home-btn{
+      visibility: visible;
+      opacity: 0.7;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
   }
 
   @media (min-width: $screen-sm) {
@@ -219,7 +244,11 @@ header {
     .top-btn{
       right: 16px;
       line-height: 44px;
-      border-left: none;
+      //border-left: none;
+    }
+
+    .home-btn{
+      display: block;
     }
 
     .navbar-collapse{
@@ -228,11 +257,15 @@ header {
     }
 
     .navbar-nav{
-      padding-right: 47px;
-      border-left: 1px solid $color-brown;
+      padding-right: 42px;
+      padding-left: 42px;
 
       li{
         width: 33.33%;
+
+        &:first-child{
+          border-left: 1px solid $color-brown;
+        }
 
         > a{
           border-bottom: 0;
@@ -448,6 +481,25 @@ blockquote{
   text-shadow: none;
 }
 
+.social-share{
+  padding: 0;
+  margin: 0 auto;
+
+  li{
+    float: left;
+    list-style: none;
+    margin: 0 10px 40px 0;
+
+    > a{
+      border: none;
+      font-size: 0.875em;
+
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
 
 // Tablet & Computers Resolution
 @media (min-width: $screen-sm) {

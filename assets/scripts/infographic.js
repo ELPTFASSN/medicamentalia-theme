@@ -44,7 +44,7 @@ var Infographic = function( _id, _type ) {
 
   that.init = function(){
 
-    console.log('infographic', id, type);
+    //console.log('infographic', id, type);
 
     $el = $( id );
     $contentList = $el.find('.infographic-content li');
@@ -110,7 +110,7 @@ var Infographic = function( _id, _type ) {
 
       if (currentItem >= 0) {
 
-        console.log('state', type, currentItem, $contentList.size() );
+        //console.log('state', type, currentItem, $contentList.size() );
 
         // Show/hide Main Infographic Menu
         if (type === 'main') {
