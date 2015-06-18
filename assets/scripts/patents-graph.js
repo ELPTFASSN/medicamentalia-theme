@@ -6,6 +6,11 @@ function patents_graph( _id ) {
 
   var id = _id;
   var $el = $(id);
+  var lang = $el.data('lang');
+  var txt = {
+    'es': 'Se aprueba la licencia obligatoria',
+    'en': 'Compulsory license is approved'
+  };
 
   var margin = {top: 20, right: 0, bottom: 20, left: 0},
       widthCont = 1140,
@@ -23,8 +28,6 @@ function patents_graph( _id ) {
   // Public Methods
 
   that.init = function() {
-
-    console.log('patents', $el);
 
     widthCont = $el.width();
     heightCont = widthCont*0.5625;
@@ -57,8 +60,6 @@ function patents_graph( _id ) {
     .append('g')
       .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-    console.log('set size', widthCont, heightCont);
-
     // Load CSV
     d3.csv( $('body').data('url')+'/dist/csv/patents.csv', function(error, data) {
 
@@ -83,9 +84,9 @@ function patents_graph( _id ) {
 
       svg.append('g')
         .attr('class', 'marker-label')
-        .attr('x1', function(d) { return x(2007); })
         .append('text')
-        .txt('Se aprueba la licencia obligatoria');
+        .attr('x', function(d) { return x(2007); })
+        .text( txt[lang] );
 
       svg.selectAll('.bar')
         .data(data)
@@ -134,8 +135,6 @@ function patents_graph( _id ) {
 
   var updateData = function(){
 
-    console.log('update data');
-
     d3.select('#patents-graph-svg')
       .attr('width', widthCont)
       .attr('height', heightCont);
@@ -146,6 +145,8 @@ function patents_graph( _id ) {
     d3.select('g.x.axis')
       .attr('transform', 'translate(0,' + height + ')')
       .call(xAxis);
+
+    d3.select('.marker-label text').attr('x', function(d) { return x(2007); });
 
     d3.selectAll('.bar')
       .attr('x', function(d) { return x(d.date); })
