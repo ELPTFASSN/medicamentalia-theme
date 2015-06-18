@@ -23,6 +23,7 @@ function Main_Infographic( _id ) {
           'horas': 'hours'
         }
       },
+      dotClicked = null,
       currentState = 0;
 
   var margin = {top: 150, right: 50, bottom: 50, left: 50},
@@ -41,6 +42,8 @@ function Main_Infographic( _id ) {
   var svg,
       x, y, xAxis, yAxis,
       dataPricesPublic, dataPricesPrivate, dataAffordability, dataCountries, dataCountriesAll;
+
+  var $dots;
 
   var tickFormatPrices = function(d){ 
         if (d === 0) {
@@ -110,14 +113,14 @@ function Main_Infographic( _id ) {
         .on('mousemove', onOverlayMove);
 
       // Add dot events
-      d3.selectAll('.dot')
+      $dots
         .on('mouseover', onDotOver )
         .on('mouseout', onDotOut );
 
     } else if( currentState === 5 ){
 
       // Remove dot events
-      d3.selectAll('.dot')
+      $dots
         .on('mouseover', null )
         .on('mouseout', null );
     }
@@ -171,7 +174,7 @@ function Main_Infographic( _id ) {
       .attr('x2', setValueX)
       .attr('y2', setValueY);
 
-    d3.selectAll('.dot')
+    $dots
       .attr('cx', setValueX)
       .attr('cy', setValueY);
 
@@ -321,6 +324,8 @@ function Main_Infographic( _id ) {
       .style('visibility', setVisibility)
       .style('opacity', DOT_OPACITY)
       .style('fill', setColor);
+
+    $dots = d3.selectAll('.dot');
   };
 
   var updateData = function(){
@@ -331,6 +336,16 @@ function Main_Infographic( _id ) {
     current.label = (current.data === 'prices') ? 'Price' : ((current.type === 'public') ? 'Public sector - number of days' : 'Private sector - number of days');
 
     if( !initialized ){ return that; }
+
+    // Reset clicked items
+    if (dotClicked !== null) {
+      dotClicked = null;
+      $dots
+        .style('fill', function(d){ return color(d.Drug); })
+        .style('opacity', DOT_OPACITY);
+      svg.selectAll('.line')
+        .style('opacity', 0);
+    }
 
     // Set title
     $('#main-infographic-menu h4').hide();
@@ -369,7 +384,8 @@ function Main_Infographic( _id ) {
     }
 
     // Reset visibility for all dots & lines
-    svg.selectAll('.dot, .line').style('visibility', 'hidden');
+    $dots.style('visibility', 'hidden');
+    svg.selectAll('.line').style('visibility', 'hidden');
 
     currentData.forEach(function(d){
 
@@ -422,6 +438,8 @@ function Main_Infographic( _id ) {
           .on('mouseout', onDotOut );
       }
     });
+
+    $dots = d3.selectAll('.dot');
 
     return that;
   };
@@ -531,7 +549,8 @@ function Main_Infographic( _id ) {
     // Update X Axis
     x.domain( dataCountries.map(function(d){ return d.Code; }) );
 
-    d3.selectAll('.dot, .line')
+    $dots.style('visibility', setVisibility);
+    d3.selectAll('.line')
       .style('visibility', setVisibility);
 
     d3.selectAll('.line')
@@ -550,12 +569,14 @@ function Main_Infographic( _id ) {
 
   var onDotOver = function(){
 
+    $dots.on('click', onDotClick );
+
     var item = d3.select(this);
 
     // Update opacity
-    svg.selectAll('.dot')
-      .style('fill', '#cacaca')
-      .style('opacity', DOT_OPACITY);
+    $dots
+      .style('fill', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? '#cacaca' : color(d.Drug); })
+      .style('opacity', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? DOT_OPACITY : 1; });
 
     svg.selectAll('.dot.drug-'+item.attr('id'))
       .style('fill', function(d) { return color(d.Drug); }).style('opacity', 1);
@@ -564,7 +585,7 @@ function Main_Infographic( _id ) {
     svg.selectAll('.line.drug-'+item.attr('id')+', .country-label, .country-label-code').style('opacity', 1);
 
     // Set selected dots on top
-    svg.selectAll('.dot').sort(function (a, b) {  
+    $dots.sort(function (a, b) {  
       return ( item.attr('id') === niceName(a.Drug) ) ? 1 : -1;
     });
 
@@ -602,14 +623,32 @@ function Main_Infographic( _id ) {
 
   var onDotOut = function(){
 
-    svg.selectAll('.line')
-      .style('opacity', 0);
+    $dots.on('click', null );
 
-    svg.selectAll('.dot')
-      .style('fill', function(d) { return color(d.Drug); })
-      .style('opacity', DOT_OPACITY );
+    if (dotClicked === null) {
+      $dots
+        .style('fill', function(d){ return color(d.Drug); })
+        .style('opacity', DOT_OPACITY);
 
+      svg.selectAll('.line')
+        .style('opacity', 0);
+    }
+    else {
+      $dots
+        .style('fill', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? '#cacaca' : color(d.Drug); })
+        .style('opacity', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? DOT_OPACITY : 1; });
+      
+      svg.selectAll('.line')
+        .style('opacity', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? 0 : 1; });
+    }
+  
     $tooltip.css({'opacity': '0', 'right': 'auto', 'left': '-1000px'});
+  };
+
+  var onDotClick = function(){
+
+    var id = d3.select(this).attr('id');
+    dotClicked = ( id !== dotClicked ) ? id : null;
   };
 
   var onOverlayMove = function(){
