@@ -357,6 +357,10 @@ Infographic
         color: $brand-primary;
         margin-bottom: 12px;
       }
+
+      img{
+        display: none;
+      }
     }
   }
 
@@ -381,58 +385,6 @@ Infographic
     background: linear-gradient(to top,transparent, $color-orange);
   }
 }
-
-/*
-#main-infographic-legend-y{
-
-  $main-infographic-legend-color: mix( $gray-light, $gray-lighter, 50% );
-
-  position: absolute;
-  top: 150px;
-  bottom: 50px;
-  left: 24px;
-  color: $main-infographic-legend-color;
-  border-left: 1px solid $main-infographic-legend-color;
-
-  .glyphicon{
-    color: $main-infographic-legend-color;
-    left: -4.5px;
-    font-size: 0.5em;
-  }
-
-  .glyphicon-menu-up{
-    position: absolute;
-    top: -2px;
-  }
-  .glyphicon-menu-down{
-    position: absolute;
-    top: 100%;
-    margin-top: -6px;
-  }
-
-  p{
-    position: absolute;
-    top: 50%;
-    margin-top: -1em;
-    line-height: 1em;
-    margin-left: -0.25em;
-    background-color: white;
-    padding: 6px 0;
-  }
-
-  .plus{
-    position: absolute;
-    top: -22px;
-    left: -4.5px;
-  }
-
-  .less{
-    position: absolute;
-    top: 100%;
-    left: -3px;
-  }
-}
-*/
 
 #main-infographic-tooltip{
   top: 80px;
@@ -809,6 +761,13 @@ Infographic
 
         &:last-child{
           border-bottom: none;
+        }
+
+        img{
+          display: block;
+          width: 100%;
+          height: auto;
+          margin-top: 20px;
         }
       }
     }
