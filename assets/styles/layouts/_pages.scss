@@ -125,6 +125,10 @@ header {
     max-width: 1040px;
   }
 
+  .navbar-header{
+      border: none;
+    }
+
   .navbar-toggle{
     float: left;
     width: 46px;
@@ -215,10 +219,6 @@ header {
     top: 0;
     z-index: 90;
 
-    .navbar-nav{
-      border-right: 1px solid $color-brown;
-    }
-
     .top-btn{
       color: $color-brown;
       visibility: visible;
@@ -239,7 +239,7 @@ header {
     }
   }
 
-  @media (min-width: $screen-sm) {
+  @media (min-width: $screen-md) {
     
     .top-btn{
       right: 16px;
@@ -251,9 +251,17 @@ header {
       display: block;
     }
 
+    .navbar-header{
+      border: none;
+    }
+
     .navbar-collapse{
       padding-right: 15px;
       padding-left: 15px;
+    }
+
+    &.fixed .navbar-nav{
+      border-right: 1px solid $color-brown;
     }
 
     .navbar-nav{
@@ -273,13 +281,16 @@ header {
         }
       }
     }
+
+    &.page-8 .navbar-nav li{
+      width: 16.6666%;
+    }
   }
 }
 
-@media (min-width: $screen-sm) {
-    
-  .nav-page.page-8 .navbar-nav li{
-    width: 16.6666%;
+@media (max-width: $screen-md) {
+  .nav-page .container{
+    width: 100%;
   }
 }
 
