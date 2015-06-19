@@ -33,7 +33,12 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="page-content-container">
-        <p class="author"><?= __('Por', 'sage'); ?> <span><?php the_field('author'); ?></span></p>
+        <?php $author = get_field('author'); ?>
+        <p class="author">
+        <?php if( $author ) : ?>
+        <?= __('Por', 'sage'); ?> <span><?php the_field('author'); ?></span>
+        <?php endif; ?>
+        </p>
         <?php the_content(); ?>
         <?php get_template_part('templates/social'); ?>
       </div>
