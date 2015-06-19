@@ -45,7 +45,7 @@ function Main_Infographic( _id ) {
 
   var svg,
       x, y, xAxis, yAxis,
-      drugsFiltered, drugsFilteredAll,
+      timeout, drugsFiltered, drugsFilteredAll,
       dataPricesPublic, dataPricesPrivate, dataAffordability, dataCountries, dataCountriesAll;
 
   var $dots, $lines, $countryMarker, $countryLabel, $countryLabelCode, $overlay, $mprLine, $yAxis, $xAxis, $yLabel;
@@ -122,13 +122,10 @@ function Main_Infographic( _id ) {
 
     if( stateID === 0 ){
 
-      //current.data = 'affordability';
-      //current.type = 'private';
-      //current.order = 'pib';
+      $tooltip.css('opacity', '0');
       drugsFiltered = drugsFilteredAll;
-      
       updateData( 'affordability', 'private' );
-      reorderData( 'pib' );
+      //reorderData( 'pib' );
 
       // Show only Salbutamol dots
       $dots.transition(1000)
@@ -140,30 +137,30 @@ function Main_Infographic( _id ) {
         return (a.Drug === 'Salbutamol') ? 1 : -1;
       });
 
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){ setTooltip(d3.select('.dot.drug-salbutamol.country-kyrgyzstan')); }, 1200);  // Tooltip
+
     } else if( stateID === 1 ){
 
-      //current.data = 'affordability';
-      //current.type = 'private';
-      //current.order = 'pib';
+      $tooltip.css('opacity', '0');
       drugsFiltered = drugsFilteredAll;
-
       updateData( 'affordability', 'private' );
-      reorderData( 'pib' );
+      //reorderData( 'pib' );
 
       // Show all dots
       $dots.transition(1000)
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY );
 
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){ setTooltip(d3.select('.dot.drug-captopril.country-ghana')); }, 1200);  // Tooltip
+
     } else if( stateID === 2 ){
 
-      //current.data = 'affordability';
-      //current.type = 'private';
-      //current.order = 'area';
+      $tooltip.css('opacity', '0');
       drugsFiltered = 'Simvastatin Omeprazole';
-
       updateData( 'affordability', 'private' );
-      reorderData( 'area' );
+      //reorderData( 'area' );
 
       // Show only drugsFiltered dots
       $dots.transition(1000)
@@ -175,92 +172,92 @@ function Main_Infographic( _id ) {
         return (drugsFiltered.indexOf(a.Drug) > -1) ? 1 : -1;
       });
 
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){ setTooltip(d3.select('.dot.drug-simvastatin.country-são-tomé-and-príncipe')); }, 1200);  // Tooltip
+
     } else if( stateID === 3 ){
 
-      //current.data = 'affordability';
-      //current.type = 'private';
-      //current.order = 'pib';
+      $tooltip.css('opacity', '0');
       drugsFiltered = drugsFilteredAll;
-
       var countries = 'São Tomé and Príncipe Kuwait Italy Spain';
 
       updateData( 'affordability', 'private' );
-      reorderData( 'pib' );
+      //reorderData( 'pib' );
 
       $dots.transition(1000)
         .style('fill', function(d){ return (countries.indexOf( d.Country ) === -1 ) ? DOT_GRAY : color(d.Drug); })
         .style('opacity', function(d){ return (countries.indexOf( d.Country ) === -1 ) ? DOT_OPACITY : 1; });
 
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){ setTooltip(d3.select('.dot.drug-ciprofloxacin.country-são-tomé-and-príncipe')); }, 1200);  // Tooltip
+
     } else if( stateID === 4 ){
 
-      //current.data = 'prices';
-      //current.type = 'private';
-      //current.order = 'pib';
+      $tooltip.css('opacity', '0');
       drugsFiltered = drugsFilteredAll;
-
       updateData( 'prices', 'private' );
-      reorderData( 'pib' );
+      //reorderData( 'pib' );
 
       $dots.transition(1000)
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY);
 
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){ setTooltip(d3.select('.dot.drug-ciprofloxacin.country-morocco')); }, 1200);  // Tooltip
+
     } else if( stateID === 5 ){
 
-      //current.data = 'prices';
-      //current.type = 'private';
-      //current.order = 'pib';
+      $tooltip.css('opacity', '0');
       drugsFiltered = drugsFilteredAll;
-
       updateData( 'prices', 'private' );
-      reorderData( 'pib' );
+      //reorderData( 'pib' );
 
       $dots.transition(1000)
         .style('fill', DOT_GRAY)
         .style('opacity',DOT_OPACITY);
 
-      svg.selectAll('.dot.drug-ciprofloxacin.country-kuwait')
+      svg.selectAll('.dot.country-kuwait')
         .transition(1000)
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', 1);
 
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){ setTooltip(d3.select('.dot.drug-ciprofloxacin.country-kuwait')); }, 1200);  // Tooltip
+
     } else if( stateID === 6 ){
 
-      //current.data = 'affordability';
-      //current.type = 'public';
-      //current.order = 'pib';
+      $tooltip.css('opacity', '0');
       drugsFiltered = drugsFilteredAll;
-
       updateData( 'affordability', 'public' );
-      reorderData( 'pib' );
+      //reorderData( 'pib' );
 
       $dots.transition(1000)
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY);
+
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){ setTooltip(d3.select('.dot.drug-diclofenac.country-sudan')); }, 1200);  // Tooltip
 
     } else if( stateID === 7 ){
 
-      //current.data = 'prices';
-      //current.type = 'public';
-      //current.order = 'pib';
+      $tooltip.css('opacity', '0');
       drugsFiltered = drugsFilteredAll;
-
       updateData( 'prices', 'public' );
-      reorderData( 'pib' );
+      //reorderData( 'pib' );
 
       $dots.transition(1000)
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY);
 
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){ setTooltip(d3.select('.dot.drug-amoxicillin.country-brazil--rio-grande-do-sul-state')); }, 1200);  // Tooltip
+
     } else if( stateID === 8 ){
 
-      //current.data = 'prices';
-      //current.type = 'private';
-      //current.order = 'pib';
+      $tooltip.css('opacity', '0');
       drugsFiltered = drugsFilteredAll;
-
       updateData( 'prices', 'private' );
-      reorderData( 'pib' );
+      //reorderData( 'pib' );
 
       // Show only drugsFiltered dots
       $dots.transition(1000)
@@ -272,22 +269,22 @@ function Main_Infographic( _id ) {
         return ('Ciprofloxacin' === a.Drug) ? 1 : -1;
       });
 
+      clearTimeout(timeout);
+      timeout = setTimeout(function(){ setTooltip(d3.select('.dot.drug-ciprofloxacin.country-ethiopia')); }, 1200);  // Tooltip
+
     } else if( stateID === 9 ){
 
-      //current.data = 'prices';
-      //current.type = 'public';
-      //current.order = 'area';
+      $tooltip.css('opacity', '0');
       drugsFiltered = drugsFilteredAll;
-
       updateData( 'prices', 'public' );
-      reorderData( 'area' );
+      //reorderData( 'area' );
 
       $dots.transition(1000)
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY);
     }
 
-    console.log( drugsFiltered );
+    //console.log( drugsFiltered );
 
     currentState = stateID;
 
@@ -525,7 +522,7 @@ function Main_Infographic( _id ) {
 
     current.label = (current.data === 'prices') ? 'Price' : ((current.type === 'public') ? 'Public sector - number of days' : 'Private sector - number of days');
 
-    console.log( 'update data', current );
+    //console.log( 'update data', current );
 
     resetDotClicked();
 
@@ -552,16 +549,16 @@ function Main_Infographic( _id ) {
 
     y.domain( d3.extent(currentData, function(d) { return d[ current.label ]; }) ).nice();
 
-    $yAxis.transition().duration(1200).ease('sin-in-out').call(yAxis);
+    $yAxis.transition().duration(1000).ease('sin-in-out').call(yAxis);
 
     if (current.data === 'prices') {
       $mprLine
-        .transition().duration(1200)
+        .transition().duration(1000)
         .attr('transform', 'translate(0 ' + y(1) + ')')
         .style('opacity', 1);
     } else {
       $mprLine
-        .transition().duration(1200)
+        .transition().duration(1000)
         .style('opacity', 0);
     }
 
@@ -578,7 +575,7 @@ function Main_Infographic( _id ) {
 
         item.datum(d)
           .style('visibility', setVisibility)
-          .transition().duration(1200)
+          .transition().duration(1000)
           .attr('cx', setValueX)
           .attr('cy', setValueY);
 
@@ -673,8 +670,6 @@ function Main_Infographic( _id ) {
     else{
       current.order = $('#area-btn').hasClass('active') ? 'area' : 'pib';
     }
-
-    console.log('reorderData', current.order );
 
     // Order Countries
     if (current.order === 'area') {
@@ -791,9 +786,9 @@ function Main_Infographic( _id ) {
 
   var onDotOver = function(){
 
-    $dots.on('click', onDotClick );
-
     var item = d3.select(this);
+
+    $dots.on('click', onDotClick );
 
     // Update opacity
     $dots
@@ -813,10 +808,14 @@ function Main_Infographic( _id ) {
       return ( item.attr('id') === niceName(a.Drug) ) ? 1 : -1;
     });
 
+    setTooltip( item );
+  };
+
+  var setTooltip = function( item ){
+
     var data = +item.data()[0][ current.label ];
     var dataIcon = (current.data !== 'prices') ? 'glyphicon-time' : ( (data < 1) ? 'glyphicon-arrow-down' : 'glyphicon-arrow-up' );
 
-    // Setup tooltip
     $tooltip.find('.country').html( getCountryData( item.data()[0].Country )[0]['Region_'+lang] ); 
     $tooltip.find('.year').html( '('+item.data()[0].Year+')' );
     $tooltip.find('.drug, .green .glyphicon, .green .txt').hide();
@@ -979,7 +978,6 @@ function Main_Infographic( _id ) {
     width = widthCont - margin.left - margin.right;
     height = heightCont - margin.top - margin.bottom;
   };
-
 
   return that;
 }
