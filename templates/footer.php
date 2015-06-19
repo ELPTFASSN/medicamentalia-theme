@@ -49,7 +49,7 @@
         
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <a href="/nosotros" class="nosotros" title="<?= __('Metodología y equipo', 'sage'); ?>"><?= __('Metodología y equipo', 'sage'); ?></a>
+        <a href="<?php echo get_permalink( icl_object_id(65, 'page') ); ?>" class="nosotros" title="<?= __('Metodología y equipo', 'sage'); ?>"><?= __('Metodología y equipo', 'sage'); ?></a>
         <p><?= __('Si quieres más información, suscríbete a nuestro boletín o escríbenos a', 'sage'); ?> <a href="mailto:contacto@civio.es">contacto@civio.es</a></p>
         <form target="_blank" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://civio.us4.list-manage1.com/subscribe/post?u=9416fe6b76f2c3f985c1f8e0f&amp;id=9d5b4c8cda">         
           <input id="mce-EMAIL" class="email" type="email" required="" placeholder="correo" name="EMAIL" value="<?= __('SUSCRÍBETE AL BOLETÍN', 'sage'); ?>">           
