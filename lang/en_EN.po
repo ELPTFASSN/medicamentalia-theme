@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-06-19 19:54+0100\n"
+"PO-Revision-Date: 2015-06-19 20:10+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8\n"
+"X-Poedit-Basepath: ../templates/\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: template-home.php:19
+msgid "Proyecto periodístico internacional sobre los precios de los medicamentos"
+msgstr "International journalistic project on the prices of medicines"
+
+#: templates/content-page.php:39
+msgid "Por"
+msgstr "By"
+
+#: templates/footer.php:7
+msgid "Medicamentalia es un proyecto de"
+msgstr "Medicamentalia is a project by"
+
+#: templates/footer.php:13
+msgid "Financiado por"
+msgstr "Funded by"
+
+#: templates/footer.php:24
+msgid "Cuenta con media partners como"
+msgstr "Has media partners such as"
+
+#: templates/footer.php:52
+msgid "Metodología y equipo"
+msgstr "Methodology and team"
+
+#: templates/footer.php:53
+msgid "Si quieres más información, suscríbete a nuestro boletín o escríbenos a"
+msgstr "If you want more information, subscribe to our newsletter or contact us at"
+
+#: templates/footer.php:56
+msgid "Enviar"
+msgstr "Send"
+
+#: footer.php:55
+msgid "SUSCRÍBETE AL BOLETÍN"
+msgstr "SUBSCRIBE TO OUR NEWSLETTER"
+
+#: templates/home-item.php:15
+msgid "Leer Más"
+msgstr "Read More"
+
+#: templates/home-item.php:17
+msgid "Explora los datos"
+msgstr "Explore the data"

@@ -16,7 +16,7 @@
     <div class="header-content">
       <div class="header-content-inner">
           <h1><?php bloginfo('name'); ?></h1>
-          <p><?php bloginfo('description'); ?></p>
+          <p><?= __('Proyecto periodístico internacional sobre los precios de los medicamentos', 'sage'); ?></p>
       </div>
     </div>
     <a href="#home" class="btn btn-primary btn-xl btn-scroll-down " title="Scroll down">Scroll down <span class="glyphicon glyphicon-chevron-down"></span><span class="animation"></span></a>
