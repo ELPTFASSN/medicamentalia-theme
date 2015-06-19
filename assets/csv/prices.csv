@@ -42,8 +42,6 @@ Amoxicillin,Private,MPR,Bolivia,2008,2.27
 Amoxicillin,Public,MPR,Bolivia,2008,1.81
 Atenolol,Private,MPR,Bolivia,2008,6.15
 Atenolol,Public,MPR,Bolivia,2008,3.51
-Captopril,Private,MPR,Bolivia,2008,NO DATA
-Captopril,Public,MPR,Bolivia,2008,NO DATA
 Ceftriaxone,Private,MPR,Bolivia,2008,1.88
 Ceftriaxone,Public,MPR,Bolivia,2008,1.56
 Ciprofloxacin,Private,MPR,Bolivia,2008,4.42
@@ -62,40 +60,25 @@ Paracetamol,Private,MPR,Bolivia,2008,5.77
 Paracetamol,Public,MPR,Bolivia,2008,3.1
 Salbutamol,Private,MPR,Bolivia,2008,2.36
 Salbutamol,Public,MPR,Bolivia,2008,1.71
-Simvastatin,Private,MPR,Bolivia,2008,NO DATA
-Simvastatin,Public,MPR,Bolivia,2008,NO DATA
 Amitriptyline,Private,MPR,"Brazil, Rio Grande do Sul State",2008,25.35
 Amitriptyline,Public,MPR,"Brazil, Rio Grande do Sul State",2008,free
 Amoxicillin,Private,MPR,"Brazil, Rio Grande do Sul State",2008,6.45
 Amoxicillin,Public,MPR,"Brazil, Rio Grande do Sul State",2008,free
 Atenolol,Private,MPR,"Brazil, Rio Grande do Sul State",2008,10.89
-Atenolol,Public,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
 Captopril,Private,MPR,"Brazil, Rio Grande do Sul State",2008,9.07
 Captopril,Public,MPR,"Brazil, Rio Grande do Sul State",2008,free
 Ceftriaxone,Private,MPR,"Brazil, Rio Grande do Sul State",2008,8.36
-Ceftriaxone,Public,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
 Ciprofloxacin,Private,MPR,"Brazil, Rio Grande do Sul State",2008,23.83
-Ciprofloxacin,Public,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
 Co-trimoxazole,Private,MPR,"Brazil, Rio Grande do Sul State",2008,8.36
 Co-trimoxazole,Public,MPR,"Brazil, Rio Grande do Sul State",2008,free
 Diazepam,Private,MPR,"Brazil, Rio Grande do Sul State",2008,16.48
-Diazepam,Public,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
 Diclofenac,Private,MPR,"Brazil, Rio Grande do Sul State",2008,47.89
-Diclofenac,Public,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
 Glibenclamide,Private,MPR,"Brazil, Rio Grande do Sul State",2008,22.27
-Glibenclamide,Public,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
 Omeprazole,Private,MPR,"Brazil, Rio Grande do Sul State",2008,15.5
-Omeprazole,Public,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
-Salbutamol,Private,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
-Salbutamol,Public,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
 Simvastatin,Private,MPR,"Brazil, Rio Grande do Sul State",2008,16.86
-Simvastatin,Public,MPR,"Brazil, Rio Grande do Sul State",2008,NO DATA
-Amitriptyline,Private,MPR,Burkina Faso,2009,NO DATA
-Amitriptyline,Public,MPR,Burkina Faso,2009,NO DATA
 Amoxicillin,Private,MPR,Burkina Faso,2009,2.36
 Amoxicillin,Public,MPR,Burkina Faso,2009,2.13
 Atenolol,Private,MPR,Burkina Faso,2009,11.12
-Atenolol,Public,MPR,Burkina Faso,2009,NO DATA
 Captopril,Private,MPR,Burkina Faso,2009,11.68
 Captopril,Public,MPR,Burkina Faso,2009,2.26
 Ceftriaxone,Private,MPR,Burkina Faso,2009,3.12
@@ -109,83 +92,49 @@ Diazepam,Public,MPR,Burkina Faso,2009,1.25
 Diclofenac,Private,MPR,Burkina Faso,2009,5.53
 Diclofenac,Public,MPR,Burkina Faso,2009,2.66
 Glibenclamide,Private,MPR,Burkina Faso,2009,4.72
-Glibenclamide,Public,MPR,Burkina Faso,2009,NO DATA
 Omeprazole,Private,MPR,Burkina Faso,2009,3.19
-Omeprazole,Public,MPR,Burkina Faso,2009,NO DATA
 Paracetamol,Private,MPR,Burkina Faso,2009,2.47
 Paracetamol,Public,MPR,Burkina Faso,2009,1.98
 Salbutamol,Private,MPR,Burkina Faso,2009,1.42
 Salbutamol,Public,MPR,Burkina Faso,2009,1.42
 Simvastatin,Private,MPR,Burkina Faso,2009,11.17
-Simvastatin,Public,MPR,Burkina Faso,2009,NO DATA
-Amitriptyline,Private,MPR,Burundi,2013,NO DATA
-Amitriptyline,Public,MPR,Burundi,2013,NO DATA
 Amoxicillin,Private,MPR,Burundi,2013,2.12
 Amoxicillin,Public,MPR,Burundi,2013,1.59
-Ceftriaxone,Private,MPR,Burundi,2013,NO DATA
-Ceftriaxone,Public,MPR,Burundi,2013,NO DATA
 Ciprofloxacin,Private,MPR,Burundi,2013,1.75
 Ciprofloxacin,Public,MPR,Burundi,2013,0.88
 Diazepam,Private,MPR,Burundi,2013,4.21
-Diazepam,Public,MPR,Burundi,2013,NO DATA
 Glibenclamide,Private,MPR,Burundi,2013,7.89
-Glibenclamide,Public,MPR,Burundi,2013,NO DATA
 Omeprazole,Private,MPR,Burundi,2013,2.05
 Omeprazole,Public,MPR,Burundi,2013,1.15
 Salbutamol,Private,MPR,Burundi,2013,1.09
-Salbutamol,Public,MPR,Burundi,2013,NO DATA
-Simvastatin,Private,MPR,Burundi,2013,NO DATA
-Simvastatin,Public,MPR,Burundi,2013,NO DATA
 Amoxicillin,Private,MPR,Cameroon,2005,4.37
 Amoxicillin,Public,MPR,Cameroon,2005,2.23
-Captopril,Private,MPR,Cameroon,2005,NO DATA
-Captopril,Public,MPR,Cameroon,2005,NO DATA
 Ceftriaxone,Private,MPR,Cameroon,2005,3.54
 Ceftriaxone,Public,MPR,Cameroon,2005,1.21
 Ciprofloxacin,Private,MPR,Cameroon,2005,24.28
 Ciprofloxacin,Public,MPR,Cameroon,2005,5.79
 Co-trimoxazole,Private,MPR,Cameroon,2005,7.46
 Co-trimoxazole,Public,MPR,Cameroon,2005,2.13
-Diazepam,Private,MPR,Cameroon,2005,NO DATA
 Diazepam,Public,MPR,Cameroon,2005,1.25
 Diclofenac,Private,MPR,Cameroon,2005,24.28
-Diclofenac,Public,MPR,Cameroon,2005,NO DATA
 Glibenclamide,Private,MPR,Cameroon,2005,33.28
 Glibenclamide,Public,MPR,Cameroon,2005,2.44
 Salbutamol,Private,MPR,Cameroon,2005,2.36
-Salbutamol,Public,MPR,Cameroon,2005,NO DATA
 Amitriptyline,Private,MPR,Chad,2004,15.31
-Amitriptyline,Public,MPR,Chad,2004,NO DATA
-Captopril,Private,MPR,Chad,2004,NO DATA
-Captopril,Public,MPR,Chad,2004,NO DATA
-Ciprofloxacin,Private,MPR,Chad,2004,NO DATA
-Ciprofloxacin,Public,MPR,Chad,2004,NO DATA
-Co-trimoxazole,Private,MPR,Chad,2004,NO DATA
 Co-trimoxazole,Public,MPR,Chad,2004,2.05
-Diazepam,Private,MPR,Chad,2004,NO DATA
 Diazepam,Public,MPR,Chad,2004,5.26
-Glibenclamide,Private,MPR,Chad,2004,NO DATA
 Glibenclamide,Public,MPR,Chad,2004,4.49
-Salbutamol,Private,MPR,Chad,2004,NO DATA
-Salbutamol,Public,MPR,Chad,2004,NO DATA
 Amitriptyline,Private,MPR,"China, Shaanxi Province",2014,4.06
 Amitriptyline,Public,MPR,"China, Shaanxi Province",2014,3.79
 Amoxicillin,Private,MPR,"China, Shaanxi Province",2014,2.72
 Amoxicillin,Public,MPR,"China, Shaanxi Province",2014,4.76
-Atenolol,Private,MPR,"China, Shaanxi Province",2014,NO DATA
-Atenolol,Public,MPR,"China, Shaanxi Province",2014,NO DATA
 Captopril,Private,MPR,"China, Shaanxi Province",2014,0.23
 Captopril,Public,MPR,"China, Shaanxi Province",2014,0.22
 Ceftriaxone,Private,MPR,"China, Shaanxi Province",2014,0.58
 Ceftriaxone,Public,MPR,"China, Shaanxi Province",2014,0.35
-Ciprofloxacin,Private,MPR,"China, Shaanxi Province",2014,NO DATA
-Ciprofloxacin,Public,MPR,"China, Shaanxi Province",2014,NO DATA
-Diazepam,Private,MPR,"China, Shaanxi Province",2014,NO DATA
-Diazepam,Public,MPR,"China, Shaanxi Province",2014,NO DATA
 Diclofenac,Private,MPR,"China, Shaanxi Province",2014,16.12
 Diclofenac,Public,MPR,"China, Shaanxi Province",2014,14.25
 Glibenclamide,Private,MPR,"China, Shaanxi Province",2014,0.68
-Glibenclamide,Public,MPR,"China, Shaanxi Province",2014,NO DATA
 Omeprazole,Private,MPR,"China, Shaanxi Province",2014,2.87
 Omeprazole,Public,MPR,"China, Shaanxi Province",2014,2.83
 Salbutamol,Private,MPR,"China, Shaanxi Province",2014,1.07
@@ -216,14 +165,9 @@ Salbutamol,Private,MPR,Colombia,2008,1.39
 Salbutamol,Public,MPR,Colombia,2008,free
 Simvastatin,Private,MPR,Colombia,2008,19.22
 Simvastatin,Public,MPR,Colombia,2008,free
-Amitriptyline,Private,MPR,Congo,2007,NO DATA
-Amitriptyline,Public,MPR,Congo,2007,NO DATA
 Amoxicillin,Private,MPR,Congo,2007,8.76
 Amoxicillin,Public,MPR,Congo,2007,3.63
-Atenolol,Private,MPR,Congo,2007,NO DATA
-Atenolol,Public,MPR,Congo,2007,NO DATA
 Captopril,Private,MPR,Congo,2007,18.99
-Captopril,Public,MPR,Congo,2007,NO DATA
 Ceftriaxone,Private,MPR,Congo,2007,5.64
 Ceftriaxone,Public,MPR,Congo,2007,2.63
 Ciprofloxacin,Private,MPR,Congo,2007,15.35
@@ -233,19 +177,12 @@ Co-trimoxazole,Public,MPR,Congo,2007,5.49
 Diclofenac,Private,MPR,Congo,2007,19.02
 Diclofenac,Public,MPR,Congo,2007,8.91
 Glibenclamide,Private,MPR,Congo,2007,28.58
-Glibenclamide,Public,MPR,Congo,2007,NO DATA
 Omeprazole,Private,MPR,Congo,2007,19.93
-Omeprazole,Public,MPR,Congo,2007,NO DATA
 Salbutamol,Private,MPR,Congo,2007,3.85
-Salbutamol,Public,MPR,Congo,2007,NO DATA
-Amitriptyline,Private,MPR,Democratic Republic of Congo,2007,NO DATA
-Amitriptyline,Public,MPR,Democratic Republic of Congo,2007,NO DATA
 Amoxicillin,Private,MPR,Democratic Republic of Congo,2007,1.8
 Amoxicillin,Public,MPR,Democratic Republic of Congo,2007,1.8
 Atenolol,Private,MPR,Democratic Republic of Congo,2007,28.31
-Atenolol,Public,MPR,Democratic Republic of Congo,2007,NO DATA
 Captopril,Private,MPR,Democratic Republic of Congo,2007,13.97
-Captopril,Public,MPR,Democratic Republic of Congo,2007,NO DATA
 Ceftriaxone,Private,MPR,Democratic Republic of Congo,2007,2.18
 Ceftriaxone,Public,MPR,Democratic Republic of Congo,2007,2.62
 Ciprofloxacin,Private,MPR,Democratic Republic of Congo,2007,1.99
@@ -257,10 +194,7 @@ Diclofenac,Public,MPR,Democratic Republic of Congo,2007,1.77
 Glibenclamide,Private,MPR,Democratic Republic of Congo,2007,8.41
 Glibenclamide,Public,MPR,Democratic Republic of Congo,2007,8.41
 Omeprazole,Private,MPR,Democratic Republic of Congo,2007,1.38
-Omeprazole,Public,MPR,Democratic Republic of Congo,2007,NO DATA
 Salbutamol,Private,MPR,Democratic Republic of Congo,2007,2.16
-Salbutamol,Public,MPR,Democratic Republic of Congo,2007,NO DATA
-Amitriptyline,Private,MPR,Ecuador,2008,NO DATA
 Amitriptyline,Public,MPR,Ecuador,2008,free
 Amoxicillin,Private,MPR,Ecuador,2008,3.38
 Amoxicillin,Public,MPR,Ecuador,2008,free
@@ -299,7 +233,6 @@ Simvastatin,Private,MPR,Egypt,2013,16.45
 Amitriptyline,Private,MPR,El Salvador,2006,72.1
 Amitriptyline,Public,MPR,El Salvador,2006,free
 Atenolol,Private,MPR,El Salvador,2006,51.94
-Atenolol,Public,MPR,El Salvador,2006,NO DATA
 Captopril,Private,MPR,El Salvador,2006,28.89
 Captopril,Public,MPR,El Salvador,2006,free
 Ceftriaxone,Private,MPR,El Salvador,2006,15.42
@@ -309,7 +242,6 @@ Ciprofloxacin,Public,MPR,El Salvador,2006,free
 Co-trimoxazole,Private,MPR,El Salvador,2006,13.22
 Co-trimoxazole,Public,MPR,El Salvador,2006,free
 Diazepam,Private,MPR,El Salvador,2006,47.62
-Diazepam,Public,MPR,El Salvador,2006,NO DATA
 Glibenclamide,Private,MPR,El Salvador,2006,53.85
 Glibenclamide,Public,MPR,El Salvador,2006,free
 Omeprazole,Private,MPR,El Salvador,2006,17.9
@@ -333,7 +265,6 @@ Paracetamol,Public,MPR,Ethiopia,2013,1.13
 Amitriptyline,Private,MPR,Fiji,2004,3.86
 Atenolol,Private,MPR,Fiji,2004,3.16
 Captopril,Private,MPR,Fiji,2004,2.22
-Ceftriaxone,Private,MPR,Fiji,2004,NO DATA
 Ciprofloxacin,Private,MPR,Fiji,2004,4.06
 Co-trimoxazole,Private,MPR,Fiji,2004,3.26
 Diazepam,Private,MPR,Fiji,2004,5.03
@@ -345,7 +276,6 @@ Amitriptyline,Public,MPR,Ghana,2004,1.11
 Atenolol,Private,MPR,Ghana,2004,6.03
 Atenolol,Public,MPR,Ghana,2004,5.43
 Captopril,Private,MPR,Ghana,2004,5.52
-Captopril,Public,MPR,Ghana,2004,NO DATA
 Ceftriaxone,Private,MPR,Ghana,2004,2.19
 Ceftriaxone,Public,MPR,Ghana,2004,2.2
 Ciprofloxacin,Private,MPR,Ghana,2004,7.05
@@ -361,9 +291,7 @@ Glibenclamide,Public,MPR,Ghana,2004,5.47
 Omeprazole,Private,MPR,Ghana,2004,1.03
 Omeprazole,Public,MPR,Ghana,2004,1.03
 Salbutamol,Private,MPR,Ghana,2004,2.49
-Salbutamol,Public,MPR,Ghana,2004,NO DATA
 Amitriptyline,Private,MPR,Haiti,2011,13.26
-Amitriptyline,Public,MPR,Haiti,2011,NO DATA
 Amoxicillin,Private,MPR,Haiti,2011,4.34
 Amoxicillin,Public,MPR,Haiti,2011,2.61
 Atenolol,Private,MPR,Haiti,2011,15.91
@@ -389,7 +317,6 @@ Paracetamol,Public,MPR,Haiti,2011,3.88
 Salbutamol,Private,MPR,Haiti,2011,2.26
 Salbutamol,Public,MPR,Haiti,2011,2.08
 Simvastatin,Private,MPR,Haiti,2011,6.08
-Simvastatin,Public,MPR,Haiti,2011,NO DATA
 Amitriptyline,Private,MPR,"India, NCT, Delhi",2011,5.48
 Amitriptyline,Public,MPR,"India, NCT, Delhi",2011,free
 Amoxicillin,Private,MPR,"India, NCT, Delhi",2011,7.21
@@ -397,7 +324,6 @@ Amoxicillin,Public,MPR,"India, NCT, Delhi",2011,free
 Atenolol,Private,MPR,"India, NCT, Delhi",2011,7.07
 Atenolol,Public,MPR,"India, NCT, Delhi",2011,free
 Captopril,Private,MPR,"India, NCT, Delhi",2011,8.4
-Captopril,Public,MPR,"India, NCT, Delhi",2011,NO DATA
 Ceftriaxone,Private,MPR,"India, NCT, Delhi",2011,2.24
 Ceftriaxone,Public,MPR,"India, NCT, Delhi",2011,free
 Ciprofloxacin,Private,MPR,"India, NCT, Delhi",2011,3.55
@@ -408,7 +334,6 @@ Diazepam,Private,MPR,"India, NCT, Delhi",2011,9.73
 Diazepam,Public,MPR,"India, NCT, Delhi",2011,free
 Diclofenac,Private,MPR,"India, NCT, Delhi",2011,8.07
 Diclofenac,Public,MPR,"India, NCT, Delhi",2011,free
-Glibenclamide,Private,MPR,"India, NCT, Delhi",2011,NO DATA
 Glibenclamide,Public,MPR,"India, NCT, Delhi",2011,free
 Omeprazole,Private,MPR,"India, NCT, Delhi",2011,3.11
 Omeprazole,Public,MPR,"India, NCT, Delhi",2011,free
@@ -422,8 +347,6 @@ Amitriptyline,Private,MPR,Indonesia,2010,2.22
 Amitriptyline,Public,MPR,Indonesia,2010,2.2
 Amoxicillin,Private,MPR,Indonesia,2010,1.37
 Amoxicillin,Public,MPR,Indonesia,2010,1.27
-Atenolol,Private,MPR,Indonesia,2010,NO DATA
-Atenolol,Public,MPR,Indonesia,2010,NO DATA
 Captopril,Private,MPR,Indonesia,2010,1.7
 Captopril,Public,MPR,Indonesia,2010,1.55
 Ceftriaxone,Private,MPR,Indonesia,2010,1.99
@@ -442,8 +365,6 @@ Omeprazole,Private,MPR,Indonesia,2010,1.86
 Omeprazole,Public,MPR,Indonesia,2010,1.84
 Paracetamol,Private,MPR,Indonesia,2010,1.16
 Paracetamol,Public,MPR,Indonesia,2010,1.06
-Salbutamol,Private,MPR,Indonesia,2010,NO DATA
-Salbutamol,Public,MPR,Indonesia,2010,NO DATA
 Simvastatin,Private,MPR,Indonesia,2010,1.15
 Simvastatin,Public,MPR,Indonesia,2010,1.11
 Amitriptyline,Private,MPR,Iran,2007,1.26
@@ -475,13 +396,10 @@ Salbutamol,Public,MPR,Iran,2007,1.1
 Simvastatin,Private,MPR,Iran,2007,1.99
 Simvastatin,Public,MPR,Iran,2007,1.99
 Amitriptyline,Private,MPR,Jordan,2004,8.65
-Amitriptyline,Public,MPR,Jordan,2004,NO DATA
 Atenolol,Private,MPR,Jordan,2004,18.39
-Atenolol,Public,MPR,Jordan,2004,NO DATA
 Captopril,Private,MPR,Jordan,2004,8.24
 Captopril,Public,MPR,Jordan,2004,0.29
 Ceftriaxone,Private,MPR,Jordan,2004,6.81
-Ceftriaxone,Public,MPR,Jordan,2004,NO DATA
 Ciprofloxacin,Private,MPR,Jordan,2004,22.06
 Ciprofloxacin,Public,MPR,Jordan,2004,1.07
 Co-trimoxazole,Private,MPR,Jordan,2004,4.66
@@ -493,31 +411,21 @@ Glibenclamide,Public,MPR,Jordan,2004,0.84
 Omeprazole,Private,MPR,Jordan,2004,5.56
 Omeprazole,Public,MPR,Jordan,2004,0.24
 Salbutamol,Private,MPR,Jordan,2004,1.1
-Salbutamol,Public,MPR,Jordan,2004,NO DATA
 Simvastatin,Private,MPR,Jordan,2004,10.5
-Simvastatin,Public,MPR,Jordan,2004,NO DATA
 Amitriptyline,Private,MPR,Kazakhstan,2004,4.42
-Amitriptyline,Public,MPR,Kazakhstan,2004,NO DATA
 Atenolol,Private,MPR,Kazakhstan,2004,3.78
-Atenolol,Public,MPR,Kazakhstan,2004,NO DATA
 Captopril,Private,MPR,Kazakhstan,2004,2.02
-Captopril,Public,MPR,Kazakhstan,2004,NO DATA
 Ceftriaxone,Private,MPR,Kazakhstan,2004,1.3
-Ceftriaxone,Public,MPR,Kazakhstan,2004,NO DATA
 Ciprofloxacin,Private,MPR,Kazakhstan,2004,10.8
-Ciprofloxacin,Public,MPR,Kazakhstan,2004,NO DATA
 Glibenclamide,Private,MPR,Kazakhstan,2004,3.72
 Glibenclamide,Public,MPR,Kazakhstan,2004,4.84
 Omeprazole,Private,MPR,Kazakhstan,2004,0.35
 Omeprazole,Public,MPR,Kazakhstan,2004,1.19
 Salbutamol,Private,MPR,Kazakhstan,2004,1.34
-Salbutamol,Public,MPR,Kazakhstan,2004,NO DATA
 Amitriptyline,Private,MPR,Kenya,2004,1.62
 Amitriptyline,Public,MPR,Kenya,2004,1.62
 Atenolol,Private,MPR,Kenya,2004,7.94
-Atenolol,Public,MPR,Kenya,2004,NO DATA
 Captopril,Private,MPR,Kenya,2004,5.59
-Captopril,Public,MPR,Kenya,2004,NO DATA
 Ceftriaxone,Private,MPR,Kenya,2004,1.92
 Ceftriaxone,Public,MPR,Kenya,2004,2.24
 Ciprofloxacin,Private,MPR,Kenya,2004,3.87
@@ -531,9 +439,6 @@ Glibenclamide,Public,MPR,Kenya,2004,3.5
 Omeprazole,Private,MPR,Kenya,2004,1.25
 Omeprazole,Public,MPR,Kenya,2004,0.52
 Salbutamol,Private,MPR,Kenya,2004,1.78
-Salbutamol,Public,MPR,Kenya,2004,NO DATA
-Amitriptyline,Private,MPR,Kuwait,2004,NO DATA
-Amitriptyline,Public,MPR,Kuwait,2004,NO DATA
 Atenolol,Private,MPR,Kuwait,2004,47.37
 Atenolol,Public,MPR,Kuwait,2004,free
 Captopril,Private,MPR,Kuwait,2004,16
@@ -544,33 +449,26 @@ Ciprofloxacin,Private,MPR,Kuwait,2004,100.05
 Ciprofloxacin,Public,MPR,Kuwait,2004,free
 Co-trimoxazole,Private,MPR,Kuwait,2004,14.62
 Co-trimoxazole,Public,MPR,Kuwait,2004,free
-Diazepam,Private,MPR,Kuwait,2004,NO DATA
-Diazepam,Public,MPR,Kuwait,2004,NO DATA
 Glibenclamide,Private,MPR,Kuwait,2004,50.76
 Glibenclamide,Public,MPR,Kuwait,2004,free
 Omeprazole,Private,MPR,Kuwait,2004,15.72
 Omeprazole,Public,MPR,Kuwait,2004,free
-Salbutamol,Private,MPR,Kuwait,2004,NO DATA
-Salbutamol,Public,MPR,Kuwait,2004,NO DATA
 Amitriptyline,Private,MPR,Kyrgyzstan,2010,3.78
 Amoxicillin,Private,MPR,Kyrgyzstan,2010,2.44
 Atenolol,Private,MPR,Kyrgyzstan,2010,1.24
 Ceftriaxone,Private,MPR,Kyrgyzstan,2010,1.41
 Ciprofloxacin,Private,MPR,Kyrgyzstan,2010,4.56
 Co-trimoxazole,Private,MPR,Kyrgyzstan,2010,5.77
-Diazepam,Private,MPR,Kyrgyzstan,2010,NO DATA
 Diclofenac,Private,MPR,Kyrgyzstan,2010,3.78
 Glibenclamide,Private,MPR,Kyrgyzstan,2010,6.31
 Omeprazole,Private,MPR,Kyrgyzstan,2010,1.18
 Paracetamol,Private,MPR,Kyrgyzstan,2010,3.45
 Salbutamol,Private,MPR,Kyrgyzstan,2010,3.55
 Simvastatin,Private,MPR,Kyrgyzstan,2010,7.43
-Amitriptyline,Private,MPR,Lao PDR,2013,NO DATA
 Amitriptyline,Public,MPR,Lao PDR,2013,7.63
 Amoxicillin,Private,MPR,Lao PDR,2013,2.01
 Amoxicillin,Public,MPR,Lao PDR,2013,2.01
 Atenolol,Private,MPR,Lao PDR,2013,4.15
-Atenolol,Public,MPR,Lao PDR,2013,NO DATA
 Ceftriaxone,Private,MPR,Lao PDR,2013,1.79
 Ceftriaxone,Public,MPR,Lao PDR,2013,2.14
 Ciprofloxacin,Private,MPR,Lao PDR,2013,1.66
@@ -587,18 +485,13 @@ Omeprazole,Private,MPR,Lao PDR,2013,3.12
 Omeprazole,Public,MPR,Lao PDR,2013,3.64
 Paracetamol,Private,MPR,Lao PDR,2013,1.66
 Paracetamol,Public,MPR,Lao PDR,2013,1.66
-Salbutamol,Private,MPR,Lao PDR,2013,NO DATA
-Salbutamol,Public,MPR,Lao PDR,2013,NO DATA
 Simvastatin,Private,MPR,Lao PDR,2013,4.24
 Simvastatin,Public,MPR,Lao PDR,2013,6.48
-Amitriptyline,Private,MPR,Lebanon,2013,NO DATA
 Amitriptyline,Public,MPR,Lebanon,2013,free
 Atenolol,Private,MPR,Lebanon,2013,7.72
 Atenolol,Public,MPR,Lebanon,2013,free
 Captopril,Private,MPR,Lebanon,2013,7.63
 Captopril,Public,MPR,Lebanon,2013,free
-Diazepam,Private,MPR,Lebanon,2013,NO DATA
-Diazepam,Public,MPR,Lebanon,2013,NO DATA
 Diclofenac,Private,MPR,Lebanon,2013,24.13
 Diclofenac,Public,MPR,Lebanon,2013,free
 Glibenclamide,Private,MPR,Lebanon,2013,9.48
@@ -614,14 +507,8 @@ Amitriptyline,Public,MPR,Malaysia,2004,free
 Atenolol,Private,MPR,Malaysia,2004,9.57
 Atenolol,Public,MPR,Malaysia,2004,free
 Captopril,Private,MPR,Malaysia,2004,7.44
-Captopril,Public,MPR,Malaysia,2004,NO DATA
-Ceftriaxone,Private,MPR,Malaysia,2004,NO DATA
-Ceftriaxone,Public,MPR,Malaysia,2004,NO DATA
 Ciprofloxacin,Private,MPR,Malaysia,2004,16.46
-Ciprofloxacin,Public,MPR,Malaysia,2004,NO DATA
-Co-trimoxazole,Private,MPR,Malaysia,2004,NO DATA
 Co-trimoxazole,Public,MPR,Malaysia,2004,free
-Diazepam,Private,MPR,Malaysia,2004,NO DATA
 Diazepam,Public,MPR,Malaysia,2004,free
 Glibenclamide,Private,MPR,Malaysia,2004,6.38
 Glibenclamide,Public,MPR,Malaysia,2004,free
@@ -630,11 +517,9 @@ Omeprazole,Public,MPR,Malaysia,2004,free
 Salbutamol,Private,MPR,Malaysia,2004,1.48
 Salbutamol,Public,MPR,Malaysia,2004,free
 Simvastatin,Private,MPR,Malaysia,2004,3.78
-Simvastatin,Public,MPR,Malaysia,2004,NO DATA
 Amoxicillin,Private,MPR,Mali,2004,3.9
 Amoxicillin,Public,MPR,Mali,2004,1.77
 Captopril,Private,MPR,Mali,2004,5.91
-Captopril,Public,MPR,Mali,2004,NO DATA
 Ceftriaxone,Private,MPR,Mali,2004,4.65
 Ceftriaxone,Public,MPR,Mali,2004,1.29
 Ciprofloxacin,Private,MPR,Mali,2004,15.54
@@ -644,9 +529,7 @@ Co-trimoxazole,Public,MPR,Mali,2004,1.81
 Diclofenac,Private,MPR,Mali,2004,12.06
 Diclofenac,Public,MPR,Mali,2004,2.77
 Glibenclamide,Private,MPR,Mali,2004,21.03
-Glibenclamide,Public,MPR,Mali,2004,NO DATA
 Salbutamol,Private,MPR,Mali,2004,2.22
-Salbutamol,Public,MPR,Mali,2004,NO DATA
 Amitriptyline,Private,MPR,Mauritius,2008,14.08
 Amitriptyline,Public,MPR,Mauritius,2008,free
 Amoxicillin,Private,MPR,Mauritius,2008,6.71
@@ -654,14 +537,12 @@ Amoxicillin,Public,MPR,Mauritius,2008,free
 Atenolol,Private,MPR,Mauritius,2008,5.69
 Atenolol,Public,MPR,Mauritius,2008,free
 Captopril,Private,MPR,Mauritius,2008,3.99
-Captopril,Public,MPR,Mauritius,2008,NO DATA
 Ceftriaxone,Private,MPR,Mauritius,2008,13.05
 Ceftriaxone,Public,MPR,Mauritius,2008,free
 Ciprofloxacin,Private,MPR,Mauritius,2008,10.55
 Ciprofloxacin,Public,MPR,Mauritius,2008,free
 Co-trimoxazole,Private,MPR,Mauritius,2008,10.16
 Co-trimoxazole,Public,MPR,Mauritius,2008,free
-Diazepam,Private,MPR,Mauritius,2008,NO DATA
 Diazepam,Public,MPR,Mauritius,2008,free
 Diclofenac,Private,MPR,Mauritius,2008,9.55
 Diclofenac,Public,MPR,Mauritius,2008,free
@@ -674,13 +555,9 @@ Paracetamol,Public,MPR,Mauritius,2008,free
 Salbutamol,Private,MPR,Mauritius,2008,1.61
 Salbutamol,Public,MPR,Mauritius,2008,free
 Simvastatin,Private,MPR,Mauritius,2008,7.04
-Simvastatin,Public,MPR,Mauritius,2008,NO DATA
-Amitriptyline,Private,MPR,"Mexico, Mexico City",2009,NO DATA
 Amitriptyline,Public,MPR,"Mexico, Mexico City",2009,free
 Amoxicillin,Private,MPR,"Mexico, Mexico City",2009,4.32
 Amoxicillin,Public,MPR,"Mexico, Mexico City",2009,free
-Atenolol,Private,MPR,"Mexico, Mexico City",2009,NO DATA
-Atenolol,Public,MPR,"Mexico, Mexico City",2009,NO DATA
 Captopril,Private,MPR,"Mexico, Mexico City",2009,5.49
 Captopril,Public,MPR,"Mexico, Mexico City",2009,free
 Ceftriaxone,Private,MPR,"Mexico, Mexico City",2009,6.62
@@ -689,7 +566,6 @@ Ciprofloxacin,Private,MPR,"Mexico, Mexico City",2009,12.66
 Ciprofloxacin,Public,MPR,"Mexico, Mexico City",2009,free
 Co-trimoxazole,Private,MPR,"Mexico, Mexico City",2009,4.45
 Co-trimoxazole,Public,MPR,"Mexico, Mexico City",2009,free
-Diclofenac,Private,MPR,"Mexico, Mexico City",2009,NO DATA
 Diclofenac,Public,MPR,"Mexico, Mexico City",2009,free
 Glibenclamide,Private,MPR,"Mexico, Mexico City",2009,5.18
 Glibenclamide,Public,MPR,"Mexico, Mexico City",2009,free
@@ -697,8 +573,6 @@ Omeprazole,Private,MPR,"Mexico, Mexico City",2009,9.3
 Omeprazole,Public,MPR,"Mexico, Mexico City",2009,free
 Salbutamol,Private,MPR,"Mexico, Mexico City",2009,2.09
 Salbutamol,Public,MPR,"Mexico, Mexico City",2009,free
-Simvastatin,Private,MPR,"Mexico, Mexico City",2009,NO DATA
-Simvastatin,Public,MPR,"Mexico, Mexico City",2009,NO DATA
 Amitriptyline,Private,MPR,Moldova,2011,6.39
 Amitriptyline,Public,MPR,Moldova,2011,6.2
 Atenolol,Private,MPR,Moldova,2011,5.44
@@ -730,31 +604,25 @@ Ceftriaxone,Public,MPR,Mongolia,2012,0.74
 Ciprofloxacin,Private,MPR,Mongolia,2012,4.7
 Ciprofloxacin,Public,MPR,Mongolia,2012,2.07
 Co-trimoxazole,Private,MPR,Mongolia,2012,6.44
-Co-trimoxazole,Public,MPR,Mongolia,2012,NO DATA
 Diclofenac,Private,MPR,Mongolia,2012,9.41
 Diclofenac,Public,MPR,Mongolia,2012,6.14
 Glibenclamide,Private,MPR,Mongolia,2012,8.53
-Glibenclamide,Public,MPR,Mongolia,2012,NO DATA
 Omeprazole,Private,MPR,Mongolia,2012,5.06
 Omeprazole,Public,MPR,Mongolia,2012,2.41
 Salbutamol,Private,MPR,Mongolia,2012,3.69
 Salbutamol,Public,MPR,Mongolia,2012,1.84
 Simvastatin,Private,MPR,Mongolia,2012,7.23
-Simvastatin,Public,MPR,Mongolia,2012,NO DATA
 Amitriptyline,Private,MPR,Morocco,2004,9.62
 Amitriptyline,Public,MPR,Morocco,2004,free
 Amoxicillin,Private,MPR,Morocco,2004,8.77
 Amoxicillin,Public,MPR,Morocco,2004,free
 Captopril,Private,MPR,Morocco,2004,13.12
-Captopril,Public,MPR,Morocco,2004,NO DATA
 Ceftriaxone,Private,MPR,Morocco,2004,7.13
 Ceftriaxone,Public,MPR,Morocco,2004,free
 Ciprofloxacin,Private,MPR,Morocco,2004,82.76
 Ciprofloxacin,Public,MPR,Morocco,2004,free
 Co-trimoxazole,Private,MPR,Morocco,2004,5.77
 Co-trimoxazole,Public,MPR,Morocco,2004,free
-Diazepam,Private,MPR,Morocco,2004,NO DATA
-Diazepam,Public,MPR,Morocco,2004,NO DATA
 Glibenclamide,Private,MPR,Morocco,2004,16.66
 Glibenclamide,Public,MPR,Morocco,2004,free
 Omeprazole,Private,MPR,Morocco,2004,2.82
@@ -788,7 +656,6 @@ Paracetamol,Public,MPR,Nicaragua,2008,free
 Salbutamol,Private,MPR,Nicaragua,2008,2.99
 Salbutamol,Public,MPR,Nicaragua,2008,free
 Simvastatin,Private,MPR,Nicaragua,2008,14.71
-Simvastatin,Public,MPR,Nicaragua,2008,NO DATA
 Amitriptyline,Private,MPR,Nigeria,2004,4.45
 Amitriptyline,Public,MPR,Nigeria,2004,2.97
 Amoxicillin,Private,MPR,Nigeria,2004,2.02
@@ -809,23 +676,15 @@ Glibenclamide,Private,MPR,Nigeria,2004,18.34
 Glibenclamide,Public,MPR,Nigeria,2004,18.34
 Omeprazole,Private,MPR,Nigeria,2004,3.01
 Omeprazole,Public,MPR,Nigeria,2004,1.92
-Salbutamol,Private,MPR,Nigeria,2004,NO DATA
-Salbutamol,Public,MPR,Nigeria,2004,NO DATA
-Amitriptyline,Private,MPR,Oman,2007,NO DATA
-Amitriptyline,Public,MPR,Oman,2007,NO DATA
 Amoxicillin,Private,MPR,Oman,2007,5.54
-Amoxicillin,Public,MPR,Oman,2007,NO DATA
 Atenolol,Private,MPR,Oman,2007,12.44
 Atenolol,Public,MPR,Oman,2007,free
-Captopril,Private,MPR,Oman,2007,NO DATA
 Captopril,Public,MPR,Oman,2007,free
 Ceftriaxone,Private,MPR,Oman,2007,10.05
 Ceftriaxone,Public,MPR,Oman,2007,free
 Ciprofloxacin,Private,MPR,Oman,2007,12.71
-Ciprofloxacin,Public,MPR,Oman,2007,NO DATA
 Co-trimoxazole,Private,MPR,Oman,2007,14.11
 Co-trimoxazole,Public,MPR,Oman,2007,free
-Diazepam,Private,MPR,Oman,2007,NO DATA
 Diazepam,Public,MPR,Oman,2007,free
 Diclofenac,Private,MPR,Oman,2007,19.27
 Diclofenac,Public,MPR,Oman,2007,free
@@ -839,7 +698,6 @@ Salbutamol,Private,MPR,Oman,2007,1.81
 Salbutamol,Public,MPR,Oman,2007,free
 Simvastatin,Private,MPR,Oman,2007,18.43
 Simvastatin,Public,MPR,Oman,2007,free
-Amitriptyline,Private,MPR,Pakistan,2004,NO DATA
 Amitriptyline,Public,MPR,Pakistan,2004,free
 Atenolol,Private,MPR,Pakistan,2004,4.06
 Atenolol,Public,MPR,Pakistan,2004,free
@@ -894,9 +752,7 @@ Co-trimoxazole,Public,MPR,Philippines,2005,4.65
 Glibenclamide,Private,MPR,Philippines,2005,22.28
 Glibenclamide,Public,MPR,Philippines,2005,13.59
 Omeprazole,Private,MPR,Philippines,2005,3.87
-Omeprazole,Public,MPR,Philippines,2005,NO DATA
 Salbutamol,Private,MPR,Philippines,2005,2.52
-Salbutamol,Public,MPR,Philippines,2005,NO DATA
 Amitriptyline,Private,MPR,"Russia, Tatarstan",2011,1.78
 Amitriptyline,Public,MPR,"Russia, Tatarstan",2011,2.15
 Amoxicillin,Private,MPR,"Russia, Tatarstan",2011,4.9
@@ -911,8 +767,6 @@ Ciprofloxacin,Private,MPR,"Russia, Tatarstan",2011,3.82
 Ciprofloxacin,Public,MPR,"Russia, Tatarstan",2011,2.64
 Co-trimoxazole,Private,MPR,"Russia, Tatarstan",2011,13.22
 Co-trimoxazole,Public,MPR,"Russia, Tatarstan",2011,4.12
-Diazepam,Private,MPR,"Russia, Tatarstan",2011,NO DATA
-Diazepam,Public,MPR,"Russia, Tatarstan",2011,NO DATA
 Diclofenac,Private,MPR,"Russia, Tatarstan",2011,10.89
 Diclofenac,Public,MPR,"Russia, Tatarstan",2011,6.28
 Glibenclamide,Private,MPR,"Russia, Tatarstan",2011,11.48
@@ -925,8 +779,6 @@ Salbutamol,Private,MPR,"Russia, Tatarstan",2011,2.68
 Salbutamol,Public,MPR,"Russia, Tatarstan",2011,2.43
 Simvastatin,Private,MPR,"Russia, Tatarstan",2011,7.37
 Simvastatin,Public,MPR,"Russia, Tatarstan",2011,2.81
-Amitriptyline,Private,MPR,São Tomé and Príncipe,2008,NO DATA
-Amitriptyline,Public,MPR,São Tomé and Príncipe,2008,NO DATA
 Amoxicillin,Private,MPR,São Tomé and Príncipe,2008,2.94
 Amoxicillin,Public,MPR,São Tomé and Príncipe,2008,1.24
 Atenolol,Private,MPR,São Tomé and Príncipe,2008,10.68
@@ -942,34 +794,23 @@ Co-trimoxazole,Public,MPR,São Tomé and Príncipe,2008,1.89
 Diazepam,Private,MPR,São Tomé and Príncipe,2008,26.98
 Diazepam,Public,MPR,São Tomé and Príncipe,2008,5.27
 Diclofenac,Private,MPR,São Tomé and Príncipe,2008,91.75
-Diclofenac,Public,MPR,São Tomé and Príncipe,2008,NO DATA
 Glibenclamide,Private,MPR,São Tomé and Príncipe,2008,36.22
 Glibenclamide,Public,MPR,São Tomé and Príncipe,2008,2.59
 Omeprazole,Private,MPR,São Tomé and Príncipe,2008,40.48
 Omeprazole,Public,MPR,São Tomé and Príncipe,2008,0.67
 Paracetamol,Private,MPR,São Tomé and Príncipe,2008,14.73
 Paracetamol,Public,MPR,São Tomé and Príncipe,2008,4.07
-Salbutamol,Private,MPR,São Tomé and Príncipe,2008,NO DATA
 Salbutamol,Public,MPR,São Tomé and Príncipe,2008,1.4
 Simvastatin,Private,MPR,São Tomé and Príncipe,2008,46.49
-Simvastatin,Public,MPR,São Tomé and Príncipe,2008,NO DATA
 Amitriptyline,Private,MPR,"South Africa, Gauteng Province",2004,18.69
 Atenolol,Private,MPR,"South Africa, Gauteng Province",2004,19.33
 Captopril,Private,MPR,"South Africa, Gauteng Province",2004,2.94
-Ceftriaxone,Private,MPR,"South Africa, Gauteng Province",2004,NO DATA
 Ciprofloxacin,Private,MPR,"South Africa, Gauteng Province",2004,16.45
 Co-trimoxazole,Private,MPR,"South Africa, Gauteng Province",2004,3.38
 Diazepam,Private,MPR,"South Africa, Gauteng Province",2004,6.77
 Glibenclamide,Private,MPR,"South Africa, Gauteng Province",2004,12.58
 Omeprazole,Private,MPR,"South Africa, Gauteng Province",2004,4.49
 Salbutamol,Private,MPR,"South Africa, Gauteng Province",2004,1.92
-Amitriptyline,Private,MPR,Sri Lanka,2001,NO DATA
-Captopril,Private,MPR,Sri Lanka,2001,NO DATA
-Ciprofloxacin,Private,MPR,Sri Lanka,2001,NO DATA
-Co-trimoxazole,Private,MPR,Sri Lanka,2001,NO DATA
-Diclofenac,Private,MPR,Sri Lanka,2001,NO DATA
-Omeprazole,Private,MPR,Sri Lanka,2001,NO DATA
-Salbutamol,Private,MPR,Sri Lanka,2001,NO DATA
 Amitriptyline,Private,MPR,Sudan,2013,7.69
 Amitriptyline,Public,MPR,Sudan,2013,7.69
 Amoxicillin,Private,MPR,Sudan,2013,3.01
@@ -1023,7 +864,6 @@ Ciprofloxacin,Public,MPR,Tajikistan,2013,3.2
 Co-trimoxazole,Private,MPR,Tajikistan,2013,3.29
 Co-trimoxazole,Public,MPR,Tajikistan,2013,3.71
 Diazepam,Private,MPR,Tajikistan,2013,23.13
-Diazepam,Public,MPR,Tajikistan,2013,NO DATA
 Diclofenac,Private,MPR,Tajikistan,2013,5.62
 Diclofenac,Public,MPR,Tajikistan,2013,3.75
 Glibenclamide,Private,MPR,Tajikistan,2013,5
@@ -1059,12 +899,10 @@ Omeprazole,Public,MPR,Tanzania,2012,2.53
 Salbutamol,Private,MPR,Tanzania,2012,1.49
 Salbutamol,Public,MPR,Tanzania,2012,1.12
 Simvastatin,Private,MPR,Tanzania,2012,8.12
-Simvastatin,Public,MPR,Tanzania,2012,NO DATA
 Amitriptyline,Private,MPR,Thailand,2006,5.4
 Amitriptyline,Public,MPR,Thailand,2006,4.05
 Atenolol,Private,MPR,Thailand,2006,6.02
 Atenolol,Public,MPR,Thailand,2006,3.01
-Captopril,Private,MPR,Thailand,2006,NO DATA
 Captopril,Public,MPR,Thailand,2006,4.36
 Ceftriaxone,Private,MPR,Thailand,2006,1.33
 Ceftriaxone,Public,MPR,Thailand,2006,0.68
@@ -1072,15 +910,11 @@ Ciprofloxacin,Private,MPR,Thailand,2006,5.22
 Ciprofloxacin,Public,MPR,Thailand,2006,3.48
 Co-trimoxazole,Private,MPR,Thailand,2006,2.98
 Co-trimoxazole,Public,MPR,Thailand,2006,1.43
-Diazepam,Private,MPR,Thailand,2006,NO DATA
 Diazepam,Public,MPR,Thailand,2006,3.15
 Glibenclamide,Private,MPR,Thailand,2006,6.79
 Glibenclamide,Public,MPR,Thailand,2006,6.79
 Omeprazole,Private,MPR,Thailand,2006,2.23
 Omeprazole,Public,MPR,Thailand,2006,0.72
-Salbutamol,Private,MPR,Thailand,2006,NO DATA
-Salbutamol,Public,MPR,Thailand,2006,NO DATA
-Amitriptyline,Private,MPR,Tunisia,2004,NO DATA
 Amitriptyline,Public,MPR,Tunisia,2004,free
 Amoxicillin,Private,MPR,Tunisia,2004,4.61
 Amoxicillin,Public,MPR,Tunisia,2004,free
@@ -1100,10 +934,7 @@ Glibenclamide,Private,MPR,Tunisia,2004,6.99
 Glibenclamide,Public,MPR,Tunisia,2004,free
 Omeprazole,Private,MPR,Tunisia,2004,6.83
 Omeprazole,Public,MPR,Tunisia,2004,free
-Salbutamol,Private,MPR,Tunisia,2004,NO DATA
 Salbutamol,Public,MPR,Tunisia,2004,free
-Simvastatin,Private,MPR,Tunisia,2004,NO DATA
-Simvastatin,Public,MPR,Tunisia,2004,NO DATA
 Amitriptyline,Private,MPR,Uganda,2013,5.58
 Amitriptyline,Public,MPR,Uganda,2013,free
 Ceftriaxone,Private,MPR,Uganda,2013,1.39
@@ -1122,7 +953,6 @@ Omeprazole,Private,MPR,Uganda,2013,3.23
 Omeprazole,Public,MPR,Uganda,2013,free
 Salbutamol,Private,MPR,Uganda,2013,1.29
 Salbutamol,Public,MPR,Uganda,2013,free
-Amitriptyline,Private,MPR,Ukraine,2012,NO DATA
 Amitriptyline,Public,MPR,Ukraine,2012,5.95
 Amoxicillin,Private,MPR,Ukraine,2012,4.38
 Amoxicillin,Public,MPR,Ukraine,2012,4.62
@@ -1136,7 +966,6 @@ Ciprofloxacin,Private,MPR,Ukraine,2012,2.74
 Ciprofloxacin,Public,MPR,Ukraine,2012,3.01
 Co-trimoxazole,Private,MPR,Ukraine,2012,8.57
 Co-trimoxazole,Public,MPR,Ukraine,2012,8.52
-Diazepam,Private,MPR,Ukraine,2012,NO DATA
 Diazepam,Public,MPR,Ukraine,2012,6.31
 Diclofenac,Private,MPR,Ukraine,2012,4.27
 Diclofenac,Public,MPR,Ukraine,2012,4.66
@@ -1150,7 +979,6 @@ Salbutamol,Private,MPR,Ukraine,2012,1.55
 Salbutamol,Public,MPR,Ukraine,2012,1.56
 Simvastatin,Private,MPR,Ukraine,2012,4.1
 Simvastatin,Public,MPR,Ukraine,2012,4.27
-Amitriptyline,Private,MPR,United Arab Emirates,2006,NO DATA
 Amitriptyline,Public,MPR,United Arab Emirates,2006,free
 Atenolol,Private,MPR,United Arab Emirates,2006,20.13
 Atenolol,Public,MPR,United Arab Emirates,2006,free
@@ -1178,31 +1006,23 @@ Captopril,Private,MPR,Uzbekistan,2004,1.76
 Ceftriaxone,Private,MPR,Uzbekistan,2004,0.81
 Ciprofloxacin,Private,MPR,Uzbekistan,2004,3.23
 Co-trimoxazole,Private,MPR,Uzbekistan,2004,4.21
-Diazepam,Private,MPR,Uzbekistan,2004,NO DATA
 Diclofenac,Private,MPR,Uzbekistan,2004,3.87
 Glibenclamide,Private,MPR,Uzbekistan,2004,4.29
 Omeprazole,Private,MPR,Uzbekistan,2004,0.64
 Salbutamol,Private,MPR,Uzbekistan,2004,0.98
 Amitriptyline,Private,MPR,Yemen,2006,11.19
-Amitriptyline,Public,MPR,Yemen,2006,NO DATA
 Atenolol,Private,MPR,Yemen,2006,5.75
-Atenolol,Public,MPR,Yemen,2006,NO DATA
 Captopril,Private,MPR,Yemen,2006,3.48
 Captopril,Public,MPR,Yemen,2006,0.86
 Ceftriaxone,Private,MPR,Yemen,2006,2.76
 Ceftriaxone,Public,MPR,Yemen,2006,2.33
 Ciprofloxacin,Private,MPR,Yemen,2006,5.33
-Ciprofloxacin,Public,MPR,Yemen,2006,NO DATA
 Co-trimoxazole,Private,MPR,Yemen,2006,2.28
 Co-trimoxazole,Public,MPR,Yemen,2006,1.3
 Diazepam,Private,MPR,Yemen,2006,8.13
-Diazepam,Public,MPR,Yemen,2006,NO DATA
 Glibenclamide,Private,MPR,Yemen,2006,8.76
-Glibenclamide,Public,MPR,Yemen,2006,NO DATA
 Omeprazole,Private,MPR,Yemen,2006,1.7
-Omeprazole,Public,MPR,Yemen,2006,NO DATA
 Salbutamol,Private,MPR,Yemen,2006,1.05
-Salbutamol,Public,MPR,Yemen,2006,NO DATA
 Amitriptyline,Private,MPR,Spain,2015,5.21769242288
 Amitriptyline,Public,MPR,Spain,2015,0.521769242288
 Amoxicillin,Private,MPR,Spain,2015,4.48518668423
@@ -1265,8 +1085,6 @@ Amoxicillin,Private,MPR,Argentina,2015,6.06932988963
 Amoxicillin,Public,MPR,Argentina,2015,3.64159793378
 Atenolol,Private,MPR,Argentina,2015,4.40079308109
 Atenolol,Public,MPR,Argentina,2015,1.31992514586
-Captopril,Private,MPR,Argentina,2015,NO DATA
-Captopril,Public,MPR,Argentina,2015,NO DATA
 Ceftriaxone,Private,MPR,Argentina,2015,10.7827123498
 Ceftriaxone,Public,MPR,Argentina,2015,6.46962740989
 Ciprofloxacin,Private,MPR,Argentina,2015,15.2231676109
@@ -1281,8 +1099,6 @@ Glibenclamide,Private,MPR,Argentina,2015,8.37588065871
 Glibenclamide,Public,MPR,Argentina,2015,2.51193790225
 Omeprazole,Private,MPR,Argentina,2015,7.05234686769
 Omeprazole,Public,MPR,Argentina,2015,4.23140812061
-Paracetamol,Private,MPR,Argentina,2015,NO DATA
-Paracetamol,Public,MPR,Argentina,2015,NO DATA
 Salbutamol,Private,MPR,Argentina,2015,2.01762965423
 Salbutamol,Public,MPR,Argentina,2015,0.703486171016
 Simvastatin,Private,MPR,Argentina,2015,7.69568134853
@@ -1294,24 +1110,17 @@ Captopril,Private,MPR,Italy,2015,6.59815813118
 Ceftriaxone,Private,MPR,Italy,2015,9.46242585159
 Ciprofloxacin,Private,MPR,Italy,2015,30.0028229522
 Co-trimoxazole,Private,MPR,Italy,2015,9.44717509645
-Diazepam,Private,MPR,Italy,2015,NO DATA
 Diclofenac,Private,MPR,Italy,2015,22.578803534
 Glibenclamide,Private,MPR,Italy,2015,16.4272974749
 Omeprazole,Private,MPR,Italy,2015,22.8610356358
-Paracetamol,Private,MPR,Italy,2015,NO DATA
 Salbutamol,Private,MPR,Italy,2015,1.42371604636
 Simvastatin,Private,MPR,Italy,2015,9.62649210628
-Amitriptyline,Public,MPR,Italy,2015,NO DATA
 Amoxicillin,Public,MPR,Italy,2015,6.09985389056
 Atenolol,Public,MPR,Italy,2015,4.75885909209
 Captopril,Public,MPR,Italy,2015,1.55984825796
 Ceftriaxone,Public,MPR,Italy,2015,1.9077471475
 Ciprofloxacin,Public,MPR,Italy,2015,8.95606655289
-Co-trimoxazole,Public,MPR,Italy,2015,NO DATA
-Diazepam,Public,MPR,Italy,2015,NO DATA
 Diclofenac,Public,MPR,Italy,2015,7.89673180593
-Glibenclamide,Public,MPR,Italy,2015,NO DATA
 Omeprazole,Public,MPR,Italy,2015,7.53246643684
-Paracetamol,Public,MPR,Italy,2015,NO DATA
 Salbutamol,Public,MPR,Italy,2015,0.56721754835
 Simvastatin,Public,MPR,Italy,2015,3.41364968308
