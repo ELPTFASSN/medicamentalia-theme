@@ -152,13 +152,12 @@ var Infographic = function( _id, _type ) {
 
     endPosition = $el.offset().top + $el.height() - $(window).height();
 
-    if (type === 'main') {
-      if (vis.isInitialized()) { 
-        vis.resize(); 
-      }
-      if ($(window).width() <= 992) {
-        $el.find('.infographic-content').css('height','auto'); 
-      }
+    if ($(window).width() <= 992) {
+      $el.find('.infographic-content').css('height','auto'); 
+    }
+
+    if (type === 'main' && vis.isInitialized()) { 
+      vis.resize(); 
     }
   };
 

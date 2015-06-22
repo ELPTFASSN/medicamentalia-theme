@@ -113,7 +113,6 @@
     else if ($('#fakes-infographic').size() > 0) {
       var fakes_infographic = new Infographic('#fakes-infographic', 'fakes');
       $(window).scroll( fakes_infographic.onScroll );
-      $(window).addEventListener('touchmove', fakes_infographic.onScroll, false);
       $(window).resize( fakes_infographic.onResize );
     }
     else if ($('#patents-graph').size() > 0) {
@@ -127,10 +126,6 @@
         patentes_infographic.onScroll();
         antimalaricos_infographic.onScroll();
       });
-      $(window).addEventListener('touchmove', function(e){
-        patentes_infographic.onScroll();
-        antimalaricos_infographic.onScroll();
-      }, false);
       $(window).resize( function(){
         patentes_infographic.onResize();
         antimalaricos_infographic.onResize(); 

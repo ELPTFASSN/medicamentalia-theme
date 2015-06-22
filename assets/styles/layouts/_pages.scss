@@ -4,7 +4,7 @@ header {
   position: relative;
   width: 100%;
   height: 33%;
-  min-height: 240px;
+  min-height: 350px;
   text-align: center;
   color: white;
   background: url('http://lorempixel.com/g/1280/720/nature/') center center no-repeat fixed;
@@ -546,6 +546,9 @@ blockquote{
 
 // Computers Resolution
 @media (min-width: $screen-md) {
+  header{
+    min-height: 240px;
+  }
 
   .page-content .page-content-container{
     width: $page-content-container * 100%;

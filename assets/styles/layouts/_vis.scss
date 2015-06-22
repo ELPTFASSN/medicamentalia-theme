@@ -99,6 +99,10 @@ Infographic
       strong{
         font-weight: 400;
       }
+
+      img, svg{
+        display: none;
+      }
     }
 
     blockquote{
@@ -379,10 +383,6 @@ Infographic
         font-size: 22px;
         color: $brand-primary;
         margin-bottom: 12px;
-      }
-
-      img{
-        display: none;
       }
     }
   }
@@ -758,41 +758,55 @@ Infographic
 }
 
 @media (max-width: $screen-md) {
-  
-  #main-infographic{
+
+  .infographic{
 
     .fixed{
       position: static !important;
     }
-   
-    .infographic-graph,
-    .infographic-nav,
-    .infographic-frame{
-      display: none;
-    }
 
     .infographic-content{ 
       position: static;
+      padding-top: 1px;
 
       li{
         position: static;
         opacity: 1;
-        width: 100%;
-        padding: 40px 5%;
-        text-align: center;
+        margin-bottom: 30px;
         border-bottom: 1px solid mix(white, $brand-primary, 8%);
 
         &:last-child{
           border-bottom: none;
         }
 
-        img{
+        img,
+        svg{
           display: block;
           width: 100%;
           height: auto;
-          margin-top: 20px;
+          margin: 20px 0;
         }
       }
+    }
+
+    .infographic-graph,
+    .infographic-nav,
+    .infographic-frame{
+      display: none;
+    }
+    
+    .infographic-frame li{
+      outline: 1px solid white;
+    }
+  }
+
+  #main-infographic{
+
+    .infographic-content li{
+      width: 100%;
+      padding: 40px 5%;
+      text-align: center;
+      
     }
   }
 
