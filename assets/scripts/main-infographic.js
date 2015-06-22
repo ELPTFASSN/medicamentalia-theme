@@ -774,6 +774,7 @@ function Main_Infographic( _id ) {
       .attr('y1', height)
       .attr('x2', setValueX)
       .attr('y2', setValueY)
+      .style('visibility', setVisibility)
       .style('stroke', setColor);
     
     // Show country marker labels
