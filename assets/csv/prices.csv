@@ -1059,8 +1059,8 @@ Atenolol,Private,MPR,Germany,2015,25.6788036609
 Atenolol,Public,MPR,Germany,2015,9.51771818417
 Captopril,Private,MPR,Germany,2015,18.5465957872
 Captopril,Public,MPR,Germany,2015,7.79924128981
-Ceftriaxone,Private,MPR,Germany,2015,22.8777037928
-Ceftriaxone,Public,MPR,Germany,2015,2.2854810827
+Ceftriaxone,Private,MPR,Germany,2015,57.957358341
+Ceftriaxone,Public,MPR,Germany,2015,9.53873573749
 Ciprofloxacin,Private,MPR,Germany,2015,33.7733269709
 Ciprofloxacin,Public,MPR,Germany,2015,13.4340998293
 Co-trimoxazole,Private,MPR,Germany,2015,28.7158888713
@@ -1104,11 +1104,11 @@ Salbutamol,Public,MPR,Argentina,2015,0.703486171016
 Simvastatin,Private,MPR,Argentina,2015,7.69568134853
 Simvastatin,Public,MPR,Argentina,2015,2.27258181864
 Amitriptyline,Private,MPR,Italy,2015,7.52470799641
-Amoxicillin,Private,MPR,Italy,2015,8.82086714566
+Amoxicillin,Private,MPR,Italy,2015,8.7909659011
 Atenolol,Private,MPR,Italy,2015,10.3172065116
 Captopril,Private,MPR,Italy,2015,6.59815813118
 Ceftriaxone,Private,MPR,Italy,2015,9.46242585159
-Ciprofloxacin,Private,MPR,Italy,2015,30.0028229522
+Ciprofloxacin,Private,MPR,Italy,2015,30.4058459471
 Co-trimoxazole,Private,MPR,Italy,2015,9.44717509645
 Diclofenac,Private,MPR,Italy,2015,22.578803534
 Glibenclamide,Private,MPR,Italy,2015,16.4272974749
