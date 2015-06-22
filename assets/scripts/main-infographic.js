@@ -18,12 +18,30 @@ function Main_Infographic( _id ) {
           'dias': 'Días',
           'horas': 'horas',
           'menoshora': 'menos de una hora',
+          'Africa': 'África',
+          'America': 'América',
+          'Asia': 'Asia',
+          'Europe': 'Europa',
+          'Oceania': 'Oceanía',
+          'Low income': 'Ingreso bajo',
+          'Lower middle income': 'Ingreso medio bajo',
+          'Upper middle income': 'Ingreso medio alto',
+          'High income': 'Ingreso alto',
         },
         'en': {
           'gratis': 'free',
           'dias': 'Days',
           'horas': 'hours',
           'menoshora': 'less than an hour',
+          'Africa': 'Africa',
+          'America': 'America',
+          'Asia': 'Asia',
+          'Europe': 'Europe',
+          'Oceania': 'Oceania',
+          'Low income': 'Low income',
+          'Lower middle income': 'Lower middle income',
+          'Upper middle income': 'Upper middle income',
+          'High income': 'High income',
         }
       },
       overlayCode = null,
@@ -50,7 +68,7 @@ function Main_Infographic( _id ) {
       timeout, tooltipItem, drugsFiltered, drugsFilteredAll,
       dataPricesPublic, dataPricesPrivate, dataAffordability, dataCountries, dataCountriesAll;
 
-  var $svg, $dots, $lines, $countryMarker, $countryLabel, $countryLabelCode, $overlay, $mprLine, $yAxis, $xAxis, $yLabel;
+  var $svg, $dots, $lines, $countryMarker, $countryLabel, $countryLabelCode, $overlay, $mprLine, $yAxis, $xAxis, $yLabel, $xArea;
 
   var tickFormatPrices = function(d){ 
         if (d === 0) {
@@ -370,8 +388,6 @@ function Main_Infographic( _id ) {
 
     var currentData = getCurrentData();
 
-    console.log('current data', currentData);
-
     $svg = d3.select('#main-infographic-svg');
 
     // Set title
@@ -476,24 +492,8 @@ function Main_Infographic( _id ) {
     $dots = d3.selectAll('.dot');
     $lines = d3.selectAll('.line');
 
-    /*
-    // Add X Axis Zones
-    var temp = null, c = null, xpos = 0,
-        $item, $xArea = $('<ul class="x-area"></ul>');
-
-    $el.append( $xArea );
-    d3.selectAll('.x.axis .tick text').each(function(d){
-      c = getCountryDataByCode( d );
-      if (temp !== c[0].Area) {
-        temp = c[0].Area;
-        console.log( x(c[0].Code) );
-        $xArea.find('li').last().css('width', (100*(x(c[0].Code)-xpos)/width)+'%' );
-        xpos = x(c[0].Code);
-        $item = $('<li>'+c[0].Area+'</li>');
-        $xArea.append( $item );
-      }
-    });
-    */
+    // Add X Axis Areas
+    setXAxisArea( true );
 
     // Add Events
     $overlay
@@ -678,6 +678,9 @@ function Main_Infographic( _id ) {
 
     // Update X Axis
     x.domain( dataCountries.map(function(d){ return d.Code; }) );
+
+    $xArea.fadeOut();
+    setTimeout( setXAxisArea, 1200 );
 
     $lines
       .attr('x1', setValueX)
@@ -992,6 +995,35 @@ function Main_Infographic( _id ) {
 
   var getCountryDataByCode = function( code ) {
     return dataCountries.filter(function(e){ return e.Code === code; });
+  };
+
+  var setXAxisArea = function( init ){
+    
+    var temp = null, c = null, xpos = 0, label, $item;
+
+    if( init ){
+      $xArea = $('<ul class="x-area"></ul>');
+      $el.append( $xArea );
+    } else {
+      $xArea.find('li').remove();
+      $xArea.fadeIn();
+    }
+    
+    label = (current.order === 'area') ? 'Area' : 'PIB_Area';
+    
+    d3.selectAll('.x.axis .tick text').each(function(d){
+      c = getCountryDataByCode( d );
+      if (temp !== c[0][label]) {
+        temp = c[0][label];
+        console.log( c, x(c[0].Code) );
+        $xArea.find('li').last().css('width', (100*(x(c[0].Code)-xpos)/width)+'%' );
+        xpos = x(c[0].Code);
+        $item = $('<li>'+txt[lang][temp]+'</li>');
+        $xArea.append( $item );
+      }
+    });
+    
+    $xArea.find('li').last().css('width', (100*(x(c[0].Code)-xpos)/width)+'%' );
   };
 
   var setDimensions = function() {
