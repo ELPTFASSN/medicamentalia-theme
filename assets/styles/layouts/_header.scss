@@ -5,7 +5,27 @@
   border-radius: 0;
 
   .home & {
-    display: none;
+    background: transparent;
+
+    .navbar-brand,
+    .navbar-nav li.menu-item{
+      display: none;
+    }
+    .navbar-nav li.menu-item-language{
+      display: block;
+    }
+    .navbar-nav > li.menu-item-language{
+      background: transparent !important;
+
+      &:hover,
+      &:focus{
+        background: $brand-primary !important;
+      }
+
+      > a{
+        color: $brand-secondary !important;
+      }
+    }
   }
 
   .navbar-brand{
@@ -120,6 +140,10 @@
                 background: $color-green-light;
                 text-decoration: none;
               }
+            }
+
+            &:last-child > a{
+              border-bottom: none;
             }
           }
         }
