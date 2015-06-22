@@ -7,10 +7,10 @@ function Main_Infographic( _id ) {
       DOT_OPACITY = 0.7,
       DOT_GRAY = '#d6d6d6',
       current = {
-        data: 'prices',
-        type: 'public',
+        data: 'affordability',
+        type: 'private',
         order: 'area',
-        label: 'Price'
+        label: 'Private sector - number of days'
       },
       txt = {
         'es': {
@@ -91,7 +91,7 @@ function Main_Infographic( _id ) {
       .scale(y)
       .tickSize(-width)
       .tickPadding(8)
-      .tickFormat(tickFormatPrices)
+      .tickFormat(tickFormatAffordability)
       .orient('left');
 
     svg = d3.select(id).append('svg')
@@ -249,7 +249,7 @@ function Main_Infographic( _id ) {
     } else if( stateID === 9 ){
 
       drugsFiltered = drugsFilteredAll;
-      updateData( 'prices', 'public' );
+      updateData( 'affordability', 'private' );
 
       $tooltip.css('opacity', '0');
       tooltipItem = null;
@@ -370,6 +370,8 @@ function Main_Infographic( _id ) {
 
     var currentData = getCurrentData();
 
+    console.log('current data', currentData);
+
     $svg = d3.select('#main-infographic-svg');
 
     // Set title
@@ -395,7 +397,6 @@ function Main_Infographic( _id ) {
     $yLabel = $yAxis.append('text')
         .attr('class', 'y-label')
         .attr('y', -15)
-        .style('opacity', 0)
         .style('text-anchor', 'end')
         .text( txt[lang].dias );
 
@@ -421,6 +422,7 @@ function Main_Infographic( _id ) {
     // MPR Line
     $mprLine = svg.append('g')
       .attr('class', 'mpr-line')
+      .style('opacity', 0)
       .attr('transform', 'translate(0 ' + y(1) + ')');
     $mprLine.append('line')
       .attr('x1', 0)
@@ -473,6 +475,25 @@ function Main_Infographic( _id ) {
 
     $dots = d3.selectAll('.dot');
     $lines = d3.selectAll('.line');
+
+    /*
+    // Add X Axis Zones
+    var temp = null, c = null, xpos = 0,
+        $item, $xArea = $('<ul class="x-area"></ul>');
+
+    $el.append( $xArea );
+    d3.selectAll('.x.axis .tick text').each(function(d){
+      c = getCountryDataByCode( d );
+      if (temp !== c[0].Area) {
+        temp = c[0].Area;
+        console.log( x(c[0].Code) );
+        $xArea.find('li').last().css('width', (100*(x(c[0].Code)-xpos)/width)+'%' );
+        xpos = x(c[0].Code);
+        $item = $('<li>'+c[0].Area+'</li>');
+        $xArea.append( $item );
+      }
+    });
+    */
 
     // Add Events
     $overlay
@@ -967,6 +988,10 @@ function Main_Infographic( _id ) {
 
   var getCountryData = function( region ) {
     return dataCountries.filter(function(e){ return e.Region_en === region; });
+  };
+
+  var getCountryDataByCode = function( code ) {
+    return dataCountries.filter(function(e){ return e.Code === code; });
   };
 
   var setDimensions = function() {
