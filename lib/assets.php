@@ -80,6 +80,7 @@ function assets() {
 
   if( is_page_template('template-article.php') || is_page_template('template-iframe.php') ){
     wp_enqueue_script('d3-queue', 'http://d3js.org/queue.v1.min.js', [], null, true);
+    //wp_enqueue_script('d3-queue', asset_path('scripts/queue.v1.min.js'), [], null, true);
     wp_enqueue_script('d3', asset_path('scripts/d3.min.js'), [], null, true);
     wp_enqueue_script('main_vis', asset_path('scripts/visualizations.js'), ['jquery', 'd3'], null, true);
   }

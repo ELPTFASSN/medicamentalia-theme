@@ -458,22 +458,6 @@ function Main_Infographic( _id ) {
       .attr('width', width)
       .attr('height', height);
 
-    // Setup Lines
-    svg.append('g')
-      .attr('class', 'dot-lines')
-    .selectAll('.dot-line')
-      .data( currentData )
-    .enter().append('line')
-      .attr('id', setId)
-      .attr('class', function(d) { return 'line'+setClass(d); })
-      .attr('x1', setValueX)
-      .attr('y1', height)
-      .attr('x2', setValueX)
-      .attr('y2', setValueY)
-      .style('visibility', setVisibility)
-      .style('opacity', 0)
-      .style('stroke', setColor);
-
     // Setup Circles
     svg.append('g')
       .attr('class', 'dots')
@@ -490,7 +474,10 @@ function Main_Infographic( _id ) {
       .style('fill', setColor);
 
     $dots = d3.selectAll('.dot');
-    $lines = d3.selectAll('.line');
+
+    // Setup Lines
+    $lines = svg.append('g')
+      .attr('class', 'dot-lines');
 
     // Add X Axis Areas
     setXAxisArea( true );
@@ -529,8 +516,6 @@ function Main_Infographic( _id ) {
     if( !initialized ){ return that; }
 
     current.label = (current.data === 'prices') ? 'Price' : ((current.type === 'public') ? 'Public sector - number of days' : 'Private sector - number of days');
-
-    //console.log( 'update data', current );
 
     resetDotClicked();
 
@@ -572,7 +557,6 @@ function Main_Infographic( _id ) {
 
     // Reset visibility for all dots & lines
     $dots.style('visibility', 'hidden');
-    $lines.style('visibility', 'hidden');
 
     currentData.forEach(function(d){
 
@@ -586,28 +570,9 @@ function Main_Infographic( _id ) {
           .transition().duration(1000)
           .attr('cx', setValueX)
           .attr('cy', setValueY);
-
-        item = svg.select('.line'+getClass(d));
-        item.datum(d)
-          .style('visibility', setVisibility)
-          .attr('y2', setValueY);
       } 
       // Create item
       else{
-
-        // Setup Lines
-        d3.select('.dot-lines')
-          .append('line')
-          .datum(d)
-          .attr('id', setId)
-          .attr('class', function(d) { return 'line'+setClass(d); })
-          .attr('x1', setValueX)
-          .attr('y1', height)
-          .attr('x2', setValueX)
-          .attr('y2', setValueY)
-          .style('visibility', setVisibility)
-          .style('opacity', 0)
-          .style('stroke', setColor);
 
         // Setup Circles
         d3.select('.dots')
@@ -627,7 +592,6 @@ function Main_Infographic( _id ) {
     });
 
     $dots = d3.selectAll('.dot');
-    $lines = d3.selectAll('.line');
 
     return that;
   };
@@ -676,15 +640,13 @@ function Main_Infographic( _id ) {
       });
     }
 
+    resetDotClicked();
+
     // Update X Axis
     x.domain( dataCountries.map(function(d){ return d.Code; }) );
 
     $xArea.fadeOut();
     setTimeout( setXAxisArea, 1200 );
-
-    $lines
-      .attr('x1', setValueX)
-      .attr('x2', setValueX);
 
     var transition = svg.transition().duration(1000);
     
@@ -745,14 +707,14 @@ function Main_Infographic( _id ) {
     }
 
     // Update X Axis
+    $xArea.fadeOut();
+    setTimeout( setXAxisArea, 1200 );
+    
     x.domain( dataCountries.map(function(d){ return d.Code; }) );
 
     $dots.style('visibility', setVisibility);
    
-    $lines
-      .attr('x1', setValueX)
-      .attr('x2', setValueX)
-      .style('visibility', setVisibility);
+    resetDotClicked();
 
     var transition = svg.transition().duration(1000);
   
@@ -780,6 +742,8 @@ function Main_Infographic( _id ) {
       $drugDropdownInputs.each(function(){ $(this).attr('checked',true); });
     }
 
+    resetDotClicked();
+
     $dots.style('visibility', setVisibility);
   };
 
@@ -789,7 +753,7 @@ function Main_Infographic( _id ) {
 
     $dots.on('click', onDotClick );
 
-    // Update opacity
+    // Update dots
     $dots
       .style('fill', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? DOT_GRAY : color(d.Drug); })
       .style('opacity', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? DOT_OPACITY : 1; });
@@ -797,8 +761,22 @@ function Main_Infographic( _id ) {
     svg.selectAll('.dot.drug-'+item.attr('id'))
       .style('fill', function(d) { return color(d.Drug); }).style('opacity', 1);
 
-    // Show lines & country marker labels
-    svg.selectAll('.line.drug-'+item.attr('id')).style('opacity', 1);
+    var drugData = getCurrentData();
+    drugData = drugData.filter(function(e){ return niceName(e.Drug) === item.attr('id'); });
+  
+    // Setup lines
+    $lines.selectAll('.line')
+      .data( drugData )
+    .enter().append('line')
+      .attr('id', setId)
+      .attr('class', function(d) { return 'line'+setClass(d); })
+      .attr('x1', setValueX)
+      .attr('y1', height)
+      .attr('x2', setValueX)
+      .attr('y2', setValueY)
+      .style('stroke', setColor);
+    
+    // Show country marker labels
     $countryLabel.style('opacity', 1);
     $countryLabelCode.style('opacity', 1);
 
@@ -871,14 +849,12 @@ function Main_Infographic( _id ) {
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY);
 
-      $lines.style('opacity', 0);
+      $lines.html('');
     }
     else {
       $dots
         .style('fill', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? DOT_GRAY : color(d.Drug); })
         .style('opacity', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? DOT_OPACITY : 1; });
-      
-      $lines.style('opacity', function(d){ return (d3.select(this).attr('id') !== dotClicked) ? 0 : 1; });
     }
   
     $tooltip.css({'opacity': '0', 'right': 'auto', 'left': '-1000px'});
@@ -918,16 +894,6 @@ function Main_Infographic( _id ) {
       .attr('x', x(overlayCode))  //-6)
       .style('opacity', 1)
       .text( countryData[0]['Country_'+lang] );
-
-    /*
-    svg.selectAll('.dot')
-      .style('fill', DOT_GRAY)
-      .style('opacity', DOT_OPACITY );
-
-    svg.selectAll('.dot.country-'+niceName(x.domain()[j]))
-      .style('fill', function(d) { return color(d.Drug); })
-      .style('opacity', 1);
-    */
   };
 
   var onOverlayOut = function(){
@@ -941,10 +907,10 @@ function Main_Infographic( _id ) {
   var resetDotClicked = function(){
     if (dotClicked !== null) {
       dotClicked = null;
+      $lines.html('');
       $dots
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY);
-      $lines.style('opacity', 0);
     }
   };
 
@@ -1015,7 +981,6 @@ function Main_Infographic( _id ) {
       c = getCountryDataByCode( d );
       if (temp !== c[0][label]) {
         temp = c[0][label];
-        console.log( c, x(c[0].Code) );
         $xArea.find('li').last().css('width', (100*(x(c[0].Code)-xpos)/width)+'%' );
         xpos = x(c[0].Code);
         $item = $('<li>'+txt[lang][temp]+'</li>');
