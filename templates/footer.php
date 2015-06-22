@@ -11,7 +11,7 @@
       </div>
       <div class="col-sm-6">
         <p><?= __('Financiado por', 'sage'); ?></p>
-        <a class="partner-logo" href="http://dev.journalismgrants.org/projects/third-world-treatments-first-world-prices" target="_blank" title="Journalism Grants">
+        <a class="partner-logo" href="http://journalismgrants.org/projects/medicamentalia" target="_blank" title="Journalism Grants">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/journalismgrants.png" alt="Journalism Grants">
         </a>
       </div>
