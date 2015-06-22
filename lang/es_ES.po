@@ -55,3 +55,11 @@ msgstr ""
 #: home-item.php:17
 msgid "Explora los datos"
 msgstr ""
+
+#: template-home.php:17
+msgid "Baja"
+msgstr ""
+
+#: template-home.php:19
+msgid "Proyecto periodístico internacional sobre los precios de los medicamentos"
+msgstr "Una investigación periodística sobre el acceso a los medicamentos en el mundo"

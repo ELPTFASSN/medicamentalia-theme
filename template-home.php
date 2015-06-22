@@ -4,6 +4,8 @@
  */
 ?>
 
+<?php do_action('icl_language_selector'); ?>
+
 <?php while (have_posts()) : the_post(); ?>
 
   <!-- Home Intro -->
@@ -19,7 +21,7 @@
           <p><?= __('Proyecto periodístico internacional sobre los precios de los medicamentos', 'sage'); ?></p>
       </div>
     </div>
-    <a href="#home" class="btn btn-primary btn-xl btn-scroll-down " title="Scroll down">Scroll down <span class="glyphicon glyphicon-chevron-down"></span><span class="animation"></span></a>
+    <a href="#home" class="btn btn-primary btn-xl btn-scroll-down " title="<?= __('Baja'); ?>"><?= __('Baja'); ?><span class="glyphicon glyphicon-chevron-down"></span><span class="animation"></span></a>
   </header>
 
   <!-- Home Main Menu -->

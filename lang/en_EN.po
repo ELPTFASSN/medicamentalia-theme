@@ -16,9 +16,13 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: template-home.php:17
+msgid "Baja"
+msgstr "Scroll down"
+
 #: template-home.php:19
 msgid "Proyecto periodístico internacional sobre los precios de los medicamentos"
-msgstr "International journalistic project on the prices of medicines"
+msgstr "A journalistic investigation into access to medicines around the world"
 
 #: templates/content-page.php:39
 msgid "Por"

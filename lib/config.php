@@ -67,3 +67,8 @@ function display_sidebar() {
 
   return $display;
 }
+
+/**
+* Remove WPML CSS (https://wpml.org/documentation/support/wpml-coding-api/)
+*/
+define('ICL_DONT_LOAD_LANGUAGE_SELECTOR_CSS', true);

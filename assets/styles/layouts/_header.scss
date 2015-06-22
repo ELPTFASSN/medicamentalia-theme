@@ -5,6 +5,8 @@
   border-radius: 0;
 
   .home & {
+    display: none;
+    /*
     background: transparent;
 
     .navbar-brand,
@@ -26,6 +28,7 @@
         color: $brand-secondary !important;
       }
     }
+    */
   }
 
   .navbar-brand{
@@ -94,6 +97,7 @@
       text-transform: uppercase;
       padding-left: 15px;
       border-bottom: 1px solid $color-green;
+      text-align: center;
 
       &.menu-item-language{
         position: relative;
@@ -191,6 +195,7 @@
       >li{
         padding-left: 0;
         border-bottom: none;
+        text-align: left;
       }
 
       >li.menu-item-language > a{
