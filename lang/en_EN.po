@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: template-home.php:17
-msgid "Baja"
+msgid "Scroll down"
 msgstr "Scroll down"
 
 #: template-home.php:19
