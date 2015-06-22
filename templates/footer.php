@@ -22,24 +22,29 @@
 
     <div class="row">
       <p><?= __('Cuenta con media partners como', 'sage'); ?></p>
-      <div class="col-sm-3">
+      <div class="col-sm-3 media-partner">
         <a href="http://www.20minutos.es/" class="logo" target="_blank" title="20Minutos">
           <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/assets/images/20minutos.png" alt="20Minutos">
         </a>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 media-partner">
         <a href="http://cadenaser.com/" class="logo" target="_blank" title="Cadena SER">
           <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/assets/images/cadenaser.png" alt="Cadena SER">
         </a>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 media-partner">
         <a href="http://www.corriere.it/" class="logo" target="_blank" title="Corriere della Sera">
           <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/assets/images/corrieredellasera.png" alt="Corriere della Sera">
         </a>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 media-partner">
         <a href="https://correctiv.org/" class="logo" target="_blank" title="Correctiv">
           <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/assets/images/correctiv.png" alt="Correctiv">
+        </a>
+      </div>
+      <div class="col-sm-3 media-partner">
+        <a href="http://www.lanacion.com.ar/" class="logo" target="_blank" title="La Nación">
+          <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/assets/images/lanacion.png" alt="La Nación">
         </a>
       </div>
       <div class="col-sm-12">
