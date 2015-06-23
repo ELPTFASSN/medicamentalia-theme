@@ -44,7 +44,7 @@ var Infographic = function( _id, _type ) {
 
   var setIframeBtns = function(){
     $contentList.each(function(i){
-      $(this).append('<div class="btn-next"><a href="#'+(i+2)+'" class="btn btn-default btn-sm">Siguiente <i class="glyphicon glyphicon-chevron-right"></i></a></div>');
+      $(this).append('<div class="btn-next"><a href="#'+(i+2)+'" class="btn btn-default btn-sm">Next <i class="glyphicon glyphicon-chevron-right"></i></a></div>');
     });
     $contentList.find('.btn-next a').click(function(e){
       e.preventDefault();
