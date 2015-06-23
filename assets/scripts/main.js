@@ -19,9 +19,18 @@
     'common': {
       init: function() {
         
-        // JavaScript to be fired on all pages
+        // Toogle Lang Menu
         $('#main-menu .navbar-nav>li.menu-item-language>a').click(function(e){
           $('#main-menu .submenu-languages').toggle();
+        });
+
+        // Set Suscribe Input Text
+        var suscribe = null;
+        $('#mc-embedded-subscribe-form .email').focus(function(){
+          suscribe = ( !suscribe ) ? $(this).val() : suscribe;
+          $(this).val('');
+        }).focusout(function(){
+          $(this).val(suscribe);
         });
 
         // Smooth page scroll to an anchor on the same page.
