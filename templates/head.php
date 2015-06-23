@@ -5,6 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
+    <!-- Fb Open Graph Meta -->
+    <meta property="og:title" content="<?= bloginfo('name'); ?>"/>
+    <meta property="og:image" content="<?= get_template_directory_uri(); ?>/dist/images/medicamentalia-img.jpg"/>
+    <meta property="og:site_name" content="<?= bloginfo('name'); ?>"/>
+    <meta property="og:description" content="<?= __('Proyecto periodístico internacional sobre los precios de los medicamentos', 'sage'); ?>"/>
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="<?= get_template_directory_uri(); ?>/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?= get_template_directory_uri(); ?>/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="<?= get_template_directory_uri(); ?>/favicons/apple-icon-72x72.png">
