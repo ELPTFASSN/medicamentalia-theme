@@ -720,6 +720,36 @@ Infographic
   }
 }
 
+.page-template-template-iframe{
+
+  #main-infographic .infographic-content li .btn-next{
+    visibility: hidden;
+    text-align: right;
+    top: 4px;
+
+    .btn{
+      background: $color-orange;
+      border-color: $color-orange;
+      color: white;
+      font-weight: 300;
+
+      .glyphicon{
+        font-size: 0.875em;
+      }
+
+      &:hover{
+        color: $color-orange;
+        background: white;
+      }
+    }
+  }
+  #main-infographic .infographic-content li.active .btn-next{
+    visibility: visible;
+    position: relative;
+    z-index: 90;
+  }
+}
+
 @media (max-width: $screen-sm) {
   .infographic .infographic-nav,
   .infographic .infographic-nav.fixed{

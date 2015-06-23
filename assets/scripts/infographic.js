@@ -31,12 +31,28 @@ var Infographic = function( _id, _type ) {
 
     $frame.append('<li class="frame-'+i+'"><div class="scroller"></div></li>');   // Add last frame item
 
-     if( type === 'main'){
+    if( type === 'main'){
       $frame.append('<li class="frame-'+(i+1)+'"><div class="scroller"></div></li>');   // Add extra frame item for Main Infographic
+      if( $el.find('.infographic-content').hasClass('iframe') ){
+        $nav.append('<li><a href="#'+i+'"></a></li>');   // Add extra nav item for Main Infographic in iframe mode
+      }
     }
 
     $el.append( $frame );
     $el.append( $nav );
+  };
+
+  var setIframeBtns = function(){
+    $contentList.each(function(i){
+      $(this).append('<div class="btn-next"><a href="#'+(i+2)+'" class="btn btn-default btn-sm">Siguiente <i class="glyphicon glyphicon-chevron-right"></i></a></div>');
+    });
+    $contentList.find('.btn-next a').click(function(e){
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $('.infographic-frame li.frame-'+$(this).attr('href').substring(1)).offset().top + 2
+      }, '200');
+    });
+    $('html, body').animate({ scrollTop: $('.infographic-frame li.frame-1').offset().top + 2}, '200');
   };
 
 
@@ -69,14 +85,18 @@ var Infographic = function( _id, _type ) {
 
     that.onResize();
 
-    if( type === 'main'){ vis.init(); }
+    if( type === 'main'){ 
+      vis.init();
+      if( $el.find('.infographic-content').hasClass('iframe') ){
+        setIframeBtns();
+      }
+    }
     
     $contentList.first().addClass('active');    // Setup firs content item as active
 
     // Nav Buttons Click Interaction
     $nav.find('li a').click(function(e){
       e.preventDefault();
-       
       $('html, body').animate({
         scrollTop: $('.infographic-frame li.frame-'+$(this).attr('href').substring(1)).offset().top + 2
       }, '200');
