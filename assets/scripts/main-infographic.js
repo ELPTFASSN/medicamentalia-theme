@@ -331,7 +331,7 @@ function Main_Infographic( _id ) {
     }
 
     // Update Dots & Lines
-    $lines
+    $lines.selectAll('line')
       .attr('x1', setValueX)
       .attr('y1', height)
       .attr('x2', setValueX)
@@ -765,17 +765,19 @@ function Main_Infographic( _id ) {
     drugData = drugData.filter(function(e){ return niceName(e.Drug) === item.attr('id'); });
   
     // Setup lines
-    $lines.selectAll('.line')
-      .data( drugData )
-    .enter().append('line')
-      .attr('id', setId)
-      .attr('class', function(d) { return 'line'+setClass(d); })
-      .attr('x1', setValueX)
-      .attr('y1', height)
-      .attr('x2', setValueX)
-      .attr('y2', setValueY)
-      .style('visibility', setVisibility)
-      .style('stroke', setColor);
+    if (dotClicked == null) {
+      $lines.selectAll('.line')
+        .data( drugData )
+      .enter().append('line')
+        .attr('id', setId)
+        .attr('class', function(d) { return 'line'+setClass(d); })
+        .attr('x1', setValueX)
+        .attr('y1', height)
+        .attr('x2', setValueX)
+        .attr('y2', setValueY)
+        .style('visibility', setVisibility)
+        .style('stroke', setColor);
+    }
     
     // Show country marker labels
     $countryLabel.style('opacity', 1);
