@@ -460,7 +460,7 @@ blockquote{
 // Carousel Fullscreen
 
 .carousel.full-width{
-  height: 100%;
+  height: 66%;
   margin-top: 40px;
   
   .item,
@@ -519,6 +519,10 @@ blockquote{
 
 // Tablet & Computers Resolution
 @media (min-width: $screen-sm) {
+
+  .carousel.full-width{
+    height: 100%;
+  }
 
   blockquote,
   .alignright,
