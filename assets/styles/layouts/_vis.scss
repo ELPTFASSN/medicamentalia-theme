@@ -677,7 +677,65 @@ Infographic
           line-height: 1.375em;
 
           &.checkbox label{
+            position: relative;
             font-weight: 300;
+
+            i{
+              position: absolute;
+              display: block;
+              width: 18px;
+              height: 13px;
+              margin-top: 2px;
+              overflow: hidden;
+              background: url(../images/pills.png) no-repeat 0 0 transparent;
+
+              &.drug-amitriptyline{
+                background-position: 0 0;
+              }
+              &.drug-simvastatin{
+                background-position: 0 -13px;
+              }
+              &.drug-amoxicillin{
+                background-position: 0 -26px;
+              }
+              &.drug-atenolol{
+                background-position: 0 -39px;
+              }
+              &.drug-captopril{
+                background-position: 0 -52px;
+              }
+              &.drug-ceftriaxone{
+                background-position: 0 -65px;
+              }
+              &.drug-ciprofloxacin{
+                background-position: 0 -78px;
+              }
+              &.drug-co-trimoxazole{
+                background-position: 0 -91px;
+              }
+              &.drug-diazepam{
+                background-position: 0 -104px;
+              }
+              &.drug-diclofenac{
+                background-position: 0 -117px;
+              }
+              &.drug-glibenclamide{
+                background-position: 0 -130px;
+              }
+              &.drug-omeprazole{
+                background-position: 0 -143px;
+              }
+              &.drug-paracetamol{
+                background-position: 0 -156px;        
+              }
+              &.drug-salbutamol{
+                background-position: 0 -169px;
+              }
+            }
+
+            span{
+              padding-left: 18px;
+            }
           }
         }
       }
