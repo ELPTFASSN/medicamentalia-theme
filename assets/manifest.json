@@ -8,6 +8,7 @@
     },
     "visualizations.js": {
       "files": [
+        "scripts/queue.js",
         "scripts/patents-graph.js",
         "scripts/infographic.js",
         "scripts/main-infographic.js",
