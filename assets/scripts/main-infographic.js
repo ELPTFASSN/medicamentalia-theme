@@ -343,6 +343,14 @@ function Main_Infographic( _id ) {
       .attr('cx', setValueX)
       .attr('cy', setValueY);
 
+    if (widthCont < 960 && DOT_RADIUS === 7) {
+      DOT_RADIUS = 6;
+      $dots.attr('r', DOT_RADIUS);
+    } else if (widthCont >= 960 && DOT_RADIUS === 6) {
+      DOT_RADIUS = 7;
+      $dots.attr('r', DOT_RADIUS);
+    }
+
     return that;
   };
 
@@ -854,7 +862,7 @@ function Main_Infographic( _id ) {
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY);
 
-      $lines.html('');
+      $lines.selectAll('*').remove();
     }
     else {
       $dots
@@ -912,7 +920,7 @@ function Main_Infographic( _id ) {
   var resetDotClicked = function(){
     if (dotClicked !== null) {
       dotClicked = null;
-      $lines.html('');
+      $lines.selectAll('*').remove();
       $dots
         .style('fill', function(d){ return color(d.Drug); })
         .style('opacity', DOT_OPACITY);

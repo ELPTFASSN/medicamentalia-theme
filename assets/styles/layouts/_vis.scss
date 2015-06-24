@@ -354,7 +354,6 @@ Infographic
 
     .dot{
       cursor: pointer;
-      r: 7;
     }
   }
 
@@ -872,10 +871,6 @@ Infographic
   @media (max-width: $screen-md) and (min-width: 859px) {
     #main-infographic{
       font-size: 0.875em;
-
-      .infographic-graph .dot{
-        r: 6;
-      }
     }
   }
 
