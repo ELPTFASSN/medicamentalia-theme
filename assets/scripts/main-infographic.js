@@ -5,6 +5,7 @@ function Main_Infographic( _id ) {
   var that = this,
       initialized = false,
       DOT_OPACITY = 0.7,
+      DOT_RADIUS = 7,
       DOT_GRAY = '#d6d6d6',
       current = {
         data: 'affordability',
@@ -284,7 +285,8 @@ function Main_Infographic( _id ) {
 
     setDimensions();  // Update width/height
 
-    if( widthCont < 992 ){ return that; }   // Skip for mobile sizes
+    //if( widthCont < 992 ){ return that; }   // Skip for mobile sizes
+    if( widthCont < 860 ){ return that; }   // Skip for mobile sizes
 
     $svg.attr('width', widthCont).attr('height', heightCont);   // Update SVG size
 
@@ -466,7 +468,7 @@ function Main_Infographic( _id ) {
     .enter().append('circle')
       .attr('id', setId)
       .attr('class', function(d) { return 'dot'+setClass(d); })
-      .attr('r', 7)
+      .attr('r', DOT_RADIUS)
       .attr('cx', setValueX)
       .attr('cy', setValueY)
       .style('visibility', setVisibility)
@@ -580,7 +582,7 @@ function Main_Infographic( _id ) {
           .datum(d)
           .attr('id', setId)
           .attr('class', function(d) { return 'dot'+setClass(d); })
-          .attr('r', 7)
+          .attr('r', DOT_RADIUS)
           .attr('cx', setValueX)
           .attr('cy', setValueY)
           .style('visibility', setVisibility)

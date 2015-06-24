@@ -354,6 +354,7 @@ Infographic
 
     .dot{
       cursor: pointer;
+      r: 7;
     }
   }
 
@@ -778,75 +779,8 @@ Infographic
   }
 }
 
-.page-template-template-iframe{
-
-  #main-infographic .infographic-content li .btn-next{
-    visibility: hidden;
-    text-align: right;
-    top: 4px;
-
-    .btn{
-      background: $color-orange;
-      border-color: $color-orange;
-      color: white;
-      font-weight: 300;
-
-      .glyphicon{
-        font-size: 0.875em;
-      }
-
-      &:hover{
-        color: $color-orange;
-        background: white;
-      }
-    }
-  }
-  #main-infographic .infographic-content li.active .btn-next{
-    visibility: visible;
-    position: relative;
-    z-index: 90;
-  }
-}
-
-@media (max-width: $screen-sm) {
-  .infographic .infographic-nav,
-  .infographic .infographic-nav.fixed{
-    display: none;
-  }
-
-  .infographic .infographic-graph svg{
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (min-width: $screen-sm) and (max-width: $screen-md) {
-  #patents-graph .axis text{
-    font-size: 0.6em;
-  }
-}
-
-
-@media (min-width: $screen-lg) {
-  
-  #main-infographic-menu{
-    padding-right: 40px;
-    padding-left: 40px;
-
-    ul li .dropdown-region,
-    ul li .dropdown-drug{
-      width: 50%;
-    }
-    ul li .dropdown-toggle .glyphicon{
-      top: 10px;
-      right: 5px;
-      font-size: 1em;
-    }
-  }
-}
-
-@media (max-width: $screen-md) {
-
+// Mobile Mixin
+@mixin infographic-mobile(){
   .infographic{
 
     .fixed{
@@ -889,6 +823,7 @@ Infographic
   }
 
   #main-infographic{
+    font-size: 0.875em;
 
     .infographic-content li{
       width: 100%;
@@ -901,5 +836,94 @@ Infographic
 
   #main-infographic-tooltip{
     display: none;
+  }
+}
+
+// Iframe
+.page-template-template-iframe{
+
+  #main-infographic .infographic-content li .btn-next{
+    visibility: hidden;
+    text-align: right;
+    top: 4px;
+
+    .btn{
+      background: $color-orange;
+      border-color: $color-orange;
+      color: white;
+      font-weight: 300;
+
+      .glyphicon{
+        font-size: 0.875em;
+      }
+
+      &:hover{
+        color: $color-orange;
+        background: white;
+      }
+    }
+  }
+  #main-infographic .infographic-content li.active .btn-next{
+    visibility: visible;
+    position: relative;
+    z-index: 90;
+  }
+
+  @media (max-width: $screen-md) and (min-width: 859px) {
+    #main-infographic{
+      font-size: 0.875em;
+
+      .infographic-graph .dot{
+        r: 6;
+      }
+    }
+  }
+
+  @media (max-width: 859px) {
+    @include infographic-mobile();
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .infographic .infographic-nav,
+  .infographic .infographic-nav.fixed{
+    display: none;
+  }
+
+  .infographic .infographic-graph svg{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+  #patents-graph .axis text{
+    font-size: 0.6em;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  
+  #main-infographic-menu{
+    padding-right: 40px;
+    padding-left: 40px;
+
+    ul li .dropdown-region,
+    ul li .dropdown-drug{
+      width: 50%;
+    }
+    ul li .dropdown-toggle .glyphicon{
+      top: 10px;
+      right: 5px;
+      font-size: 1em;
+    }
+  }
+}
+
+.page-template-template-article{
+
+  @media (max-width: $screen-md) {
+
+    @include infographic-mobile();
   }
 }
