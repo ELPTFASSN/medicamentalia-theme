@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
     <!-- Fb Open Graph Meta -->
+    <meta property="fb:app_id" content="620090684758872" />
     <meta property="og:title" content="<?= bloginfo('name'); ?>"/>
+    <meta property="og:url" content="<?= site_url(); ?>" />
     <meta property="og:image" content="<?= get_template_directory_uri(); ?>/dist/images/medicamentalia-img.jpg"/>
     <meta property="og:site_name" content="<?= bloginfo('name'); ?>"/>
     <meta property="og:description" content="<?= __('Proyecto periodístico internacional sobre los precios de los medicamentos', 'sage'); ?>"/>

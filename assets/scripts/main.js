@@ -24,6 +24,11 @@
           $('#main-menu .submenu-languages').toggle();
         });
 
+        // Add Selection Sharer (https://github.com/xdamman/selection-sharer)
+        if (!Modernizr.touch) { 
+          $('.page-content-container p').selectionSharer();
+        }
+
         // Set Suscribe Input Text
         var suscribe = null;
         $('#mc-embedded-subscribe-form .email').focus(function(){

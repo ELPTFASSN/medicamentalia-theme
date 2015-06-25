@@ -286,7 +286,7 @@ function Main_Infographic( _id ) {
     setDimensions();  // Update width/height
 
     //if( widthCont < 992 ){ return that; }   // Skip for mobile sizes
-    if( widthCont < 860 ){ return that; }   // Skip for mobile sizes
+    if( widthCont < 860 || height < 0 ){ return that; }   // Skip for mobile sizes
 
     $svg.attr('width', widthCont).attr('height', heightCont);   // Update SVG size
 

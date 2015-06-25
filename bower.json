@@ -10,7 +10,8 @@
     "modernizr": "2.8.2",
     "jquery": "1.11.2",
     "d3": "3.5.5",
-    "bootstrap-sass-official": "3.3.4"
+    "bootstrap-sass-official": "3.3.4",
+    "selection-sharer": "~0.0.15"
   },
   "overrides": {
     "modernizr": {
@@ -36,6 +37,12 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "selection-sharer": {
+      "main": [
+        "./dist/selection-sharer.js",
+        "./dist/selection-sharer.css"
       ]
     }
   }

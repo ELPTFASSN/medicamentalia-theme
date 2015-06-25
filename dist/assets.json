@@ -1,9 +1,11 @@
 {
-  "main.css": "main-e5815127.css",
+  "selection-sharer.css": "selection-sharer-89f8e7ad.css",
   "editor-style.css": "editor-style-89daa017.css",
-  "modernizr.js": "modernizr-45f0e1f4.js",
+  "main.css": "main-e5815127.css",
   "jquery.js": "jquery-cb5eadd1.js",
   "d3.min.js": "d3.min-bbbcec3e.js",
-  "main.js": "main-85633529.js",
-  "visualizations.js": "visualizations-95772d38.js"
+  "selection-sharer.js": "selection-sharer-34885e81.js",
+  "modernizr.js": "modernizr-45f0e1f4.js",
+  "main.js": "main-b1fbdd53.js",
+  "visualizations.js": "visualizations-d8df63b7.js"
 }

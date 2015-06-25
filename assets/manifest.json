@@ -29,6 +29,9 @@
         "styles/editor-style.scss"
       ]
     },
+    "selection-sharer.css": {
+      "bower": ["selection-sharer"]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     },
@@ -37,9 +40,12 @@
     },
     "modernizr.js": {
       "bower": ["modernizr"]
+    },
+    "selection-sharer.js": {
+      "bower": ["selection-sharer"]
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://localhost/medicamentalia/www/"
   }
 }
