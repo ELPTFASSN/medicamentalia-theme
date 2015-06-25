@@ -35,7 +35,9 @@
           suscribe = ( !suscribe ) ? $(this).val() : suscribe;
           $(this).val('');
         }).focusout(function(){
-          $(this).val(suscribe);
+          if( $(this).val() === '' ){
+            $(this).val(suscribe);
+          }
         });
 
         // Smooth page scroll to an anchor on the same page.
