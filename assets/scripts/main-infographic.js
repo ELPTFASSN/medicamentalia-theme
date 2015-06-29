@@ -632,9 +632,9 @@ function Main_Infographic( _id ) {
       reorderData();
     });
 
-    $regionDropdownInputs.change(function(e){ filterByRegion(); });
+    $regionDropdownInputs.change( filterByRegion );
 
-    $drugDropdownInputs.change(function(e){ filterByDrug(); });
+    $drugDropdownInputs.change( filterByDrug );
   };
 
   var reorderData = function(){
@@ -739,6 +739,27 @@ function Main_Infographic( _id ) {
   var filterByDrug = function(){
 
     drugsFiltered = '';
+
+    // Check All
+    if ($(this).attr('name') === 'All') {
+      if ($(this).attr('checked')) {
+        $drugDropdownInputs.each(function(){
+          $(this).attr('checked',true);
+        });
+      } else {
+        $drugDropdownInputs.each(function(){
+          $(this).attr('checked',false);
+        });
+        $drugDropdownInputs.filter('[name="Amitriptyline"]').attr('checked',true);
+      }
+    } else {
+      // Set All Checkbox 
+      if ($(this).attr('checked') && $drugDropdownInputs.filter(':checked').size() === $drugDropdownInputs.size()-1) {
+        $drugDropdownInputs.filter('[name="All"]').attr('checked', true);
+      } else {
+        $drugDropdownInputs.filter('[name="All"]').attr('checked', false);
+      }
+    } 
 
     $drugDropdownInputs.each(function(){
       if( $(this).is(':checked') ){
