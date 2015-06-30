@@ -632,7 +632,7 @@ function Main_Infographic( _id ) {
       reorderData();
     });
 
-    $regionDropdownInputs.change( filterByRegion );
+    $regionDropdownInputs.change(function(e){ filterByRegion(); });
 
     $drugDropdownInputs.change( filterByDrug );
   };
