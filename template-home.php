@@ -42,4 +42,20 @@
     </div>
   </section>
 
+  <!-- Home Main Menu -->
+  <section class="no-padding" id="key-findings">
+    <div class="key-findings-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <?php $home_query = new WP_Query( array('post_type' => 'page', 'page_id' => 773) ); //214 ?>
+        <?php  while ( $home_query->have_posts() ) : $home_query->the_post(); ?>
+          <div <?php post_class('col-sm-12'); ?>>
+            <h3><?php the_title(); ?></h3>
+            <?php the_content(); ?>
+          </div>
+        <?php endwhile; ?>
+      </div>
+    </div>
+  </section>
+
 <?php endwhile; ?>

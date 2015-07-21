@@ -20,11 +20,13 @@ header {
     opacity: 0.5;
   }
 
+  /*
   &.page-2{
     background-image: url('../images/medicine-pattern.png');
     background-repeat: repeat;
     @include background-size( auto );
   }
+  */
   &.page-2 .header-overlay{
     background: $overlay-green;
   }
