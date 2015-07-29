@@ -118,3 +118,7 @@ Keep track of development and community news.
 * Follow [@rootswp on Twitter](https://twitter.com/rootswp)
 * Read and subscribe to the [Roots Blog](https://roots.io/blog/)
 * Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
+
+## Dependencies
+
+medicamentalia-theme is used together with this plugin: [medicamentalia-plugin](https://github.com/civio/medicamentalia-plugin)
