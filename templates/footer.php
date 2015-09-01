@@ -32,11 +32,13 @@
           <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/assets/images/cadenaser.png" alt="Cadena SER">
         </a>
       </div>
+      <!--
       <div class="col-sm-3 media-partner">
         <a href="http://www.corriere.it/" class="logo" target="_blank" title="Corriere della Sera">
           <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/assets/images/corrieredellasera.png" alt="Corriere della Sera">
         </a>
       </div>
+      -->
       <div class="col-sm-3 media-partner">
         <a href="https://correctiv.org/" class="logo" target="_blank" title="Correctiv">
           <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/assets/images/correctiv.png" alt="Correctiv">
