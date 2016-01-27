@@ -87,9 +87,12 @@ function Main_Infographic( _id ) {
 
   // Setup Visualization
 
-  that.init = function() {
+  that.init = function( _skip ) {
 
     initialized = true;
+
+    // Use /?skip=true to skip infographic tour
+    that.skip = _skip;
 
     setDimensions();
 
@@ -392,6 +395,11 @@ function Main_Infographic( _id ) {
 
     setData();
     setupMenuBtns();
+
+    if (that.skip) {
+      // if skip setup set last state
+      that.setState( 9 );
+    }
   };
 
   var setData = function(){

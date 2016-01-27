@@ -55,6 +55,16 @@ var Infographic = function( _id, _type ) {
     $('html, body').animate({ scrollTop: $('.infographic-frame li.frame-1').offset().top + 2}, '200');
   };
 
+  // Get url params
+  var urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return results[1] || 0;
+    }
+  };
 
   // Public Methods
 
@@ -86,9 +96,18 @@ var Infographic = function( _id, _type ) {
     that.onResize();
 
     if( type === 'main'){ 
-      vis.init();
+      vis.init( urlParam('skip') === 'true' );  // Setup skip value to Main Infographic
       if( $el.find('.infographic-content').hasClass('iframe') ){
-        setIframeBtns();
+        if( vis.skip ){
+          $('#main-infographic .infographic-frame').hide();
+          $('#main-infographic-menu').addClass('active');
+          $el.find('.infographic-nav, .infographic-content').addClass('invisible');
+          $contentList.not('.active').css('top', '-40px');
+          $contentList.filter('.active').css('top', '40px').removeClass('active');
+        }
+        else{
+          setIframeBtns();
+        }
       }
     }
     
