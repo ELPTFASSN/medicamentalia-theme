@@ -2,10 +2,10 @@
   "selection-sharer.css": "selection-sharer-89f8e7ad.css",
   "editor-style.css": "editor-style-1a9b48b8.css",
   "main.css": "main-3820ade8.css",
-  "modernizr.js": "modernizr-45f0e1f4.js",
-  "selection-sharer.js": "selection-sharer-34885e81.js",
   "jquery.js": "jquery-cb5eadd1.js",
+  "selection-sharer.js": "selection-sharer-34885e81.js",
+  "modernizr.js": "modernizr-45f0e1f4.js",
   "d3.min.js": "d3.min-bbbcec3e.js",
   "main.js": "main-3d64af3d.js",
-  "visualizations.js": "visualizations-b6d6b5e4.js"
+  "visualizations.js": "visualizations-66344e65.js"
 }
