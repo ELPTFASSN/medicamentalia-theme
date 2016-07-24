@@ -193,7 +193,7 @@ function Main_Infographic( _id ) {
     } else if( stateID === 3 ){
 
       drugsFiltered = drugsFilteredAll;
-      var countries = 'São Tomé and Príncipe Kuwait Italy Spain';
+      var countries = 'São Tomé and Príncipe Kuwait Italy Spain Germany';
       updateData( 'affordability', 'private' );
 
       $dots.transition(1000)
